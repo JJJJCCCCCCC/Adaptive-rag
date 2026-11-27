@@ -1,338 +1,238 @@
-# Adaptive-RAG 电商智能客服
+# Adaptive-RAG
 
-[![CI](https://github.com/JJJJCCCCCCC/Adaptive-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/JJJJCCCCCCC/Adaptive-rag/actions/workflows/ci.yml) [![包版本](https://img.shields.io/badge/version-0.1.0-blue)](pyproject.toml) [![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](pyproject.toml) [![许可证](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+**面向中文电商客服的检索增强问答与订单工作流**
 
-Adaptive-RAG 是一个可在本地运行的中文电商客服示例。它用 LangGraph 将问题路由到不同流程：问候直接回答，政策咨询检索并引用条款，取消订单或申请退款则先展示操作摘要，等用户确认后再写入数据库。
+Adaptive-RAG 在同一套对话服务中处理**政策咨询、订单查询和售后操作**。LangGraph 根据意图和问题复杂度选择执行路径。政策回答附带条款出处，物流追问可接续同一会话中的订单，取消订单和发起退款等写操作需要用户确认后才会执行。
 
-本项目面向首次搭建 RAG 应用的开发者，以及希望接入客服 API、比较检索策略或验证业务工具流程的工程师。后端使用 Python、FastAPI 与 SQLAlchemy，前端使用 React、TypeScript 与 Vite。
+[![CI](https://github.com/JJJJCCCCCCC/Adaptive-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/JJJJCCCCCCC/Adaptive-rag/actions/workflows/ci.yml) [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB)](pyproject.toml) [![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-## 目录
+[快速开始](#quickstart) · [系统架构](#architecture) · [评测结果](#evaluation) · [部署与开发](#deployment) · [文档](#docs)
 
-[核心功能](#overview) · [快速开始](#quickstart) · [配置与 API](#usage) · [系统架构](#architecture) · [开发与测试](#dev) · [评测](#evaluation) · [项目结构与文档](#docs) · [使用边界](#limitations) · [贡献方式](#contributing) · [许可证](#license) · [致谢](#credits)
+![Adaptive-RAG Web 工作台展示退货政策对话和条款来源](docs/assets/frontend-snapshot.webp)
 
-![Web 工作台展示退货政策回答及引用来源](docs/assets/frontend-snapshot.webp)
-
-
-<a id="overview"></a>
-
-## 核心功能
-
-> **Adaptive RAG** 的核心决策是：这个问题需要直接回答、检索一条证据、交叉核对多条证据、调用业务工具，还是拒绝处理？
-
-电商客服里的问题跨度很大。「你好」无需查知识库；退货政策需要可靠出处；「定制商品超过七天但有质量问题」要同时判断定制、时效与质量例外；取消订单则必须检查订单状态、权限与确认。项目用明确的路由策略处理这些差异，避免把所有输入都塞进同一条向量检索链路。
-
-| 能力 | 你能看到什么 | 关键实现 |
-|:---|:---|:---|
-| **按复杂度路由** | 每次回答带有 `strategy`，便于追踪实际路径 | [Graph 与节点](app/agents/graph.py) · [策略枚举](app/core/enums.py) |
-| **有出处的检索** | BM25、稠密向量、RRF 融合与精排；回答可带 `citations` | [检索模块](app/retrieval/) |
-| **多跳与自纠错** | 复合问题拆分检索，答案经过忠实度检查 | [智能体节点](app/agents/nodes/) |
-| **人工确认** | 高风险写操作先返回 `pending_action`，确认后才执行 | [工具与权限](app/tools/) |
-| **Web 对话工作台** | 流式显示、引用、本地会话搜索、深色模式与确认卡片 | [前端](frontend/) |
-| **可测可观测** | 离线评测、回归测试、结构化日志与 Prometheus 指标 | [评测](eval/) · [可观测性](app/observability/) |
-
-### 五条处理路径
-
-| 策略 | 适合的问题 | 处理方式 |
-|:---:|:---|:---|
-| `DIRECT` | 问候、闲聊 | 直接生成，不做知识检索 |
-| `SINGLE` | 单一政策问题 | 一轮混合检索与精排 |
-| `MULTI` | 多条件、跨条款问题 | 查询改写、多路检索与自纠错 |
-| `AGENT` | 查询订单、物流或发起业务操作 | 规划后调用受权限约束的工具 |
-| `REFUSE` | 越权、注入或证据不足 | 拒答或引导人工处理 |
-
+*Web 工作台中的政策咨询示例。回答下方显示检索文档与对应章节。*
 
 <a id="quickstart"></a>
 
-## 🚀 快速开始
+## 快速开始
 
-### 🐳 Docker 部署
-
-需要 Docker 和 Docker Compose。以下命令均在项目根目录执行。
-
-#### 1. 默认演示
-
-适合快速体验，使用 SQLite、BM25 和内存缓存 / 向量库，不需要 PostgreSQL、Redis、Qdrant 或外部 API 密钥。
-
-```powershell
-docker compose up --build -d
-```
-
-#### 2. 单机生产
-
-使用 PostgreSQL、Redis 和单个 API 实例。先设置数据库密码：
-
-```powershell
-$env:POSTGRES_PASSWORD="your-password"
-docker compose -f docker-compose.single.yml up --build -d
-```
-
-#### 3. 多实例生产
-
-使用 PostgreSQL、Redis、Qdrant、两个 API 实例和 Nginx 负载均衡：
-
-```powershell
-$env:POSTGRES_PASSWORD="your-password"
-docker compose -f docker-compose.multi.yml up --build -d
-```
-
-单机和多实例模式建议配置 `DEEPSEEK_API_KEY` 以启用生成式回答。启用本地 Embedding / Cross-Encoder 时，首次构建和启动可能下载模型，需要预留较大的磁盘和内存。
-
-启动后访问 **http://127.0.0.1:8000**；API 文档见 **http://127.0.0.1:8000/docs**；健康检查见 **http://127.0.0.1:8000/api/v1/health**。
-
-查看日志或停止服务：
-
-```powershell
-docker compose logs -f api
-docker compose down
-```
-
-单机和多实例模式使用对应的 `-f` 参数执行 `logs` 和 `down`。没有 `DEEPSEEK_API_KEY` 时，系统使用离线证据回答；Redis、Qdrant、Embedding 或 Cross-Encoder 不可用时，会按代码中的降级策略继续运行。
-
-不使用 Docker 时，需要 **Python 3.11+**；Web 开发另需满足[前端 Node.js 要求](frontend/README.md)。
-
-### 1. 安装并启动 API
+安装 Docker 和 Docker Compose 后，在终端运行以下命令。
 
 ```bash
 git clone https://github.com/JJJJCCCCCCC/Adaptive-rag.git
 cd Adaptive-rag
-python3 -m venv .venv
+docker compose up --build -d
+```
+
+打开 [Web 工作台](http://127.0.0.1:8000) 或 [OpenAPI 文档](http://127.0.0.1:8000/docs)。默认配置使用 SQLite、内存缓存、BM25 与哈希向量，无需模型权重或 API 密钥。离线模式会摘录政策证据。加载演示订单后，也可查询订单与物流状态。在项目根目录的 `.env` 设置 `DEEPSEEK_API_KEY` 后，重新执行启动命令可启用生成式回答。密钥应保留在本地 `.env`。
+
+```bash
+curl -s http://127.0.0.1:8000/api/v1/chat \
+  -H 'Content-Type: application/json' \
+  -d '{"user_id":"u_demo","message":"定制商品过了七天，但有质量问题还能退吗？"}'
+```
+
+响应包含 `answer`、`strategy`、`session_id` 和 `trace_id`。政策回答可返回 `citations`，追问时可传回同一个 `session_id`。运行 `docker compose logs -f api` 查看日志，运行 `docker compose down` 停止服务。
+
+<details>
+<summary><strong>从源码启动并体验订单确认</strong></summary>
+
+在仓库根目录运行以下命令，需要 Python 3.11+。种子脚本会向当前配置的数据库写入演示订单。保持 API 运行后，可在另一个终端运行 `python -m app.cli`。
+
+```bash
+python -m venv .venv
 source .venv/bin/activate
-pip install -e ".[dev]"
-cp -n .env.example .env
+python -m pip install -e ".[dev]"
+test -f .env || cp .env.example .env
+python -m scripts.seed_demo
 uvicorn app.asgi:app --reload --port 8002
 ```
 
-Windows PowerShell 激活虚拟环境可使用 `.venv\Scripts\Activate.ps1`。首次启用本地 Embedding / Cross-Encoder 时可能需要下载模型；需要完整的本地精排依赖可安装 `pip install -e ".[rerank]"`。更多选项见[配置参考](docs/07-configuration.md)。
-
-`.env` 中的 `DEEPSEEK_API_KEY` 可留空：此时系统进入离线演示模式，展示检索原文或可核对的订单状态，不会假装生成完整答案。要体验生成式回答，需要配置可用的 DeepSeek 密钥。**不要提交 `.env` 或密钥。**
-
-### 2. 发送第一条消息
-
-```bash
-curl -s http://127.0.0.1:8002/api/v1/health
-curl -s http://127.0.0.1:8002/api/v1/chat \
-  -H 'content-type: application/json' \
-  -d '{"message":"定制马克杯过了七天，但有质量问题还能退吗？","user_id":"u_demo"}'
-```
-
-响应包含 `answer`、`strategy`、`trace_id`，需要检索时还会带 `citations`。也可以运行 `python -m app.cli` 进入终端对话；流式接口为 `POST /api/v1/chat/stream`，完整字段见 [API 参考](docs/06-api-reference.md)。
-
-### 3. 打开 Web 工作台
-
-保持 API 运行，另开终端：
-
-```bash
-cd frontend
-npm ci
-npm run dev
-```
-
-访问 **http://127.0.0.1:5173**。开发服务器会把 `/api` 代理到本地 FastAPI。执行 `npm run build` 后，FastAPI 检测到 `frontend/dist` 也会在根路径提供页面；Docker 镜像会自动构建前端。前端会话列表存于浏览器本地，详见[前端 README](frontend/README.md)。
-
-
-<a id="usage"></a>
-
-## 配置与 API 使用指南
-
-源码运行时在根目录的 `.env` 中设置参数，修改后重启 API。Compose 显式设置的变量以对应 Compose 文件为准。
-
-| 配置项 | 用途 |
-| --- | --- |
-| `KNOWLEDGE_DIR` | 默认为 `knowledge`。修改 Markdown 政策文件后，重启服务以重新摄取文档。 |
-| `DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL` | 设置密钥后可调用 DeepSeek。留空时可体验基于已有条款和业务状态的回复。 |
-| `DATABASE_URL` | 本地示例使用 SQLite。种子脚本和 API 应指向同一数据库。 |
-| `LOCAL_EMBEDDING_ENABLED`、`CROSS_ENCODER_ENABLED` | 控制本地 BGE 召回与重排。使用前安装 `python -m pip install -e ".[rerank]"` 并准备模型权重。 |
-| `MAX_RETRIEVAL_HOPS` | 多轮检索上限，示例值为 3。 |
-| `REDIS_URL`、`QDRANT_URL` | 可选缓存与向量库地址。通过能力接口检查实际启用的后端。 |
-
-完整配置见 [环境变量模板](.env.example) 和 [配置参考](docs/07-configuration.md)。
-
-| 接口 | 用途 |
-| --- | --- |
-| `POST /api/v1/chat` | 返回一轮对话的完整 JSON。 |
-| `POST /api/v1/chat/stream` | 通过 SSE 接收处理进度与回答事件。 |
-| `GET /api/v1/health`、`GET /api/v1/ready` | 检查进程存活及服务就绪状态。 |
-| `GET /api/v1/capabilities` | 查询当前生成、检索和存储后端。 |
-
-**在 PowerShell 中体验订单确认。** 源码模式先在项目根目录运行 `python -m scripts.seed_demo`。脚本为 `u_demo` 创建演示订单，其中 `ORD10003` 初始为已支付、未发货。
+PowerShell 中使用 `.\.venv\Scripts\Activate.ps1` 激活虚拟环境，用 `if (-not (Test-Path .env)) { Copy-Item .env.example .env }` 初始化配置。下面的第二次请求会实际取消演示库中已支付、未发货的 `ORD10003`。重复运行种子脚本会保留已有订单状态。
 
 ```powershell
 $uri = 'http://127.0.0.1:8002/api/v1/chat'
 function Send-Chat($payload) {
-    Invoke-RestMethod -Method Post -Uri $uri -ContentType 'application/json; charset=utf-8' -Body ($payload | ConvertTo-Json)
+    $request = @{
+        Method = 'Post'
+        Uri = $uri
+        ContentType = 'application/json; charset=utf-8'
+        Body = ($payload | ConvertTo-Json -Compress)
+    }
+    Invoke-RestMethod @request
 }
-$order = Send-Chat @{ user_id = 'u_demo'; message = '取消订单 ORD10003' }
-$order.pending_action | Format-List action_id, tool_name, arguments, summary
-```
 
-核对摘要后，如需实际取消该演示订单，传回同一会话 ID 和操作 ID：
+$proposal = Send-Chat @{ user_id = 'u_demo'; message = '取消订单 ORD10003' }
+$proposal.pending_action | Format-List action_id, tool_name, arguments, summary
 
-```powershell
-if ($order.pending_action) {
+# 核对提案后，单独执行以下确认请求。
+if ($proposal.pending_action) {
     Send-Chat @{
         user_id = 'u_demo'
-        session_id = $order.session_id
+        session_id = $proposal.session_id
         message = '确认取消'
-        confirm_action_id = $order.pending_action.action_id
+        confirm_action_id = $proposal.pending_action.action_id
     }
 }
 ```
 
-政策问答可读取 `answer`、`strategy` 和 `citations` 核对回答与来源。追问时传回 `session_id`，排查单次请求时使用 `trace_id`。详见 [API 参考](docs/06-api-reference.md)。
+Web 开发模式在 `frontend/` 运行 `npm ci` 和 `npm run dev`，访问 [Vite 开发服务器](http://127.0.0.1:5173)。Vite 默认将 `/api` 代理到端口 `8002`。 [前端开发说明](frontend/README.md) · [完整启动指南](docs/02-getting-started.md)
+
+</details>
+
+<a id="architecture"></a>
+
+## 系统架构
+
+FastAPI 将 JSON 和 SSE 请求交给 `ChatService`。服务层负责限流、会话恢复和事务提交，LangGraph 负责路由与节点编排。文档索引、模型和工具由应用容器装配。
+
+```mermaid
+flowchart TD
+    Client["Web / CLI / HTTP"] --> API["FastAPI · JSON / SSE"]
+    API --> Service["ChatService · 限流、会话与事务"]
+    Service --> Guard{"输入护栏"}
+    Guard -->|通过| Route{"意图识别与复杂度路由"}
+    Guard -->|拦截| Refuse["拒答或引导"]
+    Route -->|direct| Generate["生成回答"]
+    Route -->|single| Retrieve["查询改写、混合检索与精排"]
+    Route -->|multi| Multi["评估证据是否充分，按需补检"]
+    Route -->|agent| Tool["技能规划与受控工具执行"]
+    Route -->|refuse| Refuse
+    Retrieve --> Generate
+    Multi --> Generate
+    Tool --> Generate
+    Generate --> Check["忠实度校验节点"]
+    Check --> Memory["会话压缩"]
+    Refuse --> Memory
+    Memory --> Output["回答、引用或待确认操作"]
+```
+
+| 执行路径 | 请求示例 | 运行逻辑 |
+| --- | --- | --- |
+| `direct` | 「你好」 | 直接生成回答，跳过知识检索。 |
+| `single` | 「电子发票多久能开？」 | 原问题与可用改写在同一轮召回候选，去重后精排。 |
+| `multi` | 「优惠券和积分可以同时用吗？申请退款后怎么返还？」 | 评估已召回的证据，依据缺失方面改写查询，默认最多三轮。 |
+| `agent` | 「查一下 ORD10001 的物流」 | 按意图和技能规划选用工具，执行参数、资源归属与风险检查。 |
+| `refuse` | 超出客服业务范围的请求 | 由护栏或路由拒答，也可引导用户补充信息或转人工。 |
+
+示例用于说明各条路径的用途，实际决策会随请求和模型配置变化。在线模式下，适用的回答会经过忠实度检查。核验失败时可改写并复核，或回退到证据摘录和拒答。流式接口先发送节点进度，再分段发送最终答案。 [工作流源码](app/agents/graph.py) · [忠实度节点](app/agents/nodes/faithfulness.py) · [SSE 实录](eval/results/nov26/transports.json)
+
+### 知识检索与证据补查
+
+启动时加载知识文档，解析、清洗并切块。查询阶段由中文 BM25 和稠密向量分别召回，通过 RRF 融合候选，再由本地 Cross-Encoder 或词面排序进行精排。引用中保留文档标题、章节和片段 ID。默认知识目录含 **39 篇政策**，涵盖退换货、物流、发票和优惠等场景。 [知识库](knowledge/) · [检索实现](app/retrieval/) · [解析与检索说明](docs/15-ingest-and-retrieval.md)
+
+**Evidence36 实录 H11。** 用户询问补配琥珀焖烧杯盖子的收费。首轮从售后说明找到了档位 `LX-218`，但还缺价格。启用实验性证据补检后，第二轮按档位查到《盖件备料账》，结合两份证据回答 **23 元**。同题固定单轮记录只确认了档位。实验开关 `EVIDENCE_GUIDED_RETRIEVAL` 默认关闭，启用后 `single` 和 `multi` 都可按证据充分性决定是否补检。 [双轮实录](eval/results/evidence36-live/H11-adaptive.json) · [单轮实录](eval/results/evidence36-live/H11-single.json) · [检索节点](app/agents/nodes/retrieval.py)
+
+### 订单写入与用户确认
+
+首轮写请求可返回带工具名、参数和操作摘要的 `pending_action`。再次请求时，服务按用户、会话和 15 分钟有效期核对确认 ID，执行器才可调用提案中的写工具。同一确认请求重试时，执行器按幂等键和参数指纹复用已完成的结果。取消订单和创建退款申请使用数据库条件更新校验状态，并在同一事务写入业务记录或审计信息。 [对话服务](app/services/chat_service.py) · [工具执行](app/agents/nodes/executor.py) · [订单仓储](app/repositories/order_repository.py)
+
+```mermaid
+sequenceDiagram
+    participant U as 用户
+    participant C as 对话服务与工作流
+    participant D as 订单数据库
+    U->>C: 发起订单写操作
+    C-->>U: 返回操作摘要和确认 ID
+    U->>C: 核对后提交会话 ID 和确认 ID
+    C->>C: 核验提案归属、有效期和工具权限
+    C->>D: 检查幂等记录，按订单状态执行写入
+    D-->>C: 提交业务变更或返回已有结果
+    C-->>U: 返回操作结果
+```
+
+<a id="evaluation"></a>
+
+## 评测结果
+
+### Evidence36 · 按证据决定是否补检
+
+36 道合成留出题使用 58 篇虚构商店条款，涵盖跨文档关联、缺失证据和域外对照。三种策略各作答 36 题，均使用 DeepSeek 在线生成、BM25 与哈希向量召回、词面排序，并共享最终证据预算。下表是 **Codex 对匿名答案的独立复核**，预设的 DeepSeek 裁判尚未完成。耗时取单题工作流中位数，Token 为正式回答阶段的模型用量合计，含路由、改写等调用。
+
+| 检索策略 | 通过题数 | 检索总轮数 | 总 Token | 单题中位耗时 |
+| --- | ---: | ---: | ---: | ---: |
+| 固定单轮 | 18/36 | 31 | 64,131 | 4.78 秒 |
+| 固定三轮 | 21/36 | 93 | 90,834 | 8.13 秒 |
+| **按证据补检** | **24/36** | **63** | **83,931** | **7.05 秒** |
+
+相对固定单轮，按证据补检多通过 **6 题**，新增失败 **0 题**，双侧精确配对检验 `p = 0.03125`。相对固定三轮，Token 减少 **7.6%**，低于预设的 **20%** 门槛。三组在四道需要串联三份文档的题目上均未答全。这些结果描述该合成题集与模型配置的表现。 [评测设计](docs/25-evidence-guided-study.md) · [逐题复核](eval/results/evidence36-live/codex-review.csv) · [汇总及配对结果](eval/results/evidence36-live/codex-review-summary.json)
+
+### 检索和写入并发对照
+
+| 验证项 | 样本与对照 | 结果 |
+| --- | --- | --- |
+| 中文政策召回 | 65 道问题、39 篇政策。BM25 对比 BM25 + BGE-small 中文向量 + RRF。 | 首篇命中 **52/65 → 54/65**，文档 Recall@3 **90.0% → 94.6%**。本轮未加载 Cross-Encoder。 |
+| 退款并发写入 | 四个独立进程同时对同一合成订单提交全额退款。 | SQLite 和 PostgreSQL 实际写入的退款申请均从 **4 条降到 1 条**。 |
+| 确认请求重试 | SQLite 单实例连续三轮，每轮四次并发提交同一确认 ID。 | 每轮 **4/4 返回受理**，数据库均保留 **1 条退款申请**。 |
+
+[检索逐题记录](eval/results/nov26/retrieval-local.json) · [并发报告](docs/21-experiment-results.md) · [应用层确认实测](eval/results/nov26/runtime.json) · [前一轮在线策略对照 Shop30](docs/24-shop30-evaluation.md)
+
+常规离线检索可运行 `python -m eval.runner --task retrieval`。Evidence36 的在线复跑需要 DeepSeek 密钥，入口为 `python -m eval.evidence36`。 [评测方法与数据集](docs/10-evaluation.md) · [历史评测及配置](eval/MEASURED.md)
+
+<a id="deployment"></a>
+<a id="usage"></a>
+
+## 部署与开发
+
+| Compose 配置 | 服务组成 | 启动命令 |
+| --- | --- | --- |
+| 默认体验 | 单 API、SQLite、进程内缓存与向量索引 | `docker compose up --build -d` |
+| 单机服务 | 单 API、PostgreSQL、Redis | `docker compose -f docker-compose.single.yml up --build -d` |
+| 多实例拓扑 | 双 API、PostgreSQL、Redis、Qdrant、Nginx | `docker compose -f docker-compose.multi.yml up --build -d` |
+
+单机和多实例配置需要在环境或 `.env` 中设置 `POSTGRES_PASSWORD`，默认启用本地 Embedding 与 Cross-Encoder，首次运行可能下载权重。源码环境可通过 `python -m pip install -e ".[rerank]"` 安装对应依赖。可选配置还包括 OpenAI 兼容 Embedding、Unstructured 文档解析和 Redis 检索缓存。 [配置参考](docs/07-configuration.md) · [部署手册](docs/11-deployment.md) · [环境变量模板](.env.example)
+
+| 接口 | 用途 |
+| --- | --- |
+| `POST /api/v1/chat` · `POST /api/v1/chat/stream` | 完整 JSON 或 SSE。返回路由结果、引用、待确认操作与请求追踪信息。 |
+| `GET /api/v1/health` · `GET /api/v1/ready` | 检查进程存活与数据库就绪，列出其他依赖状态。 |
+| `GET /api/v1/capabilities` | 查看运行配置下的模型、检索与存储能力。 |
+| `GET /metrics` | 导出 Prometheus 指标，包括请求量、分阶段耗时、工具结果和 Token。 |
+
+<a id="limitations"></a>
+
+> [!IMPORTANT]
+> 对接真实用户前，需在可信 API 层认证并绑定用户身份。当前对话接口从请求体读取 `user_id`，订单和物流来自演示数据。待确认记录存于签发实例的内存，多实例部署时确认请求需回到签发实例。知识库在启动时全量摄取。 [API 参考](docs/06-api-reference.md) · [安全设计](docs/09-security.md) · [当前限制](docs/12-limitations.md)
 
 <a id="dev"></a>
 
-## 开发与测试
+### 开发检查
 
-在项目根目录激活已安装 `.[dev]` 的虚拟环境。以下检查与 [CI 工作流](.github/workflows/ci.yml) 对应：
+CI 在 Python 3.11 和 3.12 上校验锁文件、格式、静态类型和后端测试。安装 `.[dev]` 后可运行以下检查。
 
 ```bash
+uv lock --check
 python -m ruff format --check .
 python -m ruff check .
 python -m mypy
 python -m pytest -q --cov=app --cov=eval --cov-fail-under=70
 ```
 
-前端使用 Node.js 20.19+（20.x）或 22.12+。在 `frontend/` 下运行 `npm ci` 安装锁定依赖，`npm test` 执行测试，`npm run build` 生成 `frontend/dist`。后端启动后可从根路径提供构建好的页面。
-
-
-<a id="architecture"></a>
-
-## 🏗️ 系统架构
-
-```mermaid
-flowchart LR
-    U["用户 · Web / CLI / HTTP"] --> API["FastAPI · JSON / SSE"]
-    API --> S["ChatService"]
-    S --> G["LangGraph：护栏 → 意图 → 复杂度路由"]
-    G --> D["DIRECT"]
-    G --> R["SINGLE / MULTI"]
-    G --> A["AGENT"]
-    G --> F["REFUSE"]
-    R --> H["BM25 + 向量 → RRF → 精排"]
-    A --> T["权限校验 → 工具 → 人工确认"]
-    D --> O["生成 / 忠实度检查"]
-    H --> O
-    T --> O
-    F --> O
-    O --> X["回答 + 引用 + trace_id"]
-```
-
-HTTP 层处理校验与序列化，`ChatService` 编排对话，Graph 决定路径，检索器与工具由容器装配。默认数据库为 SQLite；Redis、Qdrant 和远程模型按配置接入。完整的节点、降级路径和依赖关系见[架构与运行流程](docs/17-architecture-flow.md)。
-
-
-<a id="evaluation"></a>
-
-## 📊 实测结果与口径
-
-下面的**检索与生成指标**来自 2026-08-22 的离线评测，具体数据集、模型与运行命令见 [`eval/MEASURED.md`](eval/MEASURED.md) 和[完整报告](docs/14-evaluation-report.md)。报告原始 JSON 未随仓库分发，复现时应以当前环境重新运行。
-
-| 环节 | 样本与设置 | 结果 |
-|:---|:---|:---|
-| 意图识别 | 100 条，`intent_v3` + 歧义规则覆盖 | **100%**；纯模型结果并非 100% |
-| BM25 稀疏检索 | 65 条政策问题 / 39 篇文档 | P@1 **76.9%** · R@3 **90.0%** |
-| bge-small 稠密检索 | 同一检索集 | P@1 **83.1%** · R@3 **94.6%** |
-| Hybrid + Cross-Encoder | 同一检索集 | P@1 **89.2%** · R@3 **97.7%** · MRR **0.94** |
-| RAG + 自纠错生成 | 65 条，同模型裁判 | 忠实度 **100%** · 幻觉率 **0%** |
-| 端到端 | 16 条 | 关键词命中 **9/11** · P50 **4.9s** · P95 **5.8s** |
-
-> [!IMPORTANT]
-> 这些是**指定离线集合与模型配置**下的测量值，不代表生产环境承诺。该集合上 RRF 与单独使用 bge-small 的检索数字相同，主要增益来自 Cross-Encoder；生成忠实度使用同模型裁判，可能偏乐观。不要把 `0%` 幻觉率理解为真实场景零错误。
-
-CI 在 Python 3.11 / 3.12 上检查锁文件、Ruff、mypy 和 pytest；[查看工作流](.github/workflows/ci.yml)。本地可运行：
-
-```bash
-python -m pytest -q
-python -m eval.runner --task retrieval
-cd frontend && npm test && npm run build
-```
-
-Windows PowerShell 在项目根目录使用下面两条命令，无需激活环境，避免调用系统中其他版本的 Python：
-
-```powershell
-.\.venv\Scripts\python.exe -m pytest -q
-.\.venv\Scripts\python.exe -m eval.runner --task retrieval
-```
-
-若提示找不到 `pytest` 或 `eval`，先确认当前位置包含 `pyproject.toml` 和 `.venv`。检索评测提示 `local_embedding_sdk_missing` 或 `cross_encoder_sdk_missing` 时，会使用后备检索并在报告中标注，不表示评测失败；完整本地模型评测需要安装 `.[rerank]` 并成功加载模型权重。
-
-
-- **修复并发退款与重复确认。** 将退款资格校验和订单状态变更合并为一条数据库条件更新，并在同一事务中写入退款申请。用 4 个独立进程同时对同一笔测试订单申请退款，SQLite 和 PostgreSQL 中的申请记录均由 **4 条降至 1 条**。对同一确认请求按幂等键和参数指纹回放结果，单实例连续 3 轮并发复测中，每轮 4 个请求均得到受理回复，且只生成 1 条申请。
-- **评估客服意图识别。** 构造覆盖 14 类意图的 28 条新问法，区分退款进度查询、退货申请、物流查询等易混场景。在同一批题上，现有离线规则判对 **6/28**，实际调用 DeepSeek 单独分类判对 **28/28**，叠加规则纠偏后结果持平。
-- **优化政策检索。** 针对用户口语与条款措辞不一致的问题，用 BM25 和中文 BGE 双路召回，以 RRF 融合排序。在 39 篇政策、65 道问题的离线对照中，相比纯 BM25，混合召回将首篇命中从 **52/65 提至 54/65**，前三篇文档召回率从 **90.0% 提至 94.6%**。
-- **实现并验证按需检索。** 对涉及多项条件的问题，根据缺失证据改写查询，最多补检至第 3 轮。使用真实 DeepSeek 在隔离知识库对比固定单轮、固定三轮和自适应策略，通过逐题核对路由、检索记录和最终回答，定位到两次可回答问题在检索前被误拒的情况。
-
-[检索与并发实验](docs/21-experiment-results.md) · [DeepSeek 在线补测](docs/23-deepseek-live.md)
-
+`uv lock --check` 需要安装 uv。前端在 `frontend/` 运行 `npm ci` 后可执行 `npm test` 和 `npm run build`。 [CI 工作流](.github/workflows/ci.yml)
 
 <a id="docs"></a>
 
 ## 项目结构与文档
 
-| 目标 | 推荐入口 |
-|:---|:---|
-| 跑通 API、CLI、Web 与 Docker | [快速开始](docs/02-getting-started.md) · [部署](docs/11-deployment.md) |
-| 理解分层、Graph 与路由 | [架构](docs/03-architecture.md) · [Adaptive RAG](docs/04-adaptive-rag.md) |
-| 看检索、精排、工具与 HITL | [解析与检索](docs/15-ingest-and-retrieval.md) · [智能体与工具](docs/05-agents-and-tools.md) |
-| 查接口、配置、安全与可靠性 | [API](docs/06-api-reference.md) · [配置](docs/07-configuration.md) · [安全](docs/09-security.md) · [可靠性](docs/08-reliability.md) |
-| 核对实验口径与数字 | [评测方法](docs/10-evaluation.md) · [原始数字说明](eval/MEASURED.md) |
-| 系统学习 RAG 工程实践 | [12 部分教学文档](docs/tutorial/README.md) |
-| 准备 Agent/RAG 面试 | [Chapter 1](docs/interview/chapter1.md) · [Chapter 2](docs/interview/chapter2.md) · [Chapter 3](docs/interview/chapter3.md) · [17 维度索引](docs/16-interview-bagu-map.md) |
+源码快照含 **200 个源码文件、13,828 个非空行**。统计范围为下表目录中的 Python、TypeScript、TSX 和 CSS，含注释、迁移和测试，排除文档、锁文件、评测数据和静态资源。 [统计所用提交 `5baa0f8`](https://github.com/JJJJCCCCCCC/Adaptive-rag/tree/5baa0f87fa8f2effc9b097c9ec0c2ba9d85f1c2b)
 
-完整索引见 [`docs/README.md`](docs/README.md)。源码可从 `app/asgi.py` → `app/services/chat_service.py` → `app/agents/graph.py` 开始读；Web 代码在 `frontend/src/`。
+| 目录 | 文件数 | 职责 |
+| --- | ---: | --- |
+| [`app/`](app/) | 120 | API、Graph 节点、检索管线、工具、数据仓储、模型适配与可观测性 |
+| [`frontend/src/`](frontend/src/) | 16 | React 对话工作台、SSE 消费、引用展示与确认卡片 |
+| [`eval/`](eval/) | 21 | 离线评测、在线策略对照、证据回放与并发实验 |
+| [`tests/`](tests/) | 35 | 单元、检索与订单集成、HTTP 端到端测试 |
+| [`alembic/`](alembic/) · [`scripts/`](scripts/) | 8 | 数据库迁移、种子数据和开发辅助脚本 |
 
-<details>
-<summary><strong>📁 展开项目目录</strong></summary>
-
-```text
-app/
-  api/            HTTP 路由、校验、SSE
-  services/       ChatService、依赖容器、演示数据
-  agents/         LangGraph 状态机与节点
-  retrieval/      解析、切块、混合检索、精排与自纠错
-  tools/          业务工具、注册表与权限
-  repositories/   订单、会话与幂等
-  providers/      生成、Embedding 与 Rerank
-  guardrails/     注入、边界与忠实度检查
-  memory/         上下文预算与压缩
-  observability/  日志、指标与请求上下文
-frontend/         React + TypeScript Web 工作台
-knowledge/        政策文档
-eval/             离线评测与口径
-tests/            单元、集成与端到端测试
-docs/             技术手册与教学文档
-```
-
-</details>
-
-<a id="limitations"></a>
-
-## ⚠️ 使用边界
-
-这是可运行的工程示例，**目前不应直接面向不可信用户开放**：
-
-- API 尚未认证请求中的 `user_id`；前端默认 `u_demo` 仅供本地演示。部署前应由可信服务端认证并绑定身份。
-- 订单与物流来自本地仓储演示数据，没有连接真实承运商或支付网关。
-- Web 会话列表保存在当前浏览器的 `localStorage`，清除站点数据或换设备后不会恢复。
-- 知识库启动时全量 ingest，尚无增量删除接口；Embedding / 精排权重不可用时会降级，降级后的效果未单独评测。
-
-更多实现边界与后续方向见[限制与路线图](docs/12-limitations.md)。
-
+源码入口依次为 [FastAPI 应用工厂](app/main.py)、[依赖装配](app/services/container.py)、[对话服务](app/services/chat_service.py) 和 [LangGraph 工作流](app/agents/graph.py)。 [完整文档索引](docs/README.md) · [架构说明](docs/03-architecture.md) · [工具及技能设计](docs/05-agents-and-tools.md) · [可靠性](docs/08-reliability.md)
 
 <a id="contributing"></a>
 
-## 贡献方式（Contributing）
-
-报告问题时请附复现步骤、运行方式和预期行为。提交修改时从独立分支发起 Pull Request，说明涉及的模块及验证结果。依赖变更请同步更新 `pyproject.toml` 与 `uv.lock`，用 `uv lock --check` 校验。详见 [贡献指南](CONTRIBUTING.md)。
+问题报告和代码贡献可参考 [贡献指南](CONTRIBUTING.md)。
 
 <a id="license"></a>
-
-## 许可证（License）
-
-本项目采用 [MIT 许可证](LICENSE)。
-
 <a id="credits"></a>
 
-## 致谢（Acknowledgements）
+## 许可证与参考
 
-感谢 FastAPI 和 LangGraph 提供 HTTP 服务与图编排基础，jieba 和 rank-bm25 提供中文分词与关键词检索能力，BAAI 的 BGE 系列提供可选向量和重排模型，以及 React 和 Vite 提供 Web 工作台的开发工具。
+本项目采用 [MIT 许可证](LICENSE)。复杂度路由和证据反思的设计分别参考 Jeong 等人的 Adaptive-RAG 与 Asai 等人的 Self-RAG。 [Adaptive-RAG 论文](https://aclanthology.org/2024.naacl-long.389/) · [Self-RAG 论文](https://arxiv.org/abs/2310.11511)
