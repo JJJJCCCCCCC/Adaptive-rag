@@ -1,0 +1,3973 @@
+{
+  "cohort": "holdout",
+  "cases": [
+    {
+      "id": "HOLDOUT-001",
+      "store": "砚溯",
+      "group": "two",
+      "query": "我在砚溯买的竹制蒸笼，补寄配件要付多少快递费？",
+      "value": 21,
+      "unit": "元",
+      "sources": [
+        "P10b47f83",
+        "Pc2ff19ca"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-002",
+      "store": "砚溯",
+      "group": "two",
+      "query": "我在砚溯买的碳钢煎锅，保修承诺是几个月？",
+      "value": 40,
+      "unit": "个月",
+      "sources": [
+        "P6734950d",
+        "P355a2a23"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-003",
+      "store": "砚溯",
+      "group": "three",
+      "query": "我在砚溯买的陶艺描金笔，返修预约最长等几天？",
+      "value": 40,
+      "unit": "天",
+      "sources": [
+        "P82221124",
+        "P6fcd83d4",
+        "Paec0db8a"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-004",
+      "store": "砚溯",
+      "group": "missing",
+      "query": "我在砚溯买的净水量杯，门店最多留货几个小时？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "Pc41ff224"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-005",
+      "store": "砚溯",
+      "group": "two",
+      "query": "我在砚溯买的桌面迷你架，补配的数量上限是什么？",
+      "value": 57,
+      "unit": "件",
+      "sources": [
+        "P571b082a",
+        "P38d756eb"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-006",
+      "store": "砚溯",
+      "group": "direct",
+      "query": "我在砚溯买的葡萄木盘，买它以后补寄费用是多少？",
+      "value": 37,
+      "unit": "元",
+      "sources": [
+        "P4ae99677"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-007",
+      "store": "砚溯",
+      "group": "two",
+      "query": "我在砚溯买的手冲保温瓶，保修一共多长时间？",
+      "value": 12,
+      "unit": "个月",
+      "sources": [
+        "P59f6f840",
+        "P96c7c942"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-008",
+      "store": "砚溯",
+      "group": "three",
+      "query": "我在砚溯买的松石茶筅，返修预约要等几天？",
+      "value": 20,
+      "unit": "天",
+      "sources": [
+        "P3046a53d",
+        "Pf57f191f",
+        "Pef098050"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-009",
+      "store": "砚溯",
+      "group": "three",
+      "query": "我在砚溯买的便携咖啡壶，门店自取会给我保留多久？",
+      "value": 45,
+      "unit": "小时",
+      "sources": [
+        "Pe4516188",
+        "Pbea35432",
+        "P6cbc3b23"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-010",
+      "store": "砚溯",
+      "group": "two",
+      "query": "我在砚溯买的不锈钢搅拌勺，补配的数量上限是什么？",
+      "value": 42,
+      "unit": "件",
+      "sources": [
+        "Pa244f219",
+        "P299ebd68"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-011",
+      "store": "棠屿",
+      "group": "two",
+      "query": "我在棠屿买的羊毛暖杯套，补寄配件要付多少快递费？",
+      "value": 19,
+      "unit": "元",
+      "sources": [
+        "Pcd079651",
+        "P39d5df9e"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-012",
+      "store": "棠屿",
+      "group": "three",
+      "query": "我在棠屿买的玻璃午餐盒，保修一共多长时间？",
+      "value": 39,
+      "unit": "个月",
+      "sources": [
+        "P3a55b070",
+        "P91bbce5b",
+        "P98ab4d72"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-013",
+      "store": "棠屿",
+      "group": "outside",
+      "query": "能帮我写一首写秋天的七言绝句吗？",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-014",
+      "store": "棠屿",
+      "group": "direct",
+      "query": "我在棠屿买的手冲保温瓶，门店最多留货几个小时？",
+      "value": 7,
+      "unit": "小时",
+      "sources": [
+        "P2613b5ce"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-015",
+      "store": "棠屿",
+      "group": "outside",
+      "query": "帮我推导二次函数的求根公式。",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-016",
+      "store": "棠屿",
+      "group": "two",
+      "query": "我在棠屿买的竹席收纳袋，补寄配件要付多少快递费？",
+      "value": 6,
+      "unit": "元",
+      "sources": [
+        "Pa087dc03",
+        "P0c3b5825"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-017",
+      "store": "棠屿",
+      "group": "direct",
+      "query": "我在棠屿买的陶艺描金笔，保修承诺是几个月？",
+      "value": 38,
+      "unit": "个月",
+      "sources": [
+        "P2e9f8114"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-018",
+      "store": "棠屿",
+      "group": "three",
+      "query": "我在棠屿买的竹制蒸笼，返修预约要等几天？",
+      "value": 57,
+      "unit": "天",
+      "sources": [
+        "Peb6d40aa",
+        "P9616b673",
+        "P9b7c1da7"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-019",
+      "store": "棠屿",
+      "group": "two",
+      "query": "我在棠屿买的葡萄木盘，门店自取会给我保留多久？",
+      "value": 59,
+      "unit": "小时",
+      "sources": [
+        "P10dd87ae",
+        "Pbbba5602"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-020",
+      "store": "棠屿",
+      "group": "outside",
+      "query": "说说海豚用什么方法在水里定位。",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-021",
+      "store": "墨禾",
+      "group": "missing",
+      "query": "我在墨禾买的羊毛暖杯套，买它以后补寄费用是多少？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "P611f3aaf",
+        "P762177ed",
+        "P28ff312a"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-022",
+      "store": "墨禾",
+      "group": "missing",
+      "query": "我在墨禾买的桌面迷你架，保修一共多长时间？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "Pcd3f30a3"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-023",
+      "store": "墨禾",
+      "group": "direct",
+      "query": "我在墨禾买的玻璃午餐盒，返修预约最长等几天？",
+      "value": 52,
+      "unit": "天",
+      "sources": [
+        "Pf0f898d3"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-024",
+      "store": "墨禾",
+      "group": "three",
+      "query": "我在墨禾买的不锈钢搅拌勺，门店自取会给我保留多久？",
+      "value": 59,
+      "unit": "小时",
+      "sources": [
+        "Pd136e325",
+        "Pd365106f",
+        "P81c51d93"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-025",
+      "store": "墨禾",
+      "group": "missing",
+      "query": "我在墨禾买的藤编置物筐，补配的数量上限是什么？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "P0651f5a3"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-026",
+      "store": "墨禾",
+      "group": "two",
+      "query": "我在墨禾买的手摇磨豆杯，买它以后补寄费用是多少？",
+      "value": 11,
+      "unit": "元",
+      "sources": [
+        "P750677d1",
+        "P47ad2cfc"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-027",
+      "store": "墨禾",
+      "group": "two",
+      "query": "我在墨禾买的碳钢煎锅，保修承诺是几个月？",
+      "value": 8,
+      "unit": "个月",
+      "sources": [
+        "Pbd180ed3",
+        "P8e5fb7f7"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-028",
+      "store": "墨禾",
+      "group": "two",
+      "query": "我在墨禾买的净水量杯，返修预约要等几天？",
+      "value": 41,
+      "unit": "天",
+      "sources": [
+        "P8e723afe",
+        "P5247b1f2"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-029",
+      "store": "墨禾",
+      "group": "three",
+      "query": "我在墨禾买的手冲保温瓶，门店自取会给我保留多久？",
+      "value": 24,
+      "unit": "小时",
+      "sources": [
+        "P8d618e6e",
+        "P8c65dddf",
+        "Pedbcbaff"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-030",
+      "store": "墨禾",
+      "group": "two",
+      "query": "我在墨禾买的竹制蒸笼，最多能给我补配几件？",
+      "value": 13,
+      "unit": "件",
+      "sources": [
+        "P89029b78",
+        "P2d1da2d6"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-031",
+      "store": "云瓷",
+      "group": "direct",
+      "query": "我在云瓷买的净水量杯，买它以后补寄费用是多少？",
+      "value": 20,
+      "unit": "元",
+      "sources": [
+        "P4d63f47b"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-032",
+      "store": "云瓷",
+      "group": "direct",
+      "query": "我在云瓷买的竹制蒸笼，保修一共多长时间？",
+      "value": 13,
+      "unit": "个月",
+      "sources": [
+        "P6959128a"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-033",
+      "store": "云瓷",
+      "group": "three",
+      "query": "我在云瓷买的陶艺描金笔，返修预约要等几天？",
+      "value": 42,
+      "unit": "天",
+      "sources": [
+        "Pc16cbcd1",
+        "P7b800fa5",
+        "P11735283"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-034",
+      "store": "云瓷",
+      "group": "direct",
+      "query": "我在云瓷买的桌面迷你架，门店自取会给我保留多久？",
+      "value": 31,
+      "unit": "小时",
+      "sources": [
+        "P59b2383c"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-035",
+      "store": "云瓷",
+      "group": "two",
+      "query": "我在云瓷买的玻璃午餐盒，补配的数量上限是什么？",
+      "value": 7,
+      "unit": "件",
+      "sources": [
+        "Pa473f507",
+        "Pea9ad556"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-036",
+      "store": "云瓷",
+      "group": "two",
+      "query": "我在云瓷买的便携咖啡壶，补寄配件要付多少快递费？",
+      "value": 59,
+      "unit": "元",
+      "sources": [
+        "P37dc7c95",
+        "P53135f4b"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-037",
+      "store": "云瓷",
+      "group": "two",
+      "query": "我在云瓷买的藤编置物筐，保修承诺是几个月？",
+      "value": 57,
+      "unit": "个月",
+      "sources": [
+        "P0c10f48a",
+        "Pf3918a8c"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-038",
+      "store": "云瓷",
+      "group": "three",
+      "query": "我在云瓷买的碳钢煎锅，返修预约最长等几天？",
+      "value": 50,
+      "unit": "天",
+      "sources": [
+        "Pfe5b0319",
+        "P7196b664",
+        "P8b2305b9"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-039",
+      "store": "云瓷",
+      "group": "two",
+      "query": "我在云瓷买的手摇磨豆杯，门店最多留货几个小时？",
+      "value": 12,
+      "unit": "小时",
+      "sources": [
+        "P396fce04",
+        "P7c58cb88"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-040",
+      "store": "云瓷",
+      "group": "outside",
+      "query": "解释一下如何用吉他按出 C 大调和弦。",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-041",
+      "store": "沐榆",
+      "group": "direct",
+      "query": "我在沐榆买的手冲保温瓶，补寄配件要付多少快递费？",
+      "value": 56,
+      "unit": "元",
+      "sources": [
+        "P1accb482"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-042",
+      "store": "沐榆",
+      "group": "direct",
+      "query": "我在沐榆买的净水量杯，保修承诺是几个月？",
+      "value": 21,
+      "unit": "个月",
+      "sources": [
+        "P252ad13f"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-043",
+      "store": "沐榆",
+      "group": "two",
+      "query": "我在沐榆买的碳钢煎锅，返修预约要等几天？",
+      "value": 43,
+      "unit": "天",
+      "sources": [
+        "Pa20ea132",
+        "P9db765aa"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-044",
+      "store": "沐榆",
+      "group": "missing",
+      "query": "我在沐榆买的竹席收纳袋，门店最多留货几个小时？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "P59c241be",
+        "Pf10974ef"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-045",
+      "store": "沐榆",
+      "group": "three",
+      "query": "我在沐榆买的竹制蒸笼，最多能给我补配几件？",
+      "value": 57,
+      "unit": "件",
+      "sources": [
+        "P39531f94",
+        "P5660a6ef",
+        "P5592066a"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-046",
+      "store": "沐榆",
+      "group": "missing",
+      "query": "我在沐榆买的葡萄木盘，补寄配件要付多少快递费？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "P57af62a1"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-047",
+      "store": "沐榆",
+      "group": "outside",
+      "query": "可以推荐一道番茄炒蛋的家常做法吗？",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-048",
+      "store": "沐榆",
+      "group": "two",
+      "query": "我在沐榆买的玻璃午餐盒，返修预约最长等几天？",
+      "value": 35,
+      "unit": "天",
+      "sources": [
+        "Pc7a6b466",
+        "Pad574730"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-049",
+      "store": "沐榆",
+      "group": "two",
+      "query": "我在沐榆买的陶艺描金笔，门店最多留货几个小时？",
+      "value": 37,
+      "unit": "小时",
+      "sources": [
+        "P79091a90",
+        "Pb3669d69"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-050",
+      "store": "沐榆",
+      "group": "two",
+      "query": "我在沐榆买的不锈钢搅拌勺，最多能给我补配几件？",
+      "value": 22,
+      "unit": "件",
+      "sources": [
+        "Pc5beb200",
+        "Pcd3d6a6d"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-051",
+      "store": "照川",
+      "group": "two",
+      "query": "我在照川买的葡萄木盘，补寄配件要付多少快递费？",
+      "value": 56,
+      "unit": "元",
+      "sources": [
+        "P670d501a",
+        "P31118583"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-052",
+      "store": "照川",
+      "group": "two",
+      "query": "我在照川买的竹制蒸笼，保修承诺是几个月？",
+      "value": 19,
+      "unit": "个月",
+      "sources": [
+        "P918d7285",
+        "Pf12c301d"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-053",
+      "store": "照川",
+      "group": "missing",
+      "query": "我在照川买的不锈钢搅拌勺，返修预约最长等几天？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "P0d3a8f91",
+        "Peace63cf"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-054",
+      "store": "照川",
+      "group": "outside",
+      "query": "给我讲讲城市地下地铁最早出现在哪个年代。",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-055",
+      "store": "照川",
+      "group": "outside",
+      "query": "为星期五的读书会推荐一首古诗。",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-056",
+      "store": "照川",
+      "group": "two",
+      "query": "我在照川买的玻璃午餐盒，补寄配件要付多少快递费？",
+      "value": 12,
+      "unit": "元",
+      "sources": [
+        "P16fbedd8",
+        "P2de28302"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-057",
+      "store": "照川",
+      "group": "two",
+      "query": "我在照川买的手摇磨豆杯，保修承诺是几个月？",
+      "value": 44,
+      "unit": "个月",
+      "sources": [
+        "P4b348b7a",
+        "Pb8638c24"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-058",
+      "store": "照川",
+      "group": "direct",
+      "query": "我在照川买的陶艺描金笔，返修预约要等几天？",
+      "value": 22,
+      "unit": "天",
+      "sources": [
+        "Pe197f900"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-059",
+      "store": "照川",
+      "group": "two",
+      "query": "我在照川买的净水量杯，门店最多留货几个小时？",
+      "value": 18,
+      "unit": "小时",
+      "sources": [
+        "P9b639217",
+        "Pb26260ac"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-060",
+      "store": "照川",
+      "group": "direct",
+      "query": "我在照川买的雨衣清洁盒，最多能给我补配几件？",
+      "value": 14,
+      "unit": "件",
+      "sources": [
+        "P406e3cf3"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-061",
+      "store": "榕岸",
+      "group": "two",
+      "query": "我在榕岸买的玻璃午餐盒，补寄配件要付多少快递费？",
+      "value": 30,
+      "unit": "元",
+      "sources": [
+        "P3de6895b",
+        "P5a48c023"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-062",
+      "store": "榕岸",
+      "group": "three",
+      "query": "我在榕岸买的碳钢煎锅，保修承诺是几个月？",
+      "value": 8,
+      "unit": "个月",
+      "sources": [
+        "P91285532",
+        "Pf016a892",
+        "Pa929c013"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-063",
+      "store": "榕岸",
+      "group": "three",
+      "query": "我在榕岸买的羊毛暖杯套，返修预约最长等几天？",
+      "value": 4,
+      "unit": "天",
+      "sources": [
+        "P68c42f53",
+        "Peb658ca6",
+        "P42bd0830"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-064",
+      "store": "榕岸",
+      "group": "three",
+      "query": "我在榕岸买的陶艺描金笔，门店最多留货几个小时？",
+      "value": 25,
+      "unit": "小时",
+      "sources": [
+        "Pdb401856",
+        "P2112bfc0",
+        "P6ce2b0db"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-065",
+      "store": "榕岸",
+      "group": "two",
+      "query": "我在榕岸买的桌面迷你架，最多能给我补配几件？",
+      "value": 52,
+      "unit": "件",
+      "sources": [
+        "P4d80e427",
+        "P9061d775"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-066",
+      "store": "榕岸",
+      "group": "two",
+      "query": "我在榕岸买的便携咖啡壶，买它以后补寄费用是多少？",
+      "value": 57,
+      "unit": "元",
+      "sources": [
+        "Pab3837e1",
+        "P5acf7d11"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-067",
+      "store": "榕岸",
+      "group": "three",
+      "query": "我在榕岸买的竹制蒸笼，保修一共多长时间？",
+      "value": 42,
+      "unit": "个月",
+      "sources": [
+        "P216b79a2",
+        "P12d0d62a",
+        "P7a5404ad"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-068",
+      "store": "榕岸",
+      "group": "direct",
+      "query": "我在榕岸买的雨衣清洁盒，返修预约要等几天？",
+      "value": 40,
+      "unit": "天",
+      "sources": [
+        "P8415bf22"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-069",
+      "store": "榕岸",
+      "group": "three",
+      "query": "我在榕岸买的藤编置物筐，门店自取会给我保留多久？",
+      "value": 14,
+      "unit": "小时",
+      "sources": [
+        "Pe086112f",
+        "P07aeb496",
+        "P472063ac"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-070",
+      "store": "榕岸",
+      "group": "three",
+      "query": "我在榕岸买的不锈钢搅拌勺，补配的数量上限是什么？",
+      "value": 18,
+      "unit": "件",
+      "sources": [
+        "P3bd008e3",
+        "Pb4cbbd92",
+        "Pa060fdd9"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-071",
+      "store": "晴汀",
+      "group": "two",
+      "query": "我在晴汀买的藤编置物筐，买它以后补寄费用是多少？",
+      "value": 39,
+      "unit": "元",
+      "sources": [
+        "P84ccf25d",
+        "Pb5f79fe5"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-072",
+      "store": "晴汀",
+      "group": "three",
+      "query": "我在晴汀买的便携咖啡壶，保修承诺是几个月？",
+      "value": 39,
+      "unit": "个月",
+      "sources": [
+        "Pd60476ed",
+        "Pf157cd77",
+        "P6e1185c2"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-073",
+      "store": "晴汀",
+      "group": "three",
+      "query": "我在晴汀买的雨衣清洁盒，返修预约要等几天？",
+      "value": 38,
+      "unit": "天",
+      "sources": [
+        "P96b9fd6b",
+        "P4693670a",
+        "P6a50db38"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-074",
+      "store": "晴汀",
+      "group": "direct",
+      "query": "我在晴汀买的羊毛暖杯套，门店自取会给我保留多久？",
+      "value": 16,
+      "unit": "小时",
+      "sources": [
+        "P9f09f6ff"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-075",
+      "store": "晴汀",
+      "group": "missing",
+      "query": "我在晴汀买的葡萄木盘，补配的数量上限是什么？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "P0c4f6001",
+        "Pbfd36a46",
+        "P456daf93"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-076",
+      "store": "晴汀",
+      "group": "three",
+      "query": "我在晴汀买的竹制蒸笼，补寄配件要付多少快递费？",
+      "value": 7,
+      "unit": "元",
+      "sources": [
+        "P97ef6979",
+        "Pccc5d2c3",
+        "Pf60f65d9"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-077",
+      "store": "晴汀",
+      "group": "two",
+      "query": "我在晴汀买的不锈钢搅拌勺，保修一共多长时间？",
+      "value": 20,
+      "unit": "个月",
+      "sources": [
+        "P707b60cd",
+        "P485d8ce1"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-078",
+      "store": "晴汀",
+      "group": "three",
+      "query": "我在晴汀买的碳钢煎锅，返修预约最长等几天？",
+      "value": 36,
+      "unit": "天",
+      "sources": [
+        "Pcb2c4f53",
+        "P06820e4f",
+        "Pdf4c5f88"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-079",
+      "store": "晴汀",
+      "group": "three",
+      "query": "我在晴汀买的陶艺描金笔，门店最多留货几个小时？",
+      "value": 28,
+      "unit": "小时",
+      "sources": [
+        "P3dd7c80e",
+        "Pdddc6a48",
+        "Pe9b54532"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-080",
+      "store": "晴汀",
+      "group": "direct",
+      "query": "我在晴汀买的松石茶筅，补配的数量上限是什么？",
+      "value": 47,
+      "unit": "件",
+      "sources": [
+        "Pd5d85efd"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-081",
+      "store": "青霁",
+      "group": "direct",
+      "query": "我在青霁买的玻璃午餐盒，补寄配件要付多少快递费？",
+      "value": 59,
+      "unit": "元",
+      "sources": [
+        "P0f674a4c"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-082",
+      "store": "青霁",
+      "group": "three",
+      "query": "我在青霁买的桌面迷你架，保修一共多长时间？",
+      "value": 19,
+      "unit": "个月",
+      "sources": [
+        "P570ef872",
+        "Pf4b30a25",
+        "Pff6f49ea"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-083",
+      "store": "青霁",
+      "group": "three",
+      "query": "我在青霁买的手冲保温瓶，返修预约最长等几天？",
+      "value": 43,
+      "unit": "天",
+      "sources": [
+        "P5e67dbbd",
+        "P8d9d19a6",
+        "Pdaadb215"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-084",
+      "store": "青霁",
+      "group": "outside",
+      "query": "简述月食为什么不会每个月都发生。",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-085",
+      "store": "青霁",
+      "group": "direct",
+      "query": "我在青霁买的雨衣清洁盒，补配的数量上限是什么？",
+      "value": 30,
+      "unit": "件",
+      "sources": [
+        "Pd83e15cf"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-086",
+      "store": "青霁",
+      "group": "direct",
+      "query": "我在青霁买的不锈钢搅拌勺，补寄配件要付多少快递费？",
+      "value": 31,
+      "unit": "元",
+      "sources": [
+        "Pe3aaab96"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-087",
+      "store": "青霁",
+      "group": "three",
+      "query": "我在青霁买的藤编置物筐，保修一共多长时间？",
+      "value": 36,
+      "unit": "个月",
+      "sources": [
+        "P62f53e4a",
+        "Pff2fec27",
+        "P9bb96464"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-088",
+      "store": "青霁",
+      "group": "outside",
+      "query": "解释一下如何用吉他按出 C 大调和弦。",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-089",
+      "store": "青霁",
+      "group": "three",
+      "query": "我在青霁买的葡萄木盘，门店自取会给我保留多久？",
+      "value": 44,
+      "unit": "小时",
+      "sources": [
+        "Pc43b7d2b",
+        "P1478c7c9",
+        "Pcc1a1b6a"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-090",
+      "store": "青霁",
+      "group": "two",
+      "query": "我在青霁买的便携咖啡壶，最多能给我补配几件？",
+      "value": 54,
+      "unit": "件",
+      "sources": [
+        "P78efb728",
+        "Pa2cb3e0d"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-091",
+      "store": "霜檀",
+      "group": "three",
+      "query": "我在霜檀买的净水量杯，买它以后补寄费用是多少？",
+      "value": 30,
+      "unit": "元",
+      "sources": [
+        "P25f3794e",
+        "P8fddb3b5",
+        "Pfe0b820e"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-092",
+      "store": "霜檀",
+      "group": "outside",
+      "query": "说说海豚用什么方法在水里定位。",
+      "value": null,
+      "unit": null,
+      "sources": [],
+      "decision": "outside"
+    },
+    {
+      "id": "HOLDOUT-093",
+      "store": "霜檀",
+      "group": "missing",
+      "query": "我在霜檀买的松石茶筅，返修预约要等几天？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "Pcf8c44f0",
+        "P6b8ea40c",
+        "Pbff2ff86"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-094",
+      "store": "霜檀",
+      "group": "two",
+      "query": "我在霜檀买的桌面迷你架，门店最多留货几个小时？",
+      "value": 47,
+      "unit": "小时",
+      "sources": [
+        "Pdb9cc086",
+        "P40d8d63f"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-095",
+      "store": "霜檀",
+      "group": "two",
+      "query": "我在霜檀买的竹制蒸笼，补配的数量上限是什么？",
+      "value": 21,
+      "unit": "件",
+      "sources": [
+        "P36cb2949",
+        "P2e8408f9"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-096",
+      "store": "霜檀",
+      "group": "direct",
+      "query": "我在霜檀买的碳钢煎锅，补寄配件要付多少快递费？",
+      "value": 38,
+      "unit": "元",
+      "sources": [
+        "P12495bd0"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-097",
+      "store": "霜檀",
+      "group": "direct",
+      "query": "我在霜檀买的羊毛暖杯套，保修一共多长时间？",
+      "value": 27,
+      "unit": "个月",
+      "sources": [
+        "P6739e470"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-098",
+      "store": "霜檀",
+      "group": "direct",
+      "query": "我在霜檀买的陶艺描金笔，返修预约要等几天？",
+      "value": 12,
+      "unit": "天",
+      "sources": [
+        "Pfc11715d"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-099",
+      "store": "霜檀",
+      "group": "two",
+      "query": "我在霜檀买的竹席收纳袋，门店自取会给我保留多久？",
+      "value": 14,
+      "unit": "小时",
+      "sources": [
+        "Pc7856d51",
+        "Pc1c4c000"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-100",
+      "store": "霜檀",
+      "group": "direct",
+      "query": "我在霜檀买的手摇磨豆杯，最多能给我补配几件？",
+      "value": 12,
+      "unit": "件",
+      "sources": [
+        "Pae1c481b"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-101",
+      "store": "锦笺",
+      "group": "three",
+      "query": "我在锦笺买的松石茶筅，买它以后补寄费用是多少？",
+      "value": 31,
+      "unit": "元",
+      "sources": [
+        "P245c5301",
+        "P91149de2",
+        "P685cd439"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-102",
+      "store": "锦笺",
+      "group": "three",
+      "query": "我在锦笺买的碳钢煎锅，保修承诺是几个月？",
+      "value": 24,
+      "unit": "个月",
+      "sources": [
+        "P4bc4431e",
+        "Pdcc58c1a",
+        "P3f71c7fb"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-103",
+      "store": "锦笺",
+      "group": "two",
+      "query": "我在锦笺买的竹席收纳袋，返修预约最长等几天？",
+      "value": 8,
+      "unit": "天",
+      "sources": [
+        "Pf6a2a4cb",
+        "Pfcbfe6f2"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-104",
+      "store": "锦笺",
+      "group": "direct",
+      "query": "我在锦笺买的羊毛暖杯套，门店最多留货几个小时？",
+      "value": 45,
+      "unit": "小时",
+      "sources": [
+        "Pb1aef839"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-105",
+      "store": "锦笺",
+      "group": "missing",
+      "query": "我在锦笺买的雨衣清洁盒，补配的数量上限是什么？",
+      "value": null,
+      "unit": null,
+      "sources": [
+        "P8fad7a05",
+        "Pe65a728d",
+        "P2c29a75d"
+      ],
+      "decision": "missing"
+    },
+    {
+      "id": "HOLDOUT-106",
+      "store": "锦笺",
+      "group": "direct",
+      "query": "我在锦笺买的净水量杯，买它以后补寄费用是多少？",
+      "value": 9,
+      "unit": "元",
+      "sources": [
+        "P7410e878"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-107",
+      "store": "锦笺",
+      "group": "two",
+      "query": "我在锦笺买的桌面迷你架，保修一共多长时间？",
+      "value": 21,
+      "unit": "个月",
+      "sources": [
+        "P8760270b",
+        "P22a7ed21"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-108",
+      "store": "锦笺",
+      "group": "direct",
+      "query": "我在锦笺买的藤编置物筐，返修预约最长等几天？",
+      "value": 49,
+      "unit": "天",
+      "sources": [
+        "Pe00159f9"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-109",
+      "store": "锦笺",
+      "group": "direct",
+      "query": "我在锦笺买的手摇磨豆杯，门店自取会给我保留多久？",
+      "value": 8,
+      "unit": "小时",
+      "sources": [
+        "P9fb621c8"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-110",
+      "store": "锦笺",
+      "group": "three",
+      "query": "我在锦笺买的便携咖啡壶，最多能给我补配几件？",
+      "value": 15,
+      "unit": "件",
+      "sources": [
+        "P3e84e947",
+        "Pb7aa5ba3",
+        "P1992a587"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-111",
+      "store": "南栗",
+      "group": "direct",
+      "query": "我在南栗买的桌面迷你架，补寄配件要付多少快递费？",
+      "value": 43,
+      "unit": "元",
+      "sources": [
+        "P660ceeef"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-112",
+      "store": "南栗",
+      "group": "direct",
+      "query": "我在南栗买的手摇磨豆杯，保修承诺是几个月？",
+      "value": 46,
+      "unit": "个月",
+      "sources": [
+        "P5913d81d"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-113",
+      "store": "南栗",
+      "group": "two",
+      "query": "我在南栗买的竹席收纳袋，返修预约要等几天？",
+      "value": 4,
+      "unit": "天",
+      "sources": [
+        "P64a6d345",
+        "P3afacd4d"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-114",
+      "store": "南栗",
+      "group": "two",
+      "query": "我在南栗买的陶艺描金笔，门店最多留货几个小时？",
+      "value": 40,
+      "unit": "小时",
+      "sources": [
+        "P1c8e7847",
+        "Pa7c30cf3"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-115",
+      "store": "南栗",
+      "group": "direct",
+      "query": "我在南栗买的净水量杯，补配的数量上限是什么？",
+      "value": 52,
+      "unit": "件",
+      "sources": [
+        "P057cc1a7"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-116",
+      "store": "南栗",
+      "group": "two",
+      "query": "我在南栗买的竹制蒸笼，买它以后补寄费用是多少？",
+      "value": 46,
+      "unit": "元",
+      "sources": [
+        "P5b741ba7",
+        "P017e2d56"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-117",
+      "store": "南栗",
+      "group": "direct",
+      "query": "我在南栗买的雨衣清洁盒，保修承诺是几个月？",
+      "value": 53,
+      "unit": "个月",
+      "sources": [
+        "Pedf94e37"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-118",
+      "store": "南栗",
+      "group": "two",
+      "query": "我在南栗买的玻璃午餐盒，返修预约要等几天？",
+      "value": 48,
+      "unit": "天",
+      "sources": [
+        "P2578be2e",
+        "P85936da6"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-119",
+      "store": "南栗",
+      "group": "three",
+      "query": "我在南栗买的便携咖啡壶，门店最多留货几个小时？",
+      "value": 26,
+      "unit": "小时",
+      "sources": [
+        "Ped9b984d",
+        "P114b94b8",
+        "Pffc882c5"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "HOLDOUT-120",
+      "store": "南栗",
+      "group": "direct",
+      "query": "我在南栗买的葡萄木盘，最多能给我补配几件？",
+      "value": 17,
+      "unit": "件",
+      "sources": [
+        "P23cdcb37"
+      ],
+      "decision": "answer"
+    }
+  ],
+  "documents": [
+    {
+      "id": "P10b47f83",
+      "store": "砚溯",
+      "title": "砚溯竹制蒸笼服务索引",
+      "text": "砚溯竹制蒸笼服务索引。编号 RV-47401；别名「砚溯00彩签」。竹制蒸笼的本记录覆盖补发运费；对应政策编号 RV-47402，请查该编号的现行标准。"
+    },
+    {
+      "id": "Pc2ff19ca",
+      "store": "砚溯",
+      "title": "砚溯银页474政策",
+      "text": "砚溯银页474政策。编号 RV-47402；别名「砚溯00竹册」。现行政策：补发运费为21元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pcc44b1cd",
+      "store": "砚溯",
+      "title": "砚溯竹制蒸笼存档问答",
+      "text": "砚溯竹制蒸笼存档问答。旧版中的补发运费为27元，于新规则生效后作废。"
+    },
+    {
+      "id": "Pe1d48a00",
+      "store": "砚溯",
+      "title": "砚溯展示474政策",
+      "text": "砚溯展示474政策。编号 RV-47409；仅用于样品。补发运费为29元。"
+    },
+    {
+      "id": "P6734950d",
+      "store": "砚溯",
+      "title": "砚溯碳钢煎锅服务索引",
+      "text": "砚溯碳钢煎锅服务索引。编号 RV-48601；别名「砚溯01彩签」。碳钢煎锅的本记录覆盖保修期限；具体约定请参照《砚溯银页486政策》。"
+    },
+    {
+      "id": "P355a2a23",
+      "store": "砚溯",
+      "title": "砚溯银页486政策",
+      "text": "砚溯银页486政策。编号 RV-48602；别名「砚溯01竹册」。现行政策：保修期限为40个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P94533dae",
+      "store": "砚溯",
+      "title": "砚溯碳钢煎锅存档问答",
+      "text": "砚溯碳钢煎锅存档问答。旧版中的保修期限为46个月，于新规则生效后作废。"
+    },
+    {
+      "id": "Pe5bca278",
+      "store": "砚溯",
+      "title": "砚溯展示486政策",
+      "text": "砚溯展示486政策。编号 RV-48609；仅用于样品。保修期限为48个月。"
+    },
+    {
+      "id": "P82221124",
+      "store": "砚溯",
+      "title": "砚溯陶艺描金笔服务索引",
+      "text": "砚溯陶艺描金笔服务索引。编号 RV-87301；别名「砚溯02彩签」。陶艺描金笔的本记录覆盖排队时限；本项使用内部别名「砚溯02竹册」，按该记录核对。"
+    },
+    {
+      "id": "P6fcd83d4",
+      "store": "砚溯",
+      "title": "砚溯银页873政策",
+      "text": "砚溯银页873政策。编号 RV-87302；别名「砚溯02竹册」。本记录覆盖排队时限；查询时使用叫做砚溯02蓝条的那张独立记录。"
+    },
+    {
+      "id": "Paec0db8a",
+      "store": "砚溯",
+      "title": "砚溯红页873政策",
+      "text": "砚溯红页873政策。编号 RV-87303；别名「砚溯02蓝条」。现行政策：排队时限为40天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pd478c5a8",
+      "store": "砚溯",
+      "title": "砚溯陶艺描金笔存档问答",
+      "text": "砚溯陶艺描金笔存档问答。旧版中的排队时限为46天，于新规则生效后作废。"
+    },
+    {
+      "id": "P02199eee",
+      "store": "砚溯",
+      "title": "砚溯展示873政策",
+      "text": "砚溯展示873政策。编号 RV-87309；仅用于样品。排队时限为48天。"
+    },
+    {
+      "id": "Pc41ff224",
+      "store": "砚溯",
+      "title": "砚溯净水量杯服务索引",
+      "text": "砚溯净水量杯服务索引。编号 RV-67601；别名「砚溯03彩签」。净水量杯的自提留存期仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "P6527a519",
+      "store": "砚溯",
+      "title": "砚溯净水量杯存档问答",
+      "text": "砚溯净水量杯存档问答。旧版中的自提留存期为65小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P571b082a",
+      "store": "砚溯",
+      "title": "砚溯桌面迷你架服务索引",
+      "text": "砚溯桌面迷你架服务索引。编号 RV-50901；别名「砚溯04彩签」。桌面迷你架的本记录覆盖补配上限；对应政策编号 RV-50902，请查该编号的现行标准。"
+    },
+    {
+      "id": "P38d756eb",
+      "store": "砚溯",
+      "title": "砚溯银页509政策",
+      "text": "砚溯银页509政策。编号 RV-50902；别名「砚溯04竹册」。现行政策：补配上限为57件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P15aee892",
+      "store": "砚溯",
+      "title": "砚溯桌面迷你架存档问答",
+      "text": "砚溯桌面迷你架存档问答。旧版中的补配上限为63件，于新规则生效后作废。"
+    },
+    {
+      "id": "P325d2437",
+      "store": "砚溯",
+      "title": "砚溯展示509政策",
+      "text": "砚溯展示509政策。编号 RV-50909；仅用于样品。补配上限为65件。"
+    },
+    {
+      "id": "P4ae99677",
+      "store": "砚溯",
+      "title": "砚溯葡萄木盘服务索引",
+      "text": "砚溯葡萄木盘服务索引。编号 RV-79601；别名「砚溯05彩签」。葡萄木盘的现行政策：补发运费为37元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P6400c4ff",
+      "store": "砚溯",
+      "title": "砚溯葡萄木盘存档问答",
+      "text": "砚溯葡萄木盘存档问答。旧版中的补发运费为43元，于新规则生效后作废。"
+    },
+    {
+      "id": "P59f6f840",
+      "store": "砚溯",
+      "title": "砚溯手冲保温瓶服务索引",
+      "text": "砚溯手冲保温瓶服务索引。编号 RV-33401；别名「砚溯06彩签」。手冲保温瓶的本记录覆盖保修期限；本项使用内部别名「砚溯06竹册」，按该记录核对。"
+    },
+    {
+      "id": "P96c7c942",
+      "store": "砚溯",
+      "title": "砚溯银页334政策",
+      "text": "砚溯银页334政策。编号 RV-33402；别名「砚溯06竹册」。现行政策：保修期限为12个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pf9fd2094",
+      "store": "砚溯",
+      "title": "砚溯手冲保温瓶存档问答",
+      "text": "砚溯手冲保温瓶存档问答。旧版中的保修期限为18个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P49b25326",
+      "store": "砚溯",
+      "title": "砚溯展示334政策",
+      "text": "砚溯展示334政策。编号 RV-33409；仅用于样品。保修期限为20个月。"
+    },
+    {
+      "id": "P3046a53d",
+      "store": "砚溯",
+      "title": "砚溯松石茶筅服务索引",
+      "text": "砚溯松石茶筅服务索引。编号 RV-12701；别名「砚溯07彩签」。松石茶筅的本记录覆盖排队时限；查询时使用叫做砚溯07竹册的那张独立记录。"
+    },
+    {
+      "id": "Pf57f191f",
+      "store": "砚溯",
+      "title": "砚溯银页127政策",
+      "text": "砚溯银页127政策。编号 RV-12702；别名「砚溯07竹册」。本记录覆盖排队时限；对应政策编号 RV-12703，请查该编号的现行标准。"
+    },
+    {
+      "id": "Pef098050",
+      "store": "砚溯",
+      "title": "砚溯红页127政策",
+      "text": "砚溯红页127政策。编号 RV-12703；别名「砚溯07蓝条」。现行政策：排队时限为20天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P45000ba4",
+      "store": "砚溯",
+      "title": "砚溯松石茶筅存档问答",
+      "text": "砚溯松石茶筅存档问答。旧版中的排队时限为26天，于新规则生效后作废。"
+    },
+    {
+      "id": "P10088888",
+      "store": "砚溯",
+      "title": "砚溯展示127政策",
+      "text": "砚溯展示127政策。编号 RV-12709；仅用于样品。排队时限为28天。"
+    },
+    {
+      "id": "Pe4516188",
+      "store": "砚溯",
+      "title": "砚溯便携咖啡壶服务索引",
+      "text": "砚溯便携咖啡壶服务索引。编号 RV-93601；别名「砚溯08彩签」。便携咖啡壶的本记录覆盖自提留存期；对应政策编号 RV-93602，请查该编号的现行标准。"
+    },
+    {
+      "id": "Pbea35432",
+      "store": "砚溯",
+      "title": "砚溯银页936政策",
+      "text": "砚溯银页936政策。编号 RV-93602；别名「砚溯08竹册」。本记录覆盖自提留存期；具体约定请参照《砚溯红页936政策》。"
+    },
+    {
+      "id": "P6cbc3b23",
+      "store": "砚溯",
+      "title": "砚溯红页936政策",
+      "text": "砚溯红页936政策。编号 RV-93603；别名「砚溯08蓝条」。现行政策：自提留存期为45小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P321384c7",
+      "store": "砚溯",
+      "title": "砚溯便携咖啡壶存档问答",
+      "text": "砚溯便携咖啡壶存档问答。旧版中的自提留存期为51小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P17a0f6ad",
+      "store": "砚溯",
+      "title": "砚溯展示936政策",
+      "text": "砚溯展示936政策。编号 RV-93609；仅用于样品。自提留存期为53小时。"
+    },
+    {
+      "id": "Pa244f219",
+      "store": "砚溯",
+      "title": "砚溯不锈钢搅拌勺服务索引",
+      "text": "砚溯不锈钢搅拌勺服务索引。编号 RV-40201；别名「砚溯09彩签」。不锈钢搅拌勺的本记录覆盖补配上限；具体约定请参照《砚溯银页402政策》。"
+    },
+    {
+      "id": "P299ebd68",
+      "store": "砚溯",
+      "title": "砚溯银页402政策",
+      "text": "砚溯银页402政策。编号 RV-40202；别名「砚溯09竹册」。现行政策：补配上限为42件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P72dbd57e",
+      "store": "砚溯",
+      "title": "砚溯不锈钢搅拌勺存档问答",
+      "text": "砚溯不锈钢搅拌勺存档问答。旧版中的补配上限为48件，于新规则生效后作废。"
+    },
+    {
+      "id": "P968420f8",
+      "store": "砚溯",
+      "title": "砚溯展示402政策",
+      "text": "砚溯展示402政策。编号 RV-40209；仅用于样品。补配上限为50件。"
+    },
+    {
+      "id": "Pcd079651",
+      "store": "棠屿",
+      "title": "棠屿羊毛暖杯套服务索引",
+      "text": "棠屿羊毛暖杯套服务索引。编号 RV-56401；别名「棠屿00彩签」。羊毛暖杯套的本记录覆盖补发运费；本项使用内部别名「棠屿00竹册」，按该记录核对。"
+    },
+    {
+      "id": "P39d5df9e",
+      "store": "棠屿",
+      "title": "棠屿银页564政策",
+      "text": "棠屿银页564政策。编号 RV-56402；别名「棠屿00竹册」。现行政策：补发运费为19元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P052fcf5d",
+      "store": "棠屿",
+      "title": "棠屿羊毛暖杯套存档问答",
+      "text": "棠屿羊毛暖杯套存档问答。旧版中的补发运费为25元，于新规则生效后作废。"
+    },
+    {
+      "id": "P49038ee3",
+      "store": "棠屿",
+      "title": "棠屿展示564政策",
+      "text": "棠屿展示564政策。编号 RV-56409；仅用于样品。补发运费为27元。"
+    },
+    {
+      "id": "P3a55b070",
+      "store": "棠屿",
+      "title": "棠屿玻璃午餐盒服务索引",
+      "text": "棠屿玻璃午餐盒服务索引。编号 RV-69901；别名「棠屿01彩签」。玻璃午餐盒的本记录覆盖保修期限；查询时使用叫做棠屿01竹册的那张独立记录。"
+    },
+    {
+      "id": "P91bbce5b",
+      "store": "棠屿",
+      "title": "棠屿银页699政策",
+      "text": "棠屿银页699政策。编号 RV-69902；别名「棠屿01竹册」。本记录覆盖保修期限；对应政策编号 RV-69903，请查该编号的现行标准。"
+    },
+    {
+      "id": "P98ab4d72",
+      "store": "棠屿",
+      "title": "棠屿红页699政策",
+      "text": "棠屿红页699政策。编号 RV-69903；别名「棠屿01蓝条」。现行政策：保修期限为39个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P225aad76",
+      "store": "棠屿",
+      "title": "棠屿玻璃午餐盒存档问答",
+      "text": "棠屿玻璃午餐盒存档问答。旧版中的保修期限为45个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P36d978ac",
+      "store": "棠屿",
+      "title": "棠屿展示699政策",
+      "text": "棠屿展示699政策。编号 RV-69909；仅用于样品。保修期限为47个月。"
+    },
+    {
+      "id": "P2613b5ce",
+      "store": "棠屿",
+      "title": "棠屿手冲保温瓶服务索引",
+      "text": "棠屿手冲保温瓶服务索引。编号 RV-81001；别名「棠屿03彩签」。手冲保温瓶的现行政策：自提留存期为7小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P4a43099f",
+      "store": "棠屿",
+      "title": "棠屿手冲保温瓶存档问答",
+      "text": "棠屿手冲保温瓶存档问答。旧版中的自提留存期为13小时，于新规则生效后作废。"
+    },
+    {
+      "id": "Pa087dc03",
+      "store": "棠屿",
+      "title": "棠屿竹席收纳袋服务索引",
+      "text": "棠屿竹席收纳袋服务索引。编号 RV-77101；别名「棠屿05彩签」。竹席收纳袋的本记录覆盖补发运费；查询时使用叫做棠屿05竹册的那张独立记录。"
+    },
+    {
+      "id": "P0c3b5825",
+      "store": "棠屿",
+      "title": "棠屿银页771政策",
+      "text": "棠屿银页771政策。编号 RV-77102；别名「棠屿05竹册」。现行政策：补发运费为6元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P438061af",
+      "store": "棠屿",
+      "title": "棠屿竹席收纳袋存档问答",
+      "text": "棠屿竹席收纳袋存档问答。旧版中的补发运费为12元，于新规则生效后作废。"
+    },
+    {
+      "id": "P8550e19f",
+      "store": "棠屿",
+      "title": "棠屿展示771政策",
+      "text": "棠屿展示771政策。编号 RV-77109；仅用于样品。补发运费为14元。"
+    },
+    {
+      "id": "P2e9f8114",
+      "store": "棠屿",
+      "title": "棠屿陶艺描金笔服务索引",
+      "text": "棠屿陶艺描金笔服务索引。编号 RV-20201；别名「棠屿06彩签」。陶艺描金笔的现行政策：保修期限为38个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P02497521",
+      "store": "棠屿",
+      "title": "棠屿陶艺描金笔存档问答",
+      "text": "棠屿陶艺描金笔存档问答。旧版中的保修期限为44个月，于新规则生效后作废。"
+    },
+    {
+      "id": "Peb6d40aa",
+      "store": "棠屿",
+      "title": "棠屿竹制蒸笼服务索引",
+      "text": "棠屿竹制蒸笼服务索引。编号 RV-73501；别名「棠屿07彩签」。竹制蒸笼的本记录覆盖排队时限；具体约定请参照《棠屿银页735政策》。"
+    },
+    {
+      "id": "P9616b673",
+      "store": "棠屿",
+      "title": "棠屿银页735政策",
+      "text": "棠屿银页735政策。编号 RV-73502；别名「棠屿07竹册」。本记录覆盖排队时限；本项使用内部别名「棠屿07蓝条」，按该记录核对。"
+    },
+    {
+      "id": "P9b7c1da7",
+      "store": "棠屿",
+      "title": "棠屿红页735政策",
+      "text": "棠屿红页735政策。编号 RV-73503；别名「棠屿07蓝条」。现行政策：排队时限为57天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pc8389794",
+      "store": "棠屿",
+      "title": "棠屿竹制蒸笼存档问答",
+      "text": "棠屿竹制蒸笼存档问答。旧版中的排队时限为63天，于新规则生效后作废。"
+    },
+    {
+      "id": "P3b39df65",
+      "store": "棠屿",
+      "title": "棠屿展示735政策",
+      "text": "棠屿展示735政策。编号 RV-73509；仅用于样品。排队时限为65天。"
+    },
+    {
+      "id": "P10dd87ae",
+      "store": "棠屿",
+      "title": "棠屿葡萄木盘服务索引",
+      "text": "棠屿葡萄木盘服务索引。编号 RV-40001；别名「棠屿08彩签」。葡萄木盘的本记录覆盖自提留存期；本项使用内部别名「棠屿08竹册」，按该记录核对。"
+    },
+    {
+      "id": "Pbbba5602",
+      "store": "棠屿",
+      "title": "棠屿银页400政策",
+      "text": "棠屿银页400政策。编号 RV-40002；别名「棠屿08竹册」。现行政策：自提留存期为59小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P50cd0025",
+      "store": "棠屿",
+      "title": "棠屿葡萄木盘存档问答",
+      "text": "棠屿葡萄木盘存档问答。旧版中的自提留存期为65小时，于新规则生效后作废。"
+    },
+    {
+      "id": "Pe7a6208f",
+      "store": "棠屿",
+      "title": "棠屿展示400政策",
+      "text": "棠屿展示400政策。编号 RV-40009；仅用于样品。自提留存期为67小时。"
+    },
+    {
+      "id": "P611f3aaf",
+      "store": "墨禾",
+      "title": "墨禾羊毛暖杯套服务索引",
+      "text": "墨禾羊毛暖杯套服务索引。编号 RV-85201；别名「墨禾00彩签」。羊毛暖杯套的本记录覆盖补发运费；对应政策编号 RV-85202，请查该编号的现行标准。"
+    },
+    {
+      "id": "P762177ed",
+      "store": "墨禾",
+      "title": "墨禾银页852政策",
+      "text": "墨禾银页852政策。编号 RV-85202；别名「墨禾00竹册」。本记录覆盖补发运费；具体约定请参照《墨禾红页852政策》。"
+    },
+    {
+      "id": "P28ff312a",
+      "store": "墨禾",
+      "title": "墨禾红页852政策",
+      "text": "墨禾红页852政策。编号 RV-85203；别名「墨禾00蓝条」。补发运费仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "P4bff3b78",
+      "store": "墨禾",
+      "title": "墨禾羊毛暖杯套存档问答",
+      "text": "墨禾羊毛暖杯套存档问答。旧版中的补发运费为16元，于新规则生效后作废。"
+    },
+    {
+      "id": "Pa247fbee",
+      "store": "墨禾",
+      "title": "墨禾展示852政策",
+      "text": "墨禾展示852政策。编号 RV-85209；仅用于样品。补发运费为18元。"
+    },
+    {
+      "id": "Pcd3f30a3",
+      "store": "墨禾",
+      "title": "墨禾桌面迷你架服务索引",
+      "text": "墨禾桌面迷你架服务索引。编号 RV-26201；别名「墨禾01彩签」。桌面迷你架的保修期限仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "P3a9a1584",
+      "store": "墨禾",
+      "title": "墨禾桌面迷你架存档问答",
+      "text": "墨禾桌面迷你架存档问答。旧版中的保修期限为11个月，于新规则生效后作废。"
+    },
+    {
+      "id": "Pf0f898d3",
+      "store": "墨禾",
+      "title": "墨禾玻璃午餐盒服务索引",
+      "text": "墨禾玻璃午餐盒服务索引。编号 RV-19301；别名「墨禾02彩签」。玻璃午餐盒的现行政策：排队时限为52天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P591caf54",
+      "store": "墨禾",
+      "title": "墨禾玻璃午餐盒存档问答",
+      "text": "墨禾玻璃午餐盒存档问答。旧版中的排队时限为58天，于新规则生效后作废。"
+    },
+    {
+      "id": "Pd136e325",
+      "store": "墨禾",
+      "title": "墨禾不锈钢搅拌勺服务索引",
+      "text": "墨禾不锈钢搅拌勺服务索引。编号 RV-33701；别名「墨禾03彩签」。不锈钢搅拌勺的本记录覆盖自提留存期；查询时使用叫做墨禾03竹册的那张独立记录。"
+    },
+    {
+      "id": "Pd365106f",
+      "store": "墨禾",
+      "title": "墨禾银页337政策",
+      "text": "墨禾银页337政策。编号 RV-33702；别名「墨禾03竹册」。本记录覆盖自提留存期；对应政策编号 RV-33703，请查该编号的现行标准。"
+    },
+    {
+      "id": "P81c51d93",
+      "store": "墨禾",
+      "title": "墨禾红页337政策",
+      "text": "墨禾红页337政策。编号 RV-33703；别名「墨禾03蓝条」。现行政策：自提留存期为59小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P9d9691eb",
+      "store": "墨禾",
+      "title": "墨禾不锈钢搅拌勺存档问答",
+      "text": "墨禾不锈钢搅拌勺存档问答。旧版中的自提留存期为65小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P545ae7ee",
+      "store": "墨禾",
+      "title": "墨禾展示337政策",
+      "text": "墨禾展示337政策。编号 RV-33709；仅用于样品。自提留存期为67小时。"
+    },
+    {
+      "id": "P0651f5a3",
+      "store": "墨禾",
+      "title": "墨禾藤编置物筐服务索引",
+      "text": "墨禾藤编置物筐服务索引。编号 RV-19201；别名「墨禾04彩签」。藤编置物筐的补配上限仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "P9fdc23db",
+      "store": "墨禾",
+      "title": "墨禾藤编置物筐存档问答",
+      "text": "墨禾藤编置物筐存档问答。旧版中的补配上限为27件，于新规则生效后作废。"
+    },
+    {
+      "id": "P750677d1",
+      "store": "墨禾",
+      "title": "墨禾手摇磨豆杯服务索引",
+      "text": "墨禾手摇磨豆杯服务索引。编号 RV-12201；别名「墨禾05彩签」。手摇磨豆杯的本记录覆盖补发运费；具体约定请参照《墨禾银页122政策》。"
+    },
+    {
+      "id": "P47ad2cfc",
+      "store": "墨禾",
+      "title": "墨禾银页122政策",
+      "text": "墨禾银页122政策。编号 RV-12202；别名「墨禾05竹册」。现行政策：补发运费为11元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pc754365c",
+      "store": "墨禾",
+      "title": "墨禾手摇磨豆杯存档问答",
+      "text": "墨禾手摇磨豆杯存档问答。旧版中的补发运费为17元，于新规则生效后作废。"
+    },
+    {
+      "id": "Pdbbfd796",
+      "store": "墨禾",
+      "title": "墨禾展示122政策",
+      "text": "墨禾展示122政策。编号 RV-12209；仅用于样品。补发运费为19元。"
+    },
+    {
+      "id": "Pbd180ed3",
+      "store": "墨禾",
+      "title": "墨禾碳钢煎锅服务索引",
+      "text": "墨禾碳钢煎锅服务索引。编号 RV-98101；别名「墨禾06彩签」。碳钢煎锅的本记录覆盖保修期限；本项使用内部别名「墨禾06竹册」，按该记录核对。"
+    },
+    {
+      "id": "P8e5fb7f7",
+      "store": "墨禾",
+      "title": "墨禾银页981政策",
+      "text": "墨禾银页981政策。编号 RV-98102；别名「墨禾06竹册」。现行政策：保修期限为8个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P42454178",
+      "store": "墨禾",
+      "title": "墨禾碳钢煎锅存档问答",
+      "text": "墨禾碳钢煎锅存档问答。旧版中的保修期限为14个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P92f01bb2",
+      "store": "墨禾",
+      "title": "墨禾展示981政策",
+      "text": "墨禾展示981政策。编号 RV-98109；仅用于样品。保修期限为16个月。"
+    },
+    {
+      "id": "P8e723afe",
+      "store": "墨禾",
+      "title": "墨禾净水量杯服务索引",
+      "text": "墨禾净水量杯服务索引。编号 RV-13001；别名「墨禾07彩签」。净水量杯的本记录覆盖排队时限；查询时使用叫做墨禾07竹册的那张独立记录。"
+    },
+    {
+      "id": "P5247b1f2",
+      "store": "墨禾",
+      "title": "墨禾银页130政策",
+      "text": "墨禾银页130政策。编号 RV-13002；别名「墨禾07竹册」。现行政策：排队时限为41天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P65611f74",
+      "store": "墨禾",
+      "title": "墨禾净水量杯存档问答",
+      "text": "墨禾净水量杯存档问答。旧版中的排队时限为47天，于新规则生效后作废。"
+    },
+    {
+      "id": "P209acb2a",
+      "store": "墨禾",
+      "title": "墨禾展示130政策",
+      "text": "墨禾展示130政策。编号 RV-13009；仅用于样品。排队时限为49天。"
+    },
+    {
+      "id": "P8d618e6e",
+      "store": "墨禾",
+      "title": "墨禾手冲保温瓶服务索引",
+      "text": "墨禾手冲保温瓶服务索引。编号 RV-53801；别名「墨禾08彩签」。手冲保温瓶的本记录覆盖自提留存期；对应政策编号 RV-53802，请查该编号的现行标准。"
+    },
+    {
+      "id": "P8c65dddf",
+      "store": "墨禾",
+      "title": "墨禾银页538政策",
+      "text": "墨禾银页538政策。编号 RV-53802；别名「墨禾08竹册」。本记录覆盖自提留存期；具体约定请参照《墨禾红页538政策》。"
+    },
+    {
+      "id": "Pedbcbaff",
+      "store": "墨禾",
+      "title": "墨禾红页538政策",
+      "text": "墨禾红页538政策。编号 RV-53803；别名「墨禾08蓝条」。现行政策：自提留存期为24小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P6cebe24e",
+      "store": "墨禾",
+      "title": "墨禾手冲保温瓶存档问答",
+      "text": "墨禾手冲保温瓶存档问答。旧版中的自提留存期为30小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P253c5342",
+      "store": "墨禾",
+      "title": "墨禾展示538政策",
+      "text": "墨禾展示538政策。编号 RV-53809；仅用于样品。自提留存期为32小时。"
+    },
+    {
+      "id": "P89029b78",
+      "store": "墨禾",
+      "title": "墨禾竹制蒸笼服务索引",
+      "text": "墨禾竹制蒸笼服务索引。编号 RV-66601；别名「墨禾09彩签」。竹制蒸笼的本记录覆盖补配上限；具体约定请参照《墨禾银页666政策》。"
+    },
+    {
+      "id": "P2d1da2d6",
+      "store": "墨禾",
+      "title": "墨禾银页666政策",
+      "text": "墨禾银页666政策。编号 RV-66602；别名「墨禾09竹册」。现行政策：补配上限为13件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P21515d46",
+      "store": "墨禾",
+      "title": "墨禾竹制蒸笼存档问答",
+      "text": "墨禾竹制蒸笼存档问答。旧版中的补配上限为19件，于新规则生效后作废。"
+    },
+    {
+      "id": "P3ce4c1e9",
+      "store": "墨禾",
+      "title": "墨禾展示666政策",
+      "text": "墨禾展示666政策。编号 RV-66609；仅用于样品。补配上限为21件。"
+    },
+    {
+      "id": "P4d63f47b",
+      "store": "云瓷",
+      "title": "云瓷净水量杯服务索引",
+      "text": "云瓷净水量杯服务索引。编号 RV-22701；别名「云瓷00彩签」。净水量杯的现行政策：补发运费为20元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P0123cfae",
+      "store": "云瓷",
+      "title": "云瓷净水量杯存档问答",
+      "text": "云瓷净水量杯存档问答。旧版中的补发运费为26元，于新规则生效后作废。"
+    },
+    {
+      "id": "P6959128a",
+      "store": "云瓷",
+      "title": "云瓷竹制蒸笼服务索引",
+      "text": "云瓷竹制蒸笼服务索引。编号 RV-86401；别名「云瓷01彩签」。竹制蒸笼的现行政策：保修期限为13个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pe609fc62",
+      "store": "云瓷",
+      "title": "云瓷竹制蒸笼存档问答",
+      "text": "云瓷竹制蒸笼存档问答。旧版中的保修期限为19个月，于新规则生效后作废。"
+    },
+    {
+      "id": "Pc16cbcd1",
+      "store": "云瓷",
+      "title": "云瓷陶艺描金笔服务索引",
+      "text": "云瓷陶艺描金笔服务索引。编号 RV-95101；别名「云瓷02彩签」。陶艺描金笔的本记录覆盖排队时限；对应政策编号 RV-95102，请查该编号的现行标准。"
+    },
+    {
+      "id": "P7b800fa5",
+      "store": "云瓷",
+      "title": "云瓷银页951政策",
+      "text": "云瓷银页951政策。编号 RV-95102；别名「云瓷02竹册」。本记录覆盖排队时限；具体约定请参照《云瓷红页951政策》。"
+    },
+    {
+      "id": "P11735283",
+      "store": "云瓷",
+      "title": "云瓷红页951政策",
+      "text": "云瓷红页951政策。编号 RV-95103；别名「云瓷02蓝条」。现行政策：排队时限为42天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pa55869ce",
+      "store": "云瓷",
+      "title": "云瓷陶艺描金笔存档问答",
+      "text": "云瓷陶艺描金笔存档问答。旧版中的排队时限为48天，于新规则生效后作废。"
+    },
+    {
+      "id": "P65036cab",
+      "store": "云瓷",
+      "title": "云瓷展示951政策",
+      "text": "云瓷展示951政策。编号 RV-95109；仅用于样品。排队时限为50天。"
+    },
+    {
+      "id": "P59b2383c",
+      "store": "云瓷",
+      "title": "云瓷桌面迷你架服务索引",
+      "text": "云瓷桌面迷你架服务索引。编号 RV-98101；别名「云瓷03彩签」。桌面迷你架的现行政策：自提留存期为31小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pd63bd1b0",
+      "store": "云瓷",
+      "title": "云瓷桌面迷你架存档问答",
+      "text": "云瓷桌面迷你架存档问答。旧版中的自提留存期为37小时，于新规则生效后作废。"
+    },
+    {
+      "id": "Pa473f507",
+      "store": "云瓷",
+      "title": "云瓷玻璃午餐盒服务索引",
+      "text": "云瓷玻璃午餐盒服务索引。编号 RV-13501；别名「云瓷04彩签」。玻璃午餐盒的本记录覆盖补配上限；本项使用内部别名「云瓷04竹册」，按该记录核对。"
+    },
+    {
+      "id": "Pea9ad556",
+      "store": "云瓷",
+      "title": "云瓷银页135政策",
+      "text": "云瓷银页135政策。编号 RV-13502；别名「云瓷04竹册」。现行政策：补配上限为7件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P034d1333",
+      "store": "云瓷",
+      "title": "云瓷玻璃午餐盒存档问答",
+      "text": "云瓷玻璃午餐盒存档问答。旧版中的补配上限为13件，于新规则生效后作废。"
+    },
+    {
+      "id": "P8c6cf9f0",
+      "store": "云瓷",
+      "title": "云瓷展示135政策",
+      "text": "云瓷展示135政策。编号 RV-13509；仅用于样品。补配上限为15件。"
+    },
+    {
+      "id": "P37dc7c95",
+      "store": "云瓷",
+      "title": "云瓷便携咖啡壶服务索引",
+      "text": "云瓷便携咖啡壶服务索引。编号 RV-24901；别名「云瓷05彩签」。便携咖啡壶的本记录覆盖补发运费；查询时使用叫做云瓷05竹册的那张独立记录。"
+    },
+    {
+      "id": "P53135f4b",
+      "store": "云瓷",
+      "title": "云瓷银页249政策",
+      "text": "云瓷银页249政策。编号 RV-24902；别名「云瓷05竹册」。现行政策：补发运费为59元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P98aad58e",
+      "store": "云瓷",
+      "title": "云瓷便携咖啡壶存档问答",
+      "text": "云瓷便携咖啡壶存档问答。旧版中的补发运费为65元，于新规则生效后作废。"
+    },
+    {
+      "id": "Paf72571e",
+      "store": "云瓷",
+      "title": "云瓷展示249政策",
+      "text": "云瓷展示249政策。编号 RV-24909；仅用于样品。补发运费为67元。"
+    },
+    {
+      "id": "P0c10f48a",
+      "store": "云瓷",
+      "title": "云瓷藤编置物筐服务索引",
+      "text": "云瓷藤编置物筐服务索引。编号 RV-54401；别名「云瓷06彩签」。藤编置物筐的本记录覆盖保修期限；对应政策编号 RV-54402，请查该编号的现行标准。"
+    },
+    {
+      "id": "Pf3918a8c",
+      "store": "云瓷",
+      "title": "云瓷银页544政策",
+      "text": "云瓷银页544政策。编号 RV-54402；别名「云瓷06竹册」。现行政策：保修期限为57个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P01f49569",
+      "store": "云瓷",
+      "title": "云瓷藤编置物筐存档问答",
+      "text": "云瓷藤编置物筐存档问答。旧版中的保修期限为63个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P8bff3941",
+      "store": "云瓷",
+      "title": "云瓷展示544政策",
+      "text": "云瓷展示544政策。编号 RV-54409；仅用于样品。保修期限为65个月。"
+    },
+    {
+      "id": "Pfe5b0319",
+      "store": "云瓷",
+      "title": "云瓷碳钢煎锅服务索引",
+      "text": "云瓷碳钢煎锅服务索引。编号 RV-86601；别名「云瓷07彩签」。碳钢煎锅的本记录覆盖排队时限；具体约定请参照《云瓷银页866政策》。"
+    },
+    {
+      "id": "P7196b664",
+      "store": "云瓷",
+      "title": "云瓷银页866政策",
+      "text": "云瓷银页866政策。编号 RV-86602；别名「云瓷07竹册」。本记录覆盖排队时限；本项使用内部别名「云瓷07蓝条」，按该记录核对。"
+    },
+    {
+      "id": "P8b2305b9",
+      "store": "云瓷",
+      "title": "云瓷红页866政策",
+      "text": "云瓷红页866政策。编号 RV-86603；别名「云瓷07蓝条」。现行政策：排队时限为50天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P3d36e878",
+      "store": "云瓷",
+      "title": "云瓷碳钢煎锅存档问答",
+      "text": "云瓷碳钢煎锅存档问答。旧版中的排队时限为56天，于新规则生效后作废。"
+    },
+    {
+      "id": "P6c9d31a3",
+      "store": "云瓷",
+      "title": "云瓷展示866政策",
+      "text": "云瓷展示866政策。编号 RV-86609；仅用于样品。排队时限为58天。"
+    },
+    {
+      "id": "P396fce04",
+      "store": "云瓷",
+      "title": "云瓷手摇磨豆杯服务索引",
+      "text": "云瓷手摇磨豆杯服务索引。编号 RV-32901；别名「云瓷08彩签」。手摇磨豆杯的本记录覆盖自提留存期；本项使用内部别名「云瓷08竹册」，按该记录核对。"
+    },
+    {
+      "id": "P7c58cb88",
+      "store": "云瓷",
+      "title": "云瓷银页329政策",
+      "text": "云瓷银页329政策。编号 RV-32902；别名「云瓷08竹册」。现行政策：自提留存期为12小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P002e3ea4",
+      "store": "云瓷",
+      "title": "云瓷手摇磨豆杯存档问答",
+      "text": "云瓷手摇磨豆杯存档问答。旧版中的自提留存期为18小时，于新规则生效后作废。"
+    },
+    {
+      "id": "Pb668d499",
+      "store": "云瓷",
+      "title": "云瓷展示329政策",
+      "text": "云瓷展示329政策。编号 RV-32909；仅用于样品。自提留存期为20小时。"
+    },
+    {
+      "id": "P1accb482",
+      "store": "沐榆",
+      "title": "沐榆手冲保温瓶服务索引",
+      "text": "沐榆手冲保温瓶服务索引。编号 RV-16301；别名「沐榆00彩签」。手冲保温瓶的现行政策：补发运费为56元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pc78d168a",
+      "store": "沐榆",
+      "title": "沐榆手冲保温瓶存档问答",
+      "text": "沐榆手冲保温瓶存档问答。旧版中的补发运费为62元，于新规则生效后作废。"
+    },
+    {
+      "id": "P252ad13f",
+      "store": "沐榆",
+      "title": "沐榆净水量杯服务索引",
+      "text": "沐榆净水量杯服务索引。编号 RV-86201；别名「沐榆01彩签」。净水量杯的现行政策：保修期限为21个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Peebe9404",
+      "store": "沐榆",
+      "title": "沐榆净水量杯存档问答",
+      "text": "沐榆净水量杯存档问答。旧版中的保修期限为27个月，于新规则生效后作废。"
+    },
+    {
+      "id": "Pa20ea132",
+      "store": "沐榆",
+      "title": "沐榆碳钢煎锅服务索引",
+      "text": "沐榆碳钢煎锅服务索引。编号 RV-57001；别名「沐榆02彩签」。碳钢煎锅的本记录覆盖排队时限；本项使用内部别名「沐榆02竹册」，按该记录核对。"
+    },
+    {
+      "id": "P9db765aa",
+      "store": "沐榆",
+      "title": "沐榆银页570政策",
+      "text": "沐榆银页570政策。编号 RV-57002；别名「沐榆02竹册」。现行政策：排队时限为43天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pe7fe849e",
+      "store": "沐榆",
+      "title": "沐榆碳钢煎锅存档问答",
+      "text": "沐榆碳钢煎锅存档问答。旧版中的排队时限为49天，于新规则生效后作废。"
+    },
+    {
+      "id": "Pdfb1dcd7",
+      "store": "沐榆",
+      "title": "沐榆展示570政策",
+      "text": "沐榆展示570政策。编号 RV-57009；仅用于样品。排队时限为51天。"
+    },
+    {
+      "id": "P59c241be",
+      "store": "沐榆",
+      "title": "沐榆竹席收纳袋服务索引",
+      "text": "沐榆竹席收纳袋服务索引。编号 RV-48801；别名「沐榆03彩签」。竹席收纳袋的本记录覆盖自提留存期；查询时使用叫做沐榆03竹册的那张独立记录。"
+    },
+    {
+      "id": "Pf10974ef",
+      "store": "沐榆",
+      "title": "沐榆银页488政策",
+      "text": "沐榆银页488政策。编号 RV-48802；别名「沐榆03竹册」。自提留存期仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "Pf3db559f",
+      "store": "沐榆",
+      "title": "沐榆竹席收纳袋存档问答",
+      "text": "沐榆竹席收纳袋存档问答。旧版中的自提留存期为59小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P0c75cc79",
+      "store": "沐榆",
+      "title": "沐榆展示488政策",
+      "text": "沐榆展示488政策。编号 RV-48809；仅用于样品。自提留存期为61小时。"
+    },
+    {
+      "id": "P39531f94",
+      "store": "沐榆",
+      "title": "沐榆竹制蒸笼服务索引",
+      "text": "沐榆竹制蒸笼服务索引。编号 RV-18801；别名「沐榆04彩签」。竹制蒸笼的本记录覆盖补配上限；对应政策编号 RV-18802，请查该编号的现行标准。"
+    },
+    {
+      "id": "P5660a6ef",
+      "store": "沐榆",
+      "title": "沐榆银页188政策",
+      "text": "沐榆银页188政策。编号 RV-18802；别名「沐榆04竹册」。本记录覆盖补配上限；具体约定请参照《沐榆红页188政策》。"
+    },
+    {
+      "id": "P5592066a",
+      "store": "沐榆",
+      "title": "沐榆红页188政策",
+      "text": "沐榆红页188政策。编号 RV-18803；别名「沐榆04蓝条」。现行政策：补配上限为57件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pb12accb8",
+      "store": "沐榆",
+      "title": "沐榆竹制蒸笼存档问答",
+      "text": "沐榆竹制蒸笼存档问答。旧版中的补配上限为63件，于新规则生效后作废。"
+    },
+    {
+      "id": "P0aa23d5d",
+      "store": "沐榆",
+      "title": "沐榆展示188政策",
+      "text": "沐榆展示188政策。编号 RV-18809；仅用于样品。补配上限为65件。"
+    },
+    {
+      "id": "P57af62a1",
+      "store": "沐榆",
+      "title": "沐榆葡萄木盘服务索引",
+      "text": "沐榆葡萄木盘服务索引。编号 RV-27901；别名「沐榆05彩签」。葡萄木盘的补发运费仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "P2f99ccc9",
+      "store": "沐榆",
+      "title": "沐榆葡萄木盘存档问答",
+      "text": "沐榆葡萄木盘存档问答。旧版中的补发运费为30元，于新规则生效后作废。"
+    },
+    {
+      "id": "Pc7a6b466",
+      "store": "沐榆",
+      "title": "沐榆玻璃午餐盒服务索引",
+      "text": "沐榆玻璃午餐盒服务索引。编号 RV-89301；别名「沐榆07彩签」。玻璃午餐盒的本记录覆盖排队时限；查询时使用叫做沐榆07竹册的那张独立记录。"
+    },
+    {
+      "id": "Pad574730",
+      "store": "沐榆",
+      "title": "沐榆银页893政策",
+      "text": "沐榆银页893政策。编号 RV-89302；别名「沐榆07竹册」。现行政策：排队时限为35天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P4079796c",
+      "store": "沐榆",
+      "title": "沐榆玻璃午餐盒存档问答",
+      "text": "沐榆玻璃午餐盒存档问答。旧版中的排队时限为41天，于新规则生效后作废。"
+    },
+    {
+      "id": "P604ea332",
+      "store": "沐榆",
+      "title": "沐榆展示893政策",
+      "text": "沐榆展示893政策。编号 RV-89309；仅用于样品。排队时限为43天。"
+    },
+    {
+      "id": "P79091a90",
+      "store": "沐榆",
+      "title": "沐榆陶艺描金笔服务索引",
+      "text": "沐榆陶艺描金笔服务索引。编号 RV-24301；别名「沐榆08彩签」。陶艺描金笔的本记录覆盖自提留存期；对应政策编号 RV-24302，请查该编号的现行标准。"
+    },
+    {
+      "id": "Pb3669d69",
+      "store": "沐榆",
+      "title": "沐榆银页243政策",
+      "text": "沐榆银页243政策。编号 RV-24302；别名「沐榆08竹册」。现行政策：自提留存期为37小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pd4543671",
+      "store": "沐榆",
+      "title": "沐榆陶艺描金笔存档问答",
+      "text": "沐榆陶艺描金笔存档问答。旧版中的自提留存期为43小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P70a82a85",
+      "store": "沐榆",
+      "title": "沐榆展示243政策",
+      "text": "沐榆展示243政策。编号 RV-24309；仅用于样品。自提留存期为45小时。"
+    },
+    {
+      "id": "Pc5beb200",
+      "store": "沐榆",
+      "title": "沐榆不锈钢搅拌勺服务索引",
+      "text": "沐榆不锈钢搅拌勺服务索引。编号 RV-28401；别名「沐榆09彩签」。不锈钢搅拌勺的本记录覆盖补配上限；具体约定请参照《沐榆银页284政策》。"
+    },
+    {
+      "id": "Pcd3d6a6d",
+      "store": "沐榆",
+      "title": "沐榆银页284政策",
+      "text": "沐榆银页284政策。编号 RV-28402；别名「沐榆09竹册」。现行政策：补配上限为22件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P6cb48b29",
+      "store": "沐榆",
+      "title": "沐榆不锈钢搅拌勺存档问答",
+      "text": "沐榆不锈钢搅拌勺存档问答。旧版中的补配上限为28件，于新规则生效后作废。"
+    },
+    {
+      "id": "Pc15ea234",
+      "store": "沐榆",
+      "title": "沐榆展示284政策",
+      "text": "沐榆展示284政策。编号 RV-28409；仅用于样品。补配上限为30件。"
+    },
+    {
+      "id": "P670d501a",
+      "store": "照川",
+      "title": "照川葡萄木盘服务索引",
+      "text": "照川葡萄木盘服务索引。编号 RV-75701；别名「照川00彩签」。葡萄木盘的本记录覆盖补发运费；本项使用内部别名「照川00竹册」，按该记录核对。"
+    },
+    {
+      "id": "P31118583",
+      "store": "照川",
+      "title": "照川银页757政策",
+      "text": "照川银页757政策。编号 RV-75702；别名「照川00竹册」。现行政策：补发运费为56元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P1b672049",
+      "store": "照川",
+      "title": "照川葡萄木盘存档问答",
+      "text": "照川葡萄木盘存档问答。旧版中的补发运费为62元，于新规则生效后作废。"
+    },
+    {
+      "id": "Pf4a40d00",
+      "store": "照川",
+      "title": "照川展示757政策",
+      "text": "照川展示757政策。编号 RV-75709；仅用于样品。补发运费为64元。"
+    },
+    {
+      "id": "P918d7285",
+      "store": "照川",
+      "title": "照川竹制蒸笼服务索引",
+      "text": "照川竹制蒸笼服务索引。编号 RV-98701；别名「照川01彩签」。竹制蒸笼的本记录覆盖保修期限；查询时使用叫做照川01竹册的那张独立记录。"
+    },
+    {
+      "id": "Pf12c301d",
+      "store": "照川",
+      "title": "照川银页987政策",
+      "text": "照川银页987政策。编号 RV-98702；别名「照川01竹册」。现行政策：保修期限为19个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P3178a8a1",
+      "store": "照川",
+      "title": "照川竹制蒸笼存档问答",
+      "text": "照川竹制蒸笼存档问答。旧版中的保修期限为25个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P4f3cd301",
+      "store": "照川",
+      "title": "照川展示987政策",
+      "text": "照川展示987政策。编号 RV-98709；仅用于样品。保修期限为27个月。"
+    },
+    {
+      "id": "P0d3a8f91",
+      "store": "照川",
+      "title": "照川不锈钢搅拌勺服务索引",
+      "text": "照川不锈钢搅拌勺服务索引。编号 RV-31101；别名「照川02彩签」。不锈钢搅拌勺的本记录覆盖排队时限；对应政策编号 RV-31102，请查该编号的现行标准。"
+    },
+    {
+      "id": "Peace63cf",
+      "store": "照川",
+      "title": "照川银页311政策",
+      "text": "照川银页311政策。编号 RV-31102；别名「照川02竹册」。排队时限仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "P4809d571",
+      "store": "照川",
+      "title": "照川不锈钢搅拌勺存档问答",
+      "text": "照川不锈钢搅拌勺存档问答。旧版中的排队时限为61天，于新规则生效后作废。"
+    },
+    {
+      "id": "P0075d1d8",
+      "store": "照川",
+      "title": "照川展示311政策",
+      "text": "照川展示311政策。编号 RV-31109；仅用于样品。排队时限为63天。"
+    },
+    {
+      "id": "P16fbedd8",
+      "store": "照川",
+      "title": "照川玻璃午餐盒服务索引",
+      "text": "照川玻璃午餐盒服务索引。编号 RV-86801；别名「照川05彩签」。玻璃午餐盒的本记录覆盖补发运费；查询时使用叫做照川05竹册的那张独立记录。"
+    },
+    {
+      "id": "P2de28302",
+      "store": "照川",
+      "title": "照川银页868政策",
+      "text": "照川银页868政策。编号 RV-86802；别名「照川05竹册」。现行政策：补发运费为12元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pe8e12e21",
+      "store": "照川",
+      "title": "照川玻璃午餐盒存档问答",
+      "text": "照川玻璃午餐盒存档问答。旧版中的补发运费为18元，于新规则生效后作废。"
+    },
+    {
+      "id": "P3a99e02d",
+      "store": "照川",
+      "title": "照川展示868政策",
+      "text": "照川展示868政策。编号 RV-86809；仅用于样品。补发运费为20元。"
+    },
+    {
+      "id": "P4b348b7a",
+      "store": "照川",
+      "title": "照川手摇磨豆杯服务索引",
+      "text": "照川手摇磨豆杯服务索引。编号 RV-41201；别名「照川06彩签」。手摇磨豆杯的本记录覆盖保修期限；对应政策编号 RV-41202，请查该编号的现行标准。"
+    },
+    {
+      "id": "Pb8638c24",
+      "store": "照川",
+      "title": "照川银页412政策",
+      "text": "照川银页412政策。编号 RV-41202；别名「照川06竹册」。现行政策：保修期限为44个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P529d9622",
+      "store": "照川",
+      "title": "照川手摇磨豆杯存档问答",
+      "text": "照川手摇磨豆杯存档问答。旧版中的保修期限为50个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P200857d4",
+      "store": "照川",
+      "title": "照川展示412政策",
+      "text": "照川展示412政策。编号 RV-41209；仅用于样品。保修期限为52个月。"
+    },
+    {
+      "id": "Pe197f900",
+      "store": "照川",
+      "title": "照川陶艺描金笔服务索引",
+      "text": "照川陶艺描金笔服务索引。编号 RV-69701；别名「照川07彩签」。陶艺描金笔的现行政策：排队时限为22天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P04464ea0",
+      "store": "照川",
+      "title": "照川陶艺描金笔存档问答",
+      "text": "照川陶艺描金笔存档问答。旧版中的排队时限为28天，于新规则生效后作废。"
+    },
+    {
+      "id": "P9b639217",
+      "store": "照川",
+      "title": "照川净水量杯服务索引",
+      "text": "照川净水量杯服务索引。编号 RV-96801；别名「照川08彩签」。净水量杯的本记录覆盖自提留存期；本项使用内部别名「照川08竹册」，按该记录核对。"
+    },
+    {
+      "id": "Pb26260ac",
+      "store": "照川",
+      "title": "照川银页968政策",
+      "text": "照川银页968政策。编号 RV-96802；别名「照川08竹册」。现行政策：自提留存期为18小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P0ac0cccb",
+      "store": "照川",
+      "title": "照川净水量杯存档问答",
+      "text": "照川净水量杯存档问答。旧版中的自提留存期为24小时，于新规则生效后作废。"
+    },
+    {
+      "id": "Pac8ea92f",
+      "store": "照川",
+      "title": "照川展示968政策",
+      "text": "照川展示968政策。编号 RV-96809；仅用于样品。自提留存期为26小时。"
+    },
+    {
+      "id": "P406e3cf3",
+      "store": "照川",
+      "title": "照川雨衣清洁盒服务索引",
+      "text": "照川雨衣清洁盒服务索引。编号 RV-50901；别名「照川09彩签」。雨衣清洁盒的现行政策：补配上限为14件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P0af2c394",
+      "store": "照川",
+      "title": "照川雨衣清洁盒存档问答",
+      "text": "照川雨衣清洁盒存档问答。旧版中的补配上限为20件，于新规则生效后作废。"
+    },
+    {
+      "id": "P3de6895b",
+      "store": "榕岸",
+      "title": "榕岸玻璃午餐盒服务索引",
+      "text": "榕岸玻璃午餐盒服务索引。编号 RV-98601；别名「榕岸00彩签」。玻璃午餐盒的本记录覆盖补发运费；对应政策编号 RV-98602，请查该编号的现行标准。"
+    },
+    {
+      "id": "P5a48c023",
+      "store": "榕岸",
+      "title": "榕岸银页986政策",
+      "text": "榕岸银页986政策。编号 RV-98602；别名「榕岸00竹册」。现行政策：补发运费为30元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pa1905c16",
+      "store": "榕岸",
+      "title": "榕岸玻璃午餐盒存档问答",
+      "text": "榕岸玻璃午餐盒存档问答。旧版中的补发运费为36元，于新规则生效后作废。"
+    },
+    {
+      "id": "Paa92a868",
+      "store": "榕岸",
+      "title": "榕岸展示986政策",
+      "text": "榕岸展示986政策。编号 RV-98609；仅用于样品。补发运费为38元。"
+    },
+    {
+      "id": "P91285532",
+      "store": "榕岸",
+      "title": "榕岸碳钢煎锅服务索引",
+      "text": "榕岸碳钢煎锅服务索引。编号 RV-78401；别名「榕岸01彩签」。碳钢煎锅的本记录覆盖保修期限；具体约定请参照《榕岸银页784政策》。"
+    },
+    {
+      "id": "Pf016a892",
+      "store": "榕岸",
+      "title": "榕岸银页784政策",
+      "text": "榕岸银页784政策。编号 RV-78402；别名「榕岸01竹册」。本记录覆盖保修期限；本项使用内部别名「榕岸01蓝条」，按该记录核对。"
+    },
+    {
+      "id": "Pa929c013",
+      "store": "榕岸",
+      "title": "榕岸红页784政策",
+      "text": "榕岸红页784政策。编号 RV-78403；别名「榕岸01蓝条」。现行政策：保修期限为8个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P6f9613ac",
+      "store": "榕岸",
+      "title": "榕岸碳钢煎锅存档问答",
+      "text": "榕岸碳钢煎锅存档问答。旧版中的保修期限为14个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P8ac14727",
+      "store": "榕岸",
+      "title": "榕岸展示784政策",
+      "text": "榕岸展示784政策。编号 RV-78409；仅用于样品。保修期限为16个月。"
+    },
+    {
+      "id": "P68c42f53",
+      "store": "榕岸",
+      "title": "榕岸羊毛暖杯套服务索引",
+      "text": "榕岸羊毛暖杯套服务索引。编号 RV-73301；别名「榕岸02彩签」。羊毛暖杯套的本记录覆盖排队时限；本项使用内部别名「榕岸02竹册」，按该记录核对。"
+    },
+    {
+      "id": "Peb658ca6",
+      "store": "榕岸",
+      "title": "榕岸银页733政策",
+      "text": "榕岸银页733政策。编号 RV-73302；别名「榕岸02竹册」。本记录覆盖排队时限；查询时使用叫做榕岸02蓝条的那张独立记录。"
+    },
+    {
+      "id": "P42bd0830",
+      "store": "榕岸",
+      "title": "榕岸红页733政策",
+      "text": "榕岸红页733政策。编号 RV-73303；别名「榕岸02蓝条」。现行政策：排队时限为4天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pdf3616c7",
+      "store": "榕岸",
+      "title": "榕岸羊毛暖杯套存档问答",
+      "text": "榕岸羊毛暖杯套存档问答。旧版中的排队时限为10天，于新规则生效后作废。"
+    },
+    {
+      "id": "P5694c63d",
+      "store": "榕岸",
+      "title": "榕岸展示733政策",
+      "text": "榕岸展示733政策。编号 RV-73309；仅用于样品。排队时限为12天。"
+    },
+    {
+      "id": "Pdb401856",
+      "store": "榕岸",
+      "title": "榕岸陶艺描金笔服务索引",
+      "text": "榕岸陶艺描金笔服务索引。编号 RV-30601；别名「榕岸03彩签」。陶艺描金笔的本记录覆盖自提留存期；查询时使用叫做榕岸03竹册的那张独立记录。"
+    },
+    {
+      "id": "P2112bfc0",
+      "store": "榕岸",
+      "title": "榕岸银页306政策",
+      "text": "榕岸银页306政策。编号 RV-30602；别名「榕岸03竹册」。本记录覆盖自提留存期；对应政策编号 RV-30603，请查该编号的现行标准。"
+    },
+    {
+      "id": "P6ce2b0db",
+      "store": "榕岸",
+      "title": "榕岸红页306政策",
+      "text": "榕岸红页306政策。编号 RV-30603；别名「榕岸03蓝条」。现行政策：自提留存期为25小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pa0b7789e",
+      "store": "榕岸",
+      "title": "榕岸陶艺描金笔存档问答",
+      "text": "榕岸陶艺描金笔存档问答。旧版中的自提留存期为31小时，于新规则生效后作废。"
+    },
+    {
+      "id": "Peddff276",
+      "store": "榕岸",
+      "title": "榕岸展示306政策",
+      "text": "榕岸展示306政策。编号 RV-30609；仅用于样品。自提留存期为33小时。"
+    },
+    {
+      "id": "P4d80e427",
+      "store": "榕岸",
+      "title": "榕岸桌面迷你架服务索引",
+      "text": "榕岸桌面迷你架服务索引。编号 RV-65801；别名「榕岸04彩签」。桌面迷你架的本记录覆盖补配上限；对应政策编号 RV-65802，请查该编号的现行标准。"
+    },
+    {
+      "id": "P9061d775",
+      "store": "榕岸",
+      "title": "榕岸银页658政策",
+      "text": "榕岸银页658政策。编号 RV-65802；别名「榕岸04竹册」。现行政策：补配上限为52件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pccd59936",
+      "store": "榕岸",
+      "title": "榕岸桌面迷你架存档问答",
+      "text": "榕岸桌面迷你架存档问答。旧版中的补配上限为58件，于新规则生效后作废。"
+    },
+    {
+      "id": "Pfcb48afb",
+      "store": "榕岸",
+      "title": "榕岸展示658政策",
+      "text": "榕岸展示658政策。编号 RV-65809；仅用于样品。补配上限为60件。"
+    },
+    {
+      "id": "Pab3837e1",
+      "store": "榕岸",
+      "title": "榕岸便携咖啡壶服务索引",
+      "text": "榕岸便携咖啡壶服务索引。编号 RV-64101；别名「榕岸05彩签」。便携咖啡壶的本记录覆盖补发运费；具体约定请参照《榕岸银页641政策》。"
+    },
+    {
+      "id": "P5acf7d11",
+      "store": "榕岸",
+      "title": "榕岸银页641政策",
+      "text": "榕岸银页641政策。编号 RV-64102；别名「榕岸05竹册」。现行政策：补发运费为57元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pa22ba872",
+      "store": "榕岸",
+      "title": "榕岸便携咖啡壶存档问答",
+      "text": "榕岸便携咖啡壶存档问答。旧版中的补发运费为63元，于新规则生效后作废。"
+    },
+    {
+      "id": "P931581d0",
+      "store": "榕岸",
+      "title": "榕岸展示641政策",
+      "text": "榕岸展示641政策。编号 RV-64109；仅用于样品。补发运费为65元。"
+    },
+    {
+      "id": "P216b79a2",
+      "store": "榕岸",
+      "title": "榕岸竹制蒸笼服务索引",
+      "text": "榕岸竹制蒸笼服务索引。编号 RV-63101；别名「榕岸06彩签」。竹制蒸笼的本记录覆盖保修期限；本项使用内部别名「榕岸06竹册」，按该记录核对。"
+    },
+    {
+      "id": "P12d0d62a",
+      "store": "榕岸",
+      "title": "榕岸银页631政策",
+      "text": "榕岸银页631政策。编号 RV-63102；别名「榕岸06竹册」。本记录覆盖保修期限；查询时使用叫做榕岸06蓝条的那张独立记录。"
+    },
+    {
+      "id": "P7a5404ad",
+      "store": "榕岸",
+      "title": "榕岸红页631政策",
+      "text": "榕岸红页631政策。编号 RV-63103；别名「榕岸06蓝条」。现行政策：保修期限为42个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P88d18353",
+      "store": "榕岸",
+      "title": "榕岸竹制蒸笼存档问答",
+      "text": "榕岸竹制蒸笼存档问答。旧版中的保修期限为48个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P476a748a",
+      "store": "榕岸",
+      "title": "榕岸展示631政策",
+      "text": "榕岸展示631政策。编号 RV-63109；仅用于样品。保修期限为50个月。"
+    },
+    {
+      "id": "P8415bf22",
+      "store": "榕岸",
+      "title": "榕岸雨衣清洁盒服务索引",
+      "text": "榕岸雨衣清洁盒服务索引。编号 RV-57801；别名「榕岸07彩签」。雨衣清洁盒的现行政策：排队时限为40天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P59a5ff2a",
+      "store": "榕岸",
+      "title": "榕岸雨衣清洁盒存档问答",
+      "text": "榕岸雨衣清洁盒存档问答。旧版中的排队时限为46天，于新规则生效后作废。"
+    },
+    {
+      "id": "Pe086112f",
+      "store": "榕岸",
+      "title": "榕岸藤编置物筐服务索引",
+      "text": "榕岸藤编置物筐服务索引。编号 RV-59701；别名「榕岸08彩签」。藤编置物筐的本记录覆盖自提留存期；对应政策编号 RV-59702，请查该编号的现行标准。"
+    },
+    {
+      "id": "P07aeb496",
+      "store": "榕岸",
+      "title": "榕岸银页597政策",
+      "text": "榕岸银页597政策。编号 RV-59702；别名「榕岸08竹册」。本记录覆盖自提留存期；具体约定请参照《榕岸红页597政策》。"
+    },
+    {
+      "id": "P472063ac",
+      "store": "榕岸",
+      "title": "榕岸红页597政策",
+      "text": "榕岸红页597政策。编号 RV-59703；别名「榕岸08蓝条」。现行政策：自提留存期为14小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P9eb44929",
+      "store": "榕岸",
+      "title": "榕岸藤编置物筐存档问答",
+      "text": "榕岸藤编置物筐存档问答。旧版中的自提留存期为20小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P7e4c99d3",
+      "store": "榕岸",
+      "title": "榕岸展示597政策",
+      "text": "榕岸展示597政策。编号 RV-59709；仅用于样品。自提留存期为22小时。"
+    },
+    {
+      "id": "P3bd008e3",
+      "store": "榕岸",
+      "title": "榕岸不锈钢搅拌勺服务索引",
+      "text": "榕岸不锈钢搅拌勺服务索引。编号 RV-59301；别名「榕岸09彩签」。不锈钢搅拌勺的本记录覆盖补配上限；具体约定请参照《榕岸银页593政策》。"
+    },
+    {
+      "id": "Pb4cbbd92",
+      "store": "榕岸",
+      "title": "榕岸银页593政策",
+      "text": "榕岸银页593政策。编号 RV-59302；别名「榕岸09竹册」。本记录覆盖补配上限；本项使用内部别名「榕岸09蓝条」，按该记录核对。"
+    },
+    {
+      "id": "Pa060fdd9",
+      "store": "榕岸",
+      "title": "榕岸红页593政策",
+      "text": "榕岸红页593政策。编号 RV-59303；别名「榕岸09蓝条」。现行政策：补配上限为18件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P5e250cc3",
+      "store": "榕岸",
+      "title": "榕岸不锈钢搅拌勺存档问答",
+      "text": "榕岸不锈钢搅拌勺存档问答。旧版中的补配上限为24件，于新规则生效后作废。"
+    },
+    {
+      "id": "P4985e89e",
+      "store": "榕岸",
+      "title": "榕岸展示593政策",
+      "text": "榕岸展示593政策。编号 RV-59309；仅用于样品。补配上限为26件。"
+    },
+    {
+      "id": "P84ccf25d",
+      "store": "晴汀",
+      "title": "晴汀藤编置物筐服务索引",
+      "text": "晴汀藤编置物筐服务索引。编号 RV-60801；别名「晴汀00彩签」。藤编置物筐的本记录覆盖补发运费；本项使用内部别名「晴汀00竹册」，按该记录核对。"
+    },
+    {
+      "id": "Pb5f79fe5",
+      "store": "晴汀",
+      "title": "晴汀银页608政策",
+      "text": "晴汀银页608政策。编号 RV-60802；别名「晴汀00竹册」。现行政策：补发运费为39元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pcf453cd6",
+      "store": "晴汀",
+      "title": "晴汀藤编置物筐存档问答",
+      "text": "晴汀藤编置物筐存档问答。旧版中的补发运费为45元，于新规则生效后作废。"
+    },
+    {
+      "id": "Pb674cfcc",
+      "store": "晴汀",
+      "title": "晴汀展示608政策",
+      "text": "晴汀展示608政策。编号 RV-60809；仅用于样品。补发运费为47元。"
+    },
+    {
+      "id": "Pd60476ed",
+      "store": "晴汀",
+      "title": "晴汀便携咖啡壶服务索引",
+      "text": "晴汀便携咖啡壶服务索引。编号 RV-11801；别名「晴汀01彩签」。便携咖啡壶的本记录覆盖保修期限；查询时使用叫做晴汀01竹册的那张独立记录。"
+    },
+    {
+      "id": "Pf157cd77",
+      "store": "晴汀",
+      "title": "晴汀银页118政策",
+      "text": "晴汀银页118政策。编号 RV-11802；别名「晴汀01竹册」。本记录覆盖保修期限；对应政策编号 RV-11803，请查该编号的现行标准。"
+    },
+    {
+      "id": "P6e1185c2",
+      "store": "晴汀",
+      "title": "晴汀红页118政策",
+      "text": "晴汀红页118政策。编号 RV-11803；别名「晴汀01蓝条」。现行政策：保修期限为39个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P56d1823f",
+      "store": "晴汀",
+      "title": "晴汀便携咖啡壶存档问答",
+      "text": "晴汀便携咖啡壶存档问答。旧版中的保修期限为45个月，于新规则生效后作废。"
+    },
+    {
+      "id": "Pe166664b",
+      "store": "晴汀",
+      "title": "晴汀展示118政策",
+      "text": "晴汀展示118政策。编号 RV-11809；仅用于样品。保修期限为47个月。"
+    },
+    {
+      "id": "P96b9fd6b",
+      "store": "晴汀",
+      "title": "晴汀雨衣清洁盒服务索引",
+      "text": "晴汀雨衣清洁盒服务索引。编号 RV-29401；别名「晴汀02彩签」。雨衣清洁盒的本记录覆盖排队时限；对应政策编号 RV-29402，请查该编号的现行标准。"
+    },
+    {
+      "id": "P4693670a",
+      "store": "晴汀",
+      "title": "晴汀银页294政策",
+      "text": "晴汀银页294政策。编号 RV-29402；别名「晴汀02竹册」。本记录覆盖排队时限；具体约定请参照《晴汀红页294政策》。"
+    },
+    {
+      "id": "P6a50db38",
+      "store": "晴汀",
+      "title": "晴汀红页294政策",
+      "text": "晴汀红页294政策。编号 RV-29403；别名「晴汀02蓝条」。现行政策：排队时限为38天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P8ccff98a",
+      "store": "晴汀",
+      "title": "晴汀雨衣清洁盒存档问答",
+      "text": "晴汀雨衣清洁盒存档问答。旧版中的排队时限为44天，于新规则生效后作废。"
+    },
+    {
+      "id": "Pb134aa33",
+      "store": "晴汀",
+      "title": "晴汀展示294政策",
+      "text": "晴汀展示294政策。编号 RV-29409；仅用于样品。排队时限为46天。"
+    },
+    {
+      "id": "P9f09f6ff",
+      "store": "晴汀",
+      "title": "晴汀羊毛暖杯套服务索引",
+      "text": "晴汀羊毛暖杯套服务索引。编号 RV-64401；别名「晴汀03彩签」。羊毛暖杯套的现行政策：自提留存期为16小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P3580393c",
+      "store": "晴汀",
+      "title": "晴汀羊毛暖杯套存档问答",
+      "text": "晴汀羊毛暖杯套存档问答。旧版中的自提留存期为22小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P0c4f6001",
+      "store": "晴汀",
+      "title": "晴汀葡萄木盘服务索引",
+      "text": "晴汀葡萄木盘服务索引。编号 RV-95201；别名「晴汀04彩签」。葡萄木盘的本记录覆盖补配上限；本项使用内部别名「晴汀04竹册」，按该记录核对。"
+    },
+    {
+      "id": "Pbfd36a46",
+      "store": "晴汀",
+      "title": "晴汀银页952政策",
+      "text": "晴汀银页952政策。编号 RV-95202；别名「晴汀04竹册」。本记录覆盖补配上限；查询时使用叫做晴汀04蓝条的那张独立记录。"
+    },
+    {
+      "id": "P456daf93",
+      "store": "晴汀",
+      "title": "晴汀红页952政策",
+      "text": "晴汀红页952政策。编号 RV-95203；别名「晴汀04蓝条」。补配上限仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "P28d0537d",
+      "store": "晴汀",
+      "title": "晴汀葡萄木盘存档问答",
+      "text": "晴汀葡萄木盘存档问答。旧版中的补配上限为18件，于新规则生效后作废。"
+    },
+    {
+      "id": "P12126806",
+      "store": "晴汀",
+      "title": "晴汀展示952政策",
+      "text": "晴汀展示952政策。编号 RV-95209；仅用于样品。补配上限为20件。"
+    },
+    {
+      "id": "P97ef6979",
+      "store": "晴汀",
+      "title": "晴汀竹制蒸笼服务索引",
+      "text": "晴汀竹制蒸笼服务索引。编号 RV-81801；别名「晴汀05彩签」。竹制蒸笼的本记录覆盖补发运费；查询时使用叫做晴汀05竹册的那张独立记录。"
+    },
+    {
+      "id": "Pccc5d2c3",
+      "store": "晴汀",
+      "title": "晴汀银页818政策",
+      "text": "晴汀银页818政策。编号 RV-81802；别名「晴汀05竹册」。本记录覆盖补发运费；对应政策编号 RV-81803，请查该编号的现行标准。"
+    },
+    {
+      "id": "Pf60f65d9",
+      "store": "晴汀",
+      "title": "晴汀红页818政策",
+      "text": "晴汀红页818政策。编号 RV-81803；别名「晴汀05蓝条」。现行政策：补发运费为7元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pd7a40bbb",
+      "store": "晴汀",
+      "title": "晴汀竹制蒸笼存档问答",
+      "text": "晴汀竹制蒸笼存档问答。旧版中的补发运费为13元，于新规则生效后作废。"
+    },
+    {
+      "id": "P90645cf7",
+      "store": "晴汀",
+      "title": "晴汀展示818政策",
+      "text": "晴汀展示818政策。编号 RV-81809；仅用于样品。补发运费为15元。"
+    },
+    {
+      "id": "P707b60cd",
+      "store": "晴汀",
+      "title": "晴汀不锈钢搅拌勺服务索引",
+      "text": "晴汀不锈钢搅拌勺服务索引。编号 RV-76401；别名「晴汀06彩签」。不锈钢搅拌勺的本记录覆盖保修期限；对应政策编号 RV-76402，请查该编号的现行标准。"
+    },
+    {
+      "id": "P485d8ce1",
+      "store": "晴汀",
+      "title": "晴汀银页764政策",
+      "text": "晴汀银页764政策。编号 RV-76402；别名「晴汀06竹册」。现行政策：保修期限为20个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P09ff0a33",
+      "store": "晴汀",
+      "title": "晴汀不锈钢搅拌勺存档问答",
+      "text": "晴汀不锈钢搅拌勺存档问答。旧版中的保修期限为26个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P5ed50ff5",
+      "store": "晴汀",
+      "title": "晴汀展示764政策",
+      "text": "晴汀展示764政策。编号 RV-76409；仅用于样品。保修期限为28个月。"
+    },
+    {
+      "id": "Pcb2c4f53",
+      "store": "晴汀",
+      "title": "晴汀碳钢煎锅服务索引",
+      "text": "晴汀碳钢煎锅服务索引。编号 RV-25301；别名「晴汀07彩签」。碳钢煎锅的本记录覆盖排队时限；具体约定请参照《晴汀银页253政策》。"
+    },
+    {
+      "id": "P06820e4f",
+      "store": "晴汀",
+      "title": "晴汀银页253政策",
+      "text": "晴汀银页253政策。编号 RV-25302；别名「晴汀07竹册」。本记录覆盖排队时限；本项使用内部别名「晴汀07蓝条」，按该记录核对。"
+    },
+    {
+      "id": "Pdf4c5f88",
+      "store": "晴汀",
+      "title": "晴汀红页253政策",
+      "text": "晴汀红页253政策。编号 RV-25303；别名「晴汀07蓝条」。现行政策：排队时限为36天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P1ef49fbe",
+      "store": "晴汀",
+      "title": "晴汀碳钢煎锅存档问答",
+      "text": "晴汀碳钢煎锅存档问答。旧版中的排队时限为42天，于新规则生效后作废。"
+    },
+    {
+      "id": "P6d397f17",
+      "store": "晴汀",
+      "title": "晴汀展示253政策",
+      "text": "晴汀展示253政策。编号 RV-25309；仅用于样品。排队时限为44天。"
+    },
+    {
+      "id": "P3dd7c80e",
+      "store": "晴汀",
+      "title": "晴汀陶艺描金笔服务索引",
+      "text": "晴汀陶艺描金笔服务索引。编号 RV-13301；别名「晴汀08彩签」。陶艺描金笔的本记录覆盖自提留存期；本项使用内部别名「晴汀08竹册」，按该记录核对。"
+    },
+    {
+      "id": "Pdddc6a48",
+      "store": "晴汀",
+      "title": "晴汀银页133政策",
+      "text": "晴汀银页133政策。编号 RV-13302；别名「晴汀08竹册」。本记录覆盖自提留存期；查询时使用叫做晴汀08蓝条的那张独立记录。"
+    },
+    {
+      "id": "Pe9b54532",
+      "store": "晴汀",
+      "title": "晴汀红页133政策",
+      "text": "晴汀红页133政策。编号 RV-13303；别名「晴汀08蓝条」。现行政策：自提留存期为28小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P40c9c8eb",
+      "store": "晴汀",
+      "title": "晴汀陶艺描金笔存档问答",
+      "text": "晴汀陶艺描金笔存档问答。旧版中的自提留存期为34小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P371d7ac1",
+      "store": "晴汀",
+      "title": "晴汀展示133政策",
+      "text": "晴汀展示133政策。编号 RV-13309；仅用于样品。自提留存期为36小时。"
+    },
+    {
+      "id": "Pd5d85efd",
+      "store": "晴汀",
+      "title": "晴汀松石茶筅服务索引",
+      "text": "晴汀松石茶筅服务索引。编号 RV-67901；别名「晴汀09彩签」。松石茶筅的现行政策：补配上限为47件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pd1763b7e",
+      "store": "晴汀",
+      "title": "晴汀松石茶筅存档问答",
+      "text": "晴汀松石茶筅存档问答。旧版中的补配上限为53件，于新规则生效后作废。"
+    },
+    {
+      "id": "P0f674a4c",
+      "store": "青霁",
+      "title": "青霁玻璃午餐盒服务索引",
+      "text": "青霁玻璃午餐盒服务索引。编号 RV-77101；别名「青霁00彩签」。玻璃午餐盒的现行政策：补发运费为59元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P87ab00f7",
+      "store": "青霁",
+      "title": "青霁玻璃午餐盒存档问答",
+      "text": "青霁玻璃午餐盒存档问答。旧版中的补发运费为65元，于新规则生效后作废。"
+    },
+    {
+      "id": "P570ef872",
+      "store": "青霁",
+      "title": "青霁桌面迷你架服务索引",
+      "text": "青霁桌面迷你架服务索引。编号 RV-52001；别名「青霁01彩签」。桌面迷你架的本记录覆盖保修期限；具体约定请参照《青霁银页520政策》。"
+    },
+    {
+      "id": "Pf4b30a25",
+      "store": "青霁",
+      "title": "青霁银页520政策",
+      "text": "青霁银页520政策。编号 RV-52002；别名「青霁01竹册」。本记录覆盖保修期限；本项使用内部别名「青霁01蓝条」，按该记录核对。"
+    },
+    {
+      "id": "Pff6f49ea",
+      "store": "青霁",
+      "title": "青霁红页520政策",
+      "text": "青霁红页520政策。编号 RV-52003；别名「青霁01蓝条」。现行政策：保修期限为19个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P50afd483",
+      "store": "青霁",
+      "title": "青霁桌面迷你架存档问答",
+      "text": "青霁桌面迷你架存档问答。旧版中的保修期限为25个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P0ec6da73",
+      "store": "青霁",
+      "title": "青霁展示520政策",
+      "text": "青霁展示520政策。编号 RV-52009；仅用于样品。保修期限为27个月。"
+    },
+    {
+      "id": "P5e67dbbd",
+      "store": "青霁",
+      "title": "青霁手冲保温瓶服务索引",
+      "text": "青霁手冲保温瓶服务索引。编号 RV-19801；别名「青霁02彩签」。手冲保温瓶的本记录覆盖排队时限；本项使用内部别名「青霁02竹册」，按该记录核对。"
+    },
+    {
+      "id": "P8d9d19a6",
+      "store": "青霁",
+      "title": "青霁银页198政策",
+      "text": "青霁银页198政策。编号 RV-19802；别名「青霁02竹册」。本记录覆盖排队时限；查询时使用叫做青霁02蓝条的那张独立记录。"
+    },
+    {
+      "id": "Pdaadb215",
+      "store": "青霁",
+      "title": "青霁红页198政策",
+      "text": "青霁红页198政策。编号 RV-19803；别名「青霁02蓝条」。现行政策：排队时限为43天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pa68855c8",
+      "store": "青霁",
+      "title": "青霁手冲保温瓶存档问答",
+      "text": "青霁手冲保温瓶存档问答。旧版中的排队时限为49天，于新规则生效后作废。"
+    },
+    {
+      "id": "P13a9d4f9",
+      "store": "青霁",
+      "title": "青霁展示198政策",
+      "text": "青霁展示198政策。编号 RV-19809；仅用于样品。排队时限为51天。"
+    },
+    {
+      "id": "Pd83e15cf",
+      "store": "青霁",
+      "title": "青霁雨衣清洁盒服务索引",
+      "text": "青霁雨衣清洁盒服务索引。编号 RV-17801；别名「青霁04彩签」。雨衣清洁盒的现行政策：补配上限为30件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P641c0106",
+      "store": "青霁",
+      "title": "青霁雨衣清洁盒存档问答",
+      "text": "青霁雨衣清洁盒存档问答。旧版中的补配上限为36件，于新规则生效后作废。"
+    },
+    {
+      "id": "Pe3aaab96",
+      "store": "青霁",
+      "title": "青霁不锈钢搅拌勺服务索引",
+      "text": "青霁不锈钢搅拌勺服务索引。编号 RV-40201；别名「青霁05彩签」。不锈钢搅拌勺的现行政策：补发运费为31元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P08005108",
+      "store": "青霁",
+      "title": "青霁不锈钢搅拌勺存档问答",
+      "text": "青霁不锈钢搅拌勺存档问答。旧版中的补发运费为37元，于新规则生效后作废。"
+    },
+    {
+      "id": "P62f53e4a",
+      "store": "青霁",
+      "title": "青霁藤编置物筐服务索引",
+      "text": "青霁藤编置物筐服务索引。编号 RV-9301；别名「青霁06彩签」。藤编置物筐的本记录覆盖保修期限；本项使用内部别名「青霁06竹册」，按该记录核对。"
+    },
+    {
+      "id": "Pff2fec27",
+      "store": "青霁",
+      "title": "青霁银页93政策",
+      "text": "青霁银页93政策。编号 RV-9302；别名「青霁06竹册」。本记录覆盖保修期限；查询时使用叫做青霁06蓝条的那张独立记录。"
+    },
+    {
+      "id": "P9bb96464",
+      "store": "青霁",
+      "title": "青霁红页93政策",
+      "text": "青霁红页93政策。编号 RV-9303；别名「青霁06蓝条」。现行政策：保修期限为36个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P3c7935a9",
+      "store": "青霁",
+      "title": "青霁藤编置物筐存档问答",
+      "text": "青霁藤编置物筐存档问答。旧版中的保修期限为42个月，于新规则生效后作废。"
+    },
+    {
+      "id": "Pc178fa85",
+      "store": "青霁",
+      "title": "青霁展示93政策",
+      "text": "青霁展示93政策。编号 RV-9309；仅用于样品。保修期限为44个月。"
+    },
+    {
+      "id": "Pc43b7d2b",
+      "store": "青霁",
+      "title": "青霁葡萄木盘服务索引",
+      "text": "青霁葡萄木盘服务索引。编号 RV-36501；别名「青霁08彩签」。葡萄木盘的本记录覆盖自提留存期；对应政策编号 RV-36502，请查该编号的现行标准。"
+    },
+    {
+      "id": "P1478c7c9",
+      "store": "青霁",
+      "title": "青霁银页365政策",
+      "text": "青霁银页365政策。编号 RV-36502；别名「青霁08竹册」。本记录覆盖自提留存期；具体约定请参照《青霁红页365政策》。"
+    },
+    {
+      "id": "Pcc1a1b6a",
+      "store": "青霁",
+      "title": "青霁红页365政策",
+      "text": "青霁红页365政策。编号 RV-36503；别名「青霁08蓝条」。现行政策：自提留存期为44小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P97a053af",
+      "store": "青霁",
+      "title": "青霁葡萄木盘存档问答",
+      "text": "青霁葡萄木盘存档问答。旧版中的自提留存期为50小时，于新规则生效后作废。"
+    },
+    {
+      "id": "Pa1c6ed41",
+      "store": "青霁",
+      "title": "青霁展示365政策",
+      "text": "青霁展示365政策。编号 RV-36509；仅用于样品。自提留存期为52小时。"
+    },
+    {
+      "id": "P78efb728",
+      "store": "青霁",
+      "title": "青霁便携咖啡壶服务索引",
+      "text": "青霁便携咖啡壶服务索引。编号 RV-29101；别名「青霁09彩签」。便携咖啡壶的本记录覆盖补配上限；具体约定请参照《青霁银页291政策》。"
+    },
+    {
+      "id": "Pa2cb3e0d",
+      "store": "青霁",
+      "title": "青霁银页291政策",
+      "text": "青霁银页291政策。编号 RV-29102；别名「青霁09竹册」。现行政策：补配上限为54件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pddcb87a3",
+      "store": "青霁",
+      "title": "青霁便携咖啡壶存档问答",
+      "text": "青霁便携咖啡壶存档问答。旧版中的补配上限为60件，于新规则生效后作废。"
+    },
+    {
+      "id": "Pf5f4493b",
+      "store": "青霁",
+      "title": "青霁展示291政策",
+      "text": "青霁展示291政策。编号 RV-29109；仅用于样品。补配上限为62件。"
+    },
+    {
+      "id": "P25f3794e",
+      "store": "霜檀",
+      "title": "霜檀净水量杯服务索引",
+      "text": "霜檀净水量杯服务索引。编号 RV-35701；别名「霜檀00彩签」。净水量杯的本记录覆盖补发运费；本项使用内部别名「霜檀00竹册」，按该记录核对。"
+    },
+    {
+      "id": "P8fddb3b5",
+      "store": "霜檀",
+      "title": "霜檀银页357政策",
+      "text": "霜檀银页357政策。编号 RV-35702；别名「霜檀00竹册」。本记录覆盖补发运费；查询时使用叫做霜檀00蓝条的那张独立记录。"
+    },
+    {
+      "id": "Pfe0b820e",
+      "store": "霜檀",
+      "title": "霜檀红页357政策",
+      "text": "霜檀红页357政策。编号 RV-35703；别名「霜檀00蓝条」。现行政策：补发运费为30元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pdd27e1b7",
+      "store": "霜檀",
+      "title": "霜檀净水量杯存档问答",
+      "text": "霜檀净水量杯存档问答。旧版中的补发运费为36元，于新规则生效后作废。"
+    },
+    {
+      "id": "Pba12df4d",
+      "store": "霜檀",
+      "title": "霜檀展示357政策",
+      "text": "霜檀展示357政策。编号 RV-35709；仅用于样品。补发运费为38元。"
+    },
+    {
+      "id": "Pcf8c44f0",
+      "store": "霜檀",
+      "title": "霜檀松石茶筅服务索引",
+      "text": "霜檀松石茶筅服务索引。编号 RV-71901；别名「霜檀02彩签」。松石茶筅的本记录覆盖排队时限；对应政策编号 RV-71902，请查该编号的现行标准。"
+    },
+    {
+      "id": "P6b8ea40c",
+      "store": "霜檀",
+      "title": "霜檀银页719政策",
+      "text": "霜檀银页719政策。编号 RV-71902；别名「霜檀02竹册」。本记录覆盖排队时限；具体约定请参照《霜檀红页719政策》。"
+    },
+    {
+      "id": "Pbff2ff86",
+      "store": "霜檀",
+      "title": "霜檀红页719政策",
+      "text": "霜檀红页719政策。编号 RV-71903；别名「霜檀02蓝条」。排队时限仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "Pdf7af594",
+      "store": "霜檀",
+      "title": "霜檀松石茶筅存档问答",
+      "text": "霜檀松石茶筅存档问答。旧版中的排队时限为56天，于新规则生效后作废。"
+    },
+    {
+      "id": "Pf21b8d65",
+      "store": "霜檀",
+      "title": "霜檀展示719政策",
+      "text": "霜檀展示719政策。编号 RV-71909；仅用于样品。排队时限为58天。"
+    },
+    {
+      "id": "Pdb9cc086",
+      "store": "霜檀",
+      "title": "霜檀桌面迷你架服务索引",
+      "text": "霜檀桌面迷你架服务索引。编号 RV-44101；别名「霜檀03彩签」。桌面迷你架的本记录覆盖自提留存期；具体约定请参照《霜檀银页441政策》。"
+    },
+    {
+      "id": "P40d8d63f",
+      "store": "霜檀",
+      "title": "霜檀银页441政策",
+      "text": "霜檀银页441政策。编号 RV-44102；别名「霜檀03竹册」。现行政策：自提留存期为47小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P8220f112",
+      "store": "霜檀",
+      "title": "霜檀桌面迷你架存档问答",
+      "text": "霜檀桌面迷你架存档问答。旧版中的自提留存期为53小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P800758d9",
+      "store": "霜檀",
+      "title": "霜檀展示441政策",
+      "text": "霜檀展示441政策。编号 RV-44109；仅用于样品。自提留存期为55小时。"
+    },
+    {
+      "id": "P36cb2949",
+      "store": "霜檀",
+      "title": "霜檀竹制蒸笼服务索引",
+      "text": "霜檀竹制蒸笼服务索引。编号 RV-32601；别名「霜檀04彩签」。竹制蒸笼的本记录覆盖补配上限；本项使用内部别名「霜檀04竹册」，按该记录核对。"
+    },
+    {
+      "id": "P2e8408f9",
+      "store": "霜檀",
+      "title": "霜檀银页326政策",
+      "text": "霜檀银页326政策。编号 RV-32602；别名「霜檀04竹册」。现行政策：补配上限为21件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Paa6107e2",
+      "store": "霜檀",
+      "title": "霜檀竹制蒸笼存档问答",
+      "text": "霜檀竹制蒸笼存档问答。旧版中的补配上限为27件，于新规则生效后作废。"
+    },
+    {
+      "id": "P7617e9f7",
+      "store": "霜檀",
+      "title": "霜檀展示326政策",
+      "text": "霜檀展示326政策。编号 RV-32609；仅用于样品。补配上限为29件。"
+    },
+    {
+      "id": "P12495bd0",
+      "store": "霜檀",
+      "title": "霜檀碳钢煎锅服务索引",
+      "text": "霜檀碳钢煎锅服务索引。编号 RV-18101；别名「霜檀05彩签」。碳钢煎锅的现行政策：补发运费为38元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P59e6a8ac",
+      "store": "霜檀",
+      "title": "霜檀碳钢煎锅存档问答",
+      "text": "霜檀碳钢煎锅存档问答。旧版中的补发运费为44元，于新规则生效后作废。"
+    },
+    {
+      "id": "P6739e470",
+      "store": "霜檀",
+      "title": "霜檀羊毛暖杯套服务索引",
+      "text": "霜檀羊毛暖杯套服务索引。编号 RV-30901；别名「霜檀06彩签」。羊毛暖杯套的现行政策：保修期限为27个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P6a7c77a4",
+      "store": "霜檀",
+      "title": "霜檀羊毛暖杯套存档问答",
+      "text": "霜檀羊毛暖杯套存档问答。旧版中的保修期限为33个月，于新规则生效后作废。"
+    },
+    {
+      "id": "Pfc11715d",
+      "store": "霜檀",
+      "title": "霜檀陶艺描金笔服务索引",
+      "text": "霜檀陶艺描金笔服务索引。编号 RV-53901；别名「霜檀07彩签」。陶艺描金笔的现行政策：排队时限为12天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P2be8a348",
+      "store": "霜檀",
+      "title": "霜檀陶艺描金笔存档问答",
+      "text": "霜檀陶艺描金笔存档问答。旧版中的排队时限为18天，于新规则生效后作废。"
+    },
+    {
+      "id": "Pc7856d51",
+      "store": "霜檀",
+      "title": "霜檀竹席收纳袋服务索引",
+      "text": "霜檀竹席收纳袋服务索引。编号 RV-44101；别名「霜檀08彩签」。竹席收纳袋的本记录覆盖自提留存期；本项使用内部别名「霜檀08竹册」，按该记录核对。"
+    },
+    {
+      "id": "Pc1c4c000",
+      "store": "霜檀",
+      "title": "霜檀银页441政策",
+      "text": "霜檀银页441政策。编号 RV-44102；别名「霜檀08竹册」。现行政策：自提留存期为14小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P51eea0cf",
+      "store": "霜檀",
+      "title": "霜檀竹席收纳袋存档问答",
+      "text": "霜檀竹席收纳袋存档问答。旧版中的自提留存期为20小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P1c04eb9a",
+      "store": "霜檀",
+      "title": "霜檀展示441政策",
+      "text": "霜檀展示441政策。编号 RV-44109；仅用于样品。自提留存期为22小时。"
+    },
+    {
+      "id": "Pae1c481b",
+      "store": "霜檀",
+      "title": "霜檀手摇磨豆杯服务索引",
+      "text": "霜檀手摇磨豆杯服务索引。编号 RV-92801；别名「霜檀09彩签」。手摇磨豆杯的现行政策：补配上限为12件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P684fd757",
+      "store": "霜檀",
+      "title": "霜檀手摇磨豆杯存档问答",
+      "text": "霜檀手摇磨豆杯存档问答。旧版中的补配上限为18件，于新规则生效后作废。"
+    },
+    {
+      "id": "P245c5301",
+      "store": "锦笺",
+      "title": "锦笺松石茶筅服务索引",
+      "text": "锦笺松石茶筅服务索引。编号 RV-18701；别名「锦笺00彩签」。松石茶筅的本记录覆盖补发运费；对应政策编号 RV-18702，请查该编号的现行标准。"
+    },
+    {
+      "id": "P91149de2",
+      "store": "锦笺",
+      "title": "锦笺银页187政策",
+      "text": "锦笺银页187政策。编号 RV-18702；别名「锦笺00竹册」。本记录覆盖补发运费；具体约定请参照《锦笺红页187政策》。"
+    },
+    {
+      "id": "P685cd439",
+      "store": "锦笺",
+      "title": "锦笺红页187政策",
+      "text": "锦笺红页187政策。编号 RV-18703；别名「锦笺00蓝条」。现行政策：补发运费为31元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P671034e3",
+      "store": "锦笺",
+      "title": "锦笺松石茶筅存档问答",
+      "text": "锦笺松石茶筅存档问答。旧版中的补发运费为37元，于新规则生效后作废。"
+    },
+    {
+      "id": "Pe1d98c9d",
+      "store": "锦笺",
+      "title": "锦笺展示187政策",
+      "text": "锦笺展示187政策。编号 RV-18709；仅用于样品。补发运费为39元。"
+    },
+    {
+      "id": "P4bc4431e",
+      "store": "锦笺",
+      "title": "锦笺碳钢煎锅服务索引",
+      "text": "锦笺碳钢煎锅服务索引。编号 RV-53201；别名「锦笺01彩签」。碳钢煎锅的本记录覆盖保修期限；具体约定请参照《锦笺银页532政策》。"
+    },
+    {
+      "id": "Pdcc58c1a",
+      "store": "锦笺",
+      "title": "锦笺银页532政策",
+      "text": "锦笺银页532政策。编号 RV-53202；别名「锦笺01竹册」。本记录覆盖保修期限；本项使用内部别名「锦笺01蓝条」，按该记录核对。"
+    },
+    {
+      "id": "P3f71c7fb",
+      "store": "锦笺",
+      "title": "锦笺红页532政策",
+      "text": "锦笺红页532政策。编号 RV-53203；别名「锦笺01蓝条」。现行政策：保修期限为24个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P73c84061",
+      "store": "锦笺",
+      "title": "锦笺碳钢煎锅存档问答",
+      "text": "锦笺碳钢煎锅存档问答。旧版中的保修期限为30个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P351ada23",
+      "store": "锦笺",
+      "title": "锦笺展示532政策",
+      "text": "锦笺展示532政策。编号 RV-53209；仅用于样品。保修期限为32个月。"
+    },
+    {
+      "id": "Pf6a2a4cb",
+      "store": "锦笺",
+      "title": "锦笺竹席收纳袋服务索引",
+      "text": "锦笺竹席收纳袋服务索引。编号 RV-44601；别名「锦笺02彩签」。竹席收纳袋的本记录覆盖排队时限；本项使用内部别名「锦笺02竹册」，按该记录核对。"
+    },
+    {
+      "id": "Pfcbfe6f2",
+      "store": "锦笺",
+      "title": "锦笺银页446政策",
+      "text": "锦笺银页446政策。编号 RV-44602；别名「锦笺02竹册」。现行政策：排队时限为8天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P4ddc8f6c",
+      "store": "锦笺",
+      "title": "锦笺竹席收纳袋存档问答",
+      "text": "锦笺竹席收纳袋存档问答。旧版中的排队时限为14天，于新规则生效后作废。"
+    },
+    {
+      "id": "P13e1c21a",
+      "store": "锦笺",
+      "title": "锦笺展示446政策",
+      "text": "锦笺展示446政策。编号 RV-44609；仅用于样品。排队时限为16天。"
+    },
+    {
+      "id": "Pb1aef839",
+      "store": "锦笺",
+      "title": "锦笺羊毛暖杯套服务索引",
+      "text": "锦笺羊毛暖杯套服务索引。编号 RV-99001；别名「锦笺03彩签」。羊毛暖杯套的现行政策：自提留存期为45小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Peb492c3b",
+      "store": "锦笺",
+      "title": "锦笺羊毛暖杯套存档问答",
+      "text": "锦笺羊毛暖杯套存档问答。旧版中的自提留存期为51小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P8fad7a05",
+      "store": "锦笺",
+      "title": "锦笺雨衣清洁盒服务索引",
+      "text": "锦笺雨衣清洁盒服务索引。编号 RV-26801；别名「锦笺04彩签」。雨衣清洁盒的本记录覆盖补配上限；对应政策编号 RV-26802，请查该编号的现行标准。"
+    },
+    {
+      "id": "Pe65a728d",
+      "store": "锦笺",
+      "title": "锦笺银页268政策",
+      "text": "锦笺银页268政策。编号 RV-26802；别名「锦笺04竹册」。本记录覆盖补配上限；具体约定请参照《锦笺红页268政策》。"
+    },
+    {
+      "id": "P2c29a75d",
+      "store": "锦笺",
+      "title": "锦笺红页268政策",
+      "text": "锦笺红页268政策。编号 RV-26803；别名「锦笺04蓝条」。补配上限仍未发布，不能从其它品项的金额、期限或件数推断。"
+    },
+    {
+      "id": "P87e08712",
+      "store": "锦笺",
+      "title": "锦笺雨衣清洁盒存档问答",
+      "text": "锦笺雨衣清洁盒存档问答。旧版中的补配上限为52件，于新规则生效后作废。"
+    },
+    {
+      "id": "P789515df",
+      "store": "锦笺",
+      "title": "锦笺展示268政策",
+      "text": "锦笺展示268政策。编号 RV-26809；仅用于样品。补配上限为54件。"
+    },
+    {
+      "id": "P7410e878",
+      "store": "锦笺",
+      "title": "锦笺净水量杯服务索引",
+      "text": "锦笺净水量杯服务索引。编号 RV-77101；别名「锦笺05彩签」。净水量杯的现行政策：补发运费为9元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P031b982a",
+      "store": "锦笺",
+      "title": "锦笺净水量杯存档问答",
+      "text": "锦笺净水量杯存档问答。旧版中的补发运费为15元，于新规则生效后作废。"
+    },
+    {
+      "id": "P8760270b",
+      "store": "锦笺",
+      "title": "锦笺桌面迷你架服务索引",
+      "text": "锦笺桌面迷你架服务索引。编号 RV-89401；别名「锦笺06彩签」。桌面迷你架的本记录覆盖保修期限；本项使用内部别名「锦笺06竹册」，按该记录核对。"
+    },
+    {
+      "id": "P22a7ed21",
+      "store": "锦笺",
+      "title": "锦笺银页894政策",
+      "text": "锦笺银页894政策。编号 RV-89402；别名「锦笺06竹册」。现行政策：保修期限为21个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P8d17ebf2",
+      "store": "锦笺",
+      "title": "锦笺桌面迷你架存档问答",
+      "text": "锦笺桌面迷你架存档问答。旧版中的保修期限为27个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P1bdcdeef",
+      "store": "锦笺",
+      "title": "锦笺展示894政策",
+      "text": "锦笺展示894政策。编号 RV-89409；仅用于样品。保修期限为29个月。"
+    },
+    {
+      "id": "Pe00159f9",
+      "store": "锦笺",
+      "title": "锦笺藤编置物筐服务索引",
+      "text": "锦笺藤编置物筐服务索引。编号 RV-63901；别名「锦笺07彩签」。藤编置物筐的现行政策：排队时限为49天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P955e4d19",
+      "store": "锦笺",
+      "title": "锦笺藤编置物筐存档问答",
+      "text": "锦笺藤编置物筐存档问答。旧版中的排队时限为55天，于新规则生效后作废。"
+    },
+    {
+      "id": "P9fb621c8",
+      "store": "锦笺",
+      "title": "锦笺手摇磨豆杯服务索引",
+      "text": "锦笺手摇磨豆杯服务索引。编号 RV-46201；别名「锦笺08彩签」。手摇磨豆杯的现行政策：自提留存期为8小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P6950d71b",
+      "store": "锦笺",
+      "title": "锦笺手摇磨豆杯存档问答",
+      "text": "锦笺手摇磨豆杯存档问答。旧版中的自提留存期为14小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P3e84e947",
+      "store": "锦笺",
+      "title": "锦笺便携咖啡壶服务索引",
+      "text": "锦笺便携咖啡壶服务索引。编号 RV-84401；别名「锦笺09彩签」。便携咖啡壶的本记录覆盖补配上限；具体约定请参照《锦笺银页844政策》。"
+    },
+    {
+      "id": "Pb7aa5ba3",
+      "store": "锦笺",
+      "title": "锦笺银页844政策",
+      "text": "锦笺银页844政策。编号 RV-84402；别名「锦笺09竹册」。本记录覆盖补配上限；本项使用内部别名「锦笺09蓝条」，按该记录核对。"
+    },
+    {
+      "id": "P1992a587",
+      "store": "锦笺",
+      "title": "锦笺红页844政策",
+      "text": "锦笺红页844政策。编号 RV-84403；别名「锦笺09蓝条」。现行政策：补配上限为15件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pfa162fa5",
+      "store": "锦笺",
+      "title": "锦笺便携咖啡壶存档问答",
+      "text": "锦笺便携咖啡壶存档问答。旧版中的补配上限为21件，于新规则生效后作废。"
+    },
+    {
+      "id": "P14180fcd",
+      "store": "锦笺",
+      "title": "锦笺展示844政策",
+      "text": "锦笺展示844政策。编号 RV-84409；仅用于样品。补配上限为23件。"
+    },
+    {
+      "id": "P660ceeef",
+      "store": "南栗",
+      "title": "南栗桌面迷你架服务索引",
+      "text": "南栗桌面迷你架服务索引。编号 RV-48501；别名「南栗00彩签」。桌面迷你架的现行政策：补发运费为43元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P0d0c7f93",
+      "store": "南栗",
+      "title": "南栗桌面迷你架存档问答",
+      "text": "南栗桌面迷你架存档问答。旧版中的补发运费为49元，于新规则生效后作废。"
+    },
+    {
+      "id": "P5913d81d",
+      "store": "南栗",
+      "title": "南栗手摇磨豆杯服务索引",
+      "text": "南栗手摇磨豆杯服务索引。编号 RV-40001；别名「南栗01彩签」。手摇磨豆杯的现行政策：保修期限为46个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P034da64e",
+      "store": "南栗",
+      "title": "南栗手摇磨豆杯存档问答",
+      "text": "南栗手摇磨豆杯存档问答。旧版中的保修期限为52个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P64a6d345",
+      "store": "南栗",
+      "title": "南栗竹席收纳袋服务索引",
+      "text": "南栗竹席收纳袋服务索引。编号 RV-98301；别名「南栗02彩签」。竹席收纳袋的本记录覆盖排队时限；对应政策编号 RV-98302，请查该编号的现行标准。"
+    },
+    {
+      "id": "P3afacd4d",
+      "store": "南栗",
+      "title": "南栗银页983政策",
+      "text": "南栗银页983政策。编号 RV-98302；别名「南栗02竹册」。现行政策：排队时限为4天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P0218b8ab",
+      "store": "南栗",
+      "title": "南栗竹席收纳袋存档问答",
+      "text": "南栗竹席收纳袋存档问答。旧版中的排队时限为10天，于新规则生效后作废。"
+    },
+    {
+      "id": "Paac3e1c5",
+      "store": "南栗",
+      "title": "南栗展示983政策",
+      "text": "南栗展示983政策。编号 RV-98309；仅用于样品。排队时限为12天。"
+    },
+    {
+      "id": "P1c8e7847",
+      "store": "南栗",
+      "title": "南栗陶艺描金笔服务索引",
+      "text": "南栗陶艺描金笔服务索引。编号 RV-89301；别名「南栗03彩签」。陶艺描金笔的本记录覆盖自提留存期；具体约定请参照《南栗银页893政策》。"
+    },
+    {
+      "id": "Pa7c30cf3",
+      "store": "南栗",
+      "title": "南栗银页893政策",
+      "text": "南栗银页893政策。编号 RV-89302；别名「南栗03竹册」。现行政策：自提留存期为40小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P7f679a0d",
+      "store": "南栗",
+      "title": "南栗陶艺描金笔存档问答",
+      "text": "南栗陶艺描金笔存档问答。旧版中的自提留存期为46小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P32403dc8",
+      "store": "南栗",
+      "title": "南栗展示893政策",
+      "text": "南栗展示893政策。编号 RV-89309；仅用于样品。自提留存期为48小时。"
+    },
+    {
+      "id": "P057cc1a7",
+      "store": "南栗",
+      "title": "南栗净水量杯服务索引",
+      "text": "南栗净水量杯服务索引。编号 RV-85001；别名「南栗04彩签」。净水量杯的现行政策：补配上限为52件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P4b8ae9ff",
+      "store": "南栗",
+      "title": "南栗净水量杯存档问答",
+      "text": "南栗净水量杯存档问答。旧版中的补配上限为58件，于新规则生效后作废。"
+    },
+    {
+      "id": "P5b741ba7",
+      "store": "南栗",
+      "title": "南栗竹制蒸笼服务索引",
+      "text": "南栗竹制蒸笼服务索引。编号 RV-41801；别名「南栗05彩签」。竹制蒸笼的本记录覆盖补发运费；查询时使用叫做南栗05竹册的那张独立记录。"
+    },
+    {
+      "id": "P017e2d56",
+      "store": "南栗",
+      "title": "南栗银页418政策",
+      "text": "南栗银页418政策。编号 RV-41802；别名「南栗05竹册」。现行政策：补发运费为46元，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P00c67f0d",
+      "store": "南栗",
+      "title": "南栗竹制蒸笼存档问答",
+      "text": "南栗竹制蒸笼存档问答。旧版中的补发运费为52元，于新规则生效后作废。"
+    },
+    {
+      "id": "Pd0dd89e2",
+      "store": "南栗",
+      "title": "南栗展示418政策",
+      "text": "南栗展示418政策。编号 RV-41809；仅用于样品。补发运费为54元。"
+    },
+    {
+      "id": "Pedf94e37",
+      "store": "南栗",
+      "title": "南栗雨衣清洁盒服务索引",
+      "text": "南栗雨衣清洁盒服务索引。编号 RV-74901；别名「南栗06彩签」。雨衣清洁盒的现行政策：保修期限为53个月，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P7c63ca37",
+      "store": "南栗",
+      "title": "南栗雨衣清洁盒存档问答",
+      "text": "南栗雨衣清洁盒存档问答。旧版中的保修期限为59个月，于新规则生效后作废。"
+    },
+    {
+      "id": "P2578be2e",
+      "store": "南栗",
+      "title": "南栗玻璃午餐盒服务索引",
+      "text": "南栗玻璃午餐盒服务索引。编号 RV-52501；别名「南栗07彩签」。玻璃午餐盒的本记录覆盖排队时限；具体约定请参照《南栗银页525政策》。"
+    },
+    {
+      "id": "P85936da6",
+      "store": "南栗",
+      "title": "南栗银页525政策",
+      "text": "南栗银页525政策。编号 RV-52502；别名「南栗07竹册」。现行政策：排队时限为48天，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P8f8628fd",
+      "store": "南栗",
+      "title": "南栗玻璃午餐盒存档问答",
+      "text": "南栗玻璃午餐盒存档问答。旧版中的排队时限为54天，于新规则生效后作废。"
+    },
+    {
+      "id": "P286c6470",
+      "store": "南栗",
+      "title": "南栗展示525政策",
+      "text": "南栗展示525政策。编号 RV-52509；仅用于样品。排队时限为56天。"
+    },
+    {
+      "id": "Ped9b984d",
+      "store": "南栗",
+      "title": "南栗便携咖啡壶服务索引",
+      "text": "南栗便携咖啡壶服务索引。编号 RV-77801；别名「南栗08彩签」。便携咖啡壶的本记录覆盖自提留存期；本项使用内部别名「南栗08竹册」，按该记录核对。"
+    },
+    {
+      "id": "P114b94b8",
+      "store": "南栗",
+      "title": "南栗银页778政策",
+      "text": "南栗银页778政策。编号 RV-77802；别名「南栗08竹册」。本记录覆盖自提留存期；查询时使用叫做南栗08蓝条的那张独立记录。"
+    },
+    {
+      "id": "Pffc882c5",
+      "store": "南栗",
+      "title": "南栗红页778政策",
+      "text": "南栗红页778政策。编号 RV-77803；别名「南栗08蓝条」。现行政策：自提留存期为26小时，仅适用该记录对应品项。"
+    },
+    {
+      "id": "Pa1bcd3c3",
+      "store": "南栗",
+      "title": "南栗便携咖啡壶存档问答",
+      "text": "南栗便携咖啡壶存档问答。旧版中的自提留存期为32小时，于新规则生效后作废。"
+    },
+    {
+      "id": "P6033601f",
+      "store": "南栗",
+      "title": "南栗展示778政策",
+      "text": "南栗展示778政策。编号 RV-77809；仅用于样品。自提留存期为34小时。"
+    },
+    {
+      "id": "P23cdcb37",
+      "store": "南栗",
+      "title": "南栗葡萄木盘服务索引",
+      "text": "南栗葡萄木盘服务索引。编号 RV-14401；别名「南栗09彩签」。葡萄木盘的现行政策：补配上限为17件，仅适用该记录对应品项。"
+    },
+    {
+      "id": "P1300ea10",
+      "store": "南栗",
+      "title": "南栗葡萄木盘存档问答",
+      "text": "南栗葡萄木盘存档问答。旧版中的补配上限为23件，于新规则生效后作废。"
+    }
+  ]
+}

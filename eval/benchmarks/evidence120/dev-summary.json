@@ -1,0 +1,90 @@
+{
+  "cohort": "dev",
+  "input_sha256": "e5e96463bb1ecfea5eb61429ae05b9935edadfee7e2c4e2f020cc724405a3e50",
+  "experiment_sha256": "8d8b903fe413025278a6154d0e2f0f15ed7982ce9bb8dd708989feb2db9db879",
+  "n": 24,
+  "merchants": 2,
+  "answerable_n": 20,
+  "controls_n": 4,
+  "model": [
+    "deepseek-flash"
+  ],
+  "physical_receipts": 88,
+  "actual_billed_tokens": 34712,
+  "group_sizes": {
+    "missing": 2,
+    "three": 6,
+    "two": 8,
+    "outside": 2,
+    "direct": 6
+  },
+  "totals": {
+    "single": {
+      "passed": 12,
+      "answerable_passed": 8,
+      "controls_passed": 4,
+      "passed_by_group": {
+        "missing": 2,
+        "two": 2,
+        "outside": 2,
+        "direct": 6
+      },
+      "rounds": 22,
+      "calls_accounted": 22,
+      "prompt_tokens": 8690,
+      "completion_tokens": 478,
+      "total_tokens": 9168,
+      "p50_ms": 529.2750000000001
+    },
+    "fixed_three": {
+      "passed": 24,
+      "answerable_passed": 20,
+      "controls_passed": 4,
+      "passed_by_group": {
+        "missing": 2,
+        "three": 6,
+        "two": 8,
+        "outside": 2,
+        "direct": 6
+      },
+      "rounds": 66,
+      "calls_accounted": 44,
+      "prompt_tokens": 15176,
+      "completion_tokens": 1123,
+      "total_tokens": 16299,
+      "p50_ms": 1086.635
+    },
+    "adaptive": {
+      "passed": 24,
+      "answerable_passed": 20,
+      "controls_passed": 4,
+      "passed_by_group": {
+        "missing": 2,
+        "three": 6,
+        "two": 8,
+        "outside": 2,
+        "direct": 6
+      },
+      "rounds": 44,
+      "calls_accounted": 22,
+      "prompt_tokens": 8573,
+      "completion_tokens": 672,
+      "total_tokens": 9245,
+      "p50_ms": 525.505
+    }
+  },
+  "quality_gain_vs_single": 0.6,
+  "quality_gain_vs_single_ci95": [
+    0.5454545454545454,
+    0.6666666666666666
+  ],
+  "quality_difference_vs_fixed_three": 0.0,
+  "quality_difference_ci95": [
+    0.0,
+    0.0
+  ],
+  "savings_vs_fixed_three": 0.43278728756365425,
+  "quality_goal": true,
+  "cost_goal": true,
+  "stretch_cost_goal": true
+}

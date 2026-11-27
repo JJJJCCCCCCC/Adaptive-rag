@@ -1,0 +1,90 @@
+{
+  "cohort": "holdout",
+  "input_sha256": "179491c05cf9b279196c2d190912bec78a21ae19c39f16f8e8efd51ec41fb23e",
+  "experiment_sha256": "6299b8bde1cf3314ab74f5fdd4fb2dd5720cfc75fd34a76421765e8775255671",
+  "n": 120,
+  "merchants": 12,
+  "answerable_n": 100,
+  "controls_n": 20,
+  "model": [
+    "deepseek-flash"
+  ],
+  "physical_receipts": 440,
+  "actual_billed_tokens": 172795,
+  "group_sizes": {
+    "two": 40,
+    "three": 30,
+    "missing": 10,
+    "direct": 30,
+    "outside": 10
+  },
+  "totals": {
+    "single": {
+      "passed": 64,
+      "answerable_passed": 44,
+      "controls_passed": 20,
+      "passed_by_group": {
+        "two": 14,
+        "missing": 10,
+        "direct": 30,
+        "outside": 10
+      },
+      "rounds": 110,
+      "calls_accounted": 110,
+      "prompt_tokens": 43046,
+      "completion_tokens": 2413,
+      "total_tokens": 45459,
+      "p50_ms": 516.48
+    },
+    "fixed_three": {
+      "passed": 120,
+      "answerable_passed": 100,
+      "controls_passed": 20,
+      "passed_by_group": {
+        "two": 40,
+        "three": 30,
+        "missing": 10,
+        "direct": 30,
+        "outside": 10
+      },
+      "rounds": 330,
+      "calls_accounted": 220,
+      "prompt_tokens": 75745,
+      "completion_tokens": 5522,
+      "total_tokens": 81267,
+      "p50_ms": 943.325
+    },
+    "adaptive": {
+      "passed": 120,
+      "answerable_passed": 100,
+      "controls_passed": 20,
+      "passed_by_group": {
+        "two": 40,
+        "three": 30,
+        "missing": 10,
+        "direct": 30,
+        "outside": 10
+      },
+      "rounds": 220,
+      "calls_accounted": 110,
+      "prompt_tokens": 42755,
+      "completion_tokens": 3314,
+      "total_tokens": 46069,
+      "p50_ms": 531.335
+    }
+  },
+  "quality_gain_vs_single": 0.56,
+  "quality_gain_vs_single_ci95": [
+    0.4444444444444444,
+    0.6666666666666666
+  ],
+  "quality_difference_vs_fixed_three": 0.0,
+  "quality_difference_ci95": [
+    0.0,
+    0.0
+  ],
+  "savings_vs_fixed_three": 0.43311553275007075,
+  "quality_goal": true,
+  "cost_goal": true,
+  "stretch_cost_goal": true
+}

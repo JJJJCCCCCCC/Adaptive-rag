@@ -102,3 +102,5 @@ HTTP → ChatService → LangGraph → Retriever 或 Tool → Provider / DB
 - [项目结构诊断](19-project-diagnosis.md)（维护者自用：历史问题与处理结果，不对读者承诺功能）
 
 下一轮评测的样本冻结、对照组、判定门槛及留档方式见 [实验设计](26-evaluation-protocol.md)。
+
+120 题留出实验、逐题记录和复算脚本见 [Evidence120 报告](../eval/benchmarks/evidence120/README.md)。
