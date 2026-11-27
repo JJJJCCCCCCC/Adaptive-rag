@@ -57,3 +57,4 @@
 
 [逐答复核](../eval/results/evidence36-live/codex-review.csv) · [独立汇总与配对题号](../eval/results/evidence36-live/codex-review-summary.json)
 
+后续研究的预设目标和冻结要求见 [新留出集实验设计](26-evaluation-protocol.md)。

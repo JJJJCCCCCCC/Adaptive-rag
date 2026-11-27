@@ -1,4 +1,4 @@
-# Adaptive-RAG 简历更新计划
+# Adaptive-RAG 项目表述与证据口径
 
 **在线补测后的调整。** 意图分类条目可用同一组 28 条新问法的配对结果：现行离线规则路径 6/28，在线 DeepSeek 原始分类 28/28，叠加规则纠偏仍为 28/28。样本为自编的 14 类各两题，不能外推为真实流量准确率。接口请求名为 `deepseek-chat`，实际响应名为 `deepseek-flash`。建议作为评测设计与错例分析材料。[在线记录](23-deepseek-live.md)
 
@@ -16,3 +16,7 @@
 
 [实验报告与证据索引](21-experiment-results.md)
 
+
+## 当前公开口径
+
+Evidence36 的独立复核是固定单轮 18/36、自适应 24/36，通过包括 6 道拒答对照。相对固定三轮，实际检索 93 → 63 轮，Token 减少 7.6%。历史完整检索实验以 39 篇文档、65 道题为样本，P@1 从 76.9% 提升到 89.2%。[Evidence36](25-evidence-guided-study.md) · [历史检索报告](14-evaluation-report.md) · [下一轮目标](26-evaluation-protocol.md)

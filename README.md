@@ -2,7 +2,7 @@
 
 **面向中文电商客服的检索增强问答与订单工作流**
 
-Adaptive-RAG 在同一套对话服务中处理**政策咨询、订单查询和售后操作**。LangGraph 根据意图和问题复杂度选择执行路径。政策回答附带条款出处，物流追问可接续同一会话中的订单，取消订单和发起退款等写操作需要用户确认后才会执行。
+Adaptive-RAG（2026.09–2026.10）针对传统 FAQ 难以覆盖长尾问题、复杂政策需要多条证据的场景，在同一套对话服务中处理**政策咨询、订单查询和售后操作**。LangGraph 根据意图和问题复杂度选择执行路径。政策回答附带条款出处，物流追问可接续同一会话中的订单，取消订单和发起退款等写操作需要用户确认后才会执行。
 
 [![CI](https://github.com/JJJJCCCCCCC/Adaptive-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/JJJJCCCCCCC/Adaptive-rag/actions/workflows/ci.yml) [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB)](pyproject.toml) [![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -115,7 +115,7 @@ flowchart TD
 | `agent` | 「查一下 ORD10001 的物流」 | 按意图和技能规划选用工具，执行参数、资源归属与风险检查。 |
 | `refuse` | 超出客服业务范围的请求 | 由护栏或路由拒答，也可引导用户补充信息或转人工。 |
 
-示例用于说明各条路径的用途，实际决策会随请求和模型配置变化。在线模式下，适用的回答会经过忠实度检查。核验失败时可改写并复核，或回退到证据摘录和拒答。流式接口先发送节点进度，再分段发送最终答案。 [工作流源码](app/agents/graph.py) · [忠实度节点](app/agents/nodes/faithfulness.py) · [SSE 实录](eval/results/nov26/transports.json)
+示例用于说明各条路径的用途，实际决策会随请求和模型配置变化。在线模式下，适用的回答会经过忠实度检查。核验失败时可改写并复核，或回退到证据摘录和拒答。流式接口先发送节点进度，再分段发送最终答案。React 按会话和消息 ID 更新回答，切换会话时取消在途请求。增量解码和帧缓冲处理 UTF-8 字符跨包、事件分隔符跨包及缺少结束符的末帧，由 Vitest 覆盖。 [前端会话处理](frontend/src/hooks/useChat.ts) · [SSE 测试](frontend/src/lib/sse.test.ts) [工作流源码](app/agents/graph.py) · [忠实度节点](app/agents/nodes/faithfulness.py) · [SSE 实录](eval/results/nov26/transports.json)
 
 ### 知识检索与证据补查
 
@@ -125,7 +125,7 @@ flowchart TD
 
 ### 订单写入与用户确认
 
-首轮写请求可返回带工具名、参数和操作摘要的 `pending_action`。再次请求时，服务按用户、会话和 15 分钟有效期核对确认 ID，执行器才可调用提案中的写工具。同一确认请求重试时，执行器按幂等键和参数指纹复用已完成的结果。取消订单和创建退款申请使用数据库条件更新校验状态，并在同一事务写入业务记录或审计信息。 [对话服务](app/services/chat_service.py) · [工具执行](app/agents/nodes/executor.py) · [订单仓储](app/repositories/order_repository.py)
+系统统一接入 **15 个业务工具**。取消订单、申请退款和申请退货需要二次确认。首轮写请求可返回带工具名、参数和操作摘要的 `pending_action`。再次请求时，服务按用户、会话和 15 分钟有效期核对确认 ID，执行器才可调用提案中的写工具。同一确认请求重试时，执行器按幂等键和参数指纹复用已完成的结果。取消订单和创建退款申请使用数据库条件更新校验状态，并在同一事务写入业务记录或审计信息。 [对话服务](app/services/chat_service.py) · [工具执行](app/agents/nodes/executor.py) · [订单仓储](app/repositories/order_repository.py)
 
 ```mermaid
 sequenceDiagram
@@ -157,10 +157,13 @@ sequenceDiagram
 
 相对固定单轮，按证据补检多通过 **6 题**，新增失败 **0 题**，双侧精确配对检验 `p = 0.03125`。相对固定三轮，Token 减少 **7.6%**，低于预设的 **20%** 门槛。三组在四道需要串联三份文档的题目上均未答全。这些结果描述该合成题集与模型配置的表现。 [评测设计](docs/25-evidence-guided-study.md) · [逐题复核](eval/results/evidence36-live/codex-review.csv) · [汇总及配对结果](eval/results/evidence36-live/codex-review-summary.json)
 
+**下一轮目标。** Evidence36 独立回归的目标是 **32/36 通过**，新留出实验相对固定三轮的 Token 降幅进阶目标为 **27.6%**。 [下一轮实验设计](docs/26-evaluation-protocol.md)
+
 ### 检索和写入并发对照
 
 | 验证项 | 样本与对照 | 结果 |
 | --- | --- | --- |
+| 历史完整检索方案 | 39 篇文档、65 道政策问题。BM25 对比 BM25 + BGE + RRF + 本地 Cross-Encoder。 | 首位命中率 P@1 **76.9% → 89.2%**。 [历史离线评测](eval/MEASURED.md) |
 | 中文政策召回 | 65 道问题、39 篇政策。BM25 对比 BM25 + BGE-small 中文向量 + RRF。 | 首篇命中 **52/65 → 54/65**，文档 Recall@3 **90.0% → 94.6%**。本轮未加载 Cross-Encoder。 |
 | 退款并发写入 | 四个独立进程同时对同一合成订单提交全额退款。 | SQLite 和 PostgreSQL 实际写入的退款申请均从 **4 条降到 1 条**。 |
 | 确认请求重试 | SQLite 单实例连续三轮，每轮四次并发提交同一确认 ID。 | 每轮 **4/4 返回受理**，数据库均保留 **1 条退款申请**。 |

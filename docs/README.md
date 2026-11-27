@@ -100,3 +100,5 @@ HTTP → ChatService → LangGraph → Retriever 或 Tool → Provider / DB
 - [项目架构图与运行流程](17-architecture-flow.md)
 - [教学文档写作蓝图](18-teaching-doc-blueprint.md)（维护者写作规范）
 - [项目结构诊断](19-project-diagnosis.md)（维护者自用：历史问题与处理结果，不对读者承诺功能）
+
+下一轮评测的样本冻结、对照组、判定门槛及留档方式见 [实验设计](26-evaluation-protocol.md)。
