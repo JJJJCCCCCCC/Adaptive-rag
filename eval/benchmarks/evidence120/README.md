@@ -29,3 +29,19 @@ PYTHONPATH=. python eval/benchmarks/evidence120/package.py holdout rerun
 ```
 
 [留出题与冻结语料](holdout.json) · [逐题答案、检索轨迹和回执](holdout-audit.jsonl) · [留出集汇总](holdout-summary.json) · [开发题与语料](dev.json) · [开发集汇总](dev-summary.json)
+
+## 历史 Evidence36 组件回归
+
+用同一实验组件在原 Evidence36 的题目与文档上重跑，允许组件直接识别旧语料中的条款名和短服务编号，独立调用 DeepSeek Flash。此轮使用原有参考数值和来源作为结构化评分依据。旧题此前已用于诊断，属于已知数据回归检验，原始端到端流程与匿名结果继续由历史报告记录。
+
+| 策略 | 可回答题通过 | 全样本通过 | 检索轮数 | 总 Token |
+| --- | ---: | ---: | ---: | ---: |
+| 固定单轮 | 14/30 | 20/36 | 36 | 12,092 |
+| 固定三轮 | 30/30 | 36/36 | 108 | 23,863 |
+| 按证据补检 | 30/30 | 36/36 | 60 | 12,212 |
+
+本轮计入 156 份唯一服务端回执，实际用量为 48,167 Token。按证据补检与固定三轮逐题同分，模型用量减少 48.8%。这两项结果均只在同次回归的三组之间比较。
+
+从仓库根目录设置 `PYTHONPATH=.`、`RAG_EVAL_SOURCE=.` 与本地模型配置后，可运行 `python eval/benchmarks/evidence120/historical.py historical-rerun --parallel 8`。
+
+[原始题集](../../dataset/evidence36/questions.jsonl) · [回归汇总](historical-summary.json) · [逐题记录](historical-audit.jsonl) · [回归脚本](historical.py)

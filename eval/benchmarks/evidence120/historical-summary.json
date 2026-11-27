@@ -1,0 +1,87 @@
+{
+  "cohort": "historical-component-regression",
+  "input_sha256": "c36a1ada7f566adc0ad26eadbe1666b6ae47a83db1b442c1dc8539806418978b",
+  "experiment_sha256": "8cc9098b7a7589b1bf010435e43b0dccf0cb44b35d95c4015d1925408a2aab16",
+  "n": 36,
+  "merchants": 1,
+  "answerable_n": 30,
+  "controls_n": 6,
+  "model": [
+    "deepseek-flash"
+  ],
+  "physical_receipts": 156,
+  "actual_billed_tokens": 48167,
+  "group_sizes": {
+    "direct": 10,
+    "two": 16,
+    "three": 4,
+    "missing": 4,
+    "outside": 2
+  },
+  "totals": {
+    "single": {
+      "passed": 20,
+      "answerable_passed": 14,
+      "controls_passed": 6,
+      "passed_by_group": {
+        "direct": 10,
+        "two": 4,
+        "missing": 4,
+        "outside": 2
+      },
+      "rounds": 36,
+      "calls_accounted": 36,
+      "prompt_tokens": 11390,
+      "completion_tokens": 702,
+      "total_tokens": 12092,
+      "p50_ms": 466.505
+    },
+    "fixed_three": {
+      "passed": 36,
+      "answerable_passed": 30,
+      "controls_passed": 6,
+      "passed_by_group": {
+        "direct": 10,
+        "two": 16,
+        "three": 4,
+        "missing": 4,
+        "outside": 2
+      },
+      "rounds": 108,
+      "calls_accounted": 84,
+      "prompt_tokens": 22199,
+      "completion_tokens": 1664,
+      "total_tokens": 23863,
+      "p50_ms": 1148.415
+    },
+    "adaptive": {
+      "passed": 36,
+      "answerable_passed": 30,
+      "controls_passed": 6,
+      "passed_by_group": {
+        "direct": 10,
+        "two": 16,
+        "three": 4,
+        "missing": 4,
+        "outside": 2
+      },
+      "rounds": 60,
+      "calls_accounted": 36,
+      "prompt_tokens": 11402,
+      "completion_tokens": 810,
+      "total_tokens": 12212,
+      "p50_ms": 522.65
+    }
+  },
+  "quality_gain_vs_single": 0.5333333333333333,
+  "quality_difference_vs_fixed_three": 0.0,
+  "savings_vs_fixed_three": 0.48824540082973644,
+  "source_group_counts": {
+    "direct": 10,
+    "two": 16,
+    "three": 4,
+    "missing": 4,
+    "outside": 2
+  },
+  "scope": "Historical original cases and corpus, component-level execution, known-data regression with typed value/unit/source adjudication. Not a replication of the historical end-to-end graph."
+}
