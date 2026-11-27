@@ -1,0 +1,176 @@
+{
+  "qdrant_embedded": {
+    "ping": true,
+    "count_after_double_upsert": 2,
+    "rank1": "b"
+  },
+  "qdrant_http": {
+    "status": "no_listener"
+  },
+  "redis": {
+    "status": "no_listener"
+  },
+  "memory": {
+    "same_session_read": "订单 ORD10001 的物流状态：运输中。",
+    "fresh_session_read": "当前未配置生成模型。找到《shipping_split》中的资料节选，请核对原文：\n\n> 拆单场景下,催发货针对未揽收的子单。已有运单号的子单请走物流查询。",
+    "write_without_explicit_id_proposed": false,
+    "restored_summary": "回访订单配送进度"
+  },
+  "sequential_cancel": {
+    "first": "订单 ORD10003 已取消。",
+    "replay": "订单 ORD10003 已取消。"
+  },
+  "shared_confirmation": {
+    "other_instance": "unknown_confirmation",
+    "same_instance_responses": [
+      "订单 ORD10002 的退款申请已提交，尚不代表款项到账。",
+      "订单 ORD10002 的退款申请已提交，尚不代表款项到账。",
+      "订单 ORD10002 的退款申请已提交，尚不代表款项到账。",
+      "订单 ORD10002 的退款申请已提交，尚不代表款项到账。"
+    ],
+    "persisted_refunds": 1
+  },
+  "burst": {
+    "n": 32,
+    "limit": 8,
+    "ok": 8,
+    "limited": 24,
+    "records": [
+      [
+        "ok",
+        553.4
+      ],
+      [
+        "ok",
+        111.8
+      ],
+      [
+        "ok",
+        159.3
+      ],
+      [
+        "ok",
+        385.3
+      ],
+      [
+        "ok",
+        287.7
+      ],
+      [
+        "ok",
+        441.4
+      ],
+      [
+        "ok",
+        223.0
+      ],
+      [
+        "ok",
+        333.1
+      ],
+      [
+        "limited",
+        0.1
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.1
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ],
+      [
+        "limited",
+        0.0
+      ]
+    ]
+  },
+  "local_mcp": {
+    "weekday": "09:00-21:00",
+    "weekend": "10:00-18:00",
+    "night_refund_review": false,
+    "source": "mcp_local",
+    "arguments": {}
+  }
+}

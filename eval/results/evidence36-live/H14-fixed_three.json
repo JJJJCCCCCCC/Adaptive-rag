@@ -1,0 +1,139 @@
+{
+  "id": "H14",
+  "group": "code_link",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "栗青磨豆器摇柄轴芯保多久？用月份回答？",
+        "missing": "",
+        "suggestions": [
+          "栗青磨豆器 摇柄轴芯 保修 几个月",
+          "栗青磨豆器 摇柄轴芯 质保 月"
+        ],
+        "searches": [
+          {
+            "query": "栗青磨豆器摇柄轴芯保多久？用月份回答？",
+            "hits": [
+              "栗青磨豆器售后说明",
+              "山杏协议",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "栗青磨豆器 摇柄轴芯 保修 几个月",
+            "hits": [
+              "栗青磨豆器售后说明",
+              "样刊邮费",
+              "零件保障期"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "售后说明指出栗青磨豆器轴芯保障为WX86，零件保障期表显示WX86为22个月，两条证据结合可直接得出答案。"
+        },
+        "accumulated": [
+          "栗青磨豆器售后说明",
+          "零件保障期",
+          "山杏协议"
+        ]
+      },
+      {
+        "input": "栗青磨豆器摇柄轴芯保多久？用月份回答？",
+        "missing": "",
+        "suggestions": [
+          "栗青磨豆器 摇柄轴芯 保修 几个月",
+          "栗青磨豆器 摇柄轴芯 质保 月数"
+        ],
+        "searches": [
+          {
+            "query": "栗青磨豆器 摇柄轴芯 质保 月数",
+            "hits": [
+              "栗青磨豆器售后说明",
+              "样刊邮费",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "售后说明指出栗青磨豆器轴芯保障为WX86，零件保障期表显示WX86为22个月，两条证据结合可直接回答保障期为22个月。"
+        },
+        "accumulated": [
+          "栗青磨豆器售后说明",
+          "交付承诺册",
+          "零件保障期"
+        ]
+      },
+      {
+        "input": "栗青磨豆器摇柄轴芯保多久？用月份回答？",
+        "missing": "",
+        "suggestions": [
+          "栗青磨豆器 摇柄轴芯 保修 几个月",
+          "栗青磨豆器 轴芯 保修期 月"
+        ],
+        "searches": [
+          {
+            "query": "栗青磨豆器 轴芯 保修期 月",
+            "hits": [
+              "附加保障期限",
+              "栗青磨豆器售后说明",
+              "零件保障期"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.9,
+      "rationale": "询问具体商品配件的保修时长，属于通用保修政策解释，不是针对某笔订单的具体售后，因此归为 faq_policy。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问特定商品配件的保修期限，属于单条政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 4,
+  "ms": 8030.9,
+  "docs": [
+    "栗青磨豆器售后说明",
+    "交付承诺册",
+    "附加保障期限"
+  ],
+  "provider_tokens": 2721,
+  "provider_responses": 9,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只写明“栗青磨豆器的轴芯保障为 WX86”，未说明 WX86 对应的具体月份，因此无法据此确认轴芯保障时长。请补充订单号或具体保障条款，也可转人工核实。",
+  "evidence": [
+    {
+      "source": "栗青磨豆器售后说明_b9c6fb55",
+      "text": "栗青磨豆器售后说明。栗青磨豆器的轴芯保障为 WX86。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    },
+    {
+      "source": "附加保障期限_d52eaf3d",
+      "text": "附加保障期限。QS38 为5个月,QS83 为17个月。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "5e15b334d9044b3bae044e4edb9491b2"
+}

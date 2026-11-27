@@ -1,0 +1,82 @@
+{
+  "id": "H05",
+  "group": "direct",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "买一套礼签随附几枚贴纸？",
+        "missing": "",
+        "suggestions": [
+          "礼签 套装 含贴纸 数量",
+          "礼签 随附贴纸 几枚",
+          "礼签 贴纸 套装 规格"
+        ],
+        "searches": [
+          {
+            "query": "买一套礼签随附几枚贴纸？",
+            "hits": [
+              "礼签加购",
+              "星堤香盒服务说明",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "礼签 套装 含贴纸 数量",
+            "hits": [
+              "礼签加购",
+              "押金清单",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.9,
+      "rationale": "询问礼签套装随附贴纸数量，属于商品规格/配件参数咨询，归为 product_consult。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问礼签套装随附贴纸数量，属于单一产品规格/FAQ查询，可直接检索产品信息回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4428.9,
+  "docs": [
+    "礼签加购",
+    "星堤香盒服务说明",
+    "交付承诺册"
+  ],
+  "provider_tokens": 1747,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "礼签每套附6枚贴纸。",
+  "evidence": [
+    {
+      "source": "礼签加购_62b25826",
+      "text": "礼签加购。礼签每套附6枚贴纸。"
+    },
+    {
+      "source": "星堤香盒服务说明_2a393c52",
+      "text": "星堤香盒服务说明。星堤香盒的暂存依照《晚枫条款》办理。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "9e60e261e66444a9b38aad1bbe40e751"
+}

@@ -1,0 +1,150 @@
+{
+  "id": "H31",
+  "group": "unknown",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "蓝枝陶铃补绳具体收几元？",
+        "missing": "",
+        "suggestions": [
+          "蓝枝陶铃 补绳 价格",
+          "蓝枝陶铃 换绳 收费",
+          "陶铃 补绳 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "蓝枝陶铃补绳具体收几元？",
+            "hits": [
+              "蓝枝陶铃公告",
+              "芦岸雨罩公告",
+              "检测合同价"
+            ]
+          },
+          {
+            "query": "蓝枝陶铃 补绳 价格",
+            "hits": [
+              "蓝枝陶铃公告",
+              "溪石约定",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "蓝枝陶铃补绳的具体价格（公告仅称价格待发布，未给出金额）",
+          "rationale": "唯一与蓝枝陶铃补绳相关的证据是其公告，但公告只说需要核验凭证、补绳价格待发布，没有具体金额；检测合同价和溪石约定均与蓝枝陶铃补绳无关，因此不足以回答具体收几元。"
+        },
+        "accumulated": [
+          "蓝枝陶铃公告",
+          "检测合同价",
+          "溪石约定"
+        ]
+      },
+      {
+        "input": "蓝枝陶铃补绳具体收几元？",
+        "missing": "蓝枝陶铃补绳的具体价格（公告仅称价格待发布，未给出金额）",
+        "suggestions": [
+          "蓝枝陶铃 补绳 价格",
+          "蓝枝陶铃 补绳 收费 公告",
+          "蓝枝陶铃 补绳 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "蓝枝陶铃补绳的具体价格（公告仅称价格待发布，未给出金额）",
+            "hits": [
+              "蓝枝陶铃公告",
+              "山杏协议",
+              "霜树收纳箱公告"
+            ]
+          },
+          {
+            "query": "蓝枝陶铃 补绳 收费 公告",
+            "hits": [
+              "蓝枝陶铃公告",
+              "栗青磨豆器售后说明",
+              "海隅坐垫公告"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "蓝枝陶铃补绳的具体价格（公告仅称价格待发布，未给出金额）",
+          "rationale": "蓝枝陶铃公告确认受理补绳但明确补绳价格待发布，未提供具体收费金额；其余证据与补绳价格无关，因此相关但不足以回答具体收几元。"
+        },
+        "accumulated": [
+          "蓝枝陶铃公告",
+          "霜树收纳箱公告",
+          "检测合同价"
+        ]
+      },
+      {
+        "input": "蓝枝陶铃补绳具体收几元？",
+        "missing": "蓝枝陶铃补绳的具体价格（公告仅称价格待发布，未给出金额）",
+        "suggestions": [
+          "蓝枝陶铃 补绳 价格",
+          "蓝枝陶铃 补绳 收费 公告",
+          "蓝枝陶铃 补绳 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "蓝枝陶铃 补绳 多少钱",
+            "hits": [
+              "交付承诺册",
+              "蓝枝陶铃公告",
+              "样片周转"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.82,
+      "rationale": "询问具体商品（蓝枝陶铃）补绳的收费金额，属于商品相关咨询，非通用政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问特定商品（蓝枝陶铃）补绳的具体收费，属于单一商品/配件价格咨询，可通过商品或配件价格政策单跳检索回答，无需组合多政策或调用订单系统。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 9424.18,
+  "docs": [
+    "蓝枝陶铃公告",
+    "霜树收纳箱公告",
+    "交付承诺册"
+  ],
+  "provider_tokens": 2806,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据现有公告，蓝枝陶铃补绳需要先核验凭证，补绳价格尚未发布，因此目前无法确认具体收费金额。建议您补充订单号，或转人工客服进一步核实。",
+  "evidence": [
+    {
+      "source": "蓝枝陶铃公告_a5f481f2",
+      "text": "蓝枝陶铃公告。蓝枝陶铃:本店受理补绳,需要先核验凭证;补绳价格待发布。"
+    },
+    {
+      "source": "霜树收纳箱公告_138da303",
+      "text": "霜树收纳箱公告。霜树收纳箱:押金方案正在制订,暂未公布具体金额。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "6eb4b508386a40518b871fb2e35b62c7"
+}

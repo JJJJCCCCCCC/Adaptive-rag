@@ -1,0 +1,37 @@
+{
+  "id": "H09",
+  "group": "direct",
+  "arm": "adaptive",
+  "route": "agent",
+  "trace": {
+    "rounds": [],
+    "intent": {
+      "label": "logistics",
+      "confidence": 0.88,
+      "rationale": "用户询问快递上门配送的加收费用，属于配送方式与运费相关物流问题，未涉及具体订单查询或退款。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "tool_required",
+      "strategy": "agent",
+      "confidence": 0.9,
+      "rationale": "用户询问具体订单的快递上门加收费用，需要查询订单/物流系统数据（该单的配送方式与费用），属于需要系统数据的物流问题。"
+    }
+  },
+  "refused": false,
+  "rounds": 0,
+  "searches": 1,
+  "ms": 4008.13,
+  "docs": [],
+  "provider_tokens": 2300,
+  "provider_responses": 4,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "暂时无法查到相关业务数据，请核对订单号或稍后重试。",
+  "evidence": [],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "517856f5afd445fab7404dd7f461271b"
+}

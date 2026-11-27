@@ -1,0 +1,24 @@
+{"id":"p01","group":"simple","query":"礼品卡到期前能换成现金吗？","docs":["gift_card"],"facts":["不可提现"]}
+{"id":"p02","group":"simple","query":"增值税专用发票收货后多久开？","docs":["invoice_vat"],"facts":["5 个工作日"]}
+{"id":"p03","group":"simple","query":"电池保修最多多少次充放电？","docs":["warranty_battery"],"facts":["300 次"]}
+{"id":"p04","group":"simple","query":"超期的积分还能补发吗？","docs":["points_expiry"],"facts":["过期不补发"]}
+{"id":"p05","group":"simple","query":"上门取件码以什么字母开头？","docs":["pickup_return"],"facts":["QM"]}
+{"id":"p06","group":"simple","query":"偏远地区包邮券抵附加费吗？","docs":["shipping_remote"],"facts":["包邮券不可抵"]}
+{"id":"p07","group":"simple","query":"PLUS 每个月有几张运费券？","docs":["membership_plus"],"facts":["3 张"]}
+{"id":"p08","group":"simple","query":"礼品卡卡密输错几次锁卡？","docs":["gift_card"],"facts":["超过 5 次"]}
+{"id":"p09","group":"simple","query":"定制印花商品印反了谁承担运费？","docs":["return_custom"],"facts":["运费平台承担"]}
+{"id":"p10","group":"simple","query":"无理由退货的上门取件费是多少？","docs":["pickup_return"],"facts":["12 元"]}
+{"id":"p11","group":"simple","query":"到货通知订阅保留几天？","docs":["restock_notify"],"facts":["保留 30 天"]}
+{"id":"p12","group":"simple","query":"秒杀价商品能用哪些包邮券？","docs":["promo_stacking"],"facts":["SHIP0"]}
+{"id":"p13","group":"compound","query":"如果耳机已经激活而且无法开机，最迟几天交证据，超过期限又该走什么流程？","docs":["return_electronics"],"facts":["15 日内","转保修通道"]}
+{"id":"p14","group":"compound","query":"给杯子印字，图案颠倒能否退货，同时想知道定制品能不能用 NEW10。","docs":["return_custom"],"facts":["质量问题全额退","不可使用 NEW10"]}
+{"id":"p15","group":"compound","query":"如果舟山岛屿加收费用，是否与偏远费叠加，并且会员券能抵这笔额外费用吗？","docs":["shipping_remote","membership_plus"],"facts":["不叠加","不可抵偏远"]}
+{"id":"p16","group":"compound","query":"礼品卡可以提现吗？同时礼品卡支付的部分能不能开增值税专用发票？","docs":["gift_card","invoice_vat"],"facts":["不可提现","礼品卡支付部分不开专票"]}
+{"id":"p17","group":"compound","query":"如果食物拆封后发现变质，能不能退，还能拿到什么赔付券？","docs":["return_food"],"facts":["除变质","FRESH20"]}
+{"id":"p18","group":"compound","query":"如果我用 PLUS 运费券并且参与秒杀，能用 NEW10 吗，会员每月发几张运费券？","docs":["promo_stacking","membership_plus"],"facts":["不可用 NEW10","3 张运费券"]}
+{"id":"p19","group":"compound","query":"如果退款时这单积分已抵现会怎样？另外，积分自入账起多久有效？","docs":["points_expiry"],"facts":["从退款中扣回","24 个月"]}
+{"id":"p20","group":"compound","query":"定制商品印反的退货运费谁承担，同时想知道质量问题上门取件怎么收费。","docs":["return_custom","pickup_return"],"facts":["运费平台承担","质量问题取件免费"]}
+{"id":"p21","group":"compound","query":"如果礼品卡超过有效期还能用吗？礼品卡所购商品是否一律享有价保，礼品卡本身呢？","docs":["gift_card","price_protect"],"facts":["12 个月有效","礼品卡、跨境购不参加价保"]}
+{"id":"p22","group":"compound","query":"如果耳机激活后无法开机要交什么凭证，电池保修又有多少次充放电的上限？","docs":["return_electronics","warranty_battery"],"facts":["视频凭证","300 次"]}
+{"id":"p23","group":"compound","query":"如果我订阅了缺货提醒，通知能保留多久？另外，到货后会给我锁几个小时的库存？","docs":["restock_notify"],"facts":["保留 30 天","库存锁 2 小时"]}
+{"id":"p24","group":"compound","query":"如果普通食品未开封，多久内可申请无理由退货，并且上门取件要付多少钱？","docs":["return_food","pickup_return"],"facts":["24 小时内","12 元"]}

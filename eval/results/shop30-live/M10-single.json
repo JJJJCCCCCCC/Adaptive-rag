@@ -1,0 +1,76 @@
+{
+  "id": "M10",
+  "group": "multihop",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "秋岚落地扇返厂，预约后应在多少个工作日内取件？",
+        "missing": "",
+        "suggestions": [
+          "秋岚落地扇返厂 预约后 几个工作日取件",
+          "秋岚落地扇 返厂取件 工作日",
+          "秋岚落地扇 返厂 预约取件 时效"
+        ],
+        "searches": [
+          {
+            "query": "秋岚落地扇返厂，预约后应在多少个工作日内取件？",
+            "hits": [
+              "返厂通道预约周期",
+              "会员补签",
+              "秋岚落地扇服务档案"
+            ]
+          },
+          {
+            "query": "秋岚落地扇返厂 预约后 几个工作日取件",
+            "hits": [
+              "秋岚落地扇服务档案",
+              "晴川手冲壶服务档案",
+              "返厂通道预约周期"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问返厂预约后取件时限，属于通用售后政策解释，非具体订单物流轨迹或退款退货操作",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4202.2,
+  "docs": [
+    "返厂通道预约周期",
+    "秋岚落地扇服务档案",
+    "会员补签"
+  ],
+  "provider_tokens": 1642,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "秋岚落地扇对应返厂通道 T48，按返厂通道预约周期，T48 在 5 个工作日内取件。",
+  "evidence": [
+    {
+      "source": "返厂通道预约周期_2d93d3d9",
+      "text": "返厂通道预约周期。T84 在2个工作日内取件,T48 在5个工作日内取件,T44 在7个工作日内取件。"
+    },
+    {
+      "source": "秋岚落地扇服务档案_121808d3",
+      "text": "秋岚落地扇服务档案。秋岚落地扇对应返厂通道 T48。"
+    },
+    {
+      "source": "会员补签_a006f38c",
+      "text": "会员补签。银卡会员每个自然月有2次补签机会,不能转给其他账户。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "57c92a6e3028438a953a4a7ae3fb8e57"
+}

@@ -1,0 +1,90 @@
+{
+  "receipts": [
+    {
+      "model": "deepseek-flash",
+      "id": "c415ecab-ceae-4ecd-b172-4025b995c17e",
+      "usage": {
+        "prompt_tokens": 256,
+        "completion_tokens": 94,
+        "total_tokens": 350,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 256
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "7df689af-7bdc-4db8-9581-f3d73050c15e",
+      "usage": {
+        "prompt_tokens": 349,
+        "completion_tokens": 133,
+        "total_tokens": 482,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 221
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "0a71942c-f4d8-4b56-9869-28aade622b1f",
+      "usage": {
+        "prompt_tokens": 218,
+        "completion_tokens": 23,
+        "total_tokens": 241,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 218
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "7d79153f-dfac-48c6-a9dc-7fa7a080ce15",
+      "usage": {
+        "prompt_tokens": 218,
+        "completion_tokens": 23,
+        "total_tokens": 241,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 218
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "8a5f4b19-01bf-4d83-abae-f866d5a0bf1c",
+      "usage": {
+        "prompt_tokens": 218,
+        "completion_tokens": 23,
+        "total_tokens": 241,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 218
+      }
+    }
+  ],
+  "labels": {
+    "A": {
+      "pass": true,
+      "reason": "回答正确给出9天，与参考答案一致。"
+    },
+    "B": {
+      "pass": true,
+      "reason": "回答正确给出9天，与参考答案一致。"
+    },
+    "C": {
+      "pass": true,
+      "reason": "回答正确给出9天，与参考答案一致。"
+    }
+  },
+  "mode": "individual_recovery",
+  "signature": "4d44d12492a84c7452b98aef7636be8371397711490950eae761dd6b0af1a1e4"
+}

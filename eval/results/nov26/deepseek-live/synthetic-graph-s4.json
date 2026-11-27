@@ -1,0 +1,116 @@
+{
+  "dense": "hash",
+  "model_requested": "deepseek-chat",
+  "case_ids": [
+    "s4"
+  ],
+  "simple_k": 5,
+  "multi_k": 5,
+  "records": [
+    {
+      "id": "s4",
+      "group": "single_document",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 2,
+      "ms": 9857.9,
+      "docs": [
+        "s4",
+        "s2",
+        "s1",
+        "s3",
+        "s5"
+      ],
+      "provider_tokens": 1697,
+      "provider_responses": 4,
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "空盒回收价为每只4枚蓝币，带盖盒回收价为每只9枚蓝币，来源为星桥手作社。该问题超出本平台客服范围，以上仅为检索到的信息，不代表本平台政策。",
+      "evidence": [
+        {
+          "source": "s4_f0c14323",
+          "text": "星桥手作社的空盒按每只4枚蓝币回收,带盖的按每只9枚蓝币回收。"
+        },
+        {
+          "source": "s2_96d6ac3a",
+          "text": "云帆俱乐部的铜船票一次最多兑换3盒纸星星。"
+        },
+        {
+          "source": "s1_e174b0ba",
+          "text": "蓝鸥玩具城的银票将在领取后第17天失效。"
+        },
+        {
+          "source": "s3_71069fd3",
+          "text": "松针集市的雾灯箱押金为23枚贝币。"
+        },
+        {
+          "source": "s5_114765ad",
+          "text": "池月小站的月票限住客购买。日票不限身份。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "group": "single_document",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 6,
+      "ms": 11773.03,
+      "docs": [
+        "s4",
+        "s2",
+        "s1",
+        "s3",
+        "s5"
+      ],
+      "provider_tokens": 2904,
+      "provider_responses": 9,
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "空盒回收价为每只4枚蓝币，带盖盒回收价为每只9枚蓝币（来源：星桥手作社）。其他检索内容与回收价无关。",
+      "evidence": [
+        {
+          "source": "s4_f0c14323",
+          "text": "星桥手作社的空盒按每只4枚蓝币回收,带盖的按每只9枚蓝币回收。"
+        },
+        {
+          "source": "s2_96d6ac3a",
+          "text": "云帆俱乐部的铜船票一次最多兑换3盒纸星星。"
+        },
+        {
+          "source": "s1_e174b0ba",
+          "text": "蓝鸥玩具城的银票将在领取后第17天失效。"
+        },
+        {
+          "source": "s3_71069fd3",
+          "text": "松针集市的雾灯箱押金为23枚贝币。"
+        },
+        {
+          "source": "s5_114765ad",
+          "text": "池月小站的月票限住客购买。日票不限身份。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "group": "single_document",
+      "arm": "adaptive",
+      "route": "refuse",
+      "rounds": 0,
+      "searches": 0,
+      "ms": 2427.79,
+      "docs": [],
+      "provider_tokens": 1009,
+      "provider_responses": 2,
+      "all_docs": false,
+      "all_evidence_spans": false,
+      "all_answer_spans": false,
+      "answer": "这个问题超出电商客服范围，我无法协助。如需购物、订单、物流或售后帮助，请换个问题。",
+      "evidence": []
+    }
+  ]
+}

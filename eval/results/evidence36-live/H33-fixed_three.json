@@ -1,0 +1,148 @@
+{
+  "id": "H33",
+  "group": "unknown",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "霜树收纳箱需付多少元押金？",
+        "missing": "",
+        "suggestions": [
+          "霜树收纳箱 押金",
+          "霜树收纳箱 押金多少"
+        ],
+        "searches": [
+          {
+            "query": "霜树收纳箱需付多少元押金？",
+            "hits": [
+              "帐篷清洁",
+              "霜树收纳箱公告",
+              "远汀书立售后说明"
+            ]
+          },
+          {
+            "query": "霜树收纳箱 押金",
+            "hits": [
+              "霜树收纳箱公告",
+              "履约排期",
+              "押金清单"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "霜树收纳箱的具体押金金额（公告称押金方案正在制订，暂未公布具体金额）",
+          "rationale": "有一条证据直接提到霜树收纳箱，但只说明押金方案正在制订、暂未公布具体金额，因此相关但不足以回答具体金额；其他证据涉及帐篷清洁费和RD75/RD57押金，与霜树收纳箱无关。"
+        },
+        "accumulated": [
+          "霜树收纳箱公告",
+          "帐篷清洁",
+          "押金清单"
+        ]
+      },
+      {
+        "input": "霜树收纳箱需付多少元押金？",
+        "missing": "霜树收纳箱的具体押金金额（公告称押金方案正在制订，暂未公布具体金额）",
+        "suggestions": [
+          "霜树收纳箱 押金 金额",
+          "霜树收纳箱 押金方案 公告",
+          "霜树收纳箱 押金 最新"
+        ],
+        "searches": [
+          {
+            "query": "霜树收纳箱的具体押金金额（公告称押金方案正在制订，暂未公布具体金额）",
+            "hits": [
+              "霜树收纳箱公告",
+              "交付承诺册",
+              "押金清单"
+            ]
+          },
+          {
+            "query": "霜树收纳箱 押金 金额",
+            "hits": [
+              "霜树收纳箱公告",
+              "瓶箱借用",
+              "押金清单"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据明确说明霜树收纳箱押金方案正在制订、暂未公布具体金额，因此可直接回答‘尚未公布’，无需编造具体数额。"
+        },
+        "accumulated": [
+          "霜树收纳箱公告",
+          "押金清单",
+          "帐篷清洁"
+        ]
+      },
+      {
+        "input": "霜树收纳箱需付多少元押金？",
+        "missing": "",
+        "suggestions": [
+          "霜树收纳箱 押金",
+          "霜树收纳箱 押金多少"
+        ],
+        "searches": [
+          {
+            "query": "霜树收纳箱 押金多少",
+            "hits": [
+              "霜树收纳箱公告",
+              "附加保障期限",
+              "押金清单"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.85,
+      "rationale": "询问具体商品霜树收纳箱的押金金额，属于商品参数/费用咨询，非通用政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问特定商品（霜树收纳箱）的押金金额，属于单条商品/政策信息查询，无需组合多条政策或调用订单系统，直接单跳检索即可。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 8574.6,
+  "docs": [
+    "霜树收纳箱公告",
+    "押金清单",
+    "附加保障期限"
+  ],
+  "provider_tokens": 2686,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "霜树收纳箱的押金方案正在制订中，暂未公布具体金额，因此目前无法确认需付多少元押金。建议您稍后关注公告更新，或提供具体订单号以便转人工进一步核实。",
+  "evidence": [
+    {
+      "source": "霜树收纳箱公告_138da303",
+      "text": "霜树收纳箱公告。霜树收纳箱:押金方案正在制订,暂未公布具体金额。"
+    },
+    {
+      "source": "押金清单_17a9833f",
+      "text": "押金清单。RD75 为16元,RD57 为39元。"
+    },
+    {
+      "source": "附加保障期限_d52eaf3d",
+      "text": "附加保障期限。QS38 为5个月,QS83 为17个月。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "e5add0081c50474c8adf12dc805d1752"
+}

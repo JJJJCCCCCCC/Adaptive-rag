@@ -1,0 +1,93 @@
+{
+  "id": "C09",
+  "group": "complex",
+  "arm": "adaptive",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "一个订单分成五个礼袋，礼袋总共收费多少？一共能拿到几张免费贺卡？",
+        "missing": "",
+        "suggestions": [
+          "订单分五个礼袋 礼袋收费 免费贺卡数量",
+          "五个礼袋 礼袋费用 贺卡赠送",
+          "分5个礼袋 收费 免费贺卡"
+        ],
+        "searches": [
+          {
+            "query": "一个订单分成五个礼袋，礼袋总共收费多少？一共能拿到几张免费贺卡？",
+            "hits": [
+              "礼物分装",
+              "组装工单费率",
+              "预约配送"
+            ]
+          },
+          {
+            "query": "订单分五个礼袋 礼袋收费 免费贺卡数量",
+            "hits": [
+              "礼物分装",
+              "回收纸箱",
+              "仓储等级保管表"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[礼物分装_147d70fa_00]明确说明同一订单前三个礼袋免费、从第四个起每个4元，因此五个礼袋收费为(5-3)×4=8元；同时说明纸质贺卡每袋只赠一张，五个礼袋共可获5张免费贺卡。信息足以回答。"
+        },
+        "accumulated": [
+          "礼物分装",
+          "回收纸箱",
+          "组装工单费率"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "order_inquiry",
+      "confidence": 0.93,
+      "rationale": "询问礼袋收费与免费贺卡数量，属于商品/包装规格与费用细节咨询，非具体订单售后或政策解释。;overlay:order_inquiry",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "multi_hop",
+      "strategy": "multi",
+      "confidence": 0.85,
+      "rationale": "该问题需要组合礼袋收费规则和免费贺卡政策，并基于订单拆分为五个礼袋进行条件推理，属于多跳政策计算。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 6702.81,
+  "docs": [
+    "礼物分装",
+    "回收纸箱",
+    "组装工单费率"
+  ],
+  "provider_tokens": 2280,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": false,
+  "all_answer_spans": true,
+  "answer": "按礼物分装规则：同一订单前三个礼袋免费，从第四个起每个4元。五个礼袋中第4、5个收费，共4×2=8元。纸质贺卡每袋只赠一张，五个礼袋共可获5张免费贺卡。",
+  "evidence": [
+    {
+      "source": "礼物分装_147d70fa",
+      "text": "礼物分装。同一订单前三个礼袋免费,从第四个起每个4元。纸质贺卡每袋只赠一张。"
+    },
+    {
+      "source": "回收纸箱_1ec21c6c",
+      "text": "回收纸箱。门店按每个完整纸箱3积分登记环保回收。"
+    },
+    {
+      "source": "组装工单费率_41be281b",
+      "text": "组装工单费率。A26 每次27元,A62 每次37元,A66 每次47元。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "345d9dee190e4e08a2cf05fbc9a1c0a5"
+}

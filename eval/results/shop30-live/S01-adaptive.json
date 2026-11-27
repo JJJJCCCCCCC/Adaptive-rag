@@ -1,0 +1,81 @@
+{
+  "id": "S01",
+  "group": "simple",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "门店自提柜发来的取货码能保留多久？",
+        "missing": "",
+        "suggestions": [
+          "门店自提柜取货码有效期多久",
+          "自提柜取货码保留时间"
+        ],
+        "searches": [
+          {
+            "query": "门店自提柜发来的取货码能保留多久？",
+            "hits": [
+              "门店自提柜",
+              "试色卡邮寄",
+              "回收纸箱"
+            ]
+          },
+          {
+            "query": "门店自提柜取货码有效期多久",
+            "hits": [
+              "回收纸箱",
+              "门店自提柜",
+              "上门测量"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.9,
+      "rationale": "询问取货码保留多久，属于通用政策解释，不是具体订单物流轨迹或售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "这是一个关于自提取货码有效期的单条政策FAQ，可直接依据政策知识库回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5179.89,
+  "docs": [
+    "门店自提柜",
+    "回收纸箱",
+    "上门测量"
+  ],
+  "provider_tokens": 1761,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "门店自提柜的取货码自短信发出后保留36小时，超时未取会退回门店。",
+  "evidence": [
+    {
+      "source": "门店自提柜_e8d4ec13",
+      "text": "门店自提柜。自提柜的取货码自短信发出后保留36小时,超时退回门店。"
+    },
+    {
+      "source": "回收纸箱_1ec21c6c",
+      "text": "回收纸箱。门店按每个完整纸箱3积分登记环保回收。"
+    },
+    {
+      "source": "上门测量_9f212e6b",
+      "text": "上门测量。衣柜上门量尺的预约金为35元,完工后冲抵安装费。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "32747eb021994bd0a05c4bea68174d2d"
+}

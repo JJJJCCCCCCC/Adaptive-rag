@@ -1,0 +1,163 @@
+{
+  "id": "S09",
+  "group": "simple",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "预约衣柜上门量尺需要交多少预约金？",
+        "missing": "",
+        "suggestions": [
+          "衣柜上门量尺 预约金 多少钱",
+          "定制衣柜 量尺 预约金 费用",
+          "衣柜 上门量尺 预约金 收费标准"
+        ],
+        "searches": [
+          {
+            "query": "预约衣柜上门量尺需要交多少预约金？",
+            "hits": [
+              "上门测量",
+              "礼盒规格加价",
+              "预约配送"
+            ]
+          },
+          {
+            "query": "衣柜上门量尺 预约金 多少钱",
+            "hits": [
+              "预约安装爽约",
+              "上门测量",
+              "家具搬楼"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[上门测量_9f212e6b_00]明确说明衣柜上门量尺的预约金为35元，完工后冲抵安装费，直接回答了问题。"
+        },
+        "accumulated": [
+          "上门测量",
+          "预约安装爽约",
+          "预约配送"
+        ]
+      },
+      {
+        "input": "预约衣柜上门量尺需要交多少预约金？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "衣柜上门量尺 预约金 多少钱",
+          "定制衣柜 上门量尺 预约金 政策",
+          "衣柜量尺 预约金 退还 条件"
+        ],
+        "searches": [
+          {
+            "query": "预约衣柜上门量尺需要交多少预约金？",
+            "hits": [
+              "上门测量",
+              "礼盒规格加价",
+              "预约配送"
+            ]
+          },
+          {
+            "query": "衣柜上门量尺 预约金 多少钱",
+            "hits": [
+              "预约安装爽约",
+              "上门测量",
+              "家具搬楼"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[上门测量_9f212e6b_00]明确说明衣柜上门量尺的预约金为35元，完工后冲抵安装费，直接回答了问题。"
+        },
+        "accumulated": [
+          "上门测量",
+          "预约安装爽约",
+          "预约配送"
+        ]
+      },
+      {
+        "input": "预约衣柜上门量尺需要交多少预约金？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "衣柜上门量尺 预约金 多少钱",
+          "定制衣柜 上门量尺 预约金 政策",
+          "衣柜量尺 预约金 退还 条件"
+        ],
+        "searches": [
+          {
+            "query": "预约衣柜上门量尺需要交多少预约金？",
+            "hits": [
+              "上门测量",
+              "礼盒规格加价",
+              "预约配送"
+            ]
+          },
+          {
+            "query": "衣柜上门量尺 预约金 多少钱",
+            "hits": [
+              "预约安装爽约",
+              "上门测量",
+              "家具搬楼"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[上门测量_9f212e6b_00]明确说明衣柜上门量尺的预约金为35元，完工后冲抵安装费，直接回答了问题。"
+        },
+        "accumulated": [
+          "上门测量",
+          "预约安装爽约",
+          "预约配送"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问预约上门量尺的预约金金额，属于通用政策/费用解释，非具体订单售后或物流问题",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8273.34,
+  "docs": [
+    "上门测量",
+    "预约安装爽约",
+    "预约配送"
+  ],
+  "provider_tokens": 2638,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "衣柜上门量尺的预约金为35元，完工后冲抵安装费。",
+  "evidence": [
+    {
+      "source": "上门测量_9f212e6b",
+      "text": "上门测量。衣柜上门量尺的预约金为35元,完工后冲抵安装费。"
+    },
+    {
+      "source": "预约安装爽约_00d02265",
+      "text": "预约安装爽约。安装师傅上门但买家未到场,第一次免空跑费,第二次收26元。师傅原因导致改期不计入买家爽约次数。"
+    },
+    {
+      "source": "预约配送_f4f613e9",
+      "text": "预约配送。预约送货每天最后一个可选时段从19点开始。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "ae357287ba004eaea00a7cbe1df0902a"
+}

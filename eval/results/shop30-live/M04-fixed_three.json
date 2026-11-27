@@ -1,0 +1,162 @@
+{
+  "id": "M04",
+  "group": "multihop",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "回澜边桌到店后可以免费存放几天？",
+        "missing": "",
+        "suggestions": [
+          "回澜边桌 到店 免费存放 几天",
+          "回澜边桌 到店存放 免费期限"
+        ],
+        "searches": [
+          {
+            "query": "回澜边桌到店后可以免费存放几天？",
+            "hits": [
+              "回澜边桌服务档案",
+              "冷藏蛋糕改期",
+              "仓储等级保管表"
+            ]
+          },
+          {
+            "query": "回澜边桌 到店 免费存放 几天",
+            "hits": [
+              "回澜边桌服务档案",
+              "北庭阅读灯服务档案",
+              "仓储等级保管表"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示回澜边桌属于仓储等级H28，而保管表中H28免费暂存6天，可直接推出答案。"
+        },
+        "accumulated": [
+          "回澜边桌服务档案",
+          "仓储等级保管表",
+          "冷藏蛋糕改期"
+        ]
+      },
+      {
+        "input": "回澜边桌到店后可以免费存放几天？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "回澜边桌 到店 免费存放 几天",
+          "回澜边桌 到店存放 免费期限 政策",
+          "回澜边桌 免费仓储 条件 到店"
+        ],
+        "searches": [
+          {
+            "query": "回澜边桌到店后可以免费存放几天？",
+            "hits": [
+              "回澜边桌服务档案",
+              "冷藏蛋糕改期",
+              "仓储等级保管表"
+            ]
+          },
+          {
+            "query": "回澜边桌 到店 免费存放 几天",
+            "hits": [
+              "回澜边桌服务档案",
+              "北庭阅读灯服务档案",
+              "仓储等级保管表"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示回澜边桌属于H28仓储等级，保管表中H28免费暂存6天，可直接回答。"
+        },
+        "accumulated": [
+          "回澜边桌服务档案",
+          "仓储等级保管表",
+          "冷藏蛋糕改期"
+        ]
+      },
+      {
+        "input": "回澜边桌到店后可以免费存放几天？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "回澜边桌 到店 免费存放 几天",
+          "回澜边桌 到店存放 免费期限 政策",
+          "回澜边桌 门店 免费仓储 条件"
+        ],
+        "searches": [
+          {
+            "query": "回澜边桌到店后可以免费存放几天？",
+            "hits": [
+              "回澜边桌服务档案",
+              "冷藏蛋糕改期",
+              "仓储等级保管表"
+            ]
+          },
+          {
+            "query": "回澜边桌 到店 免费存放 几天",
+            "hits": [
+              "回澜边桌服务档案",
+              "北庭阅读灯服务档案",
+              "仓储等级保管表"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示回澜边桌属于H28仓储等级，保管表中H28免费暂存6天，可直接回答。"
+        },
+        "accumulated": [
+          "回澜边桌服务档案",
+          "仓储等级保管表",
+          "冷藏蛋糕改期"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.92,
+      "rationale": "询问到店后免费存放天数的通用政策解释，属于政策咨询而非具体订单售后",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8292.21,
+  "docs": [
+    "回澜边桌服务档案",
+    "仓储等级保管表",
+    "冷藏蛋糕改期"
+  ],
+  "provider_tokens": 2807,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "回澜边桌属于到店仓储等级 H28，按仓储等级保管表，H28 免费暂存 6 天。",
+  "evidence": [
+    {
+      "source": "回澜边桌服务档案_a2fba9a1",
+      "text": "回澜边桌服务档案。回澜边桌属于到店仓储等级 H28。"
+    },
+    {
+      "source": "仓储等级保管表_6c09d39e",
+      "text": "仓储等级保管表。H82 免费暂存4天;H28 免费暂存6天;H20 免费暂存2天。"
+    },
+    {
+      "source": "冷藏蛋糕改期_3f4db7d0",
+      "text": "冷藏蛋糕改期。冷藏蛋糕发出前一天18点前改期免费;超过该时点且未装车,改期收16元;已经装车则不能改期。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "f0953e1bc15f4f159a8672f510c284a1"
+}

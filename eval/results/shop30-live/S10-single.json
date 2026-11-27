@@ -1,0 +1,76 @@
+{
+  "id": "S10",
+  "group": "simple",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "拿一个完好的纸箱去门店回收能得几积分？",
+        "missing": "",
+        "suggestions": [
+          "纸箱 门店回收 积分",
+          "完好纸箱 回收 积分 规则",
+          "纸箱回收 积分 门店"
+        ],
+        "searches": [
+          {
+            "query": "拿一个完好的纸箱去门店回收能得几积分？",
+            "hits": [
+              "回收纸箱",
+              "会员续期",
+              "门店自提柜"
+            ]
+          },
+          {
+            "query": "纸箱 门店回收 积分",
+            "hits": [
+              "门店自提柜",
+              "回收纸箱",
+              "秋岚落地扇服务档案"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "coupon",
+      "confidence": 0.85,
+      "rationale": "询问回收纸箱能得多少积分，属于积分获取/使用类问题，按规则归入 coupon",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5172.95,
+  "docs": [
+    "回收纸箱",
+    "门店自提柜",
+    "会员续期"
+  ],
+  "provider_tokens": 1633,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据回收规则，门店按每个完整纸箱登记环保回收，可获得3积分。该积分登记以门店实际受理为准；如未到账，请补充订单号或回收门店信息，以便转人工核实。",
+  "evidence": [
+    {
+      "source": "回收纸箱_1ec21c6c",
+      "text": "回收纸箱。门店按每个完整纸箱3积分登记环保回收。"
+    },
+    {
+      "source": "门店自提柜_e8d4ec13",
+      "text": "门店自提柜。自提柜的取货码自短信发出后保留36小时,超时退回门店。"
+    },
+    {
+      "source": "会员续期_064a7051",
+      "text": "会员续期。铜卡到期前续费加送8天,到期后续费加送3天;赠送天数不叠加。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "c6667fa67070476abdea9c6fa58bbfc2"
+}

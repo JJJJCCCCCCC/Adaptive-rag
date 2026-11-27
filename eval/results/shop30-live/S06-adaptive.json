@@ -1,0 +1,81 @@
+{
+  "id": "S06",
+  "group": "simple",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "预约送货最晚那个时段几点开始？",
+        "missing": "",
+        "suggestions": [
+          "预约送货 最晚时段 几点开始",
+          "送货预约 最晚时间段 开始时间"
+        ],
+        "searches": [
+          {
+            "query": "预约送货最晚那个时段几点开始？",
+            "hits": [
+              "预约配送",
+              "夜间自提",
+              "家具搬楼"
+            ]
+          },
+          {
+            "query": "预约送货 最晚时段 几点开始",
+            "hits": [
+              "预约配送",
+              "门店自提柜",
+              "家具搬楼"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "logistics",
+      "confidence": 0.85,
+      "rationale": "询问预约送货时段的具体时间安排，属于配送/物流相关咨询",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问预约送货最晚时段的开始时间，属于单条物流政策/FAQ查询，无需组合多条政策或调用订单系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4946.88,
+  "docs": [
+    "预约配送",
+    "家具搬楼",
+    "门店自提柜"
+  ],
+  "provider_tokens": 1748,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "预约送货每天最后一个可选时段从19点开始。",
+  "evidence": [
+    {
+      "source": "预约配送_f4f613e9",
+      "text": "预约配送。预约送货每天最后一个可选时段从19点开始。"
+    },
+    {
+      "source": "家具搬楼_d14c8c93",
+      "text": "家具搬楼。小书柜送货时,有电梯且可装下则免搬楼费;无电梯按每层6元计,从二楼开始收费。一楼按零层计。"
+    },
+    {
+      "source": "门店自提柜_e8d4ec13",
+      "text": "门店自提柜。自提柜的取货码自短信发出后保留36小时,超时退回门店。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "23dd3edfdc0c4feebbceeb833a932941"
+}

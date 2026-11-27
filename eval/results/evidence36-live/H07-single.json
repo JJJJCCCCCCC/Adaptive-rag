@@ -1,0 +1,82 @@
+{
+  "id": "H07",
+  "group": "direct",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "刻章刻七个字，超字部分一共收多少元？",
+        "missing": "",
+        "suggestions": [
+          "刻章 七个字 超字收费",
+          "刻章 超字 每字多少钱",
+          "印章 7个字 超出字数 价格"
+        ],
+        "searches": [
+          {
+            "query": "刻章刻七个字，超字部分一共收多少元？",
+            "hits": [
+              "外箱附加价",
+              "刻章加字",
+              "押金清单"
+            ]
+          },
+          {
+            "query": "刻章 七个字 超字收费",
+            "hits": [
+              "刻章加字",
+              "年度更换配额",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.92,
+      "rationale": "询问刻章超字部分的收费，属于具体商品的价格/参数咨询，不是通用政策解释，也不是售后或退款。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问刻章超字收费，属于单一价格政策/FAQ查询，可直接依据刻章收费标准回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4718.2,
+  "docs": [
+    "刻章加字",
+    "外箱附加价",
+    "押金清单"
+  ],
+  "provider_tokens": 1828,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "刻章含前四个字，超过部分每字收3元。刻七个字时，超字部分为3个字，共收9元。",
+  "evidence": [
+    {
+      "source": "刻章加字_cd48cdfd",
+      "text": "刻章加字。刻章含前四个字,超过部分每字收3元。"
+    },
+    {
+      "source": "外箱附加价_489973dd",
+      "text": "外箱附加价。PK19 收9元,PK91 收26元,PK90 收12元。"
+    },
+    {
+      "source": "押金清单_17a9833f",
+      "text": "押金清单。RD75 为16元,RD57 为39元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "352f5fd96d0648cd89d6171da556f8c1"
+}

@@ -1,0 +1,150 @@
+{
+  "id": "H05",
+  "group": "direct",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "买一套礼签随附几枚贴纸？",
+        "missing": "",
+        "suggestions": [
+          "礼签 套装 含贴纸 几枚",
+          "礼签 随附贴纸 数量",
+          "礼签 贴纸 套装 规格"
+        ],
+        "searches": [
+          {
+            "query": "买一套礼签随附几枚贴纸？",
+            "hits": [
+              "礼签加购",
+              "星堤香盒服务说明",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "礼签 套装 含贴纸 几枚",
+            "hits": [
+              "礼签加购",
+              "样刊邮费",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明礼签每套附6枚贴纸，直接回答了问题。"
+        },
+        "accumulated": [
+          "礼签加购",
+          "星堤香盒服务说明",
+          "交付承诺册"
+        ]
+      },
+      {
+        "input": "买一套礼签随附几枚贴纸？",
+        "missing": "",
+        "suggestions": [
+          "礼签 套装 含贴纸 几枚",
+          "礼签 随附贴纸 数量",
+          "礼签 贴纸 套装 规格"
+        ],
+        "searches": [
+          {
+            "query": "礼签 随附贴纸 数量",
+            "hits": [
+              "礼签加购",
+              "碧岸打气筒售后说明",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "礼签 贴纸 套装 规格",
+            "hits": [
+              "礼签加购",
+              "附加保障期限",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明礼签每套附6枚贴纸，直接回答了问题。"
+        },
+        "accumulated": [
+          "礼签加购",
+          "附加保障期限",
+          "星堤香盒服务说明"
+        ]
+      },
+      {
+        "input": "买一套礼签随附几枚贴纸？",
+        "missing": "",
+        "suggestions": [
+          "礼签 套装 含贴纸 几枚",
+          "礼签 附赠贴纸 数量",
+          "礼签 贴纸 套装 规格"
+        ],
+        "searches": [
+          {
+            "query": "礼签 附赠贴纸 数量",
+            "hits": [
+              "礼签加购",
+              "山杏协议",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.85,
+      "rationale": "询问礼签套装随附贴纸数量，属于商品规格/配件参数咨询，不是具体售后或政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问礼签套装随附贴纸数量，属于单一产品规格/FAQ查询，可直接检索产品信息回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 6681.65,
+  "docs": [
+    "礼签加购",
+    "附加保障期限",
+    "山杏协议"
+  ],
+  "provider_tokens": 2483,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "礼签每套附6枚贴纸。",
+  "evidence": [
+    {
+      "source": "礼签加购_62b25826",
+      "text": "礼签加购。礼签每套附6枚贴纸。"
+    },
+    {
+      "source": "附加保障期限_d52eaf3d",
+      "text": "附加保障期限。QS38 为5个月,QS83 为17个月。"
+    },
+    {
+      "source": "山杏协议_27dd8bf4",
+      "text": "山杏协议。该协议的执行档号为 HC64;以档号对应的细则为准。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "11bf27ff36a944dd92cc0e786b194560"
+}

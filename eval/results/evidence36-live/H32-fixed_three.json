@@ -1,0 +1,158 @@
+{
+  "id": "H32",
+  "group": "unknown",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "芦岸雨罩接单后保证几天完工？",
+        "missing": "",
+        "suggestions": [
+          "芦岸雨罩 接单后 几天完工",
+          "芦岸雨罩 定制 工期 几天",
+          "芦岸雨罩 生产周期 完工时间"
+        ],
+        "searches": [
+          {
+            "query": "芦岸雨罩接单后保证几天完工？",
+            "hits": [
+              "芦岸雨罩公告",
+              "松烟方案",
+              "样片周转"
+            ]
+          },
+          {
+            "query": "芦岸雨罩 接单后 几天完工",
+            "hits": [
+              "芦岸雨罩公告",
+              "白榆协议",
+              "样片周转"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据中芦岸雨罩公告明确说明有维修受理服务但未承诺完工日期，直接回答了问题：芦岸雨罩接单后不保证具体完工天数。"
+        },
+        "accumulated": [
+          "芦岸雨罩公告",
+          "松烟方案",
+          "样片周转"
+        ]
+      },
+      {
+        "input": "芦岸雨罩接单后保证几天完工？",
+        "missing": "",
+        "suggestions": [
+          "芦岸雨罩 接单后 几天完工",
+          "芦岸雨罩 定制 工期 几天",
+          "芦岸雨罩 生产周期 完工时间"
+        ],
+        "searches": [
+          {
+            "query": "芦岸雨罩 定制 工期 几天",
+            "hits": [
+              "芦岸雨罩公告",
+              "谷风章程",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "芦岸雨罩 生产周期 完工时间",
+            "hits": [
+              "芦岸雨罩公告",
+              "星堤香盒服务说明",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "芦岸雨罩接单后具体的完工天数承诺（证据显示其未承诺完工日期，其他证据为不同产品或方案，不能替代）",
+          "rationale": "证据中芦岸雨罩公告明确说明有维修受理服务但未承诺完工日期，因此无法回答保证几天完工；交付承诺册和松烟方案涉及其他产品或方案，与芦岸雨罩无关。"
+        },
+        "accumulated": [
+          "芦岸雨罩公告",
+          "交付承诺册",
+          "松烟方案"
+        ]
+      },
+      {
+        "input": "芦岸雨罩接单后保证几天完工？",
+        "missing": "芦岸雨罩接单后具体的完工天数承诺（证据显示其未承诺完工日期，其他证据为不同产品或方案，不能替代）",
+        "suggestions": [
+          "芦岸雨罩 接单后 完工时间 承诺",
+          "芦岸雨罩 定制 交货周期 几天",
+          "芦岸雨罩 生产周期 完工日期"
+        ],
+        "searches": [
+          {
+            "query": "芦岸雨罩接单后具体的完工天数承诺（证据显示其未承诺完工日期，其他证据为不同产品或方案，不能替代）",
+            "hits": [
+              "檐雨承诺",
+              "芦岸雨罩公告",
+              "晚枫条款"
+            ]
+          },
+          {
+            "query": "芦岸雨罩 接单后 完工时间 承诺",
+            "hits": [
+              "芦岸雨罩公告",
+              "外箱附加价",
+              "样片周转"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问接单后保证几天完工，属于通用工期/政策解释，非具体订单物流或售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问芦岸雨罩接单后的完工时间保证，属于单一政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 7264.54,
+  "docs": [
+    "芦岸雨罩公告",
+    "交付承诺册",
+    "檐雨承诺"
+  ],
+  "provider_tokens": 2761,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据现有证据，芦岸雨罩只说明有维修受理服务，未承诺具体完工日期，因此无法保证几天完工。交付承诺册中的3天、11天、7天分别对应UF25、UF52、UF55，并非芦岸雨罩的承诺。如需确认具体时效，请补充订单号或转人工核实。",
+  "evidence": [
+    {
+      "source": "芦岸雨罩公告_24ef49fc",
+      "text": "芦岸雨罩公告。芦岸雨罩:有维修受理服务,但未承诺完工日期。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    },
+    {
+      "source": "檐雨承诺_6ae05211",
+      "text": "檐雨承诺。年度耗材免费更换上限为3次。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "e0b89807bca0439eb3f46d74a5dc24c6"
+}

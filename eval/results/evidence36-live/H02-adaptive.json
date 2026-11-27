@@ -1,0 +1,93 @@
+{
+  "id": "H02",
+  "group": "direct",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "买冰柜预约你们上门测温，要付几元预约费？",
+        "missing": "",
+        "suggestions": [
+          "冰柜上门测温 预约费 多少钱",
+          "冰柜 上门测温 收费",
+          "冰柜测温服务 预约费用"
+        ],
+        "searches": [
+          {
+            "query": "买冰柜预约你们上门测温，要付几元预约费？",
+            "hits": [
+              "预约测温",
+              "检测合同价",
+              "样刊邮费"
+            ]
+          },
+          {
+            "query": "冰柜上门测温 预约费 多少钱",
+            "hits": [
+              "交付承诺册",
+              "预约测温",
+              "工厂排期索引"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[预约测温_6dd50c3d_00]明确说明本店冰柜上门测温预约费为42元，直接回答了问题。"
+        },
+        "accumulated": [
+          "预约测温",
+          "样刊邮费",
+          "检测合同价"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.86,
+      "rationale": "询问上门测温预约费的具体收费规则，属于通用政策/费用解释，不是针对某笔订单的售后或物流问题",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问上门测温预约费这一单一政策/FAQ问题，属于单跳政策查询，直接检索政策即可回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 6369.08,
+  "docs": [
+    "预约测温",
+    "样刊邮费",
+    "检测合同价"
+  ],
+  "provider_tokens": 2000,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "冰柜上门测温预约费为42元。",
+  "evidence": [
+    {
+      "source": "预约测温_6dd50c3d",
+      "text": "预约测温。本店冰柜上门测温预约费42元。"
+    },
+    {
+      "source": "样刊邮费_006718ab",
+      "text": "样刊邮费。样刊自取免费,快递上门每单11元。"
+    },
+    {
+      "source": "检测合同价_e1eddcdf",
+      "text": "检测合同价。FN48 收17元,FN84 收31元,FN80 收21元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "e03fa5661c2f4467b7c06debffcfff64"
+}

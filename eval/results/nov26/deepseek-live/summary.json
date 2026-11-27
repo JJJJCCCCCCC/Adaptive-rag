@@ -1,0 +1,41 @@
+{
+  "model_returned": "deepseek-flash",
+  "successful_scored_experiment_calls": 100,
+  "tokens_excluding_probe": 40986,
+  "intent_correct": {
+    "rules": 5,
+    "overlay_only": 2,
+    "offline_combined": 6,
+    "v3_raw": 28,
+    "v3_overlay": 28
+  },
+  "synthetic_graph": {
+    "single": {
+      "n": 3,
+      "full_answer_by_reference_review": 3,
+      "rounds": 3,
+      "searches": 6,
+      "provider_calls": 12,
+      "tokens": 5036,
+      "median_seconds": 5.57
+    },
+    "fixed_three": {
+      "n": 3,
+      "full_answer_by_reference_review": 3,
+      "rounds": 9,
+      "searches": 18,
+      "provider_calls": 27,
+      "tokens": 8725,
+      "median_seconds": 11.77
+    },
+    "adaptive": {
+      "n": 3,
+      "full_answer_by_reference_review": 1,
+      "rounds": 1,
+      "searches": 2,
+      "provider_calls": 9,
+      "tokens": 3949,
+      "median_seconds": 5.83
+    }
+  }
+}

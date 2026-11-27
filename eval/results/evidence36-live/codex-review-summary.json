@@ -1,0 +1,96 @@
+{
+  "strategies": {
+    "single": {
+      "n": 36,
+      "passed": 18,
+      "tokens": 64131,
+      "calls": 167,
+      "median_ms": 4775.96,
+      "rounds": 31,
+      "round_distribution": {
+        "1": 31,
+        "0": 5
+      },
+      "by_group": {
+        "chain": 0,
+        "code_link": 2,
+        "direct": 9,
+        "named_link": 1,
+        "outside": 2,
+        "unknown": 4
+      }
+    },
+    "fixed_three": {
+      "n": 36,
+      "passed": 21,
+      "tokens": 90834,
+      "calls": 291,
+      "median_ms": 8128.05,
+      "rounds": 93,
+      "round_distribution": {
+        "3": 31,
+        "0": 5
+      },
+      "by_group": {
+        "chain": 0,
+        "code_link": 3,
+        "direct": 9,
+        "named_link": 3,
+        "outside": 2,
+        "unknown": 4
+      }
+    },
+    "adaptive": {
+      "n": 36,
+      "passed": 24,
+      "tokens": 83931,
+      "calls": 249,
+      "median_ms": 7049.17,
+      "rounds": 63,
+      "round_distribution": {
+        "1": 12,
+        "0": 5,
+        "2": 6,
+        "3": 13
+      },
+      "by_group": {
+        "chain": 0,
+        "code_link": 6,
+        "direct": 9,
+        "named_link": 3,
+        "outside": 2,
+        "unknown": 4
+      }
+    }
+  },
+  "paired": {
+    "single": {
+      "rescued": [
+        "H11",
+        "H13",
+        "H18",
+        "H19",
+        "H21",
+        "H24"
+      ],
+      "lost": [],
+      "two_sided_exact_p": 0.03125
+    },
+    "fixed_three": {
+      "rescued": [
+        "H11",
+        "H13",
+        "H14"
+      ],
+      "lost": [],
+      "two_sided_exact_p": 0.25
+    }
+  },
+  "quality_vs_single": true,
+  "efficiency_vs_three": false,
+  "abstention_control": true,
+  "extra_tokens_per_net_correct_vs_single": 3300.0,
+  "assessor": "Codex independent review of blinded answers; not the DeepSeek judge",
+  "question_digest": "c36a1ada7f566adc0ad26eadbe1666b6ae47a83db1b442c1dc8539806418978b",
+  "receipt_count": 707
+}

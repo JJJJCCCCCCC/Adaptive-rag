@@ -1,0 +1,75 @@
+{
+  "id": "M01",
+  "group": "multihop",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "青屿折叠椅送修按规定要付多少寄送费？",
+        "missing": "",
+        "suggestions": [
+          "青屿折叠椅 送修 寄送费 规定",
+          "青屿折叠椅 维修 寄回 运费 收费标准"
+        ],
+        "searches": [
+          {
+            "query": "青屿折叠椅送修按规定要付多少寄送费？",
+            "hits": [
+              "青屿折叠椅服务档案",
+              "仓储等级保管表",
+              "维修寄送档收费表"
+            ]
+          },
+          {
+            "query": "青屿折叠椅 送修 寄送费 规定",
+            "hits": [
+              "青屿折叠椅服务档案",
+              "会员续期",
+              "维修寄送档收费表"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.92,
+      "rationale": "询问送修寄送费用的通用规定，属于保修/费用政策解释，非具体订单售后或物流轨迹",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3965.64,
+  "docs": [
+    "青屿折叠椅服务档案",
+    "维修寄送档收费表",
+    "会员续期"
+  ],
+  "provider_tokens": 1671,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "青屿折叠椅适用维修寄送档 M47，按维修寄送档收费表，M47 单次寄送收费 13 元。该费用按单次寄送计费。",
+  "evidence": [
+    {
+      "source": "青屿折叠椅服务档案_db2c909e",
+      "text": "青屿折叠椅服务档案。青屿折叠椅适用维修寄送档 M47。"
+    },
+    {
+      "source": "维修寄送档收费表_6529e93d",
+      "text": "维修寄送档收费表。M42 收9元;M47 收13元;M74 收31元。各档按单次寄送计费。"
+    },
+    {
+      "source": "会员续期_064a7051",
+      "text": "会员续期。铜卡到期前续费加送8天,到期后续费加送3天;赠送天数不叠加。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "12085090a39a4427b37c6bb3f6d8ef33"
+}

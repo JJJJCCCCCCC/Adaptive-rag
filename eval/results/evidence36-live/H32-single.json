@@ -1,0 +1,82 @@
+{
+  "id": "H32",
+  "group": "unknown",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "芦岸雨罩接单后保证几天完工？",
+        "missing": "",
+        "suggestions": [
+          "芦岸雨罩 接单后 几天完工",
+          "芦岸雨罩 定制 工期 几天",
+          "芦岸雨罩 生产周期 交货时间"
+        ],
+        "searches": [
+          {
+            "query": "芦岸雨罩接单后保证几天完工？",
+            "hits": [
+              "芦岸雨罩公告",
+              "松烟方案",
+              "样片周转"
+            ]
+          },
+          {
+            "query": "芦岸雨罩 接单后 几天完工",
+            "hits": [
+              "芦岸雨罩公告",
+              "白榆协议",
+              "样片周转"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问接单后保证几天完工，属于通用工期/政策解释，非具体订单物流或售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问芦岸雨罩接单后的完工时间保证，属于单一政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3973.88,
+  "docs": [
+    "芦岸雨罩公告",
+    "松烟方案",
+    "样片周转"
+  ],
+  "provider_tokens": 1818,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据现有公告，芦岸雨罩提供维修受理服务，但未承诺具体完工日期，因此无法保证接单后几天完工。若您需要确认具体时效，请补充订单号，或转人工进一步核实。",
+  "evidence": [
+    {
+      "source": "芦岸雨罩公告_24ef49fc",
+      "text": "芦岸雨罩公告。芦岸雨罩:有维修受理服务,但未承诺完工日期。"
+    },
+    {
+      "source": "松烟方案_690bcc88",
+      "text": "松烟方案。从柜台受理起第8天完成。"
+    },
+    {
+      "source": "样片周转_904a3723",
+      "text": "样片周转。帘布样片签收后可免费借用9天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "61c891f38ea04e48b48373a421750c60"
+}

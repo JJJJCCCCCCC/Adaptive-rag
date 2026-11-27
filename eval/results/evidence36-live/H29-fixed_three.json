@@ -1,0 +1,37 @@
+{
+  "id": "H29",
+  "group": "chain",
+  "arm": "fixed_three",
+  "route": "refuse",
+  "trace": {
+    "rounds": [],
+    "intent": {
+      "label": "out_of_scope",
+      "confidence": 0.82,
+      "rationale": "询问石浦烟熏盒预约上门取件的押金，属于与电商客服无关的本地服务/押金问题，不在标签范围内。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "out_of_scope",
+      "strategy": "refuse",
+      "confidence": 0.95,
+      "rationale": "问题涉及石浦烟熏盒预约上门取件的押金，属于特定商品/服务或非电商客服范围，超出电商客服边界，应拒绝。"
+    }
+  },
+  "refused": true,
+  "rounds": 0,
+  "searches": 0,
+  "ms": 2070.27,
+  "docs": [],
+  "provider_tokens": 1000,
+  "provider_responses": 2,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "这个问题超出电商客服范围，我无法协助。如需购物、订单、物流或售后帮助，请换个问题。",
+  "evidence": [],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "0fe9e1de27504f6983238fcf6c92b3ef"
+}

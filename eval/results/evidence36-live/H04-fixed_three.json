@@ -1,0 +1,147 @@
+{
+  "id": "H04",
+  "group": "direct",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "饮料周转箱拿走后最迟多少天要还？",
+        "missing": "",
+        "suggestions": [
+          "饮料周转箱 归还期限 最迟几天",
+          "饮料周转箱 借用 归还时间 规定"
+        ],
+        "searches": [
+          {
+            "query": "饮料周转箱拿走后最迟多少天要还？",
+            "hits": [
+              "瓶箱借用",
+              "星堤香盒服务说明",
+              "样片周转"
+            ]
+          },
+          {
+            "query": "饮料周转箱 归还期限 最迟几天",
+            "hits": [
+              "瓶箱借用",
+              "履约排期",
+              "附加保障期限"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明饮料周转箱自取走日起最迟17天内归还，直接回答了问题。"
+        },
+        "accumulated": [
+          "瓶箱借用",
+          "样片周转",
+          "履约排期"
+        ]
+      },
+      {
+        "input": "饮料周转箱拿走后最迟多少天要还？",
+        "missing": "",
+        "suggestions": [
+          "饮料周转箱 归还期限 最迟几天",
+          "饮料周转箱 归还 时间限制"
+        ],
+        "searches": [
+          {
+            "query": "饮料周转箱 归还 时间限制",
+            "hits": [
+              "瓶箱借用",
+              "青穗计划",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明饮料周转箱自取走日起最迟17天内归还，直接回答了问题。"
+        },
+        "accumulated": [
+          "瓶箱借用",
+          "交付承诺册",
+          "样片周转"
+        ]
+      },
+      {
+        "input": "饮料周转箱拿走后最迟多少天要还？",
+        "missing": "",
+        "suggestions": [
+          "饮料周转箱 归还期限 最迟几天",
+          "饮料周转箱 归还 时间限制"
+        ],
+        "searches": [
+          {
+            "query": "饮料周转箱拿走后最迟多少天要还？",
+            "hits": [
+              "瓶箱借用",
+              "星堤香盒服务说明",
+              "样片周转"
+            ]
+          },
+          {
+            "query": "饮料周转箱 归还期限 最迟几天",
+            "hits": [
+              "瓶箱借用",
+              "履约排期",
+              "附加保障期限"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.92,
+      "rationale": "询问周转箱归还期限的通用规则，属于政策解释，非具体订单售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "这是一个关于周转箱归还期限的单条政策FAQ，可直接查询政策回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 7649.22,
+  "docs": [
+    "瓶箱借用",
+    "交付承诺册",
+    "样片周转"
+  ],
+  "provider_tokens": 2441,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "饮料周转箱自取走日起最迟17天内归还。",
+  "evidence": [
+    {
+      "source": "瓶箱借用_6e226241",
+      "text": "瓶箱借用。饮料周转箱自取走日起最迟17天内归还。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    },
+    {
+      "source": "样片周转_904a3723",
+      "text": "样片周转。帘布样片签收后可免费借用9天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "bde3e9c749a34bce81e74c6cd3e79c57"
+}

@@ -1,0 +1,12 @@
+{"id":"h1","group":"simple","query":"礼品包装的贺卡能写几个字？","docs":["packaging_gift"],"facts":["限 40 字"]}
+{"id":"h2","group":"simple","query":"过保上门检测怎么收费？","docs":["repair_onsite"],"facts":["60 元"]}
+{"id":"h3","group":"simple","query":"货到付款的手续费是多少？","docs":["shipping_cod"],"facts":["6 元"]}
+{"id":"h4","group":"simple","query":"换尺码最多可以换几次？","docs":["exchange_size"],"facts":["2 次"]}
+{"id":"h5","group":"simple","query":"标准家电安装另收费吗？","docs":["install_appliance"],"facts":["标准安装免费"]}
+{"id":"h6","group":"simple","query":"投诉单号以什么开头？","docs":["complaint_sla"],"facts":["CP"]}
+{"id":"h7","group":"compound","query":"礼品包装破损还退包装费吗？此外，发票会寄给收礼的人吗？","docs":["packaging_gift"],"facts":["不退 8 元包装费","不会寄给收礼人"]}
+{"id":"h8","group":"compound","query":"过保的上门维修收多少检测费；没有备件时，最长可以等几天？","docs":["repair_onsite"],"facts":["60 元","15 天"]}
+{"id":"h9","group":"compound","query":"货到付款要额外收多少钱，定制品支持货到付款吗？","docs":["shipping_cod"],"facts":["6 元","定制商品、预售、跨境不支持"]}
+{"id":"h10","group":"compound","query":"换尺码的次数上限是多少？误差超过多少厘米可以免费换货？","docs":["exchange_size"],"facts":["2 次","超过 1.5cm"]}
+{"id":"h11","group":"compound","query":"想知道上门安装由谁预约、多久联系。另外过保的上门维修检测怎么收费？","docs":["install_appliance","repair_onsite"],"facts":["48 小时","60 元"]}
+{"id":"h12","group":"compound","query":"严重投诉多久由经理介入，投诉单号长什么样？","docs":["complaint_sla"],"facts":["4 小时","CP"]}

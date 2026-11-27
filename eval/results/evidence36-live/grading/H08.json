@@ -1,0 +1,91 @@
+{
+  "receipts": [
+    {
+      "model": "deepseek-flash",
+      "id": "4d94d48b-9025-4320-b9a1-c107465c1f07",
+      "usage": {
+        "prompt_tokens": 349,
+        "completion_tokens": 112,
+        "total_tokens": 461,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 221
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "7f0ed8a9-75a0-4a49-a35b-24df55f08b6e",
+      "usage": {
+        "prompt_tokens": 442,
+        "completion_tokens": 104,
+        "total_tokens": 546,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 186
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "3d602326-7020-41a6-b5a0-35f808a83e71",
+      "usage": {
+        "prompt_tokens": 246,
+        "completion_tokens": 35,
+        "total_tokens": 281,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 246
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "d0f90a93-96e9-4c15-85c9-23faf569043d",
+      "usage": {
+        "prompt_tokens": 252,
+        "completion_tokens": 42,
+        "total_tokens": 294,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 252
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "0b5468e8-a383-4b40-8739-b70f6ecc6d1b",
+      "usage": {
+        "prompt_tokens": 287,
+        "completion_tokens": 46,
+        "total_tokens": 333,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 159
+      }
+    }
+  ],
+  "labels": {
+    "A": {
+      "pass": true,
+      "reason": "正确应用规则：首个免费，后两个各5元，合计10元，数值和单位正确。"
+    },
+    "B": {
+      "pass": true,
+      "reason": "正确应用规则：首个免费，后两个各5元，合计10元，数值和单位正确。"
+    },
+    "C": {
+      "pass": true,
+      "reason": "正确应用规则：首个免费，后两个各5元，合计10元，数值和单位正确。"
+    }
+  },
+  "mode": "recovered_group",
+  "source_completion_id": "4d94d48b-9025-4320-b9a1-c107465c1f07",
+  "signature": "a75b4108cce1c6730319638fd2b0d601002bb2d087113668021a102b64f4aeef"
+}

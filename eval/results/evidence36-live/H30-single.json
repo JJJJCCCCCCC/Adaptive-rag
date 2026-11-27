@@ -1,0 +1,81 @@
+{
+  "id": "H30",
+  "group": "chain",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "朱湾画筒可享几个月的加保期？",
+        "missing": "",
+        "suggestions": [
+          "朱湾画筒 加保期 几个月",
+          "朱湾画筒 保修 延保 期限"
+        ],
+        "searches": [
+          {
+            "query": "朱湾画筒可享几个月的加保期？",
+            "hits": [
+              "朱湾画筒服务手册",
+              "谷风章程",
+              "零件保障期"
+            ]
+          },
+          {
+            "query": "朱湾画筒 加保期 几个月",
+            "hits": [
+              "朱湾画筒服务手册",
+              "青丘砧板服务说明",
+              "零件保障期"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问某商品可享的加保期时长，属于通用保修政策解释，非具体售后申请，归为 faq_policy",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "单一政策/FAQ查询，询问某商品的加保期时长，直接检索政策即可回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4953.04,
+  "docs": [
+    "朱湾画筒服务手册",
+    "零件保障期",
+    "青丘砧板服务说明"
+  ],
+  "provider_tokens": 1973,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据无法确定朱湾画筒的加保期时长。检索到的《朱湾画筒服务手册》只说明其配套服务执行《银梨协议》，未给出具体月数；《零件保障期》中的9/22/18个月对应WX68/WX86/WX88，与朱湾画筒的对应关系不明确，不能据此推断。建议补充订单号或具体型号，或转人工核实。",
+  "evidence": [
+    {
+      "source": "朱湾画筒服务手册_baf93dc3",
+      "text": "朱湾画筒服务手册。朱湾画筒的配套服务执行《银梨协议》。"
+    },
+    {
+      "source": "零件保障期_517af012",
+      "text": "零件保障期。WX68 为9个月,WX86 为22个月,WX88 为18个月。"
+    },
+    {
+      "source": "青丘砧板服务说明_01a43dab",
+      "text": "青丘砧板服务说明。青丘砧板的整面养护依照《谷风章程》办理。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "e82f5d5dd88d416f8f4375b54b0a3c59"
+}

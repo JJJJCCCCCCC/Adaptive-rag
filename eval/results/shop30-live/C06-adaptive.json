@@ -1,0 +1,93 @@
+{
+  "id": "C06",
+  "group": "complex",
+  "arm": "adaptive",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "铜卡到期前和到期后续，分别加送多少天？能把两次优惠叠加吗？",
+        "missing": "",
+        "suggestions": [
+          "铜卡到期前续费加送多少天",
+          "铜卡到期后续费加送多少天",
+          "铜卡两次续费优惠能否叠加"
+        ],
+        "searches": [
+          {
+            "query": "铜卡到期前和到期后续，分别加送多少天？能把两次优惠叠加吗？",
+            "hits": [
+              "会员续期",
+              "返厂通道预约周期",
+              "电子赠券"
+            ]
+          },
+          {
+            "query": "铜卡到期前续费加送多少天",
+            "hits": [
+              "电子赠券",
+              "会员续期",
+              "定制刻字修改"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明铜卡到期前续费加送8天、到期后续费加送3天，且赠送天数不叠加，完整回答了问题的两个部分。"
+        },
+        "accumulated": [
+          "会员续期",
+          "电子赠券",
+          "定制刻字修改"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.92,
+      "rationale": "询问会员卡续费赠送天数的通用规则及优惠能否叠加，属于政策解释，非具体订单售后或优惠券操作",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "multi_hop",
+      "strategy": "multi",
+      "confidence": 0.85,
+      "rationale": "需要组合会员等级政策中到期前续费与到期后续费两条规则，并判断两次优惠能否叠加，属于多条件推理。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 6664.45,
+  "docs": [
+    "会员续期",
+    "电子赠券",
+    "定制刻字修改"
+  ],
+  "provider_tokens": 2215,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "铜卡到期前续费加送8天，到期后续费加送3天；赠送天数不叠加，只能按实际续费时点享受对应一档。",
+  "evidence": [
+    {
+      "source": "会员续期_064a7051",
+      "text": "会员续期。铜卡到期前续费加送8天,到期后续费加送3天;赠送天数不叠加。"
+    },
+    {
+      "source": "电子赠券_f960a05f",
+      "text": "电子赠券。电子赠券每张面值18元,到期自动失效。"
+    },
+    {
+      "source": "定制刻字修改_5ad9208d",
+      "text": "定制刻字修改。买家确认刻字稿后90分钟内免费修改。超过90分钟但尚未雕刻,改稿收12元;已经雕刻则停止改稿。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "9f88205d06154e67820e9f1e8d05b13b"
+}

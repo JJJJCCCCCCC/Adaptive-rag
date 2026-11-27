@@ -1,0 +1,158 @@
+{
+  "id": "H07",
+  "group": "direct",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "刻章刻七个字，超字部分一共收多少元？",
+        "missing": "",
+        "suggestions": [
+          "刻章 七个字 超字收费",
+          "刻章 超字 每字多少钱",
+          "印章 七个字 价格"
+        ],
+        "searches": [
+          {
+            "query": "刻章刻七个字，超字部分一共收多少元？",
+            "hits": [
+              "外箱附加价",
+              "刻章加字",
+              "押金清单"
+            ]
+          },
+          {
+            "query": "刻章 七个字 超字收费",
+            "hits": [
+              "刻章加字",
+              "年度更换配额",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据说明刻章含前四个字，超过部分每字收3元。刻七个字，超字部分为7-4=3个字，共收3×3=9元。证据足以计算。"
+        },
+        "accumulated": [
+          "刻章加字",
+          "外箱附加价",
+          "押金清单"
+        ]
+      },
+      {
+        "input": "刻章刻七个字，超字部分一共收多少元？",
+        "missing": "",
+        "suggestions": [
+          "刻章 七个字 超字收费",
+          "刻章 超字 每字多少钱",
+          "印章 七个字 超字费用"
+        ],
+        "searches": [
+          {
+            "query": "刻章 超字 每字多少钱",
+            "hits": [
+              "交付承诺册",
+              "刻章加字",
+              "桐鸣水壶服务说明"
+            ]
+          },
+          {
+            "query": "印章 七个字 超字费用",
+            "hits": [
+              "刻章加字",
+              "礼签加购",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据说明刻章含前四个字，超过部分每字收3元。七个字超出3个字，3×3=9元，足以计算超字部分费用。"
+        },
+        "accumulated": [
+          "刻章加字",
+          "交付承诺册",
+          "外箱附加价"
+        ]
+      },
+      {
+        "input": "刻章刻七个字，超字部分一共收多少元？",
+        "missing": "",
+        "suggestions": [
+          "刻章 七个字 超字收费",
+          "刻章 超字 每字多少钱",
+          "印章 七个字 超字费用"
+        ],
+        "searches": [
+          {
+            "query": "刻章刻七个字，超字部分一共收多少元？",
+            "hits": [
+              "外箱附加价",
+              "刻章加字",
+              "押金清单"
+            ]
+          },
+          {
+            "query": "刻章 七个字 超字收费",
+            "hits": [
+              "刻章加字",
+              "年度更换配额",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.9,
+      "rationale": "询问刻章超字部分的收费，属于具体商品的价格/参数咨询，不是通用政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问刻章超字收费，属于单一价格政策咨询，需查询刻章收费标准即可回答，无需组合多政策或调用订单系统。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8686.09,
+  "docs": [
+    "刻章加字",
+    "交付承诺册",
+    "外箱附加价"
+  ],
+  "provider_tokens": 2658,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "刻章含前4个字，7个字中超出部分为3个字，按每字3元计算，超字部分共收9元。",
+  "evidence": [
+    {
+      "source": "刻章加字_cd48cdfd",
+      "text": "刻章加字。刻章含前四个字,超过部分每字收3元。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    },
+    {
+      "source": "外箱附加价_489973dd",
+      "text": "外箱附加价。PK19 收9元,PK91 收26元,PK90 收12元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "b0a8874a1a2243b4b4daa3a175418ed6"
+}

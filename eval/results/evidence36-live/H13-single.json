@@ -1,0 +1,82 @@
+{
+  "id": "H13",
+  "group": "code_link",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "风禾藤篮按店内规则翻新一次要收多少？",
+        "missing": "",
+        "suggestions": [
+          "风禾藤篮 翻新 收费",
+          "风禾藤篮 店内规则 翻新 价格",
+          "风禾藤篮 翻新 一次 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "风禾藤篮按店内规则翻新一次要收多少？",
+            "hits": [
+              "风禾藤篮售后说明",
+              "餐盘保护盒",
+              "海隅坐垫公告"
+            ]
+          },
+          {
+            "query": "风禾藤篮 翻新 收费",
+            "hits": [
+              "风禾藤篮售后说明",
+              "浅沙遮阳篷售后说明",
+              "海隅坐垫公告"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.88,
+      "rationale": "询问店内规则下翻新服务的收费，属于通用政策/费用解释，非具体订单售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问特定商品（风禾藤篮）按店内规则翻新一次的收费，属于单条政策/FAQ查询，无需组合多条政策或调用订单系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5595.15,
+  "docs": [
+    "风禾藤篮售后说明",
+    "海隅坐垫公告",
+    "餐盘保护盒"
+  ],
+  "provider_tokens": 1856,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只能确认风禾藤篮的翻新级为 JQ54，未提供翻新收费金额，因此无法确定具体费用。建议补充订单号或转人工客服核实店内翻新收费标准。",
+  "evidence": [
+    {
+      "source": "风禾藤篮售后说明_1d42cedc",
+      "text": "风禾藤篮售后说明。风禾藤篮的翻新级为 JQ54。"
+    },
+    {
+      "source": "海隅坐垫公告_83a6289a",
+      "text": "海隅坐垫公告。海隅坐垫:可以在柜台咨询翻新,尚未公布使用寿命。"
+    },
+    {
+      "source": "餐盘保护盒_7b46136d",
+      "text": "餐盘保护盒。首个保护盒免费,其后每个收5元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "2ff2987a9ddc449d8bf373e5820186fb"
+}

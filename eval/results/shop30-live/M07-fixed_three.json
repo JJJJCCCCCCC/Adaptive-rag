@@ -1,0 +1,162 @@
+{
+  "id": "M07",
+  "group": "multihop",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "给天井花架安排上门组装，按它的工单类型要收多少？",
+        "missing": "",
+        "suggestions": [
+          "天井花架 上门组装 工单类型 收费",
+          "天井花架 安装 工单类型 价格"
+        ],
+        "searches": [
+          {
+            "query": "给天井花架安排上门组装，按它的工单类型要收多少？",
+            "hits": [
+              "天井花架服务档案",
+              "晴川手冲壶服务档案",
+              "上门测量"
+            ]
+          },
+          {
+            "query": "天井花架 上门组装 工单类型 收费",
+            "hits": [
+              "天井花架服务档案",
+              "回澜边桌服务档案",
+              "组装工单费率"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示天井花架的组装工单类型为A62，且A62的组装工单费率为每次37元，因此可直接回答收费37元。"
+        },
+        "accumulated": [
+          "天井花架服务档案",
+          "上门测量",
+          "组装工单费率"
+        ]
+      },
+      {
+        "input": "给天井花架安排上门组装，按它的工单类型要收多少？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "天井花架 上门组装 工单类型 收费标准",
+          "天井花架 上门组装 工单类型 收费政策",
+          "天井花架 组装 工单类型 费用"
+        ],
+        "searches": [
+          {
+            "query": "给天井花架安排上门组装，按它的工单类型要收多少？",
+            "hits": [
+              "天井花架服务档案",
+              "晴川手冲壶服务档案",
+              "上门测量"
+            ]
+          },
+          {
+            "query": "天井花架 上门组装 工单类型 收费标准",
+            "hits": [
+              "天井花架服务档案",
+              "回澜边桌服务档案",
+              "组装工单费率"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示天井花架的组装工单类型为A62，且A62的组装工单费率为每次37元，因此可直接回答收费37元。"
+        },
+        "accumulated": [
+          "天井花架服务档案",
+          "上门测量",
+          "组装工单费率"
+        ]
+      },
+      {
+        "input": "给天井花架安排上门组装，按它的工单类型要收多少？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "天井花架 上门组装 工单类型 收费标准",
+          "天井花架 安装 工单类型 费用 政策",
+          "花架 上门组装 工单类型 收费条件"
+        ],
+        "searches": [
+          {
+            "query": "给天井花架安排上门组装，按它的工单类型要收多少？",
+            "hits": [
+              "天井花架服务档案",
+              "晴川手冲壶服务档案",
+              "上门测量"
+            ]
+          },
+          {
+            "query": "天井花架 上门组装 工单类型 收费标准",
+            "hits": [
+              "天井花架服务档案",
+              "回澜边桌服务档案",
+              "组装工单费率"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示天井花架的组装工单类型为A62，且A62的组装工单费率为每次37元，可直接回答上门组装收费37元。"
+        },
+        "accumulated": [
+          "天井花架服务档案",
+          "上门测量",
+          "组装工单费率"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "out_of_scope",
+      "confidence": 0.85,
+      "rationale": "用户询问天井花架上门组装的工单类型收费标准，属于安装服务/工单计费问题，不在电商客服意图标签范围内，且无匹配的售后、物流或政策类别。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8671.76,
+  "docs": [
+    "天井花架服务档案",
+    "上门测量",
+    "组装工单费率"
+  ],
+  "provider_tokens": 2910,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "天井花架的组装工单类型为 A62（chunk_id: 天井花架服务档案_70b24c4e_00）。按组装工单费率，A62 每次 37 元（chunk_id: 组装工单费率_41be281b_00）。因此，按该工单类型，上门组装费用为每次 37 元。若需实际下单或确认具体订单金额，请提供订单号，或转人工核实。",
+  "evidence": [
+    {
+      "source": "天井花架服务档案_70b24c4e",
+      "text": "天井花架服务档案。天井花架的组装工单类型为 A62。"
+    },
+    {
+      "source": "上门测量_9f212e6b",
+      "text": "上门测量。衣柜上门量尺的预约金为35元,完工后冲抵安装费。"
+    },
+    {
+      "source": "组装工单费率_41be281b",
+      "text": "组装工单费率。A26 每次27元,A62 每次37元,A66 每次47元。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "5bdbe5531e304ed8b92bd249726603af"
+}

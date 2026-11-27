@@ -1,0 +1,81 @@
+{
+  "id": "M02",
+  "group": "multihop",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "晴川手冲壶缺壶盖，补件审核通过后几天内能备齐？",
+        "missing": "",
+        "suggestions": [
+          "晴川手冲壶 壶盖 补件 审核通过 几天备齐",
+          "晴川手冲壶 缺壶盖 补件 时效"
+        ],
+        "searches": [
+          {
+            "query": "晴川手冲壶缺壶盖，补件审核通过后几天内能备齐？",
+            "hits": [
+              "晴川手冲壶服务档案",
+              "竹影茶盘服务档案",
+              "备件组备货时限"
+            ]
+          },
+          {
+            "query": "晴川手冲壶 壶盖 补件 审核通过 几天备齐",
+            "hits": [
+              "晴川手冲壶服务档案",
+              "凭证激活窗口",
+              "备件组备货时限"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问补件审核通过后备齐所需时间，属于通用售后时效政策解释，非具体订单物流轨迹或退款退货操作",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问补件审核通过后备齐所需时间，属于单一政策/FAQ查询，无需组合多条政策或调用订单系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4989.7,
+  "docs": [
+    "备件组备货时限",
+    "晴川手冲壶服务档案",
+    "凭证激活窗口"
+  ],
+  "provider_tokens": 2029,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "晴川手冲壶的壶盖属于备件组 K32；按备件组备货时限，K32 需在 8 天内备齐，时限自审核通过起算。因此，补件审核通过后，预计 8 天内备齐。",
+  "evidence": [
+    {
+      "source": "备件组备货时限_6777c1fc",
+      "text": "备件组备货时限。K23 在6天内备齐,K32 在8天内备齐,K30 在4天内备齐;时限自审核通过起算。"
+    },
+    {
+      "source": "晴川手冲壶服务档案_61135e23",
+      "text": "晴川手冲壶服务档案。晴川手冲壶的壶盖属于备件组 K32。"
+    },
+    {
+      "source": "凭证激活窗口_551de802",
+      "text": "凭证激活窗口。V43 需在5天内激活;V34 需在12天内激活;V33 需在7天内激活。自签收起算。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "ef8e6578e0a940d1a1f1e6630730964c"
+}

@@ -1,0 +1,3241 @@
+{
+  "n": 65,
+  "dense_backend": "hash-vector",
+  "local_embedding_configured": false,
+  "cross_encoder_configured": false,
+  "cross_encoder_available": false,
+  "cross_encoder_model": "BAAI/bge-reranker-base",
+  "note": "Cross-Encoder not loaded; hybrid+cross-encoder skipped. pip install -e \".[rerank]\". Lexical fallback is CI-only, not a Cross-Encoder.",
+  "systems": [
+    {
+      "backend": "bm25",
+      "n": 65,
+      "precision_at_1": {
+        "mean": 0.8,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "recall_at_3": {
+        "mean": 0.9,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_1": {
+        "mean": 0.8,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_3": {
+        "mean": 0.9077,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "mrr": {
+        "mean": 0.8556,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "predictions": [
+        {
+          "id": "r001",
+          "ranked_documents": [
+            "return_policy",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r002",
+          "ranked_documents": [
+            "shipping",
+            "shipping_cod",
+            "coupons",
+            "promo_stacking",
+            "shipping_split"
+          ]
+        },
+        {
+          "id": "r003",
+          "ranked_documents": [
+            "return_custom",
+            "pickup_return",
+            "cross_border",
+            "exchange_size",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r004",
+          "ranked_documents": [
+            "invoice_vat",
+            "packaging_gift",
+            "faq",
+            "return_apparel",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r005",
+          "ranked_documents": [
+            "warranty",
+            "warranty_jewelry",
+            "return_policy",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r006",
+          "ranked_documents": [
+            "faq",
+            "payment_methods",
+            "refund_timeline",
+            "installment_huabei",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r007",
+          "ranked_documents": [
+            "faq",
+            "shipping_split",
+            "promo_stacking",
+            "shipping_address",
+            "live_presale"
+          ]
+        },
+        {
+          "id": "r008",
+          "ranked_documents": [
+            "payment_methods",
+            "coupons",
+            "faq",
+            "points_expiry",
+            "return_custom"
+          ]
+        },
+        {
+          "id": "r009",
+          "ranked_documents": [
+            "return_policy",
+            "shipping",
+            "refund_timeline",
+            "shipping_address"
+          ]
+        },
+        {
+          "id": "r010",
+          "ranked_documents": [
+            "faq",
+            "return_food",
+            "return_policy",
+            "handoff_hours",
+            "refund_timeline"
+          ]
+        },
+        {
+          "id": "r011",
+          "ranked_documents": [
+            "return_policy",
+            "shipping_cod",
+            "return_food",
+            "return_apparel"
+          ]
+        },
+        {
+          "id": "r012",
+          "ranked_documents": [
+            "return_electronics",
+            "refund_timeline",
+            "return_policy",
+            "exchange_size",
+            "cross_border"
+          ]
+        },
+        {
+          "id": "r013",
+          "ranked_documents": [
+            "return_policy",
+            "return_custom",
+            "shipping_cod",
+            "cross_border",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r014",
+          "ranked_documents": [
+            "return_policy",
+            "packaging_gift",
+            "return_apparel",
+            "live_presale",
+            "size_guide"
+          ]
+        },
+        {
+          "id": "r015",
+          "ranked_documents": [
+            "shipping",
+            "shipping_cod",
+            "shipping_split",
+            "shipping_address"
+          ]
+        },
+        {
+          "id": "r016",
+          "ranked_documents": [
+            "shipping",
+            "shipping_address",
+            "warranty_battery",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r017",
+          "ranked_documents": [
+            "shipping",
+            "coupons",
+            "shipping_remote",
+            "shipping_address"
+          ]
+        },
+        {
+          "id": "r018",
+          "ranked_documents": [
+            "shipping",
+            "shipping_split",
+            "faq",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r019",
+          "ranked_documents": [
+            "shipping",
+            "logistics_exception",
+            "faq",
+            "handoff_hours",
+            "shipping_split"
+          ]
+        },
+        {
+          "id": "r020",
+          "ranked_documents": [
+            "warranty",
+            "warranty_jewelry",
+            "warranty_battery",
+            "points_expiry",
+            "repair_onsite"
+          ]
+        },
+        {
+          "id": "r021",
+          "ranked_documents": [
+            "warranty",
+            "warranty_jewelry",
+            "return_policy",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r022",
+          "ranked_documents": [
+            "warranty",
+            "warranty_battery",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r023",
+          "ranked_documents": [
+            "promo_stacking",
+            "membership_plus",
+            "return_custom",
+            "coupons",
+            "shipping"
+          ]
+        },
+        {
+          "id": "r024",
+          "ranked_documents": [
+            "coupons",
+            "promo_stacking",
+            "return_custom",
+            "payment_methods"
+          ]
+        },
+        {
+          "id": "r025",
+          "ranked_documents": [
+            "shipping_remote",
+            "shipping",
+            "coupons",
+            "membership_plus"
+          ]
+        },
+        {
+          "id": "r026",
+          "ranked_documents": [
+            "payment_methods",
+            "return_custom",
+            "membership_plus",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r027",
+          "ranked_documents": [
+            "return_custom",
+            "membership_plus",
+            "promo_stacking",
+            "coupons",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r028",
+          "ranked_documents": [
+            "return_policy",
+            "refund_timeline",
+            "exchange_size",
+            "price_protect",
+            "pickup_return"
+          ]
+        },
+        {
+          "id": "r029",
+          "ranked_documents": [
+            "shipping",
+            "pickup_return",
+            "complaint_sla",
+            "packaging_gift",
+            "return_food"
+          ]
+        },
+        {
+          "id": "r030",
+          "ranked_documents": [
+            "invoice_vat",
+            "packaging_gift",
+            "faq",
+            "warranty",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r031",
+          "ranked_documents": [
+            "warranty",
+            "warranty_jewelry",
+            "return_electronics",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r032",
+          "ranked_documents": [
+            "shipping",
+            "live_presale",
+            "shipping_cod",
+            "shipping_split",
+            "exchange_size"
+          ]
+        },
+        {
+          "id": "r033",
+          "ranked_documents": [
+            "return_electronics",
+            "warranty_jewelry",
+            "return_food",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r034",
+          "ranked_documents": [
+            "return_custom",
+            "shipping_cod",
+            "exchange_size",
+            "packaging_gift",
+            "return_apparel"
+          ]
+        },
+        {
+          "id": "r035",
+          "ranked_documents": [
+            "return_food",
+            "packaging_gift",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r036",
+          "ranked_documents": [
+            "return_custom",
+            "shipping_address",
+            "promo_stacking",
+            "packaging_gift",
+            "shipping_remote"
+          ]
+        },
+        {
+          "id": "r037",
+          "ranked_documents": [
+            "return_apparel",
+            "exchange_size",
+            "warranty_battery",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r038",
+          "ranked_documents": [
+            "missing_wrong_item",
+            "points_expiry",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r039",
+          "ranked_documents": [
+            "refund_timeline",
+            "faq",
+            "payment_methods",
+            "cross_border",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r040",
+          "ranked_documents": [
+            "pickup_return",
+            "repair_onsite",
+            "missing_wrong_item"
+          ]
+        },
+        {
+          "id": "r041",
+          "ranked_documents": [
+            "shipping_remote",
+            "membership_plus",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r042",
+          "ranked_documents": [
+            "shipping_split",
+            "packaging_gift",
+            "payment_methods",
+            "shipping_address"
+          ]
+        },
+        {
+          "id": "r043",
+          "ranked_documents": [
+            "shipping_cod",
+            "gift_card",
+            "installment_huabei"
+          ]
+        },
+        {
+          "id": "r044",
+          "ranked_documents": [
+            "logistics_exception",
+            "shipping",
+            "restock_notify",
+            "live_presale"
+          ]
+        },
+        {
+          "id": "r045",
+          "ranked_documents": [
+            "shipping_split",
+            "return_apparel",
+            "price_protect",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r046",
+          "ranked_documents": [
+            "warranty_battery",
+            "warranty",
+            "warranty_jewelry",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r047",
+          "ranked_documents": [
+            "install_appliance",
+            "warranty_jewelry",
+            "shipping"
+          ]
+        },
+        {
+          "id": "r048",
+          "ranked_documents": [
+            "repair_onsite",
+            "pickup_return",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r049",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "warranty",
+            "return_policy",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r050",
+          "ranked_documents": [
+            "installment_huabei",
+            "faq",
+            "payment_methods",
+            "refund_timeline"
+          ]
+        },
+        {
+          "id": "r051",
+          "ranked_documents": [
+            "invoice_vat",
+            "packaging_gift",
+            "privacy_cs",
+            "return_apparel",
+            "repair_onsite"
+          ]
+        },
+        {
+          "id": "r052",
+          "ranked_documents": [
+            "membership_plus",
+            "promo_stacking",
+            "coupons",
+            "invoice_vat"
+          ]
+        },
+        {
+          "id": "r053",
+          "ranked_documents": [
+            "points_expiry",
+            "warranty",
+            "live_presale",
+            "payment_methods",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r054",
+          "ranked_documents": [
+            "account_security",
+            "complaint_sla",
+            "points_expiry",
+            "invoice_vat",
+            "restock_notify"
+          ]
+        },
+        {
+          "id": "r055",
+          "ranked_documents": [
+            "gift_card",
+            "invoice_vat",
+            "price_protect",
+            "packaging_gift"
+          ]
+        },
+        {
+          "id": "r056",
+          "ranked_documents": [
+            "size_guide",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r057",
+          "ranked_documents": [
+            "live_presale",
+            "price_protect",
+            "warranty"
+          ]
+        },
+        {
+          "id": "r058",
+          "ranked_documents": [
+            "cross_border",
+            "warranty_jewelry",
+            "return_policy",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r059",
+          "ranked_documents": [
+            "complaint_sla",
+            "handoff_hours",
+            "live_presale",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r060",
+          "ranked_documents": [
+            "handoff_hours",
+            "account_security",
+            "return_food",
+            "faq",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r061",
+          "ranked_documents": [
+            "price_protect",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r062",
+          "ranked_documents": [
+            "restock_notify",
+            "live_presale",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r063",
+          "ranked_documents": [
+            "packaging_gift",
+            "invoice_vat",
+            "faq",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r064",
+          "ranked_documents": [
+            "privacy_cs",
+            "complaint_sla",
+            "account_security",
+            "shipping"
+          ]
+        },
+        {
+          "id": "r065",
+          "ranked_documents": [
+            "membership_plus",
+            "promo_stacking",
+            "coupons",
+            "return_custom",
+            "price_protect"
+          ]
+        }
+      ]
+    },
+    {
+      "backend": "hash-vector",
+      "n": 65,
+      "precision_at_1": {
+        "mean": 0.0308,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "recall_at_3": {
+        "mean": 0.0692,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_1": {
+        "mean": 0.0308,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_3": {
+        "mean": 0.0769,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "mrr": {
+        "mean": 0.0518,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "predictions": [
+        {
+          "id": "r001",
+          "ranked_documents": [
+            "complaint_sla",
+            "installment_huabei",
+            "return_policy",
+            "handoff_hours",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r002",
+          "ranked_documents": [
+            "faq",
+            "shipping_cod",
+            "shipping_remote",
+            "payment_methods",
+            "pickup_return"
+          ]
+        },
+        {
+          "id": "r003",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "promo_stacking",
+            "missing_wrong_item",
+            "complaint_sla",
+            "faq"
+          ]
+        },
+        {
+          "id": "r004",
+          "ranked_documents": [
+            "account_security",
+            "payment_methods",
+            "restock_notify",
+            "return_policy",
+            "complaint_sla"
+          ]
+        },
+        {
+          "id": "r005",
+          "ranked_documents": [
+            "handoff_hours",
+            "return_custom",
+            "shipping_remote",
+            "packaging_gift",
+            "missing_wrong_item"
+          ]
+        },
+        {
+          "id": "r006",
+          "ranked_documents": [
+            "restock_notify",
+            "repair_onsite",
+            "refund_timeline",
+            "price_protect",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r007",
+          "ranked_documents": [
+            "gift_card",
+            "shipping_remote",
+            "price_protect",
+            "payment_methods",
+            "refund_timeline"
+          ]
+        },
+        {
+          "id": "r008",
+          "ranked_documents": [
+            "warranty",
+            "refund_timeline",
+            "install_appliance",
+            "pickup_return"
+          ]
+        },
+        {
+          "id": "r009",
+          "ranked_documents": [
+            "price_protect",
+            "points_expiry",
+            "shipping_remote",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r010",
+          "ranked_documents": [
+            "shipping_remote",
+            "membership_plus",
+            "price_protect",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r011",
+          "ranked_documents": [
+            "membership_plus",
+            "return_electronics",
+            "faq",
+            "invoice_vat",
+            "return_food"
+          ]
+        },
+        {
+          "id": "r012",
+          "ranked_documents": [
+            "shipping_address",
+            "warranty_battery",
+            "complaint_sla",
+            "faq",
+            "shipping"
+          ]
+        },
+        {
+          "id": "r013",
+          "ranked_documents": [
+            "return_food",
+            "account_security",
+            "gift_card",
+            "handoff_hours",
+            "payment_methods"
+          ]
+        },
+        {
+          "id": "r014",
+          "ranked_documents": [
+            "account_security",
+            "payment_methods",
+            "promo_stacking",
+            "live_presale",
+            "installment_huabei"
+          ]
+        },
+        {
+          "id": "r015",
+          "ranked_documents": [
+            "installment_huabei",
+            "install_appliance",
+            "warranty_jewelry",
+            "return_policy",
+            "gift_card"
+          ]
+        },
+        {
+          "id": "r016",
+          "ranked_documents": [
+            "pickup_return",
+            "shipping",
+            "shipping_address",
+            "account_security",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r017",
+          "ranked_documents": [
+            "faq",
+            "points_expiry",
+            "complaint_sla",
+            "return_food",
+            "gift_card"
+          ]
+        },
+        {
+          "id": "r018",
+          "ranked_documents": [
+            "repair_onsite",
+            "return_policy",
+            "return_electronics",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r019",
+          "ranked_documents": [
+            "handoff_hours",
+            "faq",
+            "points_expiry",
+            "exchange_size",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r020",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "logistics_exception",
+            "live_presale",
+            "handoff_hours",
+            "invoice_vat"
+          ]
+        },
+        {
+          "id": "r021",
+          "ranked_documents": [
+            "complaint_sla",
+            "cross_border",
+            "warranty_jewelry",
+            "promo_stacking",
+            "shipping_remote"
+          ]
+        },
+        {
+          "id": "r022",
+          "ranked_documents": [
+            "promo_stacking",
+            "logistics_exception",
+            "gift_card",
+            "account_security",
+            "installment_huabei"
+          ]
+        },
+        {
+          "id": "r023",
+          "ranked_documents": [
+            "invoice_vat",
+            "shipping_address",
+            "live_presale",
+            "cross_border",
+            "payment_methods"
+          ]
+        },
+        {
+          "id": "r024",
+          "ranked_documents": [
+            "faq",
+            "gift_card",
+            "missing_wrong_item",
+            "shipping",
+            "exchange_size"
+          ]
+        },
+        {
+          "id": "r025",
+          "ranked_documents": [
+            "account_security",
+            "missing_wrong_item",
+            "install_appliance",
+            "invoice_vat",
+            "complaint_sla"
+          ]
+        },
+        {
+          "id": "r026",
+          "ranked_documents": [
+            "account_security",
+            "shipping_cod",
+            "coupons",
+            "return_policy",
+            "shipping"
+          ]
+        },
+        {
+          "id": "r027",
+          "ranked_documents": [
+            "return_policy",
+            "warranty_jewelry",
+            "install_appliance",
+            "payment_methods",
+            "shipping_address"
+          ]
+        },
+        {
+          "id": "r028",
+          "ranked_documents": [
+            "shipping",
+            "privacy_cs",
+            "repair_onsite",
+            "installment_huabei",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r029",
+          "ranked_documents": [
+            "exchange_size",
+            "privacy_cs",
+            "live_presale",
+            "logistics_exception",
+            "shipping_split"
+          ]
+        },
+        {
+          "id": "r030",
+          "ranked_documents": [
+            "warranty",
+            "shipping_cod",
+            "account_security",
+            "repair_onsite",
+            "privacy_cs"
+          ]
+        },
+        {
+          "id": "r031",
+          "ranked_documents": [
+            "return_food",
+            "account_security",
+            "invoice_vat",
+            "logistics_exception",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r032",
+          "ranked_documents": [
+            "repair_onsite",
+            "shipping_address",
+            "price_protect",
+            "size_guide",
+            "handoff_hours"
+          ]
+        },
+        {
+          "id": "r033",
+          "ranked_documents": [
+            "refund_timeline",
+            "install_appliance",
+            "shipping_remote",
+            "exchange_size",
+            "repair_onsite"
+          ]
+        },
+        {
+          "id": "r034",
+          "ranked_documents": [
+            "promo_stacking",
+            "warranty",
+            "invoice_vat",
+            "size_guide",
+            "price_protect"
+          ]
+        },
+        {
+          "id": "r035",
+          "ranked_documents": [
+            "return_policy",
+            "live_presale",
+            "coupons",
+            "promo_stacking",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r036",
+          "ranked_documents": [
+            "pickup_return",
+            "coupons",
+            "gift_card",
+            "points_expiry",
+            "warranty_battery"
+          ]
+        },
+        {
+          "id": "r037",
+          "ranked_documents": [
+            "points_expiry",
+            "shipping_cod",
+            "privacy_cs",
+            "return_food",
+            "restock_notify"
+          ]
+        },
+        {
+          "id": "r038",
+          "ranked_documents": [
+            "live_presale",
+            "account_security",
+            "gift_card",
+            "return_electronics",
+            "return_food"
+          ]
+        },
+        {
+          "id": "r039",
+          "ranked_documents": [
+            "points_expiry",
+            "invoice_vat",
+            "faq",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r040",
+          "ranked_documents": [
+            "price_protect",
+            "live_presale",
+            "coupons",
+            "membership_plus",
+            "pickup_return"
+          ]
+        },
+        {
+          "id": "r041",
+          "ranked_documents": [
+            "install_appliance",
+            "return_electronics",
+            "shipping_split",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r042",
+          "ranked_documents": [
+            "shipping_cod",
+            "restock_notify",
+            "promo_stacking",
+            "return_food",
+            "invoice_vat"
+          ]
+        },
+        {
+          "id": "r043",
+          "ranked_documents": [
+            "refund_timeline",
+            "repair_onsite",
+            "installment_huabei",
+            "logistics_exception",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r044",
+          "ranked_documents": [
+            "price_protect",
+            "installment_huabei",
+            "complaint_sla",
+            "points_expiry",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r045",
+          "ranked_documents": [
+            "warranty_battery",
+            "coupons",
+            "shipping_remote"
+          ]
+        },
+        {
+          "id": "r046",
+          "ranked_documents": [
+            "refund_timeline",
+            "points_expiry",
+            "warranty_jewelry",
+            "faq",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r047",
+          "ranked_documents": [
+            "pickup_return",
+            "membership_plus",
+            "complaint_sla",
+            "warranty",
+            "warranty_battery"
+          ]
+        },
+        {
+          "id": "r048",
+          "ranked_documents": [
+            "exchange_size",
+            "account_security",
+            "cross_border",
+            "gift_card"
+          ]
+        },
+        {
+          "id": "r049",
+          "ranked_documents": [
+            "handoff_hours",
+            "payment_methods",
+            "shipping_remote",
+            "price_protect",
+            "cross_border"
+          ]
+        },
+        {
+          "id": "r050",
+          "ranked_documents": [
+            "return_food",
+            "return_custom",
+            "points_expiry",
+            "handoff_hours",
+            "packaging_gift"
+          ]
+        },
+        {
+          "id": "r051",
+          "ranked_documents": [
+            "shipping_split",
+            "install_appliance",
+            "repair_onsite",
+            "size_guide",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r052",
+          "ranked_documents": [
+            "return_apparel",
+            "exchange_size",
+            "shipping_address",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r053",
+          "ranked_documents": [
+            "handoff_hours",
+            "return_food",
+            "shipping",
+            "coupons",
+            "gift_card"
+          ]
+        },
+        {
+          "id": "r054",
+          "ranked_documents": [
+            "pickup_return",
+            "shipping",
+            "complaint_sla",
+            "membership_plus",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r055",
+          "ranked_documents": [
+            "shipping_split",
+            "warranty",
+            "return_apparel",
+            "price_protect",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r056",
+          "ranked_documents": [
+            "return_food",
+            "refund_timeline",
+            "shipping",
+            "installment_huabei",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r057",
+          "ranked_documents": [
+            "invoice_vat",
+            "missing_wrong_item",
+            "shipping",
+            "account_security",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r058",
+          "ranked_documents": [
+            "account_security",
+            "install_appliance",
+            "missing_wrong_item",
+            "shipping"
+          ]
+        },
+        {
+          "id": "r059",
+          "ranked_documents": [
+            "complaint_sla",
+            "shipping",
+            "points_expiry",
+            "return_policy",
+            "shipping_split"
+          ]
+        },
+        {
+          "id": "r060",
+          "ranked_documents": [
+            "repair_onsite",
+            "return_electronics",
+            "return_policy",
+            "exchange_size"
+          ]
+        },
+        {
+          "id": "r061",
+          "ranked_documents": [
+            "install_appliance",
+            "missing_wrong_item",
+            "shipping",
+            "warranty_battery",
+            "complaint_sla"
+          ]
+        },
+        {
+          "id": "r062",
+          "ranked_documents": [
+            "pickup_return",
+            "points_expiry",
+            "shipping",
+            "gift_card"
+          ]
+        },
+        {
+          "id": "r063",
+          "ranked_documents": [
+            "shipping_address",
+            "complaint_sla",
+            "return_electronics",
+            "gift_card",
+            "pickup_return"
+          ]
+        },
+        {
+          "id": "r064",
+          "ranked_documents": [
+            "privacy_cs",
+            "gift_card",
+            "warranty_jewelry",
+            "logistics_exception",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r065",
+          "ranked_documents": [
+            "warranty_battery",
+            "shipping",
+            "warranty_jewelry",
+            "size_guide",
+            "installment_huabei"
+          ]
+        }
+      ]
+    },
+    {
+      "backend": "bm25+hash-vector+rrf",
+      "n": 65,
+      "precision_at_1": {
+        "mean": 0.7077,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "recall_at_3": {
+        "mean": 0.8231,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_1": {
+        "mean": 0.7077,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_3": {
+        "mean": 0.8462,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "mrr": {
+        "mean": 0.7872,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "predictions": [
+        {
+          "id": "r001",
+          "ranked_documents": [
+            "return_policy",
+            "complaint_sla",
+            "warranty_jewelry",
+            "installment_huabei"
+          ]
+        },
+        {
+          "id": "r002",
+          "ranked_documents": [
+            "shipping",
+            "faq",
+            "shipping_cod",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r003",
+          "ranked_documents": [
+            "return_custom",
+            "warranty_jewelry",
+            "pickup_return",
+            "promo_stacking",
+            "cross_border"
+          ]
+        },
+        {
+          "id": "r004",
+          "ranked_documents": [
+            "invoice_vat",
+            "account_security",
+            "packaging_gift",
+            "payment_methods",
+            "faq"
+          ]
+        },
+        {
+          "id": "r005",
+          "ranked_documents": [
+            "warranty",
+            "handoff_hours",
+            "warranty_jewelry",
+            "return_custom",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r006",
+          "ranked_documents": [
+            "refund_timeline",
+            "faq",
+            "restock_notify",
+            "payment_methods",
+            "repair_onsite"
+          ]
+        },
+        {
+          "id": "r007",
+          "ranked_documents": [
+            "faq",
+            "gift_card",
+            "shipping_split",
+            "shipping_remote",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r008",
+          "ranked_documents": [
+            "payment_methods",
+            "warranty",
+            "coupons",
+            "refund_timeline",
+            "faq"
+          ]
+        },
+        {
+          "id": "r009",
+          "ranked_documents": [
+            "return_policy",
+            "price_protect",
+            "shipping",
+            "points_expiry",
+            "refund_timeline"
+          ]
+        },
+        {
+          "id": "r010",
+          "ranked_documents": [
+            "faq",
+            "shipping_remote",
+            "return_food",
+            "membership_plus",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r011",
+          "ranked_documents": [
+            "return_food",
+            "return_policy",
+            "membership_plus",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r012",
+          "ranked_documents": [
+            "return_electronics",
+            "shipping_address",
+            "refund_timeline",
+            "warranty_battery",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r013",
+          "ranked_documents": [
+            "return_policy",
+            "return_food",
+            "return_custom",
+            "account_security",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r014",
+          "ranked_documents": [
+            "return_policy",
+            "account_security",
+            "packaging_gift",
+            "payment_methods",
+            "return_apparel"
+          ]
+        },
+        {
+          "id": "r015",
+          "ranked_documents": [
+            "shipping",
+            "installment_huabei",
+            "shipping_cod",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r016",
+          "ranked_documents": [
+            "shipping",
+            "pickup_return",
+            "shipping_address"
+          ]
+        },
+        {
+          "id": "r017",
+          "ranked_documents": [
+            "shipping",
+            "faq",
+            "coupons",
+            "points_expiry",
+            "shipping_remote"
+          ]
+        },
+        {
+          "id": "r018",
+          "ranked_documents": [
+            "shipping",
+            "repair_onsite",
+            "shipping_split",
+            "return_policy",
+            "faq"
+          ]
+        },
+        {
+          "id": "r019",
+          "ranked_documents": [
+            "shipping",
+            "handoff_hours",
+            "logistics_exception",
+            "faq"
+          ]
+        },
+        {
+          "id": "r020",
+          "ranked_documents": [
+            "warranty",
+            "warranty_jewelry",
+            "logistics_exception",
+            "warranty_battery"
+          ]
+        },
+        {
+          "id": "r021",
+          "ranked_documents": [
+            "warranty",
+            "complaint_sla",
+            "warranty_jewelry",
+            "cross_border",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r022",
+          "ranked_documents": [
+            "warranty",
+            "promo_stacking",
+            "warranty_battery",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r023",
+          "ranked_documents": [
+            "promo_stacking",
+            "invoice_vat",
+            "membership_plus",
+            "shipping_address",
+            "return_custom"
+          ]
+        },
+        {
+          "id": "r024",
+          "ranked_documents": [
+            "coupons",
+            "faq",
+            "gift_card",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r025",
+          "ranked_documents": [
+            "shipping_remote",
+            "account_security",
+            "shipping",
+            "missing_wrong_item",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r026",
+          "ranked_documents": [
+            "coupons",
+            "payment_methods",
+            "account_security",
+            "return_custom",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r027",
+          "ranked_documents": [
+            "return_custom",
+            "return_policy",
+            "membership_plus",
+            "warranty_jewelry",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r028",
+          "ranked_documents": [
+            "return_policy",
+            "shipping",
+            "refund_timeline",
+            "privacy_cs",
+            "exchange_size"
+          ]
+        },
+        {
+          "id": "r029",
+          "ranked_documents": [
+            "shipping",
+            "exchange_size",
+            "pickup_return",
+            "privacy_cs",
+            "complaint_sla"
+          ]
+        },
+        {
+          "id": "r030",
+          "ranked_documents": [
+            "warranty",
+            "invoice_vat",
+            "packaging_gift",
+            "shipping_cod",
+            "faq"
+          ]
+        },
+        {
+          "id": "r031",
+          "ranked_documents": [
+            "warranty",
+            "return_food",
+            "account_security",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r032",
+          "ranked_documents": [
+            "shipping",
+            "repair_onsite",
+            "live_presale",
+            "shipping_address",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r033",
+          "ranked_documents": [
+            "return_electronics",
+            "refund_timeline",
+            "warranty_jewelry",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r034",
+          "ranked_documents": [
+            "return_custom",
+            "promo_stacking",
+            "shipping_cod",
+            "warranty",
+            "exchange_size"
+          ]
+        },
+        {
+          "id": "r035",
+          "ranked_documents": [
+            "return_policy",
+            "return_food",
+            "live_presale",
+            "packaging_gift"
+          ]
+        },
+        {
+          "id": "r036",
+          "ranked_documents": [
+            "return_custom",
+            "pickup_return",
+            "shipping_address",
+            "coupons",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r037",
+          "ranked_documents": [
+            "return_apparel",
+            "points_expiry",
+            "exchange_size",
+            "shipping_cod",
+            "warranty_battery"
+          ]
+        },
+        {
+          "id": "r038",
+          "ranked_documents": [
+            "missing_wrong_item",
+            "live_presale",
+            "account_security",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r039",
+          "ranked_documents": [
+            "refund_timeline",
+            "points_expiry",
+            "faq",
+            "invoice_vat",
+            "payment_methods"
+          ]
+        },
+        {
+          "id": "r040",
+          "ranked_documents": [
+            "pickup_return",
+            "price_protect",
+            "repair_onsite",
+            "live_presale"
+          ]
+        },
+        {
+          "id": "r041",
+          "ranked_documents": [
+            "shipping_remote",
+            "install_appliance",
+            "membership_plus",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r042",
+          "ranked_documents": [
+            "shipping_split",
+            "shipping_cod",
+            "restock_notify",
+            "packaging_gift"
+          ]
+        },
+        {
+          "id": "r043",
+          "ranked_documents": [
+            "installment_huabei",
+            "shipping_cod",
+            "refund_timeline",
+            "repair_onsite"
+          ]
+        },
+        {
+          "id": "r044",
+          "ranked_documents": [
+            "logistics_exception",
+            "price_protect",
+            "shipping",
+            "installment_huabei",
+            "restock_notify"
+          ]
+        },
+        {
+          "id": "r045",
+          "ranked_documents": [
+            "shipping_split",
+            "warranty_battery",
+            "coupons",
+            "return_apparel"
+          ]
+        },
+        {
+          "id": "r046",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "warranty_battery",
+            "refund_timeline",
+            "warranty",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r047",
+          "ranked_documents": [
+            "install_appliance",
+            "pickup_return",
+            "membership_plus",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r048",
+          "ranked_documents": [
+            "repair_onsite",
+            "exchange_size",
+            "account_security",
+            "pickup_return"
+          ]
+        },
+        {
+          "id": "r049",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "handoff_hours",
+            "payment_methods",
+            "warranty"
+          ]
+        },
+        {
+          "id": "r050",
+          "ranked_documents": [
+            "installment_huabei",
+            "return_food",
+            "return_custom",
+            "faq"
+          ]
+        },
+        {
+          "id": "r051",
+          "ranked_documents": [
+            "invoice_vat",
+            "shipping_split",
+            "packaging_gift",
+            "install_appliance",
+            "privacy_cs"
+          ]
+        },
+        {
+          "id": "r052",
+          "ranked_documents": [
+            "membership_plus",
+            "return_apparel",
+            "exchange_size",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r053",
+          "ranked_documents": [
+            "coupons",
+            "points_expiry",
+            "handoff_hours",
+            "warranty",
+            "return_food"
+          ]
+        },
+        {
+          "id": "r054",
+          "ranked_documents": [
+            "account_security",
+            "pickup_return",
+            "complaint_sla",
+            "shipping",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r055",
+          "ranked_documents": [
+            "gift_card",
+            "shipping_split",
+            "warranty",
+            "invoice_vat"
+          ]
+        },
+        {
+          "id": "r056",
+          "ranked_documents": [
+            "size_guide",
+            "return_food",
+            "account_security",
+            "refund_timeline"
+          ]
+        },
+        {
+          "id": "r057",
+          "ranked_documents": [
+            "live_presale",
+            "invoice_vat",
+            "missing_wrong_item",
+            "price_protect"
+          ]
+        },
+        {
+          "id": "r058",
+          "ranked_documents": [
+            "cross_border",
+            "account_security",
+            "warranty_jewelry",
+            "install_appliance",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r059",
+          "ranked_documents": [
+            "complaint_sla",
+            "handoff_hours",
+            "shipping",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r060",
+          "ranked_documents": [
+            "return_policy",
+            "handoff_hours",
+            "repair_onsite",
+            "account_security",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r061",
+          "ranked_documents": [
+            "price_protect",
+            "install_appliance",
+            "missing_wrong_item"
+          ]
+        },
+        {
+          "id": "r062",
+          "ranked_documents": [
+            "restock_notify",
+            "pickup_return",
+            "live_presale"
+          ]
+        },
+        {
+          "id": "r063",
+          "ranked_documents": [
+            "packaging_gift",
+            "shipping_address",
+            "invoice_vat",
+            "complaint_sla"
+          ]
+        },
+        {
+          "id": "r064",
+          "ranked_documents": [
+            "privacy_cs",
+            "complaint_sla",
+            "gift_card",
+            "account_security",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r065",
+          "ranked_documents": [
+            "membership_plus",
+            "warranty_battery",
+            "promo_stacking",
+            "shipping",
+            "coupons"
+          ]
+        }
+      ]
+    },
+    {
+      "backend": "hybrid-candidates8-no-rerank",
+      "n": 65,
+      "precision_at_1": {
+        "mean": 0.5077,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "recall_at_3": {
+        "mean": 0.8231,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_1": {
+        "mean": 0.5077,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_3": {
+        "mean": 0.8462,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "mrr": {
+        "mean": 0.681,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "predictions": [
+        {
+          "id": "r001",
+          "ranked_documents": [
+            "return_policy",
+            "complaint_sla",
+            "warranty_jewelry",
+            "installment_huabei"
+          ]
+        },
+        {
+          "id": "r002",
+          "ranked_documents": [
+            "shipping",
+            "faq",
+            "shipping_cod",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r003",
+          "ranked_documents": [
+            "return_custom",
+            "warranty_jewelry",
+            "pickup_return",
+            "promo_stacking",
+            "cross_border"
+          ]
+        },
+        {
+          "id": "r004",
+          "ranked_documents": [
+            "account_security",
+            "invoice_vat",
+            "packaging_gift",
+            "payment_methods",
+            "faq"
+          ]
+        },
+        {
+          "id": "r005",
+          "ranked_documents": [
+            "warranty",
+            "handoff_hours",
+            "warranty_jewelry",
+            "return_custom",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r006",
+          "ranked_documents": [
+            "refund_timeline",
+            "faq",
+            "restock_notify",
+            "payment_methods",
+            "repair_onsite"
+          ]
+        },
+        {
+          "id": "r007",
+          "ranked_documents": [
+            "faq",
+            "gift_card",
+            "shipping_split",
+            "shipping_remote",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r008",
+          "ranked_documents": [
+            "payment_methods",
+            "warranty",
+            "coupons",
+            "refund_timeline",
+            "faq"
+          ]
+        },
+        {
+          "id": "r009",
+          "ranked_documents": [
+            "return_policy",
+            "price_protect",
+            "shipping",
+            "points_expiry",
+            "refund_timeline"
+          ]
+        },
+        {
+          "id": "r010",
+          "ranked_documents": [
+            "return_electronics",
+            "faq",
+            "shipping_remote",
+            "return_food",
+            "membership_plus"
+          ]
+        },
+        {
+          "id": "r011",
+          "ranked_documents": [
+            "return_food",
+            "return_policy",
+            "membership_plus",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r012",
+          "ranked_documents": [
+            "return_electronics",
+            "shipping_address",
+            "refund_timeline",
+            "warranty_battery",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r013",
+          "ranked_documents": [
+            "return_policy",
+            "return_food",
+            "return_custom",
+            "account_security",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r014",
+          "ranked_documents": [
+            "return_policy",
+            "account_security",
+            "packaging_gift",
+            "payment_methods",
+            "return_apparel"
+          ]
+        },
+        {
+          "id": "r015",
+          "ranked_documents": [
+            "shipping",
+            "installment_huabei",
+            "shipping_cod",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r016",
+          "ranked_documents": [
+            "shipping",
+            "pickup_return",
+            "shipping_address"
+          ]
+        },
+        {
+          "id": "r017",
+          "ranked_documents": [
+            "shipping",
+            "faq",
+            "coupons",
+            "points_expiry",
+            "shipping_remote"
+          ]
+        },
+        {
+          "id": "r018",
+          "ranked_documents": [
+            "shipping",
+            "repair_onsite",
+            "shipping_split",
+            "return_policy",
+            "faq"
+          ]
+        },
+        {
+          "id": "r019",
+          "ranked_documents": [
+            "logistics_exception",
+            "shipping",
+            "handoff_hours",
+            "faq"
+          ]
+        },
+        {
+          "id": "r020",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "warranty",
+            "logistics_exception",
+            "warranty_battery"
+          ]
+        },
+        {
+          "id": "r021",
+          "ranked_documents": [
+            "warranty",
+            "complaint_sla",
+            "warranty_jewelry",
+            "cross_border",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r022",
+          "ranked_documents": [
+            "warranty",
+            "promo_stacking",
+            "warranty_battery",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r023",
+          "ranked_documents": [
+            "promo_stacking",
+            "invoice_vat",
+            "membership_plus",
+            "shipping_address",
+            "return_custom"
+          ]
+        },
+        {
+          "id": "r024",
+          "ranked_documents": [
+            "gift_card",
+            "coupons",
+            "faq",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r025",
+          "ranked_documents": [
+            "shipping_remote",
+            "account_security",
+            "shipping",
+            "missing_wrong_item",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r026",
+          "ranked_documents": [
+            "coupons",
+            "payment_methods",
+            "account_security",
+            "return_custom",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r027",
+          "ranked_documents": [
+            "return_custom",
+            "return_policy",
+            "membership_plus",
+            "warranty_jewelry",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r028",
+          "ranked_documents": [
+            "points_expiry",
+            "return_policy",
+            "shipping",
+            "refund_timeline",
+            "privacy_cs"
+          ]
+        },
+        {
+          "id": "r029",
+          "ranked_documents": [
+            "shipping",
+            "exchange_size",
+            "pickup_return",
+            "privacy_cs",
+            "complaint_sla"
+          ]
+        },
+        {
+          "id": "r030",
+          "ranked_documents": [
+            "warranty",
+            "account_security",
+            "invoice_vat",
+            "packaging_gift",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r031",
+          "ranked_documents": [
+            "warranty",
+            "return_food",
+            "account_security",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r032",
+          "ranked_documents": [
+            "shipping",
+            "repair_onsite",
+            "live_presale",
+            "shipping_address",
+            "shipping_cod"
+          ]
+        },
+        {
+          "id": "r033",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "return_electronics",
+            "refund_timeline",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r034",
+          "ranked_documents": [
+            "size_guide",
+            "return_custom",
+            "promo_stacking",
+            "shipping_cod",
+            "warranty"
+          ]
+        },
+        {
+          "id": "r035",
+          "ranked_documents": [
+            "return_policy",
+            "return_food",
+            "live_presale",
+            "packaging_gift"
+          ]
+        },
+        {
+          "id": "r036",
+          "ranked_documents": [
+            "promo_stacking",
+            "return_custom",
+            "pickup_return",
+            "shipping_address",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r037",
+          "ranked_documents": [
+            "return_apparel",
+            "points_expiry",
+            "exchange_size",
+            "shipping_cod",
+            "warranty_battery"
+          ]
+        },
+        {
+          "id": "r038",
+          "ranked_documents": [
+            "account_security",
+            "missing_wrong_item",
+            "live_presale",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r039",
+          "ranked_documents": [
+            "refund_timeline",
+            "points_expiry",
+            "faq",
+            "invoice_vat",
+            "payment_methods"
+          ]
+        },
+        {
+          "id": "r040",
+          "ranked_documents": [
+            "pickup_return",
+            "price_protect",
+            "repair_onsite",
+            "live_presale"
+          ]
+        },
+        {
+          "id": "r041",
+          "ranked_documents": [
+            "shipping_remote",
+            "install_appliance",
+            "membership_plus",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r042",
+          "ranked_documents": [
+            "shipping_split",
+            "shipping_cod",
+            "restock_notify",
+            "packaging_gift"
+          ]
+        },
+        {
+          "id": "r043",
+          "ranked_documents": [
+            "installment_huabei",
+            "shipping_cod",
+            "refund_timeline",
+            "repair_onsite"
+          ]
+        },
+        {
+          "id": "r044",
+          "ranked_documents": [
+            "logistics_exception",
+            "price_protect",
+            "shipping",
+            "installment_huabei",
+            "restock_notify"
+          ]
+        },
+        {
+          "id": "r045",
+          "ranked_documents": [
+            "handoff_hours",
+            "shipping_split",
+            "warranty_battery",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r046",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "warranty_battery",
+            "refund_timeline",
+            "warranty",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r047",
+          "ranked_documents": [
+            "install_appliance",
+            "pickup_return",
+            "membership_plus",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r048",
+          "ranked_documents": [
+            "account_security",
+            "repair_onsite",
+            "exchange_size",
+            "pickup_return"
+          ]
+        },
+        {
+          "id": "r049",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "handoff_hours",
+            "payment_methods",
+            "warranty"
+          ]
+        },
+        {
+          "id": "r050",
+          "ranked_documents": [
+            "account_security",
+            "installment_huabei",
+            "return_food",
+            "return_custom"
+          ]
+        },
+        {
+          "id": "r051",
+          "ranked_documents": [
+            "invoice_vat",
+            "shipping_split",
+            "packaging_gift",
+            "install_appliance",
+            "privacy_cs"
+          ]
+        },
+        {
+          "id": "r052",
+          "ranked_documents": [
+            "membership_plus",
+            "return_apparel",
+            "exchange_size",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r053",
+          "ranked_documents": [
+            "coupons",
+            "points_expiry",
+            "handoff_hours",
+            "warranty",
+            "return_food"
+          ]
+        },
+        {
+          "id": "r054",
+          "ranked_documents": [
+            "account_security",
+            "pickup_return",
+            "complaint_sla",
+            "shipping",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r055",
+          "ranked_documents": [
+            "gift_card",
+            "shipping_split",
+            "warranty",
+            "invoice_vat"
+          ]
+        },
+        {
+          "id": "r056",
+          "ranked_documents": [
+            "complaint_sla",
+            "size_guide",
+            "return_food",
+            "account_security",
+            "refund_timeline"
+          ]
+        },
+        {
+          "id": "r057",
+          "ranked_documents": [
+            "live_presale",
+            "invoice_vat",
+            "missing_wrong_item",
+            "price_protect"
+          ]
+        },
+        {
+          "id": "r058",
+          "ranked_documents": [
+            "cross_border",
+            "account_security",
+            "warranty_jewelry",
+            "install_appliance",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r059",
+          "ranked_documents": [
+            "complaint_sla",
+            "handoff_hours",
+            "shipping",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r060",
+          "ranked_documents": [
+            "return_policy",
+            "handoff_hours",
+            "repair_onsite",
+            "account_security",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r061",
+          "ranked_documents": [
+            "account_security",
+            "price_protect",
+            "install_appliance",
+            "missing_wrong_item"
+          ]
+        },
+        {
+          "id": "r062",
+          "ranked_documents": [
+            "restock_notify",
+            "pickup_return",
+            "live_presale"
+          ]
+        },
+        {
+          "id": "r063",
+          "ranked_documents": [
+            "account_security",
+            "packaging_gift",
+            "shipping_address",
+            "invoice_vat",
+            "complaint_sla"
+          ]
+        },
+        {
+          "id": "r064",
+          "ranked_documents": [
+            "privacy_cs",
+            "complaint_sla",
+            "gift_card",
+            "account_security",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r065",
+          "ranked_documents": [
+            "membership_plus",
+            "warranty_battery",
+            "promo_stacking",
+            "shipping",
+            "coupons"
+          ]
+        }
+      ]
+    },
+    {
+      "backend": "hybrid+lexical-fallback",
+      "n": 65,
+      "precision_at_1": {
+        "mean": 0.8,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "recall_at_3": {
+        "mean": 0.9,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_1": {
+        "mean": 0.8,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "hit_at_3": {
+        "mean": 0.9077,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "mrr": {
+        "mean": 0.859,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "predictions": [
+        {
+          "id": "r001",
+          "ranked_documents": [
+            "return_policy",
+            "warranty_jewelry"
+          ]
+        },
+        {
+          "id": "r002",
+          "ranked_documents": [
+            "shipping",
+            "shipping_cod",
+            "coupons",
+            "promo_stacking",
+            "shipping_remote"
+          ]
+        },
+        {
+          "id": "r003",
+          "ranked_documents": [
+            "return_custom",
+            "pickup_return",
+            "cross_border",
+            "exchange_size",
+            "missing_wrong_item"
+          ]
+        },
+        {
+          "id": "r004",
+          "ranked_documents": [
+            "faq",
+            "invoice_vat",
+            "packaging_gift",
+            "return_apparel",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r005",
+          "ranked_documents": [
+            "warranty",
+            "handoff_hours",
+            "warranty_jewelry",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r006",
+          "ranked_documents": [
+            "payment_methods",
+            "faq",
+            "refund_timeline",
+            "installment_huabei",
+            "restock_notify"
+          ]
+        },
+        {
+          "id": "r007",
+          "ranked_documents": [
+            "faq",
+            "promo_stacking",
+            "shipping_split",
+            "shipping_address",
+            "payment_methods"
+          ]
+        },
+        {
+          "id": "r008",
+          "ranked_documents": [
+            "payment_methods",
+            "coupons",
+            "faq",
+            "points_expiry",
+            "warranty"
+          ]
+        },
+        {
+          "id": "r009",
+          "ranked_documents": [
+            "return_policy",
+            "shipping",
+            "refund_timeline",
+            "price_protect",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r010",
+          "ranked_documents": [
+            "faq",
+            "return_policy",
+            "return_food",
+            "handoff_hours",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r011",
+          "ranked_documents": [
+            "return_policy",
+            "shipping_cod",
+            "return_food",
+            "return_electronics"
+          ]
+        },
+        {
+          "id": "r012",
+          "ranked_documents": [
+            "return_electronics",
+            "return_policy",
+            "refund_timeline",
+            "exchange_size",
+            "warranty_battery"
+          ]
+        },
+        {
+          "id": "r013",
+          "ranked_documents": [
+            "return_policy",
+            "cross_border",
+            "shipping_cod",
+            "return_food",
+            "return_custom"
+          ]
+        },
+        {
+          "id": "r014",
+          "ranked_documents": [
+            "return_policy",
+            "return_apparel",
+            "packaging_gift",
+            "live_presale",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r015",
+          "ranked_documents": [
+            "shipping",
+            "shipping_cod",
+            "shipping_split",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r016",
+          "ranked_documents": [
+            "shipping",
+            "shipping_address",
+            "warranty_battery",
+            "pickup_return"
+          ]
+        },
+        {
+          "id": "r017",
+          "ranked_documents": [
+            "shipping",
+            "coupons",
+            "shipping_remote",
+            "shipping_address",
+            "faq"
+          ]
+        },
+        {
+          "id": "r018",
+          "ranked_documents": [
+            "shipping",
+            "shipping_split",
+            "return_policy",
+            "faq"
+          ]
+        },
+        {
+          "id": "r019",
+          "ranked_documents": [
+            "shipping",
+            "logistics_exception",
+            "faq",
+            "handoff_hours"
+          ]
+        },
+        {
+          "id": "r020",
+          "ranked_documents": [
+            "warranty",
+            "warranty_jewelry",
+            "warranty_battery",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r021",
+          "ranked_documents": [
+            "return_policy",
+            "warranty",
+            "warranty_jewelry",
+            "complaint_sla"
+          ]
+        },
+        {
+          "id": "r022",
+          "ranked_documents": [
+            "warranty",
+            "warranty_battery",
+            "warranty_jewelry",
+            "promo_stacking"
+          ]
+        },
+        {
+          "id": "r023",
+          "ranked_documents": [
+            "promo_stacking",
+            "membership_plus",
+            "return_custom",
+            "invoice_vat",
+            "cross_border"
+          ]
+        },
+        {
+          "id": "r024",
+          "ranked_documents": [
+            "coupons",
+            "gift_card",
+            "promo_stacking",
+            "return_custom"
+          ]
+        },
+        {
+          "id": "r025",
+          "ranked_documents": [
+            "shipping_remote",
+            "shipping",
+            "coupons",
+            "membership_plus",
+            "invoice_vat"
+          ]
+        },
+        {
+          "id": "r026",
+          "ranked_documents": [
+            "payment_methods",
+            "return_custom",
+            "membership_plus",
+            "coupons"
+          ]
+        },
+        {
+          "id": "r027",
+          "ranked_documents": [
+            "return_custom",
+            "membership_plus",
+            "promo_stacking",
+            "coupons",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r028",
+          "ranked_documents": [
+            "return_policy",
+            "refund_timeline",
+            "price_protect",
+            "points_expiry",
+            "exchange_size"
+          ]
+        },
+        {
+          "id": "r029",
+          "ranked_documents": [
+            "shipping",
+            "packaging_gift",
+            "pickup_return",
+            "privacy_cs",
+            "complaint_sla"
+          ]
+        },
+        {
+          "id": "r030",
+          "ranked_documents": [
+            "faq",
+            "invoice_vat",
+            "packaging_gift",
+            "warranty",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r031",
+          "ranked_documents": [
+            "warranty",
+            "warranty_jewelry",
+            "return_electronics",
+            "return_food"
+          ]
+        },
+        {
+          "id": "r032",
+          "ranked_documents": [
+            "shipping",
+            "live_presale",
+            "shipping_cod",
+            "shipping_split",
+            "repair_onsite"
+          ]
+        },
+        {
+          "id": "r033",
+          "ranked_documents": [
+            "return_electronics",
+            "warranty_jewelry",
+            "return_food",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r034",
+          "ranked_documents": [
+            "size_guide",
+            "exchange_size",
+            "return_custom",
+            "shipping_cod",
+            "packaging_gift"
+          ]
+        },
+        {
+          "id": "r035",
+          "ranked_documents": [
+            "return_food",
+            "return_policy",
+            "packaging_gift"
+          ]
+        },
+        {
+          "id": "r036",
+          "ranked_documents": [
+            "return_custom",
+            "promo_stacking",
+            "shipping_address",
+            "pickup_return",
+            "packaging_gift"
+          ]
+        },
+        {
+          "id": "r037",
+          "ranked_documents": [
+            "exchange_size",
+            "return_apparel",
+            "account_security",
+            "warranty_battery",
+            "privacy_cs"
+          ]
+        },
+        {
+          "id": "r038",
+          "ranked_documents": [
+            "missing_wrong_item",
+            "account_security",
+            "points_expiry",
+            "logistics_exception"
+          ]
+        },
+        {
+          "id": "r039",
+          "ranked_documents": [
+            "refund_timeline",
+            "payment_methods",
+            "cross_border",
+            "faq"
+          ]
+        },
+        {
+          "id": "r040",
+          "ranked_documents": [
+            "pickup_return",
+            "repair_onsite",
+            "missing_wrong_item",
+            "price_protect"
+          ]
+        },
+        {
+          "id": "r041",
+          "ranked_documents": [
+            "shipping_remote",
+            "membership_plus",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r042",
+          "ranked_documents": [
+            "shipping_split",
+            "packaging_gift",
+            "shipping_cod",
+            "payment_methods"
+          ]
+        },
+        {
+          "id": "r043",
+          "ranked_documents": [
+            "shipping_cod",
+            "installment_huabei",
+            "gift_card"
+          ]
+        },
+        {
+          "id": "r044",
+          "ranked_documents": [
+            "logistics_exception",
+            "shipping",
+            "installment_huabei",
+            "restock_notify",
+            "live_presale"
+          ]
+        },
+        {
+          "id": "r045",
+          "ranked_documents": [
+            "shipping_split",
+            "return_apparel",
+            "price_protect",
+            "handoff_hours"
+          ]
+        },
+        {
+          "id": "r046",
+          "ranked_documents": [
+            "warranty_battery",
+            "warranty_jewelry",
+            "warranty",
+            "return_policy"
+          ]
+        },
+        {
+          "id": "r047",
+          "ranked_documents": [
+            "install_appliance",
+            "warranty_jewelry",
+            "warranty"
+          ]
+        },
+        {
+          "id": "r048",
+          "ranked_documents": [
+            "repair_onsite",
+            "pickup_return",
+            "cross_border",
+            "exchange_size"
+          ]
+        },
+        {
+          "id": "r049",
+          "ranked_documents": [
+            "warranty_jewelry",
+            "return_policy",
+            "price_protect",
+            "warranty"
+          ]
+        },
+        {
+          "id": "r050",
+          "ranked_documents": [
+            "installment_huabei",
+            "payment_methods",
+            "faq",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r051",
+          "ranked_documents": [
+            "privacy_cs",
+            "invoice_vat",
+            "packaging_gift",
+            "install_appliance",
+            "return_apparel"
+          ]
+        },
+        {
+          "id": "r052",
+          "ranked_documents": [
+            "membership_plus",
+            "promo_stacking",
+            "coupons",
+            "exchange_size"
+          ]
+        },
+        {
+          "id": "r053",
+          "ranked_documents": [
+            "points_expiry",
+            "handoff_hours",
+            "payment_methods",
+            "coupons",
+            "warranty"
+          ]
+        },
+        {
+          "id": "r054",
+          "ranked_documents": [
+            "account_security",
+            "complaint_sla",
+            "points_expiry",
+            "invoice_vat"
+          ]
+        },
+        {
+          "id": "r055",
+          "ranked_documents": [
+            "gift_card",
+            "invoice_vat",
+            "price_protect",
+            "shipping_split"
+          ]
+        },
+        {
+          "id": "r056",
+          "ranked_documents": [
+            "size_guide",
+            "complaint_sla",
+            "account_security",
+            "return_food"
+          ]
+        },
+        {
+          "id": "r057",
+          "ranked_documents": [
+            "live_presale",
+            "price_protect",
+            "invoice_vat",
+            "missing_wrong_item"
+          ]
+        },
+        {
+          "id": "r058",
+          "ranked_documents": [
+            "cross_border",
+            "warranty_jewelry",
+            "shipping_cod",
+            "return_policy",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r059",
+          "ranked_documents": [
+            "complaint_sla",
+            "handoff_hours",
+            "live_presale",
+            "points_expiry"
+          ]
+        },
+        {
+          "id": "r060",
+          "ranked_documents": [
+            "handoff_hours",
+            "return_policy",
+            "account_security",
+            "return_food",
+            "faq"
+          ]
+        },
+        {
+          "id": "r061",
+          "ranked_documents": [
+            "price_protect",
+            "account_security",
+            "install_appliance"
+          ]
+        },
+        {
+          "id": "r062",
+          "ranked_documents": [
+            "restock_notify",
+            "live_presale",
+            "pickup_return",
+            "shipping"
+          ]
+        },
+        {
+          "id": "r063",
+          "ranked_documents": [
+            "packaging_gift",
+            "invoice_vat",
+            "faq",
+            "account_security"
+          ]
+        },
+        {
+          "id": "r064",
+          "ranked_documents": [
+            "privacy_cs",
+            "complaint_sla",
+            "account_security",
+            "shipping"
+          ]
+        },
+        {
+          "id": "r065",
+          "ranked_documents": [
+            "membership_plus",
+            "promo_stacking",
+            "return_custom",
+            "coupons",
+            "size_guide"
+          ]
+        }
+      ]
+    }
+  ]
+}

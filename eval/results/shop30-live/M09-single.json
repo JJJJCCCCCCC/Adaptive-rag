@@ -1,0 +1,75 @@
+{
+  "id": "M09",
+  "group": "multihop",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "补寄竹影茶盘的防护包装要交多少押金？",
+        "missing": "",
+        "suggestions": [
+          "竹影茶盘 防护包装 补寄 押金",
+          "茶盘 防护包装 补寄 押金 多少"
+        ],
+        "searches": [
+          {
+            "query": "补寄竹影茶盘的防护包装要交多少押金？",
+            "hits": [
+              "竹影茶盘服务档案",
+              "回收纸箱",
+              "防护组合押金"
+            ]
+          },
+          {
+            "query": "竹影茶盘 防护包装 补寄 押金",
+            "hits": [
+              "竹影茶盘服务档案",
+              "会员续期",
+              "防护组合押金"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.82,
+      "rationale": "询问补寄防护包装的押金规则，属于通用政策/费用解释，非具体订单售后或物流催发。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3778.87,
+  "docs": [
+    "竹影茶盘服务档案",
+    "防护组合押金",
+    "回收纸箱"
+  ],
+  "provider_tokens": 1615,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "竹影茶盘补寄时使用防护组合 B92，对应防护包装押金为 21 元。该押金为规则说明，实际收取以补寄确认页面为准。",
+  "evidence": [
+    {
+      "source": "竹影茶盘服务档案_6598fb2e",
+      "text": "竹影茶盘服务档案。竹影茶盘补寄时使用防护组合 B92。"
+    },
+    {
+      "source": "防护组合押金_718e717d",
+      "text": "防护组合押金。B29 的防护包装押金为15元,B92 为21元,B99 为29元。"
+    },
+    {
+      "source": "回收纸箱_1ec21c6c",
+      "text": "回收纸箱。门店按每个完整纸箱3积分登记环保回收。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "0c3a8778cc9f4414b103b30eee7a9b50"
+}

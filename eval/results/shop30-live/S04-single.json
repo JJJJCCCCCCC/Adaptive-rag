@@ -1,0 +1,76 @@
+{
+  "id": "S04",
+  "group": "simple",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "纸质发票的邮费是多少？",
+        "missing": "",
+        "suggestions": [
+          "纸质发票 邮费",
+          "纸质发票 邮寄费用",
+          "发票 邮寄 邮费 多少"
+        ],
+        "searches": [
+          {
+            "query": "纸质发票的邮费是多少？",
+            "hits": [
+              "发票寄送",
+              "青屿折叠椅服务档案",
+              "礼物分装"
+            ]
+          },
+          {
+            "query": "纸质发票 邮费",
+            "hits": [
+              "发票寄送",
+              "云纹羊毛毯服务档案",
+              "礼物分装"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.95,
+      "rationale": "询问纸质发票邮寄费用，属于通用政策解释（发票/运费规则），非具体订单售后或物流轨迹。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3957.39,
+  "docs": [
+    "发票寄送",
+    "礼物分装",
+    "青屿折叠椅服务档案"
+  ],
+  "provider_tokens": 1512,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "纸质发票通过挂号信寄出，每封收取7元邮寄费。",
+  "evidence": [
+    {
+      "source": "发票寄送_2726700a",
+      "text": "发票寄送。纸质发票通过挂号信寄出,每封收取7元邮寄费。"
+    },
+    {
+      "source": "礼物分装_147d70fa",
+      "text": "礼物分装。同一订单前三个礼袋免费,从第四个起每个4元。纸质贺卡每袋只赠一张。"
+    },
+    {
+      "source": "青屿折叠椅服务档案_db2c909e",
+      "text": "青屿折叠椅服务档案。青屿折叠椅适用维修寄送档 M47。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "aac446d71ac74be08407cac812c80876"
+}

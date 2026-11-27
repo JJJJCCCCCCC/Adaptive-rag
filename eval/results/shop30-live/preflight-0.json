@@ -1,0 +1,14 @@
+{
+  "id": "c75ef710-2b6a-4f9f-a993-8370e07e02c6",
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 11,
+    "completion_tokens": 4,
+    "total_tokens": 15,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 11
+  }
+}

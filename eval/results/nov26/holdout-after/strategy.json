@@ -1,0 +1,1366 @@
+{
+  "llm": "OfflineLLMProvider",
+  "dense": "bge-small-zh-v1.5",
+  "reranker": "lexical",
+  "simple_k": 3,
+  "multi_k": 8,
+  "case_sha256": "87b8a5bec62f693d53434230eed08a0340d5e9b31148119c66501f060f80d3f2",
+  "summary": [
+    {
+      "group": "simple",
+      "arm": "single",
+      "n": 6,
+      "all_docs": 6,
+      "all_evidence_spans": 6,
+      "all_answer_spans": 5,
+      "rounds": 6,
+      "searches": 6,
+      "median_ms": 21.15,
+      "routes": {
+        "single": 6
+      }
+    },
+    {
+      "group": "simple",
+      "arm": "fixed_three",
+      "n": 6,
+      "all_docs": 6,
+      "all_evidence_spans": 6,
+      "all_answer_spans": 5,
+      "rounds": 18,
+      "searches": 18,
+      "median_ms": 23.18,
+      "routes": {
+        "multi": 6
+      }
+    },
+    {
+      "group": "simple",
+      "arm": "adaptive",
+      "n": 6,
+      "all_docs": 6,
+      "all_evidence_spans": 6,
+      "all_answer_spans": 5,
+      "rounds": 6,
+      "searches": 6,
+      "median_ms": 21.02,
+      "routes": {
+        "single": 6
+      }
+    },
+    {
+      "group": "compound",
+      "arm": "single",
+      "n": 6,
+      "all_docs": 6,
+      "all_evidence_spans": 5,
+      "all_answer_spans": 0,
+      "rounds": 6,
+      "searches": 6,
+      "median_ms": 21.43,
+      "routes": {
+        "single": 6
+      }
+    },
+    {
+      "group": "compound",
+      "arm": "fixed_three",
+      "n": 6,
+      "all_docs": 6,
+      "all_evidence_spans": 5,
+      "all_answer_spans": 3,
+      "rounds": 18,
+      "searches": 18,
+      "median_ms": 24.39,
+      "routes": {
+        "multi": 6
+      }
+    },
+    {
+      "group": "compound",
+      "arm": "adaptive",
+      "n": 6,
+      "all_docs": 6,
+      "all_evidence_spans": 5,
+      "all_answer_spans": 0,
+      "rounds": 6,
+      "searches": 6,
+      "median_ms": 23.21,
+      "routes": {
+        "single": 6
+      }
+    },
+    {
+      "group": "all",
+      "arm": "single",
+      "n": 12,
+      "all_docs": 12,
+      "all_evidence_spans": 11,
+      "all_answer_spans": 5,
+      "rounds": 12,
+      "searches": 12,
+      "median_ms": 21.43,
+      "routes": {
+        "single": 12
+      }
+    },
+    {
+      "group": "all",
+      "arm": "fixed_three",
+      "n": 12,
+      "all_docs": 12,
+      "all_evidence_spans": 11,
+      "all_answer_spans": 8,
+      "rounds": 36,
+      "searches": 36,
+      "median_ms": 23.93,
+      "routes": {
+        "multi": 12
+      }
+    },
+    {
+      "group": "all",
+      "arm": "adaptive",
+      "n": 12,
+      "all_docs": 12,
+      "all_evidence_spans": 11,
+      "all_answer_spans": 5,
+      "rounds": 12,
+      "searches": 12,
+      "median_ms": 21.92,
+      "routes": {
+        "single": 12
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "h1",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 32.31,
+      "docs": [
+        "packaging_gift",
+        "gift_card",
+        "shipping_split"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《packaging_gift》的资料节选，请核对原文：\n\n> 礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。",
+      "evidence": [
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "shipping_split_5cae1477",
+          "text": "拆单场景下,催发货针对未揽收的子单。已有运单号的子单请走物流查询。"
+        }
+      ]
+    },
+    {
+      "id": "h1",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 20.35,
+      "docs": [
+        "packaging_gift",
+        "gift_card",
+        "shipping_split"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《packaging_gift》的资料节选，请核对原文：\n\n> 礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。",
+      "evidence": [
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "shipping_split_5cae1477",
+          "text": "拆单场景下,催发货针对未揽收的子单。已有运单号的子单请走物流查询。"
+        }
+      ]
+    },
+    {
+      "id": "h1",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 22.49,
+      "docs": [
+        "packaging_gift",
+        "gift_card",
+        "return_policy",
+        "invoice_vat"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《packaging_gift》的资料节选，请核对原文：\n\n> 礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。",
+      "evidence": [
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "超过 7 天无理由且无法证明质量问题的,不能退货。可转保修或人工复核。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "需在发货前填写公司名称、税号、地址电话、开户行账号。确认收货后 5 个工作日开具 PDF+纸质(纸质需到付)。"
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 33.4,
+      "docs": [
+        "repair_onsite",
+        "warranty",
+        "warranty_battery",
+        "pickup_return"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "相关条款节选，请逐条核对适用范围：\n\n《repair_onsite》上门费\n> 在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。\n\n《repair_onsite》范围\n> 家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。",
+      "evidence": [
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        },
+        {
+          "source": "warranty_1f88fd5f",
+          "text": "申请保修需提供订单号与故障照片。检测周期 3-7 个工作日,在保免费维修或换新。"
+        },
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "鼓包因过充、暴晒、非原装充电器导致的,不在保。检测报告会写明原因。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "售后审核通过后可选上门取件。当日 16:00 前预约,最早次日 10:00-12:00 时段。取件码以 QM 开头,短信下发。"
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 30.23,
+      "docs": [
+        "repair_onsite",
+        "warranty_jewelry"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《repair_onsite》的资料节选，请核对原文：\n\n> 在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。",
+      "evidence": [
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "戒指改围收费 35 元起,改围后该尺寸无理由退货关闭。"
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 24.23,
+      "docs": [
+        "repair_onsite",
+        "warranty_jewelry"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《repair_onsite》的资料节选，请核对原文：\n\n> 在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。",
+      "evidence": [
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "戒指改围收费 35 元起,改围后该尺寸无理由退货关闭。"
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 21.85,
+      "docs": [
+        "shipping_cod"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《shipping_cod》的资料节选，请核对原文：\n\n> 货到付款手续费 6 元,由买家在签收时一并支付,不计入满 59 包邮门槛。",
+      "evidence": [
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "货到付款手续费 6 元,由买家在签收时一并支付,不计入满 59 包邮门槛。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "无理由拒收,手续费不退,并可能影响后续货到付款资格。质量问题拒收免手续费。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "仅江浙沪皖、且订单实付 ≤ 2000 元支持货到付款。定制商品、预售、跨境不支持。"
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 23.87,
+      "docs": [
+        "shipping_cod",
+        "installment_huabei",
+        "gift_card"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《shipping_cod》的资料节选，请核对原文：\n\n> 货到付款手续费 6 元,由买家在签收时一并支付,不计入满 59 包邮门槛。",
+      "evidence": [
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "货到付款手续费 6 元,由买家在签收时一并支付,不计入满 59 包邮门槛。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "无理由拒收,手续费不退,并可能影响后续货到付款资格。质量问题拒收免手续费。"
+        },
+        {
+          "source": "installment_huabei_55f3f6f1",
+          "text": "分期后退款,已收息费是否退还以支付宝规则为准。本平台不额外收取分期手续费。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "仅江浙沪皖、且订单实付 ≤ 2000 元支持货到付款。定制商品、预售、跨境不支持。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.03,
+      "docs": [
+        "shipping_cod"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《shipping_cod》的资料节选，请核对原文：\n\n> 货到付款手续费 6 元,由买家在签收时一并支付,不计入满 59 包邮门槛。",
+      "evidence": [
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "货到付款手续费 6 元,由买家在签收时一并支付,不计入满 59 包邮门槛。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "无理由拒收,手续费不退,并可能影响后续货到付款资格。质量问题拒收免手续费。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "仅江浙沪皖、且订单实付 ≤ 2000 元支持货到付款。定制商品、预售、跨境不支持。"
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 21.15,
+      "docs": [
+        "return_apparel",
+        "exchange_size",
+        "warranty_battery"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_apparel》的资料节选，请核对原文：\n\n> 同款换尺码不补差价。换其他款按现价多退少补,补差在 30 分钟内支付否则换货单关闭。",
+      "evidence": [
+        {
+          "source": "return_apparel_bef262ac",
+          "text": "同款换尺码不补差价。换其他款按现价多退少补,补差在 30 分钟内支付否则换货单关闭。"
+        },
+        {
+          "source": "exchange_size_216f0802",
+          "text": "同一订单同一 SKU 最多换货 2 次。第二次仍不适配,建议退货而非继续换。"
+        },
+        {
+          "source": "exchange_size_216f0802",
+          "text": "服装尺寸与尺码表误差在 ±1.5cm 内视为合格,不构成质量问题。超过 1.5cm 可免费换货,平台承担双向运费。"
+        },
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。"
+        },
+        {
+          "source": "return_apparel_bef262ac",
+          "text": "已洗涤、已穿着有明显褶皱汗渍、内裤/袜子/泳衣已拆封,不适用无理由。质量问题(开线、色差严重、尺码与吊牌不符超过 1.5cm)可换货。"
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.74,
+      "docs": [
+        "return_apparel",
+        "exchange_size"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_apparel》的资料节选，请核对原文：\n\n> 同款换尺码不补差价。换其他款按现价多退少补,补差在 30 分钟内支付否则换货单关闭。",
+      "evidence": [
+        {
+          "source": "return_apparel_bef262ac",
+          "text": "同款换尺码不补差价。换其他款按现价多退少补,补差在 30 分钟内支付否则换货单关闭。"
+        },
+        {
+          "source": "exchange_size_216f0802",
+          "text": "同一订单同一 SKU 最多换货 2 次。第二次仍不适配,建议退货而非继续换。"
+        },
+        {
+          "source": "exchange_size_216f0802",
+          "text": "服装尺寸与尺码表误差在 ±1.5cm 内视为合格,不构成质量问题。超过 1.5cm 可免费换货,平台承担双向运费。"
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 22.14,
+      "docs": [
+        "return_apparel",
+        "exchange_size"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_apparel》的资料节选，请核对原文：\n\n> 同款换尺码不补差价。换其他款按现价多退少补,补差在 30 分钟内支付否则换货单关闭。",
+      "evidence": [
+        {
+          "source": "return_apparel_bef262ac",
+          "text": "同款换尺码不补差价。换其他款按现价多退少补,补差在 30 分钟内支付否则换货单关闭。"
+        },
+        {
+          "source": "exchange_size_216f0802",
+          "text": "同一订单同一 SKU 最多换货 2 次。第二次仍不适配,建议退货而非继续换。"
+        },
+        {
+          "source": "exchange_size_216f0802",
+          "text": "服装尺寸与尺码表误差在 ±1.5cm 内视为合格,不构成质量问题。超过 1.5cm 可免费换货,平台承担双向运费。"
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 25.83,
+      "docs": [
+        "install_appliance",
+        "warranty_jewelry",
+        "repair_onsite"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "相关条款节选，请逐条核对适用范围：\n\n《install_appliance》费用\n> 标准安装免费。打孔超过 2 个、移机、加长管按现场报价,费用付给服务商,平台不代收。\n\n《warranty_jewelry》改围\n> 戒指改围收费 35 元起,改围后该尺寸无理由退货关闭。",
+      "evidence": [
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "标准安装免费。打孔超过 2 个、移机、加长管按现场报价,费用付给服务商,平台不代收。"
+        },
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "空调、净水器等标「含安装」商品,签收后 48 小时内由服务商电话预约。超时未联系可在订单页点「催安装」。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "戒指改围收费 35 元起,改围后该尺寸无理由退货关闭。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.31,
+      "docs": [
+        "install_appliance",
+        "warranty_jewelry"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《install_appliance》的资料节选，请核对原文：\n\n> 标准安装免费。打孔超过 2 个、移机、加长管按现场报价,费用付给服务商,平台不代收。",
+      "evidence": [
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "标准安装免费。打孔超过 2 个、移机、加长管按现场报价,费用付给服务商,平台不代收。"
+        },
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "空调、净水器等标「含安装」商品,签收后 48 小时内由服务商电话预约。超时未联系可在订单页点「催安装」。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "戒指改围收费 35 元起,改围后该尺寸无理由退货关闭。"
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 6.32,
+      "docs": [
+        "install_appliance",
+        "warranty_jewelry"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《install_appliance》的资料节选，请核对原文：\n\n> 标准安装免费。打孔超过 2 个、移机、加长管按现场报价,费用付给服务商,平台不代收。",
+      "evidence": [
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "标准安装免费。打孔超过 2 个、移机、加长管按现场报价,费用付给服务商,平台不代收。"
+        },
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "空调、净水器等标「含安装」商品,签收后 48 小时内由服务商电话预约。超时未联系可在订单页点「催安装」。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "戒指改围收费 35 元起,改围后该尺寸无理由退货关闭。"
+        }
+      ]
+    },
+    {
+      "id": "h6",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 20.44,
+      "docs": [
+        "complaint_sla",
+        "refund_timeline"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《complaint_sla》的资料节选，请核对原文：\n\n> 投诉单号 CP 开头。用户可在「我的客服」查看进度,不要重复进线以免拆单。",
+      "evidence": [
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "投诉单号 CP 开头。用户可在「我的客服」查看进度,不要重复进线以免拆单。"
+        },
+        {
+          "source": "refund_timeline_dbf0b0cb",
+          "text": "仅退运费或仅退配件时,主单状态保持不变,退款单号以 RF 开头可在订单售后页查询。"
+        },
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "一般投诉(态度、延误)24 小时内首次回复。升级投诉(涉嫌欺诈、安全)4 小时内值班经理接入。"
+        }
+      ]
+    },
+    {
+      "id": "h6",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 21.7,
+      "docs": [
+        "complaint_sla",
+        "refund_timeline"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《complaint_sla》的资料节选，请核对原文：\n\n> 投诉单号 CP 开头。用户可在「我的客服」查看进度,不要重复进线以免拆单。",
+      "evidence": [
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "投诉单号 CP 开头。用户可在「我的客服」查看进度,不要重复进线以免拆单。"
+        },
+        {
+          "source": "refund_timeline_dbf0b0cb",
+          "text": "仅退运费或仅退配件时,主单状态保持不变,退款单号以 RF 开头可在订单售后页查询。"
+        },
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "一般投诉(态度、延误)24 小时内首次回复。升级投诉(涉嫌欺诈、安全)4 小时内值班经理接入。"
+        }
+      ]
+    },
+    {
+      "id": "h6",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 20.06,
+      "docs": [
+        "complaint_sla",
+        "refund_timeline",
+        "install_appliance",
+        "price_protect",
+        "privacy_cs"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "相关条款节选，请逐条核对适用范围：\n\n《complaint_sla》工单\n> 投诉单号 CP 开头。用户可在「我的客服」查看进度,不要重复进线以免拆单。\n\n《refund_timeline》部分退款\n> 仅退运费或仅退配件时,主单状态保持不变,退款单号以 RF 开头可在订单售后页查询。",
+      "evidence": [
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "投诉单号 CP 开头。用户可在「我的客服」查看进度,不要重复进线以免拆单。"
+        },
+        {
+          "source": "refund_timeline_dbf0b0cb",
+          "text": "仅退运费或仅退配件时,主单状态保持不变,退款单号以 RF 开头可在订单售后页查询。"
+        },
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "安装导致墙面/商品损坏,由服务商在 7 日内修复或赔付,工单号以 IN 开头。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "补差以余额或原路返回,审核 24 小时。价保记录单号 PP 开头。"
+        },
+        {
+          "source": "privacy_cs_0c4fad81",
+          "text": "其他收货地址全文、历史支付账号、浏览记录。涉及诉讼的调证走法务工单 LW 开头,不在客服会话完成。"
+        }
+      ]
+    },
+    {
+      "id": "h7",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.73,
+      "docs": [
+        "packaging_gift"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《packaging_gift》的资料节选，请核对原文：\n\n> 礼品模式隐藏价格小票。电子发票仍发至下单账号,不会寄给收礼人。",
+      "evidence": [
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品模式隐藏价格小票。电子发票仍发至下单账号,不会寄给收礼人。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "包装破损可补寄包装材料,不退 8 元包装费。商品质量问题按普通售后,包装费一并退。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        }
+      ]
+    },
+    {
+      "id": "h7",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 24.94,
+      "docs": [
+        "packaging_gift",
+        "live_presale",
+        "pickup_return"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "相关条款节选，请逐条核对适用范围：\n\n《packaging_gift》发票与价格\n> 礼品模式隐藏价格小票。电子发票仍发至下单账号,不会寄给收礼人。\n\n《packaging_gift》售后\n> 包装破损可补寄包装材料,不退 8 元包装费。商品质量问题按普通售后,包装费一并退。\n\n《packaging_gift》费用\n> 礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。",
+      "evidence": [
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品模式隐藏价格小票。电子发票仍发至下单账号,不会寄给收礼人。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "包装破损可补寄包装材料,不退 8 元包装费。商品质量问题按普通售后,包装费一并退。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        },
+        {
+          "source": "live_presale_2eba858e",
+          "text": "直播预售定金一般为成交价 20%,商品页写明「定金不退」的,尾款开始前仍可退定金;尾款开始后定金不退,除非平台无法发货。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        }
+      ]
+    },
+    {
+      "id": "h7",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 21.37,
+      "docs": [
+        "packaging_gift"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《packaging_gift》的资料节选，请核对原文：\n\n> 礼品模式隐藏价格小票。电子发票仍发至下单账号,不会寄给收礼人。",
+      "evidence": [
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品模式隐藏价格小票。电子发票仍发至下单账号,不会寄给收礼人。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "包装破损可补寄包装材料,不退 8 元包装费。商品质量问题按普通售后,包装费一并退。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        }
+      ]
+    },
+    {
+      "id": "h8",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 23.31,
+      "docs": [
+        "repair_onsite"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《repair_onsite》的资料节选，请核对原文：\n\n> 在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。",
+      "evidence": [
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        }
+      ]
+    },
+    {
+      "id": "h8",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 24.8,
+      "docs": [
+        "repair_onsite",
+        "warranty",
+        "warranty_battery"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "相关条款节选，请逐条核对适用范围：\n\n《repair_onsite》上门费\n> 在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。\n\n《repair_onsite》备件\n> 无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。",
+      "evidence": [
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        },
+        {
+          "source": "warranty_1f88fd5f",
+          "text": "申请保修需提供订单号与故障照片。检测周期 3-7 个工作日,在保免费维修或换新。"
+        },
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "滤芯、刀头、墨水等耗材无保修,质量问题(未开封即损坏)签收 7 日内可退。"
+        }
+      ]
+    },
+    {
+      "id": "h8",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 21.48,
+      "docs": [
+        "repair_onsite"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《repair_onsite》的资料节选，请核对原文：\n\n> 在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。",
+      "evidence": [
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        }
+      ]
+    },
+    {
+      "id": "h9",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 21.1,
+      "docs": [
+        "shipping_cod",
+        "gift_card"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《shipping_cod》的资料节选，请核对原文：\n\n> 仅江浙沪皖、且订单实付 ≤ 2000 元支持货到付款。定制商品、预售、跨境不支持。",
+      "evidence": [
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "仅江浙沪皖、且订单实付 ≤ 2000 元支持货到付款。定制商品、预售、跨境不支持。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "货到付款手续费 6 元,由买家在签收时一并支付,不计入满 59 包邮门槛。"
+        }
+      ]
+    },
+    {
+      "id": "h9",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 6.03,
+      "docs": [
+        "shipping_cod",
+        "gift_card"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《shipping_cod》的资料节选，请核对原文：\n\n> 仅江浙沪皖、且订单实付 ≤ 2000 元支持货到付款。定制商品、预售、跨境不支持。",
+      "evidence": [
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "仅江浙沪皖、且订单实付 ≤ 2000 元支持货到付款。定制商品、预售、跨境不支持。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "货到付款手续费 6 元,由买家在签收时一并支付,不计入满 59 包邮门槛。"
+        }
+      ]
+    },
+    {
+      "id": "h9",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 22.94,
+      "docs": [
+        "shipping_cod",
+        "gift_card",
+        "installment_huabei"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "相关条款节选，请逐条核对适用范围：\n\n《shipping_cod》开通范围\n> 仅江浙沪皖、且订单实付 ≤ 2000 元支持货到付款。定制商品、预售、跨境不支持。\n\n《installment_huabei》退款\n> 分期后退款,已收息费是否退还以支付宝规则为准。本平台不额外收取分期手续费。",
+      "evidence": [
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "仅江浙沪皖、且订单实付 ≤ 2000 元支持货到付款。定制商品、预售、跨境不支持。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "货到付款手续费 6 元,由买家在签收时一并支付,不计入满 59 包邮门槛。"
+        },
+        {
+          "source": "installment_huabei_55f3f6f1",
+          "text": "分期后退款,已收息费是否退还以支付宝规则为准。本平台不额外收取分期手续费。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "无理由拒收,手续费不退,并可能影响后续货到付款资格。质量问题拒收免手续费。"
+        }
+      ]
+    },
+    {
+      "id": "h10",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 23.99,
+      "docs": [
+        "exchange_size",
+        "return_apparel",
+        "size_guide",
+        "shipping_address"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": false,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《exchange_size》的资料节选，请核对原文：\n\n> 服装尺寸与尺码表误差在 ±1.5cm 内视为合格,不构成质量问题。超过 1.5cm 可免费换货,平台承担双向运费。",
+      "evidence": [
+        {
+          "source": "exchange_size_216f0802",
+          "text": "服装尺寸与尺码表误差在 ±1.5cm 内视为合格,不构成质量问题。超过 1.5cm 可免费换货,平台承担双向运费。"
+        },
+        {
+          "source": "return_apparel_bef262ac",
+          "text": "已洗涤、已穿着有明显褶皱汗渍、内裤/袜子/泳衣已拆封,不适用无理由。质量问题(开线、色差严重、尺码与吊牌不符超过 1.5cm)可换货。"
+        },
+        {
+          "source": "return_apparel_bef262ac",
+          "text": "同款换尺码不补差价。换其他款按现价多退少补,补差在 30 分钟内支付否则换货单关闭。"
+        },
+        {
+          "source": "size_guide_d5cd5f47",
+          "text": "与尺码表误差 ±1.5cm 内合格。买家测量方式与图示不一致导致的差异不支持质量退货,可走 7 天无理由(服饰未洗涤)。"
+        },
+        {
+          "source": "shipping_address_7242689a",
+          "text": "支付后、仓库未拣货前可修改收货地址,每个订单限 1 次。改到偏远地区需补 8 元附加费。"
+        }
+      ]
+    },
+    {
+      "id": "h10",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 22.19,
+      "docs": [
+        "exchange_size",
+        "return_apparel",
+        "size_guide"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": false,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《exchange_size》的资料节选，请核对原文：\n\n> 服装尺寸与尺码表误差在 ±1.5cm 内视为合格,不构成质量问题。超过 1.5cm 可免费换货,平台承担双向运费。",
+      "evidence": [
+        {
+          "source": "exchange_size_216f0802",
+          "text": "服装尺寸与尺码表误差在 ±1.5cm 内视为合格,不构成质量问题。超过 1.5cm 可免费换货,平台承担双向运费。"
+        },
+        {
+          "source": "return_apparel_bef262ac",
+          "text": "同款换尺码不补差价。换其他款按现价多退少补,补差在 30 分钟内支付否则换货单关闭。"
+        },
+        {
+          "source": "size_guide_d5cd5f47",
+          "text": "与尺码表误差 ±1.5cm 内合格。买家测量方式与图示不一致导致的差异不支持质量退货,可走 7 天无理由(服饰未洗涤)。"
+        }
+      ]
+    },
+    {
+      "id": "h10",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 23.12,
+      "docs": [
+        "exchange_size",
+        "return_apparel",
+        "size_guide"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": false,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《exchange_size》的资料节选，请核对原文：\n\n> 服装尺寸与尺码表误差在 ±1.5cm 内视为合格,不构成质量问题。超过 1.5cm 可免费换货,平台承担双向运费。",
+      "evidence": [
+        {
+          "source": "exchange_size_216f0802",
+          "text": "服装尺寸与尺码表误差在 ±1.5cm 内视为合格,不构成质量问题。超过 1.5cm 可免费换货,平台承担双向运费。"
+        },
+        {
+          "source": "return_apparel_bef262ac",
+          "text": "同款换尺码不补差价。换其他款按现价多退少补,补差在 30 分钟内支付否则换货单关闭。"
+        },
+        {
+          "source": "size_guide_d5cd5f47",
+          "text": "与尺码表误差 ±1.5cm 内合格。买家测量方式与图示不一致导致的差异不支持质量退货,可走 7 天无理由(服饰未洗涤)。"
+        }
+      ]
+    },
+    {
+      "id": "h11",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 24.03,
+      "docs": [
+        "repair_onsite",
+        "install_appliance"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《repair_onsite》的资料节选，请核对原文：\n\n> 在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。",
+      "evidence": [
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "空调、净水器等标「含安装」商品,签收后 48 小时内由服务商电话预约。超时未联系可在订单页点「催安装」。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        }
+      ]
+    },
+    {
+      "id": "h11",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 43.29,
+      "docs": [
+        "repair_onsite",
+        "install_appliance",
+        "warranty_battery",
+        "warranty"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "相关条款节选，请逐条核对适用范围：\n\n《repair_onsite》上门费\n> 在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。\n\n《install_appliance》预约\n> 空调、净水器等标「含安装」商品,签收后 48 小时内由服务商电话预约。超时未联系可在订单页点「催安装」。\n\n《warranty_battery》不保\n> 鼓包因过充、暴晒、非原装充电器导致的,不在保。检测报告会写明原因。",
+      "evidence": [
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "空调、净水器等标「含安装」商品,签收后 48 小时内由服务商电话预约。超时未联系可在订单页点「催安装」。"
+        },
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "鼓包因过充、暴晒、非原装充电器导致的,不在保。检测报告会写明原因。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        },
+        {
+          "source": "warranty_1f88fd5f",
+          "text": "申请保修需提供订单号与故障照片。检测周期 3-7 个工作日,在保免费维修或换新。"
+        }
+      ]
+    },
+    {
+      "id": "h11",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 25.8,
+      "docs": [
+        "repair_onsite",
+        "install_appliance"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《repair_onsite》的资料节选，请核对原文：\n\n> 在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。",
+      "evidence": [
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "install_appliance_ff51ceed",
+          "text": "空调、净水器等标「含安装」商品,签收后 48 小时内由服务商电话预约。超时未联系可在订单页点「催安装」。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        }
+      ]
+    },
+    {
+      "id": "h12",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 27.16,
+      "docs": [
+        "complaint_sla",
+        "handoff_hours"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《complaint_sla》的资料节选，请核对原文：\n\n> 一般投诉(态度、延误)24 小时内首次回复。升级投诉(涉嫌欺诈、安全)4 小时内值班经理接入。",
+      "evidence": [
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "一般投诉(态度、延误)24 小时内首次回复。升级投诉(涉嫌欺诈、安全)4 小时内值班经理接入。"
+        },
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "投诉单号 CP 开头。用户可在「我的客服」查看进度,不要重复进线以免拆单。"
+        },
+        {
+          "source": "handoff_hours_2d7a34e9",
+          "text": "以下必须转人工:疑似盗用、金额 ≥ 2000 元争议、已投诉未闭环。机器人不得反复挽留。"
+        }
+      ]
+    },
+    {
+      "id": "h12",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 6.28,
+      "docs": [
+        "complaint_sla",
+        "handoff_hours"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《complaint_sla》的资料节选，请核对原文：\n\n> 一般投诉(态度、延误)24 小时内首次回复。升级投诉(涉嫌欺诈、安全)4 小时内值班经理接入。",
+      "evidence": [
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "一般投诉(态度、延误)24 小时内首次回复。升级投诉(涉嫌欺诈、安全)4 小时内值班经理接入。"
+        },
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "投诉单号 CP 开头。用户可在「我的客服」查看进度,不要重复进线以免拆单。"
+        },
+        {
+          "source": "handoff_hours_2d7a34e9",
+          "text": "以下必须转人工:疑似盗用、金额 ≥ 2000 元争议、已投诉未闭环。机器人不得反复挽留。"
+        }
+      ]
+    },
+    {
+      "id": "h12",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 23.79,
+      "docs": [
+        "complaint_sla",
+        "logistics_exception",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "相关条款节选，请逐条核对适用范围：\n\n《complaint_sla》分级\n> 一般投诉(态度、延误)24 小时内首次回复。升级投诉(涉嫌欺诈、安全)4 小时内值班经理接入。\n\n《logistics_exception》升级单\n> 介入后生成物流工单 LG 开头。普通查询 24 小时内回访;声明价值 ≥ 500 元的丢件 4 小时内升级承运商。",
+      "evidence": [
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "一般投诉(态度、延误)24 小时内首次回复。升级投诉(涉嫌欺诈、安全)4 小时内值班经理接入。"
+        },
+        {
+          "source": "complaint_sla_f6fe97f8",
+          "text": "投诉单号 CP 开头。用户可在「我的客服」查看进度,不要重复进线以免拆单。"
+        },
+        {
+          "source": "logistics_exception_b97f65d5",
+          "text": "介入后生成物流工单 LG 开头。普通查询 24 小时内回访;声明价值 ≥ 500 元的丢件 4 小时内升级承运商。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "显示停滞超过 48 小时,可申请客服介入查询。签收后请当场检查外包装。"
+        },
+        {
+          "source": "logistics_exception_b97f65d5",
+          "text": "政策版本:2024-12-v3\n主政策:停滞超过 48 小时可申请客服介入。"
+        }
+      ]
+    }
+  ]
+}

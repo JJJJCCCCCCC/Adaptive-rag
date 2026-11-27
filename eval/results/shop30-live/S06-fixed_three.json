@@ -1,0 +1,162 @@
+{
+  "id": "S06",
+  "group": "simple",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "预约送货最晚那个时段几点开始？",
+        "missing": "",
+        "suggestions": [
+          "预约送货 最晚时段 几点开始",
+          "送货预约 最晚时间段 开始时间"
+        ],
+        "searches": [
+          {
+            "query": "预约送货最晚那个时段几点开始？",
+            "hits": [
+              "预约配送",
+              "夜间自提",
+              "家具搬楼"
+            ]
+          },
+          {
+            "query": "预约送货 最晚时段 几点开始",
+            "hits": [
+              "预约配送",
+              "门店自提柜",
+              "家具搬楼"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明预约送货每天最后一个可选时段从19点开始，直接回答了问题。"
+        },
+        "accumulated": [
+          "预约配送",
+          "家具搬楼",
+          "门店自提柜"
+        ]
+      },
+      {
+        "input": "预约送货最晚那个时段几点开始？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "预约送货 最晚时段 几点开始",
+          "预约送货 最晚时段 配送时间 政策",
+          "预约送货 晚间时段 开始时间 规定"
+        ],
+        "searches": [
+          {
+            "query": "预约送货最晚那个时段几点开始？",
+            "hits": [
+              "预约配送",
+              "夜间自提",
+              "家具搬楼"
+            ]
+          },
+          {
+            "query": "预约送货 最晚时段 几点开始",
+            "hits": [
+              "预约配送",
+              "门店自提柜",
+              "家具搬楼"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据直接说明预约送货每天最后一个可选时段从19点开始，完整回答了问题。"
+        },
+        "accumulated": [
+          "预约配送",
+          "家具搬楼",
+          "门店自提柜"
+        ]
+      },
+      {
+        "input": "预约送货最晚那个时段几点开始？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "预约送货 最晚时段 几点开始",
+          "预约送货 最晚配送时段 时间",
+          "送货预约 最晚时段 开始时间"
+        ],
+        "searches": [
+          {
+            "query": "预约送货最晚那个时段几点开始？",
+            "hits": [
+              "预约配送",
+              "夜间自提",
+              "家具搬楼"
+            ]
+          },
+          {
+            "query": "预约送货 最晚时段 几点开始",
+            "hits": [
+              "预约配送",
+              "门店自提柜",
+              "家具搬楼"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明预约送货每天最后一个可选时段从19点开始，直接回答了问题；其余证据与问题无关。"
+        },
+        "accumulated": [
+          "预约配送",
+          "家具搬楼",
+          "门店自提柜"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "logistics",
+      "confidence": 0.88,
+      "rationale": "询问预约送货时段的具体时间，属于配送/物流安排问题。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8499.76,
+  "docs": [
+    "预约配送",
+    "家具搬楼",
+    "门店自提柜"
+  ],
+  "provider_tokens": 2583,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "预约送货每天最后一个可选时段从19点开始。",
+  "evidence": [
+    {
+      "source": "预约配送_f4f613e9",
+      "text": "预约配送。预约送货每天最后一个可选时段从19点开始。"
+    },
+    {
+      "source": "家具搬楼_d14c8c93",
+      "text": "家具搬楼。小书柜送货时,有电梯且可装下则免搬楼费;无电梯按每层6元计,从二楼开始收费。一楼按零层计。"
+    },
+    {
+      "source": "门店自提柜_e8d4ec13",
+      "text": "门店自提柜。自提柜的取货码自短信发出后保留36小时,超时退回门店。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "e84e5e943dbe4d9681752b0878671442"
+}

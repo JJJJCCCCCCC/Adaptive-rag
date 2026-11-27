@@ -1,0 +1,90 @@
+{
+  "receipts": [
+    {
+      "model": "deepseek-flash",
+      "id": "a299ebf9-0fb4-4d85-bb9e-5be9aad76160",
+      "usage": {
+        "prompt_tokens": 261,
+        "completion_tokens": 100,
+        "total_tokens": 361,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 261
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "e71f3ed8-6b2c-4118-81c9-8923e1817a50",
+      "usage": {
+        "prompt_tokens": 354,
+        "completion_tokens": 115,
+        "total_tokens": 469,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 226
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "01f41105-bd4b-44d9-90e5-2cf428680954",
+      "usage": {
+        "prompt_tokens": 221,
+        "completion_tokens": 31,
+        "total_tokens": 252,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 221
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "23253b57-374d-44c5-95cb-e9915bb8bcf6",
+      "usage": {
+        "prompt_tokens": 221,
+        "completion_tokens": 32,
+        "total_tokens": 253,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 221
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "9e80d576-113e-4bda-963d-0bb463671fad",
+      "usage": {
+        "prompt_tokens": 221,
+        "completion_tokens": 34,
+        "total_tokens": 255,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 221
+      }
+    }
+  ],
+  "labels": {
+    "A": {
+      "pass": true,
+      "reason": "回答明确给出17天，并说明自取走日起算，与参考答案一致。"
+    },
+    "B": {
+      "pass": true,
+      "reason": "回答明确给出最迟17天内归还，与参考答案一致，数值和条件均正确。"
+    },
+    "C": {
+      "pass": true,
+      "reason": "回答明确给出最迟17天内归还，与参考答案一致，含正确数值和起算条件。"
+    }
+  },
+  "mode": "individual_recovery",
+  "signature": "a0920ef9fdd28cab79658695cfe2762afddcde09a4020fe93b99822090c6ee87"
+}

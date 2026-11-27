@@ -1,0 +1,157 @@
+{
+  "id": "H17",
+  "group": "code_link",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "枣林纸灯要求升级外包装时，需另付几元？",
+        "missing": "",
+        "suggestions": [
+          "枣林纸灯 外包装升级 加价 几元",
+          "枣林纸灯 升级包装 另付费用"
+        ],
+        "searches": [
+          {
+            "query": "枣林纸灯要求升级外包装时，需另付几元？",
+            "hits": [
+              "枣林纸灯售后说明",
+              "履约排期",
+              "晚枫条款"
+            ]
+          },
+          {
+            "query": "枣林纸灯 外包装升级 加价 几元",
+            "hits": [
+              "枣林纸灯售后说明",
+              "押金清单",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": false,
+          "sufficient": false,
+          "missing_aspect": "枣林纸灯升级外包装的额外费用（需另付几元）",
+          "rationale": "三条证据分别涉及防损系数、保存期限和押金金额，均未提及外包装升级费用，无法回答问题。"
+        },
+        "accumulated": [
+          "枣林纸灯售后说明",
+          "晚枫条款",
+          "押金清单"
+        ]
+      },
+      {
+        "input": "枣林纸灯要求升级外包装时，需另付几元？",
+        "missing": "枣林纸灯升级外包装的额外费用（需另付几元）",
+        "suggestions": [
+          "枣林纸灯 升级外包装 另付几元",
+          "枣林纸灯 外包装升级 额外费用",
+          "纸灯 定制外包装 加价 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "枣林纸灯升级外包装的额外费用（需另付几元）",
+            "hits": [
+              "枣林纸灯售后说明",
+              "年度更换配额",
+              "晚枫条款"
+            ]
+          },
+          {
+            "query": "枣林纸灯 升级外包装 另付几元",
+            "hits": [
+              "枣林纸灯售后说明",
+              "押金清单",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": false,
+          "sufficient": false,
+          "missing_aspect": "枣林纸灯升级外包装的额外费用（需另付几元）",
+          "rationale": "三条证据分别涉及防损系数、年度更换配额和保存期限，均未提及外包装升级或相关费用，无法回答问题。"
+        },
+        "accumulated": [
+          "枣林纸灯售后说明",
+          "年度更换配额",
+          "晚枫条款"
+        ]
+      },
+      {
+        "input": "枣林纸灯要求升级外包装时，需另付几元？",
+        "missing": "枣林纸灯升级外包装的额外费用（需另付几元）",
+        "suggestions": [
+          "枣林纸灯 外包装升级 另付费用",
+          "枣林纸灯 升级包装 加价 几元",
+          "纸灯 外包装升级 额外收费"
+        ],
+        "searches": [
+          {
+            "query": "枣林纸灯 外包装升级 另付费用",
+            "hits": [
+              "枣林纸灯售后说明",
+              "押金清单",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "枣林纸灯 升级包装 加价 几元",
+            "hits": [
+              "枣林纸灯售后说明",
+              "工厂排期索引",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.85,
+      "rationale": "询问特定商品升级外包装的额外费用，属于商品参数/服务咨询，非通用政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问特定商品（枣林纸灯）升级外包装的固定费用，属于单条政策/FAQ查询，无需组合多条政策或调用订单系统。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8189.05,
+  "docs": [
+    "枣林纸灯售后说明",
+    "年度更换配额",
+    "交付承诺册"
+  ],
+  "provider_tokens": 2731,
+  "provider_responses": 9,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据未包含“升级外包装需另付几元”的收费标准，无法确认具体金额。建议补充订单号或商品规格，以便转人工核实；请勿依据未提供的信息付款。",
+  "evidence": [
+    {
+      "source": "枣林纸灯售后说明_630c9c40",
+      "text": "枣林纸灯售后说明。枣林纸灯的防损系数档为 PK91。"
+    },
+    {
+      "source": "年度更换配额_1046839f",
+      "text": "年度更换配额。ZE72 每年1枚,ZE27 每年4枚,ZE22 每年2枚。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "aa8705bc7ea14623a0fad2f9aba1520e"
+}

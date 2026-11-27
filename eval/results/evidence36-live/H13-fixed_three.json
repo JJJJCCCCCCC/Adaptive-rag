@@ -1,0 +1,158 @@
+{
+  "id": "H13",
+  "group": "code_link",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "风禾藤篮按店内规则翻新一次要收多少？",
+        "missing": "",
+        "suggestions": [
+          "风禾藤篮 翻新 收费",
+          "风禾藤篮 店内规则 翻新 价格",
+          "藤篮 翻新 费用 风禾"
+        ],
+        "searches": [
+          {
+            "query": "风禾藤篮按店内规则翻新一次要收多少？",
+            "hits": [
+              "风禾藤篮售后说明",
+              "餐盘保护盒",
+              "海隅坐垫公告"
+            ]
+          },
+          {
+            "query": "风禾藤篮 翻新 收费",
+            "hits": [
+              "风禾藤篮售后说明",
+              "浅沙遮阳篷售后说明",
+              "海隅坐垫公告"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "风禾藤篮店内规则中翻新一次的具体收费金额",
+          "rationale": "证据仅提到风禾藤篮的翻新级为JQ54，未给出任何收费金额；其他证据涉及海隅坐垫和餐盘保护盒，与风禾藤篮翻新收费无关，因此不足以回答收费多少。"
+        },
+        "accumulated": [
+          "风禾藤篮售后说明",
+          "海隅坐垫公告",
+          "餐盘保护盒"
+        ]
+      },
+      {
+        "input": "风禾藤篮按店内规则翻新一次要收多少？",
+        "missing": "风禾藤篮店内规则中翻新一次的具体收费金额",
+        "suggestions": [
+          "风禾藤篮 翻新 收费",
+          "风禾藤篮 店内规则 翻新 价格",
+          "风禾藤篮 翻新一次 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "风禾藤篮店内规则中翻新一次的具体收费金额",
+            "hits": [
+              "风禾藤篮售后说明",
+              "碧岸打气筒售后说明",
+              "霜树收纳箱公告"
+            ]
+          },
+          {
+            "query": "风禾藤篮 店内规则 翻新 价格",
+            "hits": [
+              "风禾藤篮售后说明",
+              "晴瓦烘鞋架售后说明",
+              "蓝枝陶铃公告"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "风禾藤篮按店内规则翻新一次的具体收费金额",
+          "rationale": "唯一相关证据只给出风禾藤篮的翻新级为JQ54，未提及任何收费金额或店内规则中的价格信息，因此无法回答收费多少。"
+        },
+        "accumulated": [
+          "风禾藤篮售后说明",
+          "霜树收纳箱公告",
+          "海隅坐垫公告"
+        ]
+      },
+      {
+        "input": "风禾藤篮按店内规则翻新一次要收多少？",
+        "missing": "风禾藤篮按店内规则翻新一次的具体收费金额",
+        "suggestions": [
+          "风禾藤篮 翻新 收费",
+          "风禾藤篮 翻新 价格 店内规则",
+          "风禾藤篮 翻新一次 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "风禾藤篮按店内规则翻新一次的具体收费金额",
+            "hits": [
+              "风禾藤篮售后说明",
+              "绀海折桌服务手册",
+              "霜树收纳箱公告"
+            ]
+          },
+          {
+            "query": "风禾藤篮 翻新 价格 店内规则",
+            "hits": [
+              "风禾藤篮售后说明",
+              "晴瓦烘鞋架售后说明",
+              "蓝枝陶铃公告"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.88,
+      "rationale": "询问店内规则下翻新服务的收费，属于通用政策/费用解释，非具体订单售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问特定商品按店内规则翻新的费用，属于单条政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 7531.46,
+  "docs": [
+    "风禾藤篮售后说明",
+    "霜树收纳箱公告",
+    "绀海折桌服务手册"
+  ],
+  "provider_tokens": 2756,
+  "provider_responses": 9,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只说明风禾藤篮的翻新级为 JQ54，未提供翻新收费金额，因此无法确认具体费用。建议补充订单号，或转人工核实店内翻新收费标准。",
+  "evidence": [
+    {
+      "source": "风禾藤篮售后说明_1d42cedc",
+      "text": "风禾藤篮售后说明。风禾藤篮的翻新级为 JQ54。"
+    },
+    {
+      "source": "霜树收纳箱公告_138da303",
+      "text": "霜树收纳箱公告。霜树收纳箱:押金方案正在制订,暂未公布具体金额。"
+    },
+    {
+      "source": "绀海折桌服务手册_9b405269",
+      "text": "绀海折桌服务手册。绀海折桌的配套服务执行《西苔协议》。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "2a76a3006e6d4b0480f7f1a12592aed7"
+}

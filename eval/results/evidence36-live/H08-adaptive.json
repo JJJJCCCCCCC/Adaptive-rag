@@ -1,0 +1,93 @@
+{
+  "id": "H08",
+  "group": "direct",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "餐盘要三个保护盒，一共加收多少元？",
+        "missing": "",
+        "suggestions": [
+          "餐盘 三个保护盒 加收 多少钱",
+          "餐盘 保护盒 3个 加收费用",
+          "餐盘 保护盒 加价 3个"
+        ],
+        "searches": [
+          {
+            "query": "餐盘要三个保护盒，一共加收多少元？",
+            "hits": [
+              "餐盘保护盒",
+              "青丘砧板服务说明",
+              "石浦烟熏盒服务手册"
+            ]
+          },
+          {
+            "query": "餐盘 三个保护盒 加收 多少钱",
+            "hits": [
+              "餐盘保护盒",
+              "松烟方案",
+              "石浦烟熏盒服务手册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据明确说明首个保护盒免费，其后每个收5元。三个保护盒中第一个免费，后两个各收5元，共加收10元，足以回答。"
+        },
+        "accumulated": [
+          "餐盘保护盒",
+          "青丘砧板服务说明",
+          "石浦烟熏盒服务手册"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.85,
+      "rationale": "询问餐盘配三个保护盒的加收费用，属于具体商品配件/费用咨询，非通用政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问餐盘配三个保护盒的加收费用，属于单一商品附加费用的咨询，可通过单条价格政策或FAQ直接回答，无需组合多政策或调用订单系统。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5364.43,
+  "docs": [
+    "餐盘保护盒",
+    "青丘砧板服务说明",
+    "石浦烟熏盒服务手册"
+  ],
+  "provider_tokens": 2160,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": false,
+  "all_answer_spans": true,
+  "answer": "按餐盘保护盒规则，首个保护盒免费，其后每个收5元。三个保护盒中，第1个免费，第2、3个各收5元，因此一共加收10元。",
+  "evidence": [
+    {
+      "source": "餐盘保护盒_7b46136d",
+      "text": "餐盘保护盒。首个保护盒免费,其后每个收5元。"
+    },
+    {
+      "source": "青丘砧板服务说明_01a43dab",
+      "text": "青丘砧板服务说明。青丘砧板的整面养护依照《谷风章程》办理。"
+    },
+    {
+      "source": "石浦烟熏盒服务手册_2e9e9ddc",
+      "text": "石浦烟熏盒服务手册。石浦烟熏盒的配套服务执行《白榆协议》。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "0a92695bd4c547c4aa7996bf3e337bc8"
+}

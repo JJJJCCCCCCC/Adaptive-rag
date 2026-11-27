@@ -1,0 +1,82 @@
+{
+  "id": "H10",
+  "group": "direct",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "租的帐篷还没干就送回，清洁要付多少钱？",
+        "missing": "",
+        "suggestions": [
+          "帐篷 未干 送回 清洁费 多少钱",
+          "租赁帐篷 清洁费 收费标准",
+          "帐篷 归还 清洁 费用"
+        ],
+        "searches": [
+          {
+            "query": "租的帐篷还没干就送回，清洁要付多少钱？",
+            "hits": [
+              "帐篷清洁",
+              "霜树收纳箱公告",
+              "山杏协议"
+            ]
+          },
+          {
+            "query": "帐篷 未干 送回 清洁费 多少钱",
+            "hits": [
+              "交付承诺册",
+              "帐篷清洁",
+              "样片周转"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.82,
+      "rationale": "询问租赁帐篷未干归还的清洁费用规则，属于通用政策/费用解释，非具体订单售后或退款",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问租赁帐篷未干即归还的清洁费用，属于单一政策/FAQ查询，可直接依据清洁费政策回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4495.36,
+  "docs": [
+    "帐篷清洁",
+    "山杏协议",
+    "交付承诺册"
+  ],
+  "provider_tokens": 1808,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据帐篷清洁规则，干燥交还免清洁费；尚未晾干就送回需付24元。因此您这种情况需支付24元清洁费。",
+  "evidence": [
+    {
+      "source": "帐篷清洁_3c3f5ac7",
+      "text": "帐篷清洁。干燥交还免清洁费,尚未晾干送回需付24元。"
+    },
+    {
+      "source": "山杏协议_27dd8bf4",
+      "text": "山杏协议。该协议的执行档号为 HC64;以档号对应的细则为准。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "1f914755876e4964a9cd10a0e7e89b55"
+}

@@ -1,0 +1,147 @@
+{
+  "id": "H16",
+  "group": "code_link",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "碧岸打气筒送到门店做检测，收费几元？",
+        "missing": "",
+        "suggestions": [
+          "碧岸打气筒 门店检测 收费",
+          "碧岸打气筒 检测费用 几元"
+        ],
+        "searches": [
+          {
+            "query": "碧岸打气筒送到门店做检测，收费几元？",
+            "hits": [
+              "线下代存",
+              "碧岸打气筒售后说明",
+              "朱湾画筒服务手册"
+            ]
+          },
+          {
+            "query": "碧岸打气筒 门店检测 收费",
+            "hits": [
+              "检测合同价",
+              "碧岸打气筒售后说明",
+              "年度更换配额"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示碧岸打气筒的检测合同为FN84，而FN84的检测收费为31元，因此可以回答收费31元。"
+        },
+        "accumulated": [
+          "碧岸打气筒售后说明",
+          "检测合同价",
+          "线下代存"
+        ]
+      },
+      {
+        "input": "碧岸打气筒送到门店做检测，收费几元？",
+        "missing": "",
+        "suggestions": [
+          "碧岸打气筒 门店检测 收费",
+          "碧岸打气筒 检测费用 几元"
+        ],
+        "searches": [
+          {
+            "query": "碧岸打气筒 检测费用 几元",
+            "hits": [
+              "碧岸打气筒售后说明",
+              "琥珀焖烧杯售后说明",
+              "检测合同价"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示碧岸打气筒的检测合同为FN84，而FN84的检测收费为31元，因此可以回答收费31元。"
+        },
+        "accumulated": [
+          "碧岸打气筒售后说明",
+          "检测合同价",
+          "线下代存"
+        ]
+      },
+      {
+        "input": "碧岸打气筒送到门店做检测，收费几元？",
+        "missing": "",
+        "suggestions": [
+          "碧岸打气筒 门店检测 收费",
+          "碧岸打气筒 检测费用 几元"
+        ],
+        "searches": [
+          {
+            "query": "碧岸打气筒送到门店做检测，收费几元？",
+            "hits": [
+              "线下代存",
+              "碧岸打气筒售后说明",
+              "朱湾画筒服务手册"
+            ]
+          },
+          {
+            "query": "碧岸打气筒 门店检测 收费",
+            "hits": [
+              "检测合同价",
+              "碧岸打气筒售后说明",
+              "年度更换配额"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.88,
+      "rationale": "询问送门店检测的收费标准，属于通用政策/费用解释，非具体订单售后或物流问题",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问打气筒到门店检测的收费标准，属于单一FAQ/政策查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 7102.49,
+  "docs": [
+    "碧岸打气筒售后说明",
+    "检测合同价",
+    "线下代存"
+  ],
+  "provider_tokens": 2623,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "碧岸打气筒的检测合同为 FN84，按检测合同价 FN84 收取 31 元。该金额为检测合同价，实际收费是否包含其他费用需以门店确认为准。",
+  "evidence": [
+    {
+      "source": "碧岸打气筒售后说明_c1572c44",
+      "text": "碧岸打气筒售后说明。碧岸打气筒的检测合同为 FN84。"
+    },
+    {
+      "source": "检测合同价_e1eddcdf",
+      "text": "检测合同价。FN48 收17元,FN84 收31元,FN80 收21元。"
+    },
+    {
+      "source": "线下代存_dde8aeb9",
+      "text": "线下代存。门店每个包裹可免费代存28小时。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "446b53d094d54e548dca0566c6e8abec"
+}

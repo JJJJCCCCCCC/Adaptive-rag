@@ -1,0 +1,75 @@
+{
+  "id": "C05",
+  "group": "complex",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "普通配件商品款80元另付8元运费，积分充足时最多能抵几元、用多少积分？",
+        "missing": "",
+        "suggestions": [
+          "普通配件商品款80元 另付8元运费 积分充足 最多抵几元 用多少积分",
+          "配件 80元 8元运费 积分抵扣 上限 积分数量"
+        ],
+        "searches": [
+          {
+            "query": "普通配件商品款80元另付8元运费，积分充足时最多能抵几元、用多少积分？",
+            "hits": [
+              "积分抵扣",
+              "夜间自提",
+              "回收纸箱"
+            ]
+          },
+          {
+            "query": "普通配件商品款80元 另付8元运费 积分充足 最多抵几元 用多少积分",
+            "hits": [
+              "积分抵扣",
+              "会员补签",
+              "回收纸箱"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "coupon",
+      "confidence": 0.92,
+      "rationale": "询问积分抵扣运费的具体规则与上限，属于积分抵运费/优惠抵扣类问题，按优先级12归为 coupon。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4257.85,
+  "docs": [
+    "积分抵扣",
+    "夜间自提",
+    "回收纸箱"
+  ],
+  "provider_tokens": 1705,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": false,
+  "all_answer_spans": true,
+  "answer": "按积分抵扣规则，普通配件每笔最多抵扣商品款的四分之一，运费不参与计算；每100积分抵1元。商品款80元，四分之一为20元，因此最多可抵20元，需要2000积分。",
+  "evidence": [
+    {
+      "source": "积分抵扣_dd707cd7",
+      "text": "积分抵扣。普通配件每笔最多抵扣商品款的四分之一,运费不参与计算;每100积分抵1元。"
+    },
+    {
+      "source": "夜间自提_7d35c485",
+      "text": "夜间自提。普通自提服务到20点结束;购买夜取服务可延长至22点。夜取每单5元,生鲜订单不可购买。"
+    },
+    {
+      "source": "回收纸箱_1ec21c6c",
+      "text": "回收纸箱。门店按每个完整纸箱3积分登记环保回收。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "5ee7a6d679ce446eaac216645653b226"
+}

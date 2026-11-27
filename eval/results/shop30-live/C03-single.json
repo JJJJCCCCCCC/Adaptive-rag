@@ -1,0 +1,76 @@
+{
+  "id": "C03",
+  "group": "complex",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "无电梯要把小书柜送到四楼，搬楼收多少？如果电梯装得下又是多少？",
+        "missing": "",
+        "suggestions": [
+          "无电梯搬小书柜到四楼 搬楼费多少",
+          "小书柜 电梯能装下 搬运费多少",
+          "小书柜 无电梯 四楼 送货上楼 收费"
+        ],
+        "searches": [
+          {
+            "query": "无电梯要把小书柜送到四楼，搬楼收多少？如果电梯装得下又是多少？",
+            "hits": [
+              "家具搬楼",
+              "回收纸箱",
+              "滤水壶退货"
+            ]
+          },
+          {
+            "query": "无电梯搬小书柜到四楼 搬楼费多少",
+            "hits": [
+              "家具搬楼",
+              "晴川手冲壶服务档案",
+              "滤水壶退货"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.88,
+      "rationale": "询问搬楼/上楼配送费用规则，属于通用配送政策解释，非具体订单物流轨迹或售后",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3453.22,
+  "docs": [
+    "家具搬楼",
+    "滤水壶退货",
+    "回收纸箱"
+  ],
+  "provider_tokens": 1822,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "根据家具搬楼规则：无电梯时按每层6元计费，从二楼开始收费，一楼按零层计。因此送到四楼需计二楼、三楼、四楼共3层，搬楼费为3×6=18元。若电梯可装下小书柜，则免搬楼费。以上为规则说明，实际费用以订单结算为准。",
+  "evidence": [
+    {
+      "source": "家具搬楼_d14c8c93",
+      "text": "家具搬楼。小书柜送货时,有电梯且可装下则免搬楼费;无电梯按每层6元计,从二楼开始收费。一楼按零层计。"
+    },
+    {
+      "source": "滤水壶退货_a4c9d881",
+      "text": "滤水壶退货。全新未注水的滤水壶签收后9日内可无理由退回,买家付运费;已注水且无故障则不能无理由退。"
+    },
+    {
+      "source": "回收纸箱_1ec21c6c",
+      "text": "回收纸箱。门店按每个完整纸箱3积分登记环保回收。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "005d2b1aad72402e8e3dbd190f6d71fe"
+}

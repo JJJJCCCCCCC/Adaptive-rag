@@ -1,0 +1,129 @@
+{
+  "n": 16,
+  "refuse_accuracy": 1.0,
+  "keyword_hit": 0.9091,
+  "tool_path_hit": 1.0,
+  "latency_ms": {
+    "p50": 49.2,
+    "p95": 59.1,
+    "mean": 42.4,
+    "intent_p50": 0.1,
+    "retrieval_p50": 0.0,
+    "llm_p50": 0.0,
+    "tool_p50": 0.0
+  },
+  "cases": [
+    {
+      "id": "e01",
+      "refused": false,
+      "strategy": "direct",
+      "intent": "greeting",
+      "latency_ms": 41.7
+    },
+    {
+      "id": "e02",
+      "refused": false,
+      "strategy": "multi",
+      "intent": "faq_policy",
+      "latency_ms": 69.7
+    },
+    {
+      "id": "e03",
+      "refused": false,
+      "strategy": "single",
+      "intent": "faq_policy",
+      "latency_ms": 59.1
+    },
+    {
+      "id": "e04",
+      "refused": false,
+      "strategy": "single",
+      "intent": "faq_policy",
+      "latency_ms": 49.9
+    },
+    {
+      "id": "e05",
+      "refused": false,
+      "strategy": "single",
+      "intent": "faq_policy",
+      "latency_ms": 50.1
+    },
+    {
+      "id": "e06",
+      "refused": false,
+      "strategy": "agent",
+      "intent": "order_inquiry",
+      "latency_ms": 45.0
+    },
+    {
+      "id": "e07",
+      "refused": false,
+      "strategy": "agent",
+      "intent": "order_inquiry",
+      "latency_ms": 38.4
+    },
+    {
+      "id": "e08",
+      "refused": false,
+      "strategy": "agent",
+      "intent": "logistics",
+      "latency_ms": 34.0
+    },
+    {
+      "id": "e09",
+      "refused": false,
+      "strategy": "single",
+      "intent": "coupon",
+      "latency_ms": 55.6
+    },
+    {
+      "id": "e10",
+      "refused": true,
+      "strategy": "refuse",
+      "intent": null,
+      "latency_ms": 14.0
+    },
+    {
+      "id": "e11",
+      "refused": true,
+      "strategy": "refuse",
+      "intent": "out_of_scope",
+      "latency_ms": 20.6
+    },
+    {
+      "id": "e12",
+      "refused": true,
+      "strategy": "refuse",
+      "intent": "out_of_scope",
+      "latency_ms": 17.5
+    },
+    {
+      "id": "e13",
+      "refused": false,
+      "strategy": "agent",
+      "intent": "human_handoff",
+      "latency_ms": 57.3
+    },
+    {
+      "id": "e14",
+      "refused": false,
+      "strategy": "single",
+      "intent": "product_consult",
+      "latency_ms": 49.2
+    },
+    {
+      "id": "e15",
+      "refused": false,
+      "strategy": "agent",
+      "intent": "cancel_order",
+      "latency_ms": 25.6
+    },
+    {
+      "id": "e16",
+      "refused": false,
+      "strategy": "single",
+      "intent": "faq_policy",
+      "latency_ms": 50.8
+    }
+  ]
+}

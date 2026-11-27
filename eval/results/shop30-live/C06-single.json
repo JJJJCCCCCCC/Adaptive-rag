@@ -1,0 +1,76 @@
+{
+  "id": "C06",
+  "group": "complex",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "铜卡到期前和到期后续，分别加送多少天？能把两次优惠叠加吗？",
+        "missing": "",
+        "suggestions": [
+          "铜卡到期前续费赠送天数",
+          "铜卡到期后续费赠送天数",
+          "铜卡两次续费优惠能否叠加"
+        ],
+        "searches": [
+          {
+            "query": "铜卡到期前和到期后续，分别加送多少天？能把两次优惠叠加吗？",
+            "hits": [
+              "会员续期",
+              "返厂通道预约周期",
+              "电子赠券"
+            ]
+          },
+          {
+            "query": "铜卡到期前续费赠送天数",
+            "hits": [
+              "会员续期",
+              "上门测量",
+              "电子赠券"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.92,
+      "rationale": "询问会员卡续费赠送天数的通用规则及优惠能否叠加，属于政策解释，非具体订单售后或优惠券操作",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3732.96,
+  "docs": [
+    "会员续期",
+    "电子赠券",
+    "返厂通道预约周期"
+  ],
+  "provider_tokens": 1642,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "铜卡到期前续费加送8天，到期后续费加送3天；赠送天数不叠加，两次优惠不能叠加使用。",
+  "evidence": [
+    {
+      "source": "会员续期_064a7051",
+      "text": "会员续期。铜卡到期前续费加送8天,到期后续费加送3天;赠送天数不叠加。"
+    },
+    {
+      "source": "电子赠券_f960a05f",
+      "text": "电子赠券。电子赠券每张面值18元,到期自动失效。"
+    },
+    {
+      "source": "返厂通道预约周期_2d93d3d9",
+      "text": "返厂通道预约周期。T84 在2个工作日内取件,T48 在5个工作日内取件,T44 在7个工作日内取件。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "8f6486afa466469d83660591153b5043"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "H16",
+  "group": "code_link",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "碧岸打气筒送到门店做检测，收费几元？",
+        "missing": "",
+        "suggestions": [
+          "碧岸打气筒 门店检测 收费",
+          "碧岸打气筒 检测费用 几元"
+        ],
+        "searches": [
+          {
+            "query": "碧岸打气筒送到门店做检测，收费几元？",
+            "hits": [
+              "线下代存",
+              "碧岸打气筒售后说明",
+              "朱湾画筒服务手册"
+            ]
+          },
+          {
+            "query": "碧岸打气筒 门店检测 收费",
+            "hits": [
+              "检测合同价",
+              "碧岸打气筒售后说明",
+              "年度更换配额"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示碧岸打气筒的检测合同为FN84，而FN84的检测收费为31元，因此可以回答收费31元。"
+        },
+        "accumulated": [
+          "碧岸打气筒售后说明",
+          "检测合同价",
+          "线下代存"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.82,
+      "rationale": "询问品牌打气筒送门店检测的收费规则，属于通用政策/费用解释，非具体订单售后或物流问题",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问打气筒到门店检测的收费标准，属于单条政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4904.25,
+  "docs": [
+    "碧岸打气筒售后说明",
+    "检测合同价",
+    "线下代存"
+  ],
+  "provider_tokens": 2133,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "碧岸打气筒对应的检测合同为 FN84，按检测合同价收取 31 元。该费用为检测合同价，实际是否收费及收费方式建议以门店确认为准；如需进一步核实，请补充订单号或转人工。",
+  "evidence": [
+    {
+      "source": "碧岸打气筒售后说明_c1572c44",
+      "text": "碧岸打气筒售后说明。碧岸打气筒的检测合同为 FN84。"
+    },
+    {
+      "source": "检测合同价_e1eddcdf",
+      "text": "检测合同价。FN48 收17元,FN84 收31元,FN80 收21元。"
+    },
+    {
+      "source": "线下代存_dde8aeb9",
+      "text": "线下代存。门店每个包裹可免费代存28小时。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "9f92e8db603c43a9881c1ab99aee09a1"
+}

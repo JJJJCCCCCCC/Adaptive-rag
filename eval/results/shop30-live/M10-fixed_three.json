@@ -1,0 +1,170 @@
+{
+  "id": "M10",
+  "group": "multihop",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "秋岚落地扇返厂，预约后应在多少个工作日内取件？",
+        "missing": "",
+        "suggestions": [
+          "秋岚落地扇返厂预约后几个工作日内取件",
+          "秋岚落地扇返厂取件时效 工作日",
+          "秋岚落地扇返厂预约取件 多久上门"
+        ],
+        "searches": [
+          {
+            "query": "秋岚落地扇返厂，预约后应在多少个工作日内取件？",
+            "hits": [
+              "返厂通道预约周期",
+              "会员补签",
+              "秋岚落地扇服务档案"
+            ]
+          },
+          {
+            "query": "秋岚落地扇返厂预约后几个工作日内取件",
+            "hits": [
+              "返厂通道预约周期",
+              "电子赠券",
+              "秋岚落地扇服务档案"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示秋岚落地扇对应返厂通道T48，而T48在5个工作日内取件，因此可直接回答。"
+        },
+        "accumulated": [
+          "返厂通道预约周期",
+          "秋岚落地扇服务档案",
+          "会员补签"
+        ]
+      },
+      {
+        "input": "秋岚落地扇返厂，预约后应在多少个工作日内取件？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "秋岚落地扇返厂预约后取件工作日",
+          "秋岚落地扇返厂取件时效政策",
+          "秋岚落地扇返厂预约取件条件"
+        ],
+        "searches": [
+          {
+            "query": "秋岚落地扇返厂，预约后应在多少个工作日内取件？",
+            "hits": [
+              "返厂通道预约周期",
+              "会员补签",
+              "秋岚落地扇服务档案"
+            ]
+          },
+          {
+            "query": "秋岚落地扇返厂预约后取件工作日",
+            "hits": [
+              "秋岚落地扇服务档案",
+              "返厂通道预约周期",
+              "试色卡邮寄"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示秋岚落地扇对应返厂通道T48，而T48在5个工作日内取件，因此可直接回答。"
+        },
+        "accumulated": [
+          "返厂通道预约周期",
+          "秋岚落地扇服务档案",
+          "会员补签",
+          "试色卡邮寄"
+        ]
+      },
+      {
+        "input": "秋岚落地扇返厂，预约后应在多少个工作日内取件？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "秋岚落地扇返厂预约后几个工作日内取件",
+          "秋岚落地扇返厂取件时效 工作日",
+          "秋岚落地扇返厂预约取件政策"
+        ],
+        "searches": [
+          {
+            "query": "秋岚落地扇返厂，预约后应在多少个工作日内取件？",
+            "hits": [
+              "返厂通道预约周期",
+              "会员补签",
+              "秋岚落地扇服务档案"
+            ]
+          },
+          {
+            "query": "秋岚落地扇返厂预约后几个工作日内取件",
+            "hits": [
+              "返厂通道预约周期",
+              "电子赠券",
+              "秋岚落地扇服务档案"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示秋岚落地扇对应返厂通道T48，而T48在5个工作日内取件，因此可直接回答。"
+        },
+        "accumulated": [
+          "返厂通道预约周期",
+          "秋岚落地扇服务档案",
+          "会员补签",
+          "试色卡邮寄"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问返厂预约后取件的通用时限政策，属于售后流程政策解释，非具体订单物流轨迹或退款退货操作。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8957.95,
+  "docs": [
+    "返厂通道预约周期",
+    "秋岚落地扇服务档案",
+    "会员补签",
+    "试色卡邮寄"
+  ],
+  "provider_tokens": 2915,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "秋岚落地扇对应返厂通道 T48，按返厂通道预约周期，T48 在 5 个工作日内取件。",
+  "evidence": [
+    {
+      "source": "返厂通道预约周期_2d93d3d9",
+      "text": "返厂通道预约周期。T84 在2个工作日内取件,T48 在5个工作日内取件,T44 在7个工作日内取件。"
+    },
+    {
+      "source": "秋岚落地扇服务档案_121808d3",
+      "text": "秋岚落地扇服务档案。秋岚落地扇对应返厂通道 T48。"
+    },
+    {
+      "source": "会员补签_a006f38c",
+      "text": "会员补签。银卡会员每个自然月有2次补签机会,不能转给其他账户。"
+    },
+    {
+      "source": "试色卡邮寄_08c9e039",
+      "text": "试色卡邮寄。试色卡每个收件地址每月可免费领取4张。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "30fe17c83e6e4091810b05d65e8f8711"
+}

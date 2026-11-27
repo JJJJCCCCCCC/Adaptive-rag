@@ -1,0 +1,76 @@
+{
+  "id": "C07",
+  "group": "complex",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "全新滤水壶签收第六天，没注水能无理由退吗，邮费谁出？已经注水但没坏呢？",
+        "missing": "",
+        "suggestions": [
+          "全新滤水壶 签收第六天 未注水 无理由退货 邮费",
+          "滤水壶 已注水 无质量问题 七天无理由退货",
+          "滤水壶 退货 邮费 谁承担 七天无理由"
+        ],
+        "searches": [
+          {
+            "query": "全新滤水壶签收第六天，没注水能无理由退吗，邮费谁出？已经注水但没坏呢？",
+            "hits": [
+              "定制刻字修改",
+              "滤水壶退货",
+              "冷藏蛋糕改期"
+            ]
+          },
+          {
+            "query": "全新滤水壶 签收第六天 未注水 无理由退货 邮费",
+            "hits": [
+              "布料样本包",
+              "滤水壶退货",
+              "发票寄送"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "return_exchange",
+      "confidence": 0.92,
+      "rationale": "用户询问具体商品（全新滤水壶、已注水）能否无理由退货及邮费承担，属于针对「这件」的具体售后场景，优先匹配 return_exchange 而非通用政策 faq_policy。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5520.01,
+  "docs": [
+    "滤水壶退货",
+    "冷藏蛋糕改期",
+    "定制刻字修改"
+  ],
+  "provider_tokens": 1952,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据现有规则：全新未注水的滤水壶在签收后9日内可无理由退回，但需由买家承担运费；您目前是签收第6天，仍在9日范围内，可以申请无理由退货。若已经注水且没有故障，则不能无理由退货。退货属于不可逆操作，如确认申请，我会先为您发起退货确认流程，最终结果以系统确认为准。",
+  "evidence": [
+    {
+      "source": "滤水壶退货_a4c9d881",
+      "text": "滤水壶退货。全新未注水的滤水壶签收后9日内可无理由退回,买家付运费;已注水且无故障则不能无理由退。"
+    },
+    {
+      "source": "冷藏蛋糕改期_3f4db7d0",
+      "text": "冷藏蛋糕改期。冷藏蛋糕发出前一天18点前改期免费;超过该时点且未装车,改期收16元;已经装车则不能改期。"
+    },
+    {
+      "source": "定制刻字修改_5ad9208d",
+      "text": "定制刻字修改。买家确认刻字稿后90分钟内免费修改。超过90分钟但尚未雕刻,改稿收12元;已经雕刻则停止改稿。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "0d6d809419e94f9abe48131aef22cb25"
+}

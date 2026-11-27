@@ -1,0 +1,90 @@
+{
+  "receipts": [
+    {
+      "model": "deepseek-flash",
+      "id": "99c35783-f118-430d-8aef-6164166cda6d",
+      "usage": {
+        "prompt_tokens": 249,
+        "completion_tokens": 103,
+        "total_tokens": 352,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 249
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "f81b2514-99fc-412d-ac14-41e1a43ac296",
+      "usage": {
+        "prompt_tokens": 342,
+        "completion_tokens": 118,
+        "total_tokens": 460,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 214
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "18cd795e-6f67-4c51-9083-1aa67f5d8a34",
+      "usage": {
+        "prompt_tokens": 215,
+        "completion_tokens": 33,
+        "total_tokens": 248,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 215
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "6aa8680d-c63f-4b21-9e5a-44026dcb1922",
+      "usage": {
+        "prompt_tokens": 215,
+        "completion_tokens": 31,
+        "total_tokens": 246,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 215
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "4726f8e9-bc24-49fc-b07c-8aac68cb089c",
+      "usage": {
+        "prompt_tokens": 215,
+        "completion_tokens": 34,
+        "total_tokens": 249,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 215
+      }
+    }
+  ],
+  "labels": {
+    "A": {
+      "pass": true,
+      "reason": "回答明确给出每套附6枚贴纸，数值与单位均正确，符合参考答案。"
+    },
+    "B": {
+      "pass": true,
+      "reason": "回答正确给出每套附6枚贴纸，数值与单位均符合参考答案。"
+    },
+    "C": {
+      "pass": true,
+      "reason": "回答明确给出每套附6枚贴纸，数值、单位及条件均与参考答案一致。"
+    }
+  },
+  "mode": "individual_recovery",
+  "signature": "daa1ef0614c54d8c04c1e6c09a30c62712a1ac83e7e7e617b9d0bf9339a4d9d8"
+}

@@ -1,0 +1,170 @@
+{
+  "id": "S04",
+  "group": "simple",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "纸质发票的邮费是多少？",
+        "missing": "",
+        "suggestions": [
+          "纸质发票 邮费",
+          "纸质发票 邮寄费用",
+          "发票 邮寄 邮费"
+        ],
+        "searches": [
+          {
+            "query": "纸质发票的邮费是多少？",
+            "hits": [
+              "发票寄送",
+              "青屿折叠椅服务档案",
+              "礼物分装"
+            ]
+          },
+          {
+            "query": "纸质发票 邮费",
+            "hits": [
+              "发票寄送",
+              "云纹羊毛毯服务档案",
+              "礼物分装"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明纸质发票通过挂号信寄出，每封收取7元邮寄费，直接回答了邮费问题。"
+        },
+        "accumulated": [
+          "发票寄送",
+          "礼物分装",
+          "青屿折叠椅服务档案"
+        ]
+      },
+      {
+        "input": "纸质发票的邮费是多少？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "纸质发票 邮寄 邮费 政策",
+          "纸质发票 快递费 收费标准",
+          "发票邮寄 邮费 条件"
+        ],
+        "searches": [
+          {
+            "query": "纸质发票的邮费是多少？",
+            "hits": [
+              "发票寄送",
+              "青屿折叠椅服务档案",
+              "礼物分装"
+            ]
+          },
+          {
+            "query": "纸质发票 邮寄 邮费 政策",
+            "hits": [
+              "发票寄送",
+              "积分抵扣",
+              "试色卡邮寄"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[发票寄送_2726700a_00]明确说明纸质发票通过挂号信寄出，每封收取7元邮寄费，直接回答了问题。"
+        },
+        "accumulated": [
+          "发票寄送",
+          "礼物分装",
+          "青屿折叠椅服务档案",
+          "积分抵扣"
+        ]
+      },
+      {
+        "input": "纸质发票的邮费是多少？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "纸质发票 邮寄 邮费 政策",
+          "纸质发票 快递费 收费标准",
+          "发票邮寄 邮费 条件"
+        ],
+        "searches": [
+          {
+            "query": "纸质发票的邮费是多少？",
+            "hits": [
+              "发票寄送",
+              "青屿折叠椅服务档案",
+              "礼物分装"
+            ]
+          },
+          {
+            "query": "纸质发票 邮寄 邮费 政策",
+            "hits": [
+              "发票寄送",
+              "积分抵扣",
+              "试色卡邮寄"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[发票寄送_2726700a_00]明确说明纸质发票通过挂号信寄出，每封收取7元邮寄费，直接回答了问题。"
+        },
+        "accumulated": [
+          "发票寄送",
+          "礼物分装",
+          "青屿折叠椅服务档案",
+          "积分抵扣"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.95,
+      "rationale": "询问纸质发票邮寄费用，属于通用政策解释（发票/运费规则），非具体订单售后或物流轨迹。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8729.37,
+  "docs": [
+    "发票寄送",
+    "礼物分装",
+    "青屿折叠椅服务档案",
+    "积分抵扣"
+  ],
+  "provider_tokens": 2707,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "纸质发票通过挂号信寄出，每封收取7元邮寄费。",
+  "evidence": [
+    {
+      "source": "发票寄送_2726700a",
+      "text": "发票寄送。纸质发票通过挂号信寄出,每封收取7元邮寄费。"
+    },
+    {
+      "source": "礼物分装_147d70fa",
+      "text": "礼物分装。同一订单前三个礼袋免费,从第四个起每个4元。纸质贺卡每袋只赠一张。"
+    },
+    {
+      "source": "青屿折叠椅服务档案_db2c909e",
+      "text": "青屿折叠椅服务档案。青屿折叠椅适用维修寄送档 M47。"
+    },
+    {
+      "source": "积分抵扣_dd707cd7",
+      "text": "积分抵扣。普通配件每笔最多抵扣商品款的四分之一,运费不参与计算;每100积分抵1元。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "5dadbb31073f42cc848cc9770a24c574"
+}

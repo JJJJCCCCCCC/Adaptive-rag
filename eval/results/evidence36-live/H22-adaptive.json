@@ -1,0 +1,150 @@
+{
+  "id": "H22",
+  "group": "named_link",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "稻田餐垫办理补缝后要等几天？",
+        "missing": "",
+        "suggestions": [
+          "稻田餐垫 补缝 几天",
+          "稻田餐垫 补缝 时效",
+          "稻田餐垫 补缝 等待时间"
+        ],
+        "searches": [
+          {
+            "query": "稻田餐垫办理补缝后要等几天？",
+            "hits": [
+              "稻田餐垫服务说明",
+              "花渡台秤服务说明",
+              "样片周转"
+            ]
+          },
+          {
+            "query": "稻田餐垫 补缝 几天",
+            "hits": [
+              "稻田餐垫服务说明",
+              "琥珀焖烧杯售后说明",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "稻田餐垫补缝后需要等待的天数（补缝办理时限）",
+          "rationale": "唯一相关证据仅说明稻田餐垫补缝依照《松烟方案》办理，未给出具体等待天数；其余证据与稻田餐垫无关，因此不足以回答。"
+        },
+        "accumulated": [
+          "稻田餐垫服务说明",
+          "花渡台秤服务说明",
+          "样片周转"
+        ]
+      },
+      {
+        "input": "稻田餐垫办理补缝后要等几天？",
+        "missing": "稻田餐垫补缝后需要等待的天数（补缝办理时限）",
+        "suggestions": [
+          "稻田餐垫 补缝 几天",
+          "稻田餐垫 补缝 办理时限",
+          "稻田餐垫 补缝 等待天数"
+        ],
+        "searches": [
+          {
+            "query": "稻田餐垫补缝后需要等待的天数（补缝办理时限）",
+            "hits": [
+              "稻田餐垫服务说明",
+              "栗青磨豆器售后说明",
+              "蓝枝陶铃公告"
+            ]
+          },
+          {
+            "query": "稻田餐垫 补缝 办理时限",
+            "hits": [
+              "稻田餐垫服务说明",
+              "琥珀焖烧杯售后说明",
+              "星堤香盒服务说明"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "稻田餐垫补缝后需要等待的天数（补缝办理时限）",
+          "rationale": "唯一相关证据只说明稻田餐垫补缝依照《松烟方案》办理，未提及补缝后需等待几天；其余证据涉及蓝枝陶铃和花渡台秤，与问题无关。"
+        },
+        "accumulated": [
+          "稻田餐垫服务说明",
+          "蓝枝陶铃公告",
+          "花渡台秤服务说明"
+        ]
+      },
+      {
+        "input": "稻田餐垫办理补缝后要等几天？",
+        "missing": "稻田餐垫补缝后需要等待的天数（补缝办理时限）",
+        "suggestions": [
+          "稻田餐垫 补缝 几天",
+          "稻田餐垫 补缝 办理时限",
+          "餐垫 补缝 等待天数"
+        ],
+        "searches": [
+          {
+            "query": "餐垫 补缝 等待天数",
+            "hits": [
+              "稻田餐垫服务说明",
+              "朱湾画筒服务手册",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.82,
+      "rationale": "询问补缝服务的处理时长，属于通用售后政策/时效解释，未涉及具体订单或物流轨迹",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问稻田餐垫补缝后的等待时间，属于单一售后政策/FAQ查询，无需组合多条政策或调用订单系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 10457.59,
+  "docs": [
+    "稻田餐垫服务说明",
+    "蓝枝陶铃公告",
+    "交付承诺册"
+  ],
+  "provider_tokens": 2831,
+  "provider_responses": 9,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只说明稻田餐垫的补缝依照《松烟方案》办理，未给出补缝所需天数；交付承诺册中的3天、11天、7天对应UF25、UF52、UF55，不能确认适用于稻田餐垫补缝。因此目前无法确定要等几天。建议补充订单号或具体服务单号，以便转人工核实《松烟方案》的处理时效。",
+  "evidence": [
+    {
+      "source": "稻田餐垫服务说明_d424771d",
+      "text": "稻田餐垫服务说明。稻田餐垫的补缝依照《松烟方案》办理。"
+    },
+    {
+      "source": "蓝枝陶铃公告_a5f481f2",
+      "text": "蓝枝陶铃公告。蓝枝陶铃:本店受理补绳,需要先核验凭证;补绳价格待发布。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "f4cf2e402710499492510b79d3a526a5"
+}

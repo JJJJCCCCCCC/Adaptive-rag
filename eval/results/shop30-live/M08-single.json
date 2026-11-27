@@ -1,0 +1,75 @@
+{
+  "id": "M08",
+  "group": "multihop",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "交回清涟滤芯后可以得到多少元的回收券？",
+        "missing": "",
+        "suggestions": [
+          "清涟滤芯 回收券 金额",
+          "清涟滤芯 交回 回收券 多少元"
+        ],
+        "searches": [
+          {
+            "query": "交回清涟滤芯后可以得到多少元的回收券？",
+            "hits": [
+              "门店自提柜",
+              "清涟滤芯服务档案",
+              "冷藏蛋糕改期"
+            ]
+          },
+          {
+            "query": "清涟滤芯 回收券 金额",
+            "hits": [
+              "清涟滤芯服务档案",
+              "布料样本包",
+              "回收纸箱"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "coupon",
+      "confidence": 0.88,
+      "rationale": "询问交回滤芯后可获得的回收券金额，属于优惠券/券类权益咨询。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4357.87,
+  "docs": [
+    "清涟滤芯服务档案",
+    "布料样本包",
+    "门店自提柜"
+  ],
+  "provider_tokens": 1589,
+  "provider_responses": 4,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只能确认清涟滤芯参加了回收活动 R71，但未提供该活动可获得的回收券金额，因此无法确定具体金额。建议补充订单号或活动页面信息，或转人工核实。",
+  "evidence": [
+    {
+      "source": "清涟滤芯服务档案_954f7072",
+      "text": "清涟滤芯服务档案。清涟滤芯参加回收活动 R71。"
+    },
+    {
+      "source": "布料样本包_f582cc48",
+      "text": "布料样本包。布料样本包签收后可保留11天,之后应寄回。"
+    },
+    {
+      "source": "门店自提柜_e8d4ec13",
+      "text": "门店自提柜。自提柜的取货码自短信发出后保留36小时,超时退回门店。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "0e7bf322c7c2464b8f1e3e15bbe88915"
+}

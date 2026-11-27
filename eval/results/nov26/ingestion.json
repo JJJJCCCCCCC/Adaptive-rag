@@ -1,0 +1,16 @@
+{
+  ".docx": {
+    "chunks": 1,
+    "contains_fact": true,
+    "parsers": [
+      "unstructured"
+    ]
+  },
+  ".png": {
+    "chunks": 1,
+    "contains_fact": true,
+    "parsers": [
+      "unstructured"
+    ]
+  }
+}

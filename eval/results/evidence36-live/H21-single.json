@@ -1,0 +1,82 @@
+{
+  "id": "H21",
+  "group": "named_link",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "月桥保温袋换内胆需要自己交几元？",
+        "missing": "",
+        "suggestions": [
+          "月桥保温袋 换内胆 费用",
+          "月桥保温袋 内胆更换 多少钱",
+          "月桥保温袋 换内胆 自费"
+        ],
+        "searches": [
+          {
+            "query": "月桥保温袋换内胆需要自己交几元？",
+            "hits": [
+              "月桥保温袋服务说明",
+              "苇洲折扇售后说明",
+              "零件保障期"
+            ]
+          },
+          {
+            "query": "月桥保温袋 换内胆 费用",
+            "hits": [
+              "月桥保温袋服务说明",
+              "石浦烟熏盒服务手册",
+              "零件保障期"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.82,
+      "rationale": "询问换内胆需自付多少费用，属于通用售后政策/费用解释，未涉及具体订单或退换货申请",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "单一政策/FAQ查询，询问换内胆的自付费用，可直接检索政策回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 6232.43,
+  "docs": [
+    "月桥保温袋服务说明",
+    "零件保障期",
+    "苇洲折扇售后说明"
+  ],
+  "provider_tokens": 1970,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只能确认：月桥保温袋换内胆依照《青穗计划》办理（chunk_id: 月桥保温袋服务说明_1eb90ea7_00），但未提供换内胆需用户自付的具体金额。因此无法确认“需要自己交几元”，请不要按猜测金额支付。下一步建议：提供订单号，或转人工核实《青穗计划》下该型号的收费标准。",
+  "evidence": [
+    {
+      "source": "月桥保温袋服务说明_1eb90ea7",
+      "text": "月桥保温袋服务说明。月桥保温袋的换内胆依照《青穗计划》办理。"
+    },
+    {
+      "source": "零件保障期_517af012",
+      "text": "零件保障期。WX68 为9个月,WX86 为22个月,WX88 为18个月。"
+    },
+    {
+      "source": "苇洲折扇售后说明_b85e4857",
+      "text": "苇洲折扇售后说明。苇洲折扇的寄存服务档为 AV36。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "9e2873a7774647b6be0d088d3332f730"
+}

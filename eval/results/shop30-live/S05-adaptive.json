@@ -1,0 +1,81 @@
+{
+  "id": "S05",
+  "group": "simple",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "布料样本包签收后允许保留几天？",
+        "missing": "",
+        "suggestions": [
+          "布料样本包 签收后 保留几天",
+          "布料样本包 签收 保留期限"
+        ],
+        "searches": [
+          {
+            "query": "布料样本包签收后允许保留几天？",
+            "hits": [
+              "布料样本包",
+              "回澜边桌服务档案",
+              "门店自提柜"
+            ]
+          },
+          {
+            "query": "布料样本包 签收后 保留几天",
+            "hits": [
+              "布料样本包",
+              "预约配送",
+              "门店自提柜"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.95,
+      "rationale": "询问签收后样本包可保留几天的通用政策解释，未涉及具体订单售后或退货申请，属于政策咨询。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.95,
+      "rationale": "单一政策事实查询（样本包签收后保留期限），属于单跳 FAQ，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5279.6,
+  "docs": [
+    "布料样本包",
+    "门店自提柜",
+    "预约配送"
+  ],
+  "provider_tokens": 1730,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "布料样本包签收后可保留11天，之后应寄回。",
+  "evidence": [
+    {
+      "source": "布料样本包_f582cc48",
+      "text": "布料样本包。布料样本包签收后可保留11天,之后应寄回。"
+    },
+    {
+      "source": "门店自提柜_e8d4ec13",
+      "text": "门店自提柜。自提柜的取货码自短信发出后保留36小时,超时退回门店。"
+    },
+    {
+      "source": "预约配送_f4f613e9",
+      "text": "预约配送。预约送货每天最后一个可选时段从19点开始。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "4a142639f21e45fdbf5e903dd16afb3f"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "H25",
+  "group": "named_link",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "桐鸣水壶一年可免费换几次壶嘴？",
+        "missing": "",
+        "suggestions": [
+          "桐鸣水壶 壶嘴 免费更换 次数",
+          "桐鸣水壶 壶嘴 一年 免费换"
+        ],
+        "searches": [
+          {
+            "query": "桐鸣水壶一年可免费换几次壶嘴？",
+            "hits": [
+              "桐鸣水壶服务说明",
+              "晴瓦烘鞋架售后说明",
+              "线下代存"
+            ]
+          },
+          {
+            "query": "桐鸣水壶 壶嘴 免费更换 次数",
+            "hits": [
+              "桐鸣水壶服务说明",
+              "履约排期",
+              "檐雨承诺"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.9,
+      "rationale": "询问桐鸣水壶壶嘴一年免费更换次数的通用保修政策，属于政策解释而非具体售后申请",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问桐鸣水壶壶嘴一年免费更换次数的单一政策事实，属于单跳FAQ，直接检索政策即可回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4758.06,
+  "docs": [
+    "桐鸣水壶服务说明",
+    "檐雨承诺",
+    "线下代存"
+  ],
+  "provider_tokens": 1807,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据《檐雨承诺》，年度耗材免费更换上限为3次；桐鸣水壶的换嘴依照该承诺办理，因此一年内最多可免费更换壶嘴3次。",
+  "evidence": [
+    {
+      "source": "桐鸣水壶服务说明_c49252b4",
+      "text": "桐鸣水壶服务说明。桐鸣水壶的换嘴依照《檐雨承诺》办理。"
+    },
+    {
+      "source": "檐雨承诺_6ae05211",
+      "text": "檐雨承诺。年度耗材免费更换上限为3次。"
+    },
+    {
+      "source": "线下代存_dde8aeb9",
+      "text": "线下代存。门店每个包裹可免费代存28小时。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "df6df7ec474d4cdf9180abc388b0efb5"
+}

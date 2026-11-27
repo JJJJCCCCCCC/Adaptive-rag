@@ -1,0 +1,81 @@
+{
+  "id": "H04",
+  "group": "direct",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "饮料周转箱拿走后最迟多少天要还？",
+        "missing": "",
+        "suggestions": [
+          "饮料周转箱 归还期限 最迟几天",
+          "饮料周转箱 归还 时间限制"
+        ],
+        "searches": [
+          {
+            "query": "饮料周转箱拿走后最迟多少天要还？",
+            "hits": [
+              "瓶箱借用",
+              "星堤香盒服务说明",
+              "样片周转"
+            ]
+          },
+          {
+            "query": "饮料周转箱 归还期限 最迟几天",
+            "hits": [
+              "瓶箱借用",
+              "履约排期",
+              "附加保障期限"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.92,
+      "rationale": "询问周转箱归还期限的通用规则，属于政策解释，非具体订单售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "单一政策FAQ，询问周转箱归还期限，直接查询政策即可回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3465.97,
+  "docs": [
+    "瓶箱借用",
+    "样片周转",
+    "履约排期"
+  ],
+  "provider_tokens": 1700,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "饮料周转箱自取走日起最迟17天内归还。",
+  "evidence": [
+    {
+      "source": "瓶箱借用_6e226241",
+      "text": "瓶箱借用。饮料周转箱自取走日起最迟17天内归还。"
+    },
+    {
+      "source": "样片周转_904a3723",
+      "text": "样片周转。帘布样片签收后可免费借用9天。"
+    },
+    {
+      "source": "履约排期_56e22b64",
+      "text": "履约排期。HC46 为5天,HC64 为14天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "c190765c2f9343f9a0b682c3fb0366fd"
+}

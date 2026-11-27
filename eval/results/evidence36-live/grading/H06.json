@@ -1,0 +1,90 @@
+{
+  "receipts": [
+    {
+      "model": "deepseek-flash",
+      "id": "16637945-6b73-445f-8117-5d27eb8a0f84",
+      "usage": {
+        "prompt_tokens": 248,
+        "completion_tokens": 115,
+        "total_tokens": 363,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 248
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "f297637c-ec7b-4df3-9585-79e13dd4c8fb",
+      "usage": {
+        "prompt_tokens": 341,
+        "completion_tokens": 91,
+        "total_tokens": 432,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 213
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "8eaffa45-5676-43ca-a91e-0e4e7410bc90",
+      "usage": {
+        "prompt_tokens": 214,
+        "completion_tokens": 26,
+        "total_tokens": 240,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 214
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "b20b98b3-9bcc-4809-b0a2-f245f638ae15",
+      "usage": {
+        "prompt_tokens": 214,
+        "completion_tokens": 28,
+        "total_tokens": 242,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 214
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "c6abb899-dfec-4c5f-9111-f8b5752cc26d",
+      "usage": {
+        "prompt_tokens": 214,
+        "completion_tokens": 35,
+        "total_tokens": 249,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 214
+      }
+    }
+  ],
+  "labels": {
+    "A": {
+      "pass": true,
+      "reason": "回答正确给出28小时，与参考答案一致，单位正确。"
+    },
+    "B": {
+      "pass": true,
+      "reason": "回答正确给出28小时，与参考答案一致，单位及条件明确。"
+    },
+    "C": {
+      "pass": true,
+      "reason": "回答正确给出28小时，与参考答案一致，单位及条件（门店免费代存）均符合。"
+    }
+  },
+  "mode": "individual_recovery",
+  "signature": "6e0ef0e9a59faa93cb5f49db653751ed341d06dfc8c4236bf4ef4ca05f122390"
+}

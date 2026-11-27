@@ -1,0 +1,157 @@
+{
+  "id": "H17",
+  "group": "code_link",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "枣林纸灯要求升级外包装时，需另付几元？",
+        "missing": "",
+        "suggestions": [
+          "枣林纸灯 外包装升级 另付几元",
+          "枣林纸灯 升级外包装 费用"
+        ],
+        "searches": [
+          {
+            "query": "枣林纸灯要求升级外包装时，需另付几元？",
+            "hits": [
+              "枣林纸灯售后说明",
+              "履约排期",
+              "晚枫条款"
+            ]
+          },
+          {
+            "query": "枣林纸灯 外包装升级 另付几元",
+            "hits": [
+              "枣林纸灯售后说明",
+              "押金清单",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": false,
+          "sufficient": false,
+          "missing_aspect": "枣林纸灯升级外包装的额外费用（几元）",
+          "rationale": "三条证据分别涉及防损系数、保存期限和押金金额，均未提及外包装升级费用，无法回答问题。"
+        },
+        "accumulated": [
+          "枣林纸灯售后说明",
+          "晚枫条款",
+          "押金清单"
+        ]
+      },
+      {
+        "input": "枣林纸灯要求升级外包装时，需另付几元？",
+        "missing": "枣林纸灯升级外包装的额外费用（几元）",
+        "suggestions": [
+          "枣林纸灯 外包装升级 费用",
+          "枣林纸灯 升级包装 加价 几元",
+          "枣林纸灯 定制外包装 额外收费"
+        ],
+        "searches": [
+          {
+            "query": "枣林纸灯升级外包装的额外费用（几元）",
+            "hits": [
+              "枣林纸灯售后说明",
+              "银梨协议",
+              "山杏协议"
+            ]
+          },
+          {
+            "query": "枣林纸灯 外包装升级 费用",
+            "hits": [
+              "枣林纸灯售后说明",
+              "押金清单",
+              "交付承诺册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": false,
+          "sufficient": false,
+          "missing_aspect": "枣林纸灯升级外包装需另付的具体金额",
+          "rationale": "三条证据分别涉及防损系数档、银梨协议执行档号和晚枫条款保存期限，均未提及外包装升级费用，无法回答问题。"
+        },
+        "accumulated": [
+          "枣林纸灯售后说明",
+          "银梨协议",
+          "晚枫条款"
+        ]
+      },
+      {
+        "input": "枣林纸灯要求升级外包装时，需另付几元？",
+        "missing": "枣林纸灯升级外包装需另付的具体金额",
+        "suggestions": [
+          "枣林纸灯 升级外包装 另付 几元",
+          "枣林纸灯 外包装升级 费用",
+          "纸灯 外包装升级 加价 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "枣林纸灯升级外包装需另付的具体金额",
+            "hits": [
+              "枣林纸灯售后说明",
+              "季度保管账",
+              "霜树收纳箱公告"
+            ]
+          },
+          {
+            "query": "枣林纸灯 升级外包装 另付 几元",
+            "hits": [
+              "枣林纸灯售后说明",
+              "浅沙遮阳篷售后说明",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.82,
+      "rationale": "询问特定商品升级外包装的额外费用，属于商品参数/服务咨询，非通用政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问特定商品（枣林纸灯）升级外包装的附加费用，属于单条政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8801.4,
+  "docs": [
+    "枣林纸灯售后说明",
+    "银梨协议",
+    "霜树收纳箱公告"
+  ],
+  "provider_tokens": 2667,
+  "provider_responses": 9,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据未包含“升级外包装需另付几元”的具体金额，无法确认费用。建议补充订单号或商品页面信息，并转人工核实。",
+  "evidence": [
+    {
+      "source": "枣林纸灯售后说明_630c9c40",
+      "text": "枣林纸灯售后说明。枣林纸灯的防损系数档为 PK91。"
+    },
+    {
+      "source": "银梨协议_2fbdcc9a",
+      "text": "银梨协议。该协议的执行档号为 QS83;以档号对应的细则为准。"
+    },
+    {
+      "source": "霜树收纳箱公告_138da303",
+      "text": "霜树收纳箱公告。霜树收纳箱:押金方案正在制订,暂未公布具体金额。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "1f7639b2a4bd429fa743cedbb568afff"
+}

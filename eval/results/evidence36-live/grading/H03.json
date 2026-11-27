@@ -1,0 +1,90 @@
+{
+  "receipts": [
+    {
+      "model": "deepseek-flash",
+      "id": "4e5d1557-09fd-4c18-9b8a-064827d84830",
+      "usage": {
+        "prompt_tokens": 252,
+        "completion_tokens": 82,
+        "total_tokens": 334,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 252
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "ae28cc36-ca19-4108-b38f-89a3eac0330b",
+      "usage": {
+        "prompt_tokens": 345,
+        "completion_tokens": 130,
+        "total_tokens": 475,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 217
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "d7a53817-3693-41f5-8c3f-eeba8d2cd9a5",
+      "usage": {
+        "prompt_tokens": 216,
+        "completion_tokens": 23,
+        "total_tokens": 239,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 216
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "814917a6-b256-4d4a-8aad-94d02df9b131",
+      "usage": {
+        "prompt_tokens": 216,
+        "completion_tokens": 23,
+        "total_tokens": 239,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 216
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "8d6155aa-7150-472e-9e82-5e9fe75bce8b",
+      "usage": {
+        "prompt_tokens": 216,
+        "completion_tokens": 23,
+        "total_tokens": 239,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 216
+      }
+    }
+  ],
+  "labels": {
+    "A": {
+      "pass": true,
+      "reason": "回答正确给出3次，与参考答案一致。"
+    },
+    "B": {
+      "pass": true,
+      "reason": "回答正确给出3次，与参考答案一致。"
+    },
+    "C": {
+      "pass": true,
+      "reason": "回答正确给出3次，与参考答案一致。"
+    }
+  },
+  "mode": "individual_recovery",
+  "signature": "ff3974390e51b13b54de0934d696ed975f833a79582507059dd0acfe616c3d0c"
+}

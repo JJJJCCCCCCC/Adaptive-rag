@@ -1,0 +1,81 @@
+{
+  "id": "H03",
+  "group": "direct",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "一个订单可以免费补打几次收据？",
+        "missing": "",
+        "suggestions": [
+          "订单 免费补打收据 次数",
+          "收据 补打 免费 规则"
+        ],
+        "searches": [
+          {
+            "query": "一个订单可以免费补打几次收据？",
+            "hits": [
+              "补印收据",
+              "附加保障期限",
+              "海隅坐垫公告"
+            ]
+          },
+          {
+            "query": "订单 免费补打收据 次数",
+            "hits": [
+              "补印收据",
+              "检测合同价",
+              "线下代存"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "order_inquiry",
+      "confidence": 0.95,
+      "rationale": "询问订单收据免费补打的通用次数规则，属于政策解释，不是具体订单售后或物流问题;overlay:order_inquiry",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "这是一个关于收据补打政策的单一FAQ问题，属于单跳政策查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5295.29,
+  "docs": [
+    "补印收据",
+    "线下代存",
+    "海隅坐垫公告"
+  ],
+  "provider_tokens": 1709,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "每个订单可免费补印收据3次。",
+  "evidence": [
+    {
+      "source": "补印收据_f1fcf368",
+      "text": "补印收据。每个订单可免费补印收据3次。"
+    },
+    {
+      "source": "线下代存_dde8aeb9",
+      "text": "线下代存。门店每个包裹可免费代存28小时。"
+    },
+    {
+      "source": "海隅坐垫公告_83a6289a",
+      "text": "海隅坐垫公告。海隅坐垫:可以在柜台咨询翻新,尚未公布使用寿命。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "ff22a270b49443ae89e2ab9ab6912d99"
+}

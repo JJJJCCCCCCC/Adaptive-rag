@@ -1,0 +1,10 @@
+{"id":"f1","query":"定制杯图案印反，回寄运费是谁出？","doc":"return_custom","supported":"印反属于质量问题，运费平台承担。","unsupported":"印反属于质量问题，但运费不能由平台承担。","facts":["运费"]}
+{"id":"f2","query":"拆封耳机激活后还能无理由退吗？","doc":"return_electronics","supported":"激活后不适用 7 天无理由。","unsupported":"激活后仍适用 7 天无理由。","facts":["7 天无理由"]}
+{"id":"f3","query":"修理过保的家电，上门检测费多少？","doc":"repair_onsite","supported":"过保上门检测费 60 元。","unsupported":"过保上门检测费 60 元只适用于电池，家电免费。","facts":["60 元"]}
+{"id":"f4","query":"舟山岛屿费和偏远费一起加收吗？","doc":"shipping_remote","supported":"15 元岛屿费和 8 元偏远费取较高者。","unsupported":"15 元岛屿费和 8 元偏远费需要相加。","facts":["15 元","8 元"]}
+{"id":"f5","query":"礼品卡能取现吗？","doc":"gift_card","supported":"礼品卡不可提现。","unsupported":"礼品卡可提现。","facts":["提现"]}
+{"id":"f6","query":"拆封食物变质，经核实会发哪张券？","doc":"return_food","supported":"退款外另赔 FRESH20。","unsupported":"只能领 FRESH20，不能退款。","facts":["FRESH20"]}
+{"id":"f7","query":"退订未用权益的 PLUS，在开通七日内能全额退吗？","doc":"membership_plus","supported":"7 日内未使用任何 PLUS 券可全额退。","unsupported":"7 日内即便用过 PLUS 券也能全额退。","facts":["7 日","全额退"]}
+{"id":"f8","query":"开专票要几个工作日？","doc":"invoice_vat","supported":"确认收货后 5 个工作日开具。","unsupported":"发货前 5 个工作日就必须开具。","facts":["5 个工作日"]}
+{"id":"f9","query":"上门取件收费适用于质量问题吗？","doc":"pickup_return","supported":"质量问题免费；无理由退货收 12 元。","unsupported":"质量问题收 12 元，无理由退货免费。","facts":["12 元"]}
+{"id":"f10","query":"已过期的积分能补发吗？","doc":"points_expiry","supported":"24 个月到期，过期不补发。","unsupported":"24 个月到期后可以补发。","facts":["24 个月"]}

@@ -1,0 +1,90 @@
+{
+  "receipts": [
+    {
+      "model": "deepseek-flash",
+      "id": "ca5ea634-b0c9-4c18-8bf9-a3d9a523798a",
+      "usage": {
+        "prompt_tokens": 322,
+        "completion_tokens": 115,
+        "total_tokens": 437,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 194
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "4a26ddcb-8c9d-4c55-aa3c-9669ee1f8628",
+      "usage": {
+        "prompt_tokens": 415,
+        "completion_tokens": 121,
+        "total_tokens": 536,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 159
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "56da220f-9e23-4a53-a9ec-765fd4fac780",
+      "usage": {
+        "prompt_tokens": 245,
+        "completion_tokens": 38,
+        "total_tokens": 283,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 245
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "77de7354-64e9-45fc-b84d-c76024a338d4",
+      "usage": {
+        "prompt_tokens": 245,
+        "completion_tokens": 36,
+        "total_tokens": 281,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 245
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "d93ce6b7-6820-479a-aec0-3a80ed699299",
+      "usage": {
+        "prompt_tokens": 244,
+        "completion_tokens": 38,
+        "total_tokens": 282,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 244
+      }
+    }
+  ],
+  "labels": {
+    "A": {
+      "pass": true,
+      "reason": "正确识别超字3个，按每字3元计算共9元，数值、单位及条件均正确。"
+    },
+    "B": {
+      "pass": true,
+      "reason": "正确识别超字3个，按每字3元计算共9元，数值与单位均正确。"
+    },
+    "C": {
+      "pass": true,
+      "reason": "正确识别超出3字，按每字3元计算，结论9元，数值、单位及条件均正确。"
+    }
+  },
+  "mode": "individual_recovery",
+  "signature": "a4139cb6f4a9565dfd43280a808f1ddc434a97d629442244a4006f38d7794f2c"
+}

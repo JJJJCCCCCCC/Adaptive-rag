@@ -1,0 +1,75 @@
+{
+  "id": "M06",
+  "group": "multihop",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "微光收音机的换新凭证最晚在签收后多少天内激活？",
+        "missing": "",
+        "suggestions": [
+          "微光收音机 换新凭证 激活 签收后 多少天",
+          "微光收音机 换新凭证 激活期限"
+        ],
+        "searches": [
+          {
+            "query": "微光收音机的换新凭证最晚在签收后多少天内激活？",
+            "hits": [
+              "布料样本包",
+              "微光收音机服务档案",
+              "定制刻字修改"
+            ]
+          },
+          {
+            "query": "微光收音机 换新凭证 激活 签收后 多少天",
+            "hits": [
+              "凭证激活窗口",
+              "微光收音机服务档案",
+              "晴川手冲壶服务档案"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.9,
+      "rationale": "询问换新凭证激活期限的通用政策解释，非具体订单售后",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4046.9,
+  "docs": [
+    "微光收音机服务档案",
+    "凭证激活窗口",
+    "布料样本包"
+  ],
+  "provider_tokens": 1596,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "微光收音机随附的是换新凭证 V34，按凭证激活窗口规则，V34 需在签收后 12 天内激活。",
+  "evidence": [
+    {
+      "source": "微光收音机服务档案_49452677",
+      "text": "微光收音机服务档案。微光收音机随附换新凭证 V34。"
+    },
+    {
+      "source": "凭证激活窗口_551de802",
+      "text": "凭证激活窗口。V43 需在5天内激活;V34 需在12天内激活;V33 需在7天内激活。自签收起算。"
+    },
+    {
+      "source": "布料样本包_f582cc48",
+      "text": "布料样本包。布料样本包签收后可保留11天,之后应寄回。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "88c76ed7f39b46cfa82f5cf49b6669b9"
+}

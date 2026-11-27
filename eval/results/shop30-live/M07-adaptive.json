@@ -1,0 +1,37 @@
+{
+  "id": "M07",
+  "group": "multihop",
+  "arm": "adaptive",
+  "route": "refuse",
+  "trace": {
+    "rounds": [],
+    "intent": {
+      "label": "out_of_scope",
+      "confidence": 0.85,
+      "rationale": "询问天井花架上门组装的工单类型收费标准，属于安装服务/工单计费问题，不在电商客服意图标签范围内。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "out_of_scope",
+      "strategy": "refuse",
+      "confidence": 0.92,
+      "rationale": "该问题涉及天井花架的上门组装工单类型及收费，属于安装/服务工单计费，超出电商客服（订单/物流/退款/政策FAQ）边界，应拒绝并引导至相应服务渠道。"
+    }
+  },
+  "refused": true,
+  "rounds": 0,
+  "searches": 0,
+  "ms": 1768.79,
+  "docs": [],
+  "provider_tokens": 1026,
+  "provider_responses": 2,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "这个问题超出电商客服范围，我无法协助。如需购物、订单、物流或售后帮助，请换个问题。",
+  "evidence": [],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "0e4d26453e104cd7ae731c21fec0602e"
+}

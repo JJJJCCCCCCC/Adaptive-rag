@@ -1,0 +1,37 @@
+{
+  "id": "H36",
+  "group": "outside",
+  "arm": "single",
+  "route": "refuse",
+  "trace": {
+    "rounds": [],
+    "intent": {
+      "label": "out_of_scope",
+      "confidence": 0.98,
+      "rationale": "用户请求为唐诗逐句写赏析，属于作业/文学创作类任务，与电商客服无关，按优先级第1条归为 out_of_scope。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "out_of_scope",
+      "strategy": "refuse",
+      "confidence": 0.98,
+      "rationale": "用户请求为唐诗逐句写赏析，属于文学创作/教育类任务，超出电商客服边界。"
+    }
+  },
+  "refused": true,
+  "rounds": 0,
+  "searches": 0,
+  "ms": 2102.1,
+  "docs": [],
+  "provider_tokens": 991,
+  "provider_responses": 2,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "这个问题超出电商客服范围，我无法协助。如需购物、订单、物流或售后帮助，请换个问题。",
+  "evidence": [],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "3a216eae3bbf4295ae2ef511a1bd449d"
+}

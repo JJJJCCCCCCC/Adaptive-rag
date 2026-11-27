@@ -1,0 +1,81 @@
+{
+  "id": "H15",
+  "group": "code_link",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "浅沙遮阳篷配的托架订货以后多少天交付？",
+        "missing": "",
+        "suggestions": [
+          "浅沙遮阳篷托架 订货 交付天数",
+          "浅沙遮阳篷 托架 交期"
+        ],
+        "searches": [
+          {
+            "query": "浅沙遮阳篷配的托架订货以后多少天交付？",
+            "hits": [
+              "浅沙遮阳篷售后说明",
+              "刻章加字",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "浅沙遮阳篷托架 订货 交付天数",
+            "hits": [
+              "交付承诺册",
+              "浅沙遮阳篷售后说明",
+              "附加保障期限"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问订货后交付天数，属于通用交付/发货时效政策解释，非具体订单物流轨迹，故为 faq_policy",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问特定配件（浅沙遮阳篷托架）的交付周期，属于单条政策/FAQ查询，无需组合多条政策或调用订单系统。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4894.42,
+  "docs": [
+    "浅沙遮阳篷售后说明",
+    "交付承诺册",
+    "刻章加字"
+  ],
+  "provider_tokens": 1891,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只能确认浅沙遮阳篷的托架交付档为 YP13，但未提供 YP13 对应的具体交付天数，因此无法确定订货后多少天交付。建议补充订单号或转人工核实。",
+  "evidence": [
+    {
+      "source": "浅沙遮阳篷售后说明_70a6916a",
+      "text": "浅沙遮阳篷售后说明。浅沙遮阳篷的托架交付档为 YP13。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    },
+    {
+      "source": "刻章加字_cd48cdfd",
+      "text": "刻章加字。刻章含前四个字,超过部分每字收3元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "cf5a1d614c7c486daf1c799e00524753"
+}

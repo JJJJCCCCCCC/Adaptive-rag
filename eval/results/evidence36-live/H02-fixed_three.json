@@ -1,0 +1,158 @@
+{
+  "id": "H02",
+  "group": "direct",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "买冰柜预约你们上门测温，要付几元预约费？",
+        "missing": "",
+        "suggestions": [
+          "冰柜上门测温 预约费 多少钱",
+          "冰柜 上门测温 收费",
+          "冰柜测温 预约 费用"
+        ],
+        "searches": [
+          {
+            "query": "买冰柜预约你们上门测温，要付几元预约费？",
+            "hits": [
+              "预约测温",
+              "检测合同价",
+              "样刊邮费"
+            ]
+          },
+          {
+            "query": "冰柜上门测温 预约费 多少钱",
+            "hits": [
+              "交付承诺册",
+              "预约测温",
+              "工厂排期索引"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[预约测温_6dd50c3d_00]明确说明冰柜上门测温预约费为42元，直接回答了问题。"
+        },
+        "accumulated": [
+          "预约测温",
+          "样刊邮费",
+          "检测合同价"
+        ]
+      },
+      {
+        "input": "买冰柜预约你们上门测温，要付几元预约费？",
+        "missing": "",
+        "suggestions": [
+          "冰柜上门测温 预约费 多少钱",
+          "冰柜测温服务 收费 预约",
+          "上门测温 冰柜 费用"
+        ],
+        "searches": [
+          {
+            "query": "冰柜测温服务 收费 预约",
+            "hits": [
+              "预约测温",
+              "晴瓦烘鞋架售后说明",
+              "朱湾画筒服务手册"
+            ]
+          },
+          {
+            "query": "上门测温 冰柜 费用",
+            "hits": [
+              "预约测温",
+              "碧岸打气筒售后说明",
+              "样刊邮费"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[预约测温_6dd50c3d_00]明确说明本店冰柜上门测温预约费为42元，直接回答了问题。"
+        },
+        "accumulated": [
+          "预约测温",
+          "朱湾画筒服务手册",
+          "样刊邮费"
+        ]
+      },
+      {
+        "input": "买冰柜预约你们上门测温，要付几元预约费？",
+        "missing": "",
+        "suggestions": [
+          "冰柜上门测温 预约费 多少钱",
+          "冰柜测温服务 收费 预约",
+          "上门测温 冰柜 费用"
+        ],
+        "searches": [
+          {
+            "query": "买冰柜预约你们上门测温，要付几元预约费？",
+            "hits": [
+              "预约测温",
+              "检测合同价",
+              "样刊邮费"
+            ]
+          },
+          {
+            "query": "冰柜上门测温 预约费 多少钱",
+            "hits": [
+              "交付承诺册",
+              "预约测温",
+              "工厂排期索引"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问上门测温预约费的具体收费规则，属于通用政策解释，非具体订单售后或物流问题",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问预约上门测温的预约费金额，属于单一政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8455.47,
+  "docs": [
+    "预约测温",
+    "朱湾画筒服务手册",
+    "样刊邮费"
+  ],
+  "provider_tokens": 2596,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据检索到的预约测温说明，本店冰柜上门测温预约费为42元。该费用信息来自预约测温条目，建议下单前再与客服确认适用门店和是否可抵扣。",
+  "evidence": [
+    {
+      "source": "预约测温_6dd50c3d",
+      "text": "预约测温。本店冰柜上门测温预约费42元。"
+    },
+    {
+      "source": "朱湾画筒服务手册_baf93dc3",
+      "text": "朱湾画筒服务手册。朱湾画筒的配套服务执行《银梨协议》。"
+    },
+    {
+      "source": "样刊邮费_006718ab",
+      "text": "样刊邮费。样刊自取免费,快递上门每单11元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "97f01935d61942bb9d1e7d9c079351ea"
+}

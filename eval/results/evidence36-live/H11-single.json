@@ -1,0 +1,82 @@
+{
+  "id": "H11",
+  "group": "code_link",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "琥珀焖烧杯丢了盖子，按店里补配政策收多少钱？",
+        "missing": "",
+        "suggestions": [
+          "琥珀焖烧杯 补配盖子 价格",
+          "琥珀焖烧杯 盖子 补配政策 收费",
+          "琥珀焖烧杯 原装配件 盖子 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "琥珀焖烧杯丢了盖子，按店里补配政策收多少钱？",
+            "hits": [
+              "琥珀焖烧杯售后说明",
+              "帐篷清洁",
+              "检测合同价"
+            ]
+          },
+          {
+            "query": "琥珀焖烧杯 补配盖子 价格",
+            "hits": [
+              "琥珀焖烧杯售后说明",
+              "年度更换配额",
+              "蓝枝陶铃公告"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.86,
+      "rationale": "询问补配政策收费，属于通用政策解释，不是具体订单售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问补配盖子的收费标准，属于单一政策FAQ，直接查询补配政策即可回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4269.29,
+  "docs": [
+    "琥珀焖烧杯售后说明",
+    "蓝枝陶铃公告",
+    "检测合同价"
+  ],
+  "provider_tokens": 1891,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只能确认琥珀焖烧杯的封盖补配档为 LX-218，未提供该档位的补配价格，因此无法确定具体收费金额。建议补充订单号后转人工核实补配价格。",
+  "evidence": [
+    {
+      "source": "琥珀焖烧杯售后说明_927324ca",
+      "text": "琥珀焖烧杯售后说明。琥珀焖烧杯的封盖补配档为 LX-218。"
+    },
+    {
+      "source": "蓝枝陶铃公告_a5f481f2",
+      "text": "蓝枝陶铃公告。蓝枝陶铃:本店受理补绳,需要先核验凭证;补绳价格待发布。"
+    },
+    {
+      "source": "检测合同价_e1eddcdf",
+      "text": "检测合同价。FN48 收17元,FN84 收31元,FN80 收21元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "55c8f630c1cb433fbb288ca396e68e1d"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "H28",
+  "group": "chain",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "雾岭冷萃瓶返店换滤片要等几天？",
+        "missing": "",
+        "suggestions": [
+          "雾岭冷萃瓶 返店换滤片 要等几天",
+          "雾岭冷萃瓶 滤片更换 等待时间",
+          "雾岭冷萃瓶 售后换滤片 时效"
+        ],
+        "searches": [
+          {
+            "query": "雾岭冷萃瓶返店换滤片要等几天？",
+            "hits": [
+              "雾岭冷萃瓶服务手册",
+              "履约排期",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "雾岭冷萃瓶 返店换滤片 要等几天",
+            "hits": [
+              "刻章加字",
+              "雾岭冷萃瓶服务手册",
+              "谷风章程"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "return_exchange",
+      "confidence": 0.82,
+      "rationale": "用户询问具体商品（雾岭冷萃瓶）返店换滤片的等待时间，属于具体换货售后时效咨询，优先匹配 return_exchange。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问返店换滤片的等待时间，属于单一售后政策/流程类FAQ，无需组合多条政策或调用订单系统数据，直接按单跳政策查询回答即可。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5684.03,
+  "docs": [
+    "雾岭冷萃瓶服务手册",
+    "履约排期",
+    "交付承诺册"
+  ],
+  "provider_tokens": 2048,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "不确定。现有证据只提到雾岭冷萃瓶的配套服务执行《山杏协议》，并列出若干排期编码（HC46 5天、HC64 14天、UF25 3天、UF52 11天、UF55 7天），但没有说明“返店换滤片”对应哪个编码或具体等待天数，因此无法给出准确时效。请补充订单号或服务单号，以便核对适用的排期；如急需确认，可转人工客服。",
+  "evidence": [
+    {
+      "source": "雾岭冷萃瓶服务手册_ceb0e637",
+      "text": "雾岭冷萃瓶服务手册。雾岭冷萃瓶的配套服务执行《山杏协议》。"
+    },
+    {
+      "source": "履约排期_56e22b64",
+      "text": "履约排期。HC46 为5天,HC64 为14天。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "956096d0cc7a4ffb9b2b7a1fb0eb28ed"
+}

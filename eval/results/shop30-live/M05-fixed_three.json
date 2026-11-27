@@ -1,0 +1,163 @@
+{
+  "id": "M05",
+  "group": "multihop",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "云纹羊毛毯按配套规格换礼盒加多少钱？",
+        "missing": "",
+        "suggestions": [
+          "云纹羊毛毯 配套规格 换礼盒 加价",
+          "云纹羊毛毯 礼盒 差价 多少钱",
+          "云纹羊毛毯 配套 礼盒 加多少钱"
+        ],
+        "searches": [
+          {
+            "query": "云纹羊毛毯按配套规格换礼盒加多少钱？",
+            "hits": [
+              "礼盒规格加价",
+              "云纹羊毛毯服务档案",
+              "电子赠券"
+            ]
+          },
+          {
+            "query": "云纹羊毛毯 配套规格 换礼盒 加价",
+            "hits": [
+              "礼盒规格加价",
+              "云纹羊毛毯服务档案",
+              "定制刻字修改"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示云纹羊毛毯对应礼盒规格P53，且P53礼盒加收19元，可直接回答加价金额。"
+        },
+        "accumulated": [
+          "云纹羊毛毯服务档案",
+          "礼盒规格加价",
+          "电子赠券"
+        ]
+      },
+      {
+        "input": "云纹羊毛毯按配套规格换礼盒加多少钱？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "云纹羊毛毯 配套规格 换礼盒 加价",
+          "云纹羊毛毯 礼盒 定制 价格",
+          "云纹羊毛毯 礼盒 质量问题 加钱"
+        ],
+        "searches": [
+          {
+            "query": "云纹羊毛毯按配套规格换礼盒加多少钱？",
+            "hits": [
+              "礼盒规格加价",
+              "云纹羊毛毯服务档案",
+              "电子赠券"
+            ]
+          },
+          {
+            "query": "云纹羊毛毯 配套规格 换礼盒 加价",
+            "hits": [
+              "礼盒规格加价",
+              "云纹羊毛毯服务档案",
+              "定制刻字修改"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示云纹羊毛毯对应礼盒规格P53，且P53礼盒加收19元，可直接回答加价金额。"
+        },
+        "accumulated": [
+          "云纹羊毛毯服务档案",
+          "礼盒规格加价",
+          "电子赠券"
+        ]
+      },
+      {
+        "input": "云纹羊毛毯按配套规格换礼盒加多少钱？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "云纹羊毛毯 配套规格 换礼盒 加价",
+          "云纹羊毛毯 礼盒 定制 价格",
+          "云纹羊毛毯 礼盒 质量问题 换货 费用"
+        ],
+        "searches": [
+          {
+            "query": "云纹羊毛毯按配套规格换礼盒加多少钱？",
+            "hits": [
+              "礼盒规格加价",
+              "云纹羊毛毯服务档案",
+              "电子赠券"
+            ]
+          },
+          {
+            "query": "云纹羊毛毯 配套规格 换礼盒 加价",
+            "hits": [
+              "礼盒规格加价",
+              "云纹羊毛毯服务档案",
+              "定制刻字修改"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示云纹羊毛毯对应礼盒规格P53，且P53礼盒加收19元，可直接回答加价金额。"
+        },
+        "accumulated": [
+          "云纹羊毛毯服务档案",
+          "礼盒规格加价",
+          "电子赠券"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.85,
+      "rationale": "询问具体商品换配套礼盒的加价，属于商品规格/价格咨询，非通用政策解释",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 6654.9,
+  "docs": [
+    "云纹羊毛毯服务档案",
+    "礼盒规格加价",
+    "电子赠券"
+  ],
+  "provider_tokens": 2662,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "云纹羊毛毯对应礼盒规格 P53，P53 礼盒加收 19 元。",
+  "evidence": [
+    {
+      "source": "云纹羊毛毯服务档案_b9312e39",
+      "text": "云纹羊毛毯服务档案。云纹羊毛毯对应礼盒规格 P53。"
+    },
+    {
+      "source": "礼盒规格加价_e20cf470",
+      "text": "礼盒规格加价。P35 礼盒加收11元,P53 加收19元,P55 加收25元。"
+    },
+    {
+      "source": "电子赠券_f960a05f",
+      "text": "电子赠券。电子赠券每张面值18元,到期自动失效。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "06dd8026af914828a4adb05d12c4f98b"
+}

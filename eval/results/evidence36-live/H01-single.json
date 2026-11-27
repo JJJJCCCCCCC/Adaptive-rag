@@ -1,0 +1,82 @@
+{
+  "id": "H01",
+  "group": "direct",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "店里的帘布样片能免费留几天？",
+        "missing": "",
+        "suggestions": [
+          "帘布样片 免费保留 几天",
+          "样片 免费留存 期限",
+          "帘布样片 归还 期限"
+        ],
+        "searches": [
+          {
+            "query": "店里的帘布样片能免费留几天？",
+            "hits": [
+              "样片周转",
+              "山杏协议",
+              "线下代存"
+            ]
+          },
+          {
+            "query": "帘布样片 免费保留 几天",
+            "hits": [
+              "样片周转",
+              "晴瓦烘鞋架售后说明",
+              "线下代存"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问店内帘布样片可免费保留多久，属于通用政策解释，不涉及具体订单售后或物流。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问样片保留期限这一单一政策问题，属于单跳 FAQ，直接查询政策即可回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4987.56,
+  "docs": [
+    "样片周转",
+    "线下代存",
+    "山杏协议"
+  ],
+  "provider_tokens": 1710,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "帘布样片签收后可免费借用9天。",
+  "evidence": [
+    {
+      "source": "样片周转_904a3723",
+      "text": "样片周转。帘布样片签收后可免费借用9天。"
+    },
+    {
+      "source": "线下代存_dde8aeb9",
+      "text": "线下代存。门店每个包裹可免费代存28小时。"
+    },
+    {
+      "source": "山杏协议_27dd8bf4",
+      "text": "山杏协议。该协议的执行档号为 HC64;以档号对应的细则为准。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "9ee227c21f6a4bfe96ddd054df63a4d6"
+}

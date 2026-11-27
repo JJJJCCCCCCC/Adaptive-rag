@@ -1,0 +1,28 @@
+{
+  "http_tool": {
+    "valid_reply": {
+      "name": "echo_fixture",
+      "id": "synthetic"
+    },
+    "upstream_503": "remote MCP HTTP 503"
+  },
+  "sse": {
+    "event_types": [
+      "started",
+      "node",
+      "node",
+      "node",
+      "node",
+      "node",
+      "node",
+      "node",
+      "token",
+      "token",
+      "answer",
+      "done"
+    ],
+    "first_token_after_check_node": true,
+    "joined_chunks_match_answer": true,
+    "ended_with_done": true
+  }
+}

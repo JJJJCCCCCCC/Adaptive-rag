@@ -1,0 +1,90 @@
+{
+  "receipts": [
+    {
+      "model": "deepseek-flash",
+      "id": "08fd7100-64bc-4895-b5f4-dbdfe97fe43e",
+      "usage": {
+        "prompt_tokens": 318,
+        "completion_tokens": 107,
+        "total_tokens": 425,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 190
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "aeb13b0d-e952-4085-b036-b87c68864772",
+      "usage": {
+        "prompt_tokens": 411,
+        "completion_tokens": 98,
+        "total_tokens": 509,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 155
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "a6cae93e-1df2-49e4-b92b-28349d278002",
+      "usage": {
+        "prompt_tokens": 249,
+        "completion_tokens": 34,
+        "total_tokens": 283,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 249
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "cba13bef-a914-4b15-bf1c-1a9ee9b875be",
+      "usage": {
+        "prompt_tokens": 218,
+        "completion_tokens": 25,
+        "total_tokens": 243,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 218
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "id": "8a9c15aa-519a-4094-8d60-75182c07d539",
+      "usage": {
+        "prompt_tokens": 253,
+        "completion_tokens": 45,
+        "total_tokens": 298,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 253
+      }
+    }
+  ],
+  "labels": {
+    "A": {
+      "pass": true,
+      "reason": "回答明确给出预约费42元，数值正确，并附有适用条件提示，符合参考答案。"
+    },
+    "B": {
+      "pass": true,
+      "reason": "回答正确给出42元预约费，与参考答案一致。"
+    },
+    "C": {
+      "pass": true,
+      "reason": "回答明确给出预约费42元，数值正确，并补充了证据未说明的抵扣/退还条件，未编造额外结论，符合参考答案。"
+    }
+  },
+  "mode": "individual_recovery",
+  "signature": "75bf5fcea13b81e53e4206b8b6a3eee9b8a8b25d286a9fd6a1a26c84898dc5ae"
+}

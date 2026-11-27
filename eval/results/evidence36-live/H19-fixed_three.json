@@ -1,0 +1,148 @@
+{
+  "id": "H19",
+  "group": "code_link",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "远汀书立送去保养通常几天完工？",
+        "missing": "",
+        "suggestions": [
+          "远汀书立 保养 几天完工",
+          "远汀书立 保养 工期"
+        ],
+        "searches": [
+          {
+            "query": "远汀书立送去保养通常几天完工？",
+            "hits": [
+              "远汀书立售后说明",
+              "履约排期",
+              "芦岸雨罩公告"
+            ]
+          },
+          {
+            "query": "远汀书立 保养 几天完工",
+            "hits": [
+              "远汀书立售后说明",
+              "青穗计划",
+              "芦岸雨罩公告"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "远汀书立对应的维护方案UF52的完工天数；履约排期中的HC46（5天）和HC64（14天）未与UF52或远汀书立建立对应关系",
+          "rationale": "证据中提到了远汀书立的维护方案为UF52，但未给出UF52的完工天数；履约排期只列出HC46为5天、HC64为14天，无法确定哪个适用于远汀书立，因此不足以回答通常几天完工。"
+        },
+        "accumulated": [
+          "远汀书立售后说明",
+          "芦岸雨罩公告",
+          "履约排期"
+        ]
+      },
+      {
+        "input": "远汀书立送去保养通常几天完工？",
+        "missing": "远汀书立对应的维护方案UF52的完工天数；履约排期中的HC46（5天）和HC64（14天）未与UF52或远汀书立建立对应关系",
+        "suggestions": [
+          "远汀书立 保养 完工 几天",
+          "远汀书立 维护方案 UF52 完工天数",
+          "远汀书立 保养 排期 HC46 HC64"
+        ],
+        "searches": [
+          {
+            "query": "UF52",
+            "hits": [
+              "远汀书立售后说明",
+              "交付承诺册",
+              "帐篷清洁"
+            ]
+          },
+          {
+            "query": "HC46",
+            "hits": [
+              "刻章加字",
+              "履约排期",
+              "栗青磨豆器售后说明"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示远汀书立维护方案为UF52，交付承诺册明确UF52为11天，可直接回答。"
+        },
+        "accumulated": [
+          "远汀书立售后说明",
+          "交付承诺册",
+          "芦岸雨罩公告"
+        ]
+      },
+      {
+        "input": "远汀书立送去保养通常几天完工？",
+        "missing": "",
+        "suggestions": [
+          "远汀书立 保养 几天完工",
+          "远汀书立 保养 工期"
+        ],
+        "searches": [
+          {
+            "query": "远汀书立 保养 工期",
+            "hits": [
+              "远汀书立售后说明",
+              "履约排期",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问保养通常几天完工，属于通用服务政策/时效解释，非具体订单售后或物流轨迹",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问保养完工时间，属于单条政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 8067.05,
+  "docs": [
+    "远汀书立售后说明",
+    "交付承诺册",
+    "履约排期"
+  ],
+  "provider_tokens": 2694,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "远汀书立的维护方案为 UF52；按交付承诺册，UF52 的完工时效为 11 天。该时效为承诺口径，实际以订单受理后的排期为准。",
+  "evidence": [
+    {
+      "source": "远汀书立售后说明_8acfbdcf",
+      "text": "远汀书立售后说明。远汀书立的维护方案为 UF52。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    },
+    {
+      "source": "履约排期_56e22b64",
+      "text": "履约排期。HC46 为5天,HC64 为14天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "015d8213f5d0483fbd6e21ef70c0b0a9"
+}

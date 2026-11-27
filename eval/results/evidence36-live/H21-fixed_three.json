@@ -1,0 +1,158 @@
+{
+  "id": "H21",
+  "group": "named_link",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "月桥保温袋换内胆需要自己交几元？",
+        "missing": "",
+        "suggestions": [
+          "月桥保温袋 换内胆 费用",
+          "月桥保温袋 内胆更换 多少钱",
+          "月桥保温袋 换内胆 自费"
+        ],
+        "searches": [
+          {
+            "query": "月桥保温袋换内胆需要自己交几元？",
+            "hits": [
+              "月桥保温袋服务说明",
+              "苇洲折扇售后说明",
+              "零件保障期"
+            ]
+          },
+          {
+            "query": "月桥保温袋 换内胆 费用",
+            "hits": [
+              "月桥保温袋服务说明",
+              "石浦烟熏盒服务手册",
+              "零件保障期"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "《青穗计划》中关于月桥保温袋换内胆的具体收费金额（用户需自付几元）",
+          "rationale": "证据仅说明换内胆依照《青穗计划》办理，但未给出该计划的具体收费金额；其余证据涉及零件保障期和苇洲折扇，与问题无关，因此不足以回答具体需交几元。"
+        },
+        "accumulated": [
+          "月桥保温袋服务说明",
+          "零件保障期",
+          "苇洲折扇售后说明"
+        ]
+      },
+      {
+        "input": "月桥保温袋换内胆需要自己交几元？",
+        "missing": "《青穗计划》中关于月桥保温袋换内胆的具体收费金额（用户需自付几元）",
+        "suggestions": [
+          "月桥保温袋 换内胆 自付 几元",
+          "月桥保温袋 换内胆 收费 青穗计划",
+          "月桥保温袋 内胆更换 费用 自费"
+        ],
+        "searches": [
+          {
+            "query": "青穗计划",
+            "hits": [
+              "月桥保温袋服务说明",
+              "青穗计划",
+              "工艺结算表"
+            ]
+          },
+          {
+            "query": "《青穗计划》中关于月桥保温袋换内胆的具体收费金额（用户需自付几元）",
+            "hits": [
+              "月桥保温袋服务说明",
+              "帐篷清洁",
+              "青穗计划"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据明确说明月桥保温袋换内胆依照《青穗计划》办理，而《青穗计划》规定每次更换耗材买家支付14元，因此可直接回答需自付14元。"
+        },
+        "accumulated": [
+          "月桥保温袋服务说明",
+          "青穗计划",
+          "零件保障期"
+        ]
+      },
+      {
+        "input": "月桥保温袋换内胆需要自己交几元？",
+        "missing": "",
+        "suggestions": [
+          "月桥保温袋 换内胆 费用",
+          "月桥保温袋 内胆更换 多少钱",
+          "月桥保温袋 换内胆 自费"
+        ],
+        "searches": [
+          {
+            "query": "月桥保温袋 内胆更换 多少钱",
+            "hits": [
+              "月桥保温袋服务说明",
+              "交付承诺册",
+              "零件保障期"
+            ]
+          },
+          {
+            "query": "月桥保温袋 换内胆 自费",
+            "hits": [
+              "月桥保温袋服务说明",
+              "外箱附加价",
+              "零件保障期"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.82,
+      "rationale": "询问换内胆需自付多少费用，属于通用售后政策/费用解释，未涉及具体订单退款或退货流程",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "单一政策/FAQ查询，询问换内胆的自付费用，直接检索政策即可回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8022.13,
+  "docs": [
+    "月桥保温袋服务说明",
+    "青穗计划",
+    "零件保障期"
+  ],
+  "provider_tokens": 2721,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据《青穗计划》，每次更换耗材买家支付14元；月桥保温袋换内胆依照该计划办理，因此需要自己支付14元。",
+  "evidence": [
+    {
+      "source": "月桥保温袋服务说明_1eb90ea7",
+      "text": "月桥保温袋服务说明。月桥保温袋的换内胆依照《青穗计划》办理。"
+    },
+    {
+      "source": "青穗计划_c0deb519",
+      "text": "青穗计划。每次更换耗材买家支付14元。"
+    },
+    {
+      "source": "零件保障期_517af012",
+      "text": "零件保障期。WX68 为9个月,WX86 为22个月,WX88 为18个月。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "4d1062e7a72346429cdf3dda789aaee6"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "C10",
+  "group": "complex",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "师傅自己改期一次后，我第一次和第二次不在家各收多少空跑费？",
+        "missing": "",
+        "suggestions": [
+          "师傅改期后 第一次不在家 空跑费 收多少",
+          "师傅改期后 第二次不在家 空跑费 收多少",
+          "师傅改期 两次不在家 空跑费 收费标准"
+        ],
+        "searches": [
+          {
+            "query": "师傅自己改期一次后，我第一次和第二次不在家各收多少空跑费？",
+            "hits": [
+              "预约安装爽约",
+              "积分抵扣",
+              "会员续期"
+            ]
+          },
+          {
+            "query": "师傅改期后 第一次不在家 空跑费 收多少",
+            "hits": [
+              "会员续期",
+              "冷藏蛋糕改期",
+              "预约安装爽约"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问安装/上门服务改期后空跑费的通用收费规则，属于政策解释，非具体订单售后或物流轨迹",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4890.56,
+  "docs": [
+    "预约安装爽约",
+    "冷藏蛋糕改期",
+    "积分抵扣"
+  ],
+  "provider_tokens": 1712,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": false,
+  "answer": "按预约安装爽约规则：师傅原因导致的改期不计入买家爽约次数，因此师傅自己改期一次不影响您的空跑费计数。您第一次不在家免空跑费，第二次收26元。",
+  "evidence": [
+    {
+      "source": "预约安装爽约_00d02265",
+      "text": "预约安装爽约。安装师傅上门但买家未到场,第一次免空跑费,第二次收26元。师傅原因导致改期不计入买家爽约次数。"
+    },
+    {
+      "source": "冷藏蛋糕改期_3f4db7d0",
+      "text": "冷藏蛋糕改期。冷藏蛋糕发出前一天18点前改期免费;超过该时点且未装车,改期收16元;已经装车则不能改期。"
+    },
+    {
+      "source": "积分抵扣_dd707cd7",
+      "text": "积分抵扣。普通配件每笔最多抵扣商品款的四分之一,运费不参与计算;每100积分抵1元。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "27acbedd626d4ca491e095870adbee6c"
+}

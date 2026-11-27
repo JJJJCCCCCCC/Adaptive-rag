@@ -1,0 +1,149 @@
+{
+  "id": "H26",
+  "group": "named_link",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "青丘砧板做一次整面养护要几元？",
+        "missing": "",
+        "suggestions": [
+          "青丘砧板 整面养护 价格",
+          "青丘砧板 养护 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "青丘砧板做一次整面养护要几元？",
+            "hits": [
+              "青丘砧板服务说明",
+              "石浦烟熏盒服务手册",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "青丘砧板 整面养护 价格",
+            "hits": [
+              "青丘砧板服务说明",
+              "年度更换配额",
+              "蓝枝陶铃公告"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "青丘砧板整面养护的具体价格（几元）",
+          "rationale": "唯一相关证据是青丘砧板服务说明，但它只提到整面养护依照《谷风章程》办理，没有给出任何价格数字；其余两条证据分别关于蓝枝陶铃和石浦烟熏盒，与问题无关。因此无法据此回答具体费用。"
+        },
+        "accumulated": [
+          "青丘砧板服务说明",
+          "蓝枝陶铃公告",
+          "石浦烟熏盒服务手册"
+        ]
+      },
+      {
+        "input": "青丘砧板做一次整面养护要几元？",
+        "missing": "青丘砧板整面养护的具体价格（几元）",
+        "suggestions": [
+          "青丘砧板 整面养护 价格",
+          "青丘砧板 养护 多少钱",
+          "青丘砧板 整面保养 费用"
+        ],
+        "searches": [
+          {
+            "query": "青丘砧板整面养护的具体价格（几元）",
+            "hits": [
+              "青丘砧板服务说明",
+              "交付承诺册",
+              "霜树收纳箱公告"
+            ]
+          },
+          {
+            "query": "青丘砧板 养护 多少钱",
+            "hits": [
+              "交付承诺册",
+              "刻章加字",
+              "青丘砧板服务说明"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "青丘砧板整面养护的具体价格（几元）",
+          "rationale": "证据中只有青丘砧板服务说明提到整面养护依照《谷风章程》办理，但未给出具体价格；其余两条证据与青丘砧板无关。因此相关但不足以回答价格。"
+        },
+        "accumulated": [
+          "青丘砧板服务说明",
+          "霜树收纳箱公告",
+          "蓝枝陶铃公告"
+        ]
+      },
+      {
+        "input": "青丘砧板做一次整面养护要几元？",
+        "missing": "青丘砧板整面养护的具体价格（几元）",
+        "suggestions": [
+          "青丘砧板 整面养护 价格",
+          "青丘砧板 养护 多少钱",
+          "青丘砧板 整面保养 费用"
+        ],
+        "searches": [
+          {
+            "query": "青丘砧板 整面保养 费用",
+            "hits": [
+              "交付承诺册",
+              "青丘砧板服务说明",
+              "晚枫条款"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.85,
+      "rationale": "询问青丘砧板整面养护的价格，属于具体商品的服务/费用咨询，归入产品咨询。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问特定商品（青丘砧板）整面养护的价格，属于单跳产品咨询/FAQ，可直接查询商品养护服务价格回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 8606.73,
+  "docs": [
+    "青丘砧板服务说明",
+    "霜树收纳箱公告",
+    "交付承诺册"
+  ],
+  "provider_tokens": 2809,
+  "provider_responses": 9,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只说明青丘砧板的整面养护依照《谷风章程》办理，未给出具体价格，因此无法确认要几元。建议补充订单号或具体服务项目，以便转人工核实。",
+  "evidence": [
+    {
+      "source": "青丘砧板服务说明_01a43dab",
+      "text": "青丘砧板服务说明。青丘砧板的整面养护依照《谷风章程》办理。"
+    },
+    {
+      "source": "霜树收纳箱公告_138da303",
+      "text": "霜树收纳箱公告。霜树收纳箱:押金方案正在制订,暂未公布具体金额。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "2699ef093097414c92b245c9dbce58ef"
+}

@@ -1,0 +1,163 @@
+{
+  "id": "C08",
+  "group": "complex",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "普通包裹晚上九点想自提，要加多少钱？如果是生鲜能选夜取吗？",
+        "missing": "",
+        "suggestions": [
+          "普通包裹 晚上九点 自提 加收费用",
+          "生鲜 夜间自提 可选吗",
+          "夜间自提 收费标准 生鲜"
+        ],
+        "searches": [
+          {
+            "query": "普通包裹晚上九点想自提，要加多少钱？如果是生鲜能选夜取吗？",
+            "hits": [
+              "夜间自提",
+              "定制刻字修改",
+              "积分抵扣"
+            ]
+          },
+          {
+            "query": "普通包裹 晚上九点 自提 加收费用",
+            "hits": [
+              "夜间自提",
+              "会员续期",
+              "礼盒规格加价"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[夜间自提_7d35c485_00]明确说明普通自提服务到20点结束，购买夜取服务可延长至22点，夜取每单5元，且生鲜订单不可购买夜取服务。这直接回答了晚上九点自提需加5元，以及生鲜不能选夜取的问题。"
+        },
+        "accumulated": [
+          "夜间自提",
+          "积分抵扣",
+          "会员续期"
+        ]
+      },
+      {
+        "input": "普通包裹晚上九点想自提，要加多少钱？如果是生鲜能选夜取吗？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "普通包裹 晚上九点 自提 加收费用",
+          "生鲜 夜间自提 是否支持",
+          "夜间自提 收费标准 生鲜 政策"
+        ],
+        "searches": [
+          {
+            "query": "普通包裹晚上九点想自提，要加多少钱？如果是生鲜能选夜取吗？",
+            "hits": [
+              "夜间自提",
+              "定制刻字修改",
+              "积分抵扣"
+            ]
+          },
+          {
+            "query": "普通包裹 晚上九点 自提 加收费用",
+            "hits": [
+              "夜间自提",
+              "会员续期",
+              "礼盒规格加价"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据明确说明普通自提20点结束，夜取服务延长至22点，每单5元，且生鲜订单不可购买夜取，因此能完整回答晚上九点自提需加5元以及生鲜不能选夜取。"
+        },
+        "accumulated": [
+          "夜间自提",
+          "积分抵扣",
+          "会员续期"
+        ]
+      },
+      {
+        "input": "普通包裹晚上九点想自提，要加多少钱？如果是生鲜能选夜取吗？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "普通包裹 晚上九点 自提 加收费用",
+          "生鲜 夜取 自提 政策",
+          "夜间自提 收费标准 生鲜"
+        ],
+        "searches": [
+          {
+            "query": "普通包裹晚上九点想自提，要加多少钱？如果是生鲜能选夜取吗？",
+            "hits": [
+              "夜间自提",
+              "定制刻字修改",
+              "积分抵扣"
+            ]
+          },
+          {
+            "query": "普通包裹 晚上九点 自提 加收费用",
+            "hits": [
+              "夜间自提",
+              "会员续期",
+              "礼盒规格加价"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据明确说明普通自提20点结束，购买夜取服务可延长至22点，每单5元，且生鲜订单不可购买夜取服务，因此能完整回答晚上九点自提需加5元以及生鲜不能选夜取。"
+        },
+        "accumulated": [
+          "夜间自提",
+          "积分抵扣",
+          "会员续期"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.92,
+      "rationale": "询问自提夜间服务费用及生鲜夜取规则，属于通用政策解释，非具体订单物流轨迹",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 9248.08,
+  "docs": [
+    "夜间自提",
+    "积分抵扣",
+    "会员续期"
+  ],
+  "provider_tokens": 3000,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "普通包裹晚上九点自提：普通自提服务到20点结束，购买夜取服务可延长至22点，夜取每单5元，因此需加5元。生鲜订单不可购买夜取服务，所以生鲜不能选夜取。",
+  "evidence": [
+    {
+      "source": "夜间自提_7d35c485",
+      "text": "夜间自提。普通自提服务到20点结束;购买夜取服务可延长至22点。夜取每单5元,生鲜订单不可购买。"
+    },
+    {
+      "source": "积分抵扣_dd707cd7",
+      "text": "积分抵扣。普通配件每笔最多抵扣商品款的四分之一,运费不参与计算;每100积分抵1元。"
+    },
+    {
+      "source": "会员续期_064a7051",
+      "text": "会员续期。铜卡到期前续费加送8天,到期后续费加送3天;赠送天数不叠加。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "bb0c914d4d0841d8821c6c6d6eac661c"
+}

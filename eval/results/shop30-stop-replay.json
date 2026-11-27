@@ -1,0 +1,682 @@
+{
+  "source": "shop30-live historical fixed_three traces, shared-prefix replay",
+  "rounds": {
+    "1": 29,
+    "3": 1
+  },
+  "total_rounds": 32,
+  "early_complete": 29,
+  "final_complete": 29,
+  "changed": [],
+  "rows": [
+    {
+      "id": "S01",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据明确说明自提柜取货码自短信发出后保留36小时，超时退回门店，直接完整回答了问题。"
+      },
+      "early_sources": [
+        "门店自提柜",
+        "回收纸箱",
+        "试色卡邮寄"
+      ],
+      "final_sources": [
+        "门店自提柜",
+        "回收纸箱",
+        "试色卡邮寄",
+        "上门测量"
+      ]
+    },
+    {
+      "id": "S02",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据[电子赠券_f960a05f_00]明确说明电子赠券每张面值18元，直接回答了问题。"
+      },
+      "early_sources": [
+        "电子赠券",
+        "礼物分装",
+        "回收活动券额"
+      ],
+      "final_sources": [
+        "电子赠券",
+        "礼物分装",
+        "回收活动券额"
+      ]
+    },
+    {
+      "id": "S03",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据明确说明试色卡每个收件地址每月可免费领取4张，直接回答了问题。"
+      },
+      "early_sources": [
+        "试色卡邮寄",
+        "礼物分装",
+        "会员补签"
+      ],
+      "final_sources": [
+        "试色卡邮寄",
+        "礼物分装",
+        "会员补签"
+      ]
+    },
+    {
+      "id": "S04",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据明确说明纸质发票通过挂号信寄出，每封收取7元邮寄费，直接回答了邮费问题。"
+      },
+      "early_sources": [
+        "发票寄送",
+        "礼物分装",
+        "青屿折叠椅服务档案"
+      ],
+      "final_sources": [
+        "发票寄送",
+        "礼物分装",
+        "青屿折叠椅服务档案",
+        "积分抵扣"
+      ]
+    },
+    {
+      "id": "S05",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据明确说明布料样本包签收后可保留11天，之后应寄回，直接回答了问题。"
+      },
+      "early_sources": [
+        "布料样本包",
+        "门店自提柜",
+        "预约配送"
+      ],
+      "final_sources": [
+        "布料样本包",
+        "门店自提柜",
+        "预约配送"
+      ]
+    },
+    {
+      "id": "S06",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据明确说明预约送货每天最后一个可选时段从19点开始，直接回答了问题。"
+      },
+      "early_sources": [
+        "预约配送",
+        "家具搬楼",
+        "门店自提柜"
+      ],
+      "final_sources": [
+        "预约配送",
+        "家具搬楼",
+        "门店自提柜"
+      ]
+    },
+    {
+      "id": "S07",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据明确说明银卡会员每个自然月有2次补签机会，直接回答了问题。"
+      },
+      "early_sources": [
+        "会员补签",
+        "预约安装爽约",
+        "维修寄送档收费表"
+      ],
+      "final_sources": [
+        "会员补签",
+        "预约安装爽约",
+        "维修寄送档收费表",
+        "凭证激活窗口"
+      ]
+    },
+    {
+      "id": "S08",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据明确说明实体礼卡激活后余额有效期为16个月，直接回答了问题。"
+      },
+      "early_sources": [
+        "礼卡激活",
+        "延保方案年限",
+        "布料样本包"
+      ],
+      "final_sources": [
+        "礼卡激活",
+        "延保方案年限",
+        "布料样本包"
+      ]
+    },
+    {
+      "id": "S09",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据[上门测量_9f212e6b_00]明确说明衣柜上门量尺的预约金为35元，完工后冲抵安装费，直接回答了问题。"
+      },
+      "early_sources": [
+        "上门测量",
+        "预约安装爽约",
+        "预约配送"
+      ],
+      "final_sources": [
+        "上门测量",
+        "预约安装爽约",
+        "预约配送"
+      ]
+    },
+    {
+      "id": "S10",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据[回收纸箱_1ec21c6c_00]明确说明门店按每个完整纸箱3积分登记环保回收，直接回答了问题。"
+      },
+      "early_sources": [
+        "回收纸箱",
+        "门店自提柜",
+        "会员续期"
+      ],
+      "final_sources": [
+        "回收纸箱",
+        "门店自提柜",
+        "会员续期"
+      ]
+    },
+    {
+      "id": "C01",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据直接覆盖问题：确认后90分钟内免费改；超过90分钟但未雕刻收12元；已雕刻则停止改稿。两小时已超90分钟，若未雕刻可改收12元，已雕刻不能改。信息足以回答。"
+      },
+      "early_sources": [
+        "定制刻字修改",
+        "家具搬楼",
+        "门店自提柜"
+      ],
+      "final_sources": [
+        "定制刻字修改",
+        "家具搬楼",
+        "门店自提柜"
+      ]
+    },
+    {
+      "id": "C02",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据[冷藏蛋糕改期_3f4db7d0_00]直接回答了问题：超过截止点且未装车改期收16元；已经装车则不能改期。信息完整，无需编造。"
+      },
+      "early_sources": [
+        "冷藏蛋糕改期",
+        "预约安装爽约",
+        "天井花架服务档案"
+      ],
+      "final_sources": [
+        "冷藏蛋糕改期",
+        "预约安装爽约",
+        "天井花架服务档案",
+        "发票寄送"
+      ]
+    },
+    {
+      "id": "C03",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据[家具搬楼_d14c8c93_00]明确说明：有电梯且可装下则免搬楼费；无电梯按每层6元计，从二楼开始收费，一楼按零层计。因此无电梯送到四楼需收3层费用（2、3、4楼）共18元；电梯装得下则免搬楼费。信息足以回答。"
+      },
+      "early_sources": [
+        "家具搬楼",
+        "滤水壶退货",
+        "回收纸箱"
+      ],
+      "final_sources": [
+        "家具搬楼",
+        "滤水壶退货",
+        "回收纸箱"
+      ]
+    },
+    {
+      "id": "C04",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据直接回答了三个问题：可单独免费补发破损的一只；整套退款须退回三只；运费由商家承担。其余证据与问题无关。"
+      },
+      "early_sources": [
+        "组合装售后",
+        "滤水壶退货",
+        "仓储等级保管表"
+      ],
+      "final_sources": [
+        "组合装售后",
+        "滤水壶退货",
+        "仓储等级保管表"
+      ]
+    },
+    {
+      "id": "C05",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据明确说明普通配件每笔最多抵扣商品款的四分之一，运费不参与计算，且每100积分抵1元。商品款80元的四分之一为20元，因此最多抵20元，需2000积分。信息完整，可据此回答。"
+      },
+      "early_sources": [
+        "积分抵扣",
+        "夜间自提",
+        "回收纸箱"
+      ],
+      "final_sources": [
+        "积分抵扣",
+        "夜间自提",
+        "回收纸箱"
+      ]
+    },
+    {
+      "id": "C06",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "第一条证据明确说明铜卡到期前续费加送8天、到期后续费加送3天，且赠送天数不叠加，完整回答了问题的两个部分。"
+      },
+      "early_sources": [
+        "会员续期",
+        "电子赠券",
+        "定制刻字修改"
+      ],
+      "final_sources": [
+        "会员续期",
+        "电子赠券",
+        "定制刻字修改",
+        "返厂通道预约周期"
+      ]
+    },
+    {
+      "id": "C07",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据[滤水壶退货_a4c9d881_00]直接覆盖问题：全新未注水签收后9日内可无理由退、买家付运费；已注水且无故障则不能无理由退。签收第六天在9日内，故可回答。"
+      },
+      "early_sources": [
+        "滤水壶退货",
+        "冷藏蛋糕改期",
+        "定制刻字修改"
+      ],
+      "final_sources": [
+        "滤水壶退货",
+        "冷藏蛋糕改期",
+        "定制刻字修改"
+      ]
+    },
+    {
+      "id": "C08",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据[夜间自提_7d35c485_00]明确说明普通自提服务到20点结束，购买夜取服务可延长至22点，夜取每单5元，且生鲜订单不可购买夜取服务。这直接回答了晚上九点自提需加5元，以及生鲜不能选夜取的问题。"
+      },
+      "early_sources": [
+        "夜间自提",
+        "积分抵扣",
+        "会员续期"
+      ],
+      "final_sources": [
+        "夜间自提",
+        "积分抵扣",
+        "会员续期"
+      ]
+    },
+    {
+      "id": "C09",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据[礼物分装_147d70fa_00]明确说明同一订单前三个礼袋免费、从第四个起每个4元，因此五个礼袋收费为(5-3)×4=8元；同时说明纸质贺卡每袋只赠一张，五个礼袋共可获5张免费贺卡。信息足以回答。"
+      },
+      "early_sources": [
+        "礼物分装",
+        "回收纸箱",
+        "组装工单费率"
+      ],
+      "final_sources": [
+        "礼物分装",
+        "回收纸箱",
+        "组装工单费率",
+        "预约配送"
+      ]
+    },
+    {
+      "id": "C10",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据[预约安装爽约_00d02265_00]明确说明第一次免空跑费、第二次收26元，且师傅原因改期不计入买家爽约次数，因此可直接回答第一次0元、第二次26元。"
+      },
+      "early_sources": [
+        "预约安装爽约",
+        "冷藏蛋糕改期",
+        "积分抵扣"
+      ],
+      "final_sources": [
+        "预约安装爽约",
+        "冷藏蛋糕改期",
+        "积分抵扣"
+      ]
+    },
+    {
+      "id": "M01",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "青屿折叠椅适用维修寄送档M47，收费表显示M47收13元，按单次寄送计费，因此可确定寄送费为13元。"
+      },
+      "early_sources": [
+        "青屿折叠椅服务档案",
+        "维修寄送档收费表",
+        "会员续期"
+      ],
+      "final_sources": [
+        "青屿折叠椅服务档案",
+        "维修寄送档收费表",
+        "会员续期"
+      ]
+    },
+    {
+      "id": "M02",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据显示晴川手冲壶壶盖属于K32备件，而K32备货时限为审核通过起8天内备齐，可直接回答。"
+      },
+      "early_sources": [
+        "备件组备货时限",
+        "晴川手冲壶服务档案",
+        "凭证激活窗口"
+      ],
+      "final_sources": [
+        "备件组备货时限",
+        "晴川手冲壶服务档案",
+        "凭证激活窗口",
+        "定制刻字修改",
+        "竹影茶盘服务档案"
+      ]
+    },
+    {
+      "id": "M03",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据显示北庭阅读灯随产品发放延保方案W65，而W65延长14个月，且在原保修期后起算，因此可直接回答延长14个月。"
+      },
+      "early_sources": [
+        "北庭阅读灯服务档案",
+        "延保方案年限",
+        "布料样本包"
+      ],
+      "final_sources": [
+        "北庭阅读灯服务档案",
+        "延保方案年限",
+        "布料样本包"
+      ]
+    },
+    {
+      "id": "M04",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据显示回澜边桌属于仓储等级H28，而保管表中H28免费暂存6天，可直接推出答案。"
+      },
+      "early_sources": [
+        "回澜边桌服务档案",
+        "仓储等级保管表",
+        "冷藏蛋糕改期"
+      ],
+      "final_sources": [
+        "回澜边桌服务档案",
+        "仓储等级保管表",
+        "冷藏蛋糕改期"
+      ]
+    },
+    {
+      "id": "M05",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据显示云纹羊毛毯对应礼盒规格P53，且P53礼盒加收19元，可直接回答加价金额。"
+      },
+      "early_sources": [
+        "云纹羊毛毯服务档案",
+        "礼盒规格加价",
+        "电子赠券"
+      ],
+      "final_sources": [
+        "云纹羊毛毯服务档案",
+        "礼盒规格加价",
+        "电子赠券"
+      ]
+    },
+    {
+      "id": "M06",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据明确说明微光收音机随附换新凭证V34，且V34需在签收后12天内激活，足以回答。"
+      },
+      "early_sources": [
+        "微光收音机服务档案",
+        "凭证激活窗口",
+        "布料样本包"
+      ],
+      "final_sources": [
+        "微光收音机服务档案",
+        "凭证激活窗口",
+        "布料样本包"
+      ]
+    },
+    {
+      "id": "M07",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据显示天井花架的组装工单类型为A62，且A62的组装工单费率为每次37元，因此可直接回答收费37元。"
+      },
+      "early_sources": [
+        "天井花架服务档案",
+        "上门测量",
+        "组装工单费率"
+      ],
+      "final_sources": [
+        "天井花架服务档案",
+        "上门测量",
+        "组装工单费率"
+      ]
+    },
+    {
+      "id": "M08",
+      "rounds": 3,
+      "early_evidence": false,
+      "final_evidence": false,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": false,
+        "missing_aspect": "清涟滤芯回收活动R71对应的回收券金额",
+        "rationale": "证据仅说明清涟滤芯参加回收活动R71，未给出该活动可获得的回收券金额，无法回答具体多少元。"
+      },
+      "early_sources": [
+        "清涟滤芯服务档案",
+        "布料样本包",
+        "门店自提柜"
+      ],
+      "final_sources": [
+        "清涟滤芯服务档案",
+        "布料样本包",
+        "门店自提柜"
+      ]
+    },
+    {
+      "id": "M09",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "档案显示竹影茶盘补寄使用防护组合B92，押金表显示B92押金为21元，两条证据结合可直接得出答案。"
+      },
+      "early_sources": [
+        "竹影茶盘服务档案",
+        "防护组合押金",
+        "回收纸箱"
+      ],
+      "final_sources": [
+        "竹影茶盘服务档案",
+        "防护组合押金",
+        "回收纸箱"
+      ]
+    },
+    {
+      "id": "M10",
+      "rounds": 1,
+      "early_evidence": true,
+      "final_evidence": true,
+      "stop_grade": {
+        "relevant": true,
+        "sufficient": true,
+        "missing_aspect": "",
+        "rationale": "证据显示秋岚落地扇对应返厂通道T48，而T48在5个工作日内取件，因此可直接回答。"
+      },
+      "early_sources": [
+        "返厂通道预约周期",
+        "秋岚落地扇服务档案",
+        "会员补签"
+      ],
+      "final_sources": [
+        "返厂通道预约周期",
+        "秋岚落地扇服务档案",
+        "会员补签",
+        "试色卡邮寄"
+      ]
+    }
+  ]
+}

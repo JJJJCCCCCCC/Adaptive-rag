@@ -1,0 +1,163 @@
+{
+  "id": "M03",
+  "group": "multihop",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "北庭阅读灯原保修结束以后，随产品的延保能延长几个月？",
+        "missing": "",
+        "suggestions": [
+          "北庭阅读灯 延保 延长几个月",
+          "北庭阅读灯 保修结束后 延保时长",
+          "北庭阅读灯 原厂保修 延保 几个月"
+        ],
+        "searches": [
+          {
+            "query": "北庭阅读灯原保修结束以后，随产品的延保能延长几个月？",
+            "hits": [
+              "北庭阅读灯服务档案",
+              "清涟滤芯服务档案",
+              "延保方案年限"
+            ]
+          },
+          {
+            "query": "北庭阅读灯 延保 延长几个月",
+            "hits": [
+              "北庭阅读灯服务档案",
+              "布料样本包",
+              "延保方案年限"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示北庭阅读灯随产品发放延保方案W65，而W65延长14个月，且在原保修期后起算，因此可直接回答延长14个月。"
+        },
+        "accumulated": [
+          "北庭阅读灯服务档案",
+          "延保方案年限",
+          "布料样本包"
+        ]
+      },
+      {
+        "input": "北庭阅读灯原保修结束以后，随产品的延保能延长几个月？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "北庭阅读灯 延保 延长几个月",
+          "北庭阅读灯 保修结束后 延保 时长",
+          "北庭阅读灯 延保政策 条件"
+        ],
+        "searches": [
+          {
+            "query": "北庭阅读灯原保修结束以后，随产品的延保能延长几个月？",
+            "hits": [
+              "北庭阅读灯服务档案",
+              "清涟滤芯服务档案",
+              "延保方案年限"
+            ]
+          },
+          {
+            "query": "北庭阅读灯 延保 延长几个月",
+            "hits": [
+              "北庭阅读灯服务档案",
+              "布料样本包",
+              "延保方案年限"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示北庭阅读灯随产品发放延保方案 W65，而 W65 延长14个月，且在原保修期后起算，足以回答。"
+        },
+        "accumulated": [
+          "北庭阅读灯服务档案",
+          "延保方案年限",
+          "布料样本包"
+        ]
+      },
+      {
+        "input": "北庭阅读灯原保修结束以后，随产品的延保能延长几个月？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "北庭阅读灯 延保 延长几个月",
+          "北庭阅读灯 保修结束后 延保 政策",
+          "北庭阅读灯 延保 条件 时长"
+        ],
+        "searches": [
+          {
+            "query": "北庭阅读灯原保修结束以后，随产品的延保能延长几个月？",
+            "hits": [
+              "北庭阅读灯服务档案",
+              "清涟滤芯服务档案",
+              "延保方案年限"
+            ]
+          },
+          {
+            "query": "北庭阅读灯 延保 延长几个月",
+            "hits": [
+              "北庭阅读灯服务档案",
+              "布料样本包",
+              "延保方案年限"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据显示北庭阅读灯随产品发放延保方案 W65，且 W65 延长14个月，均在原保修期后起算，足以回答。"
+        },
+        "accumulated": [
+          "北庭阅读灯服务档案",
+          "延保方案年限",
+          "布料样本包"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.92,
+      "rationale": "询问保修结束后延保可延长几个月的通用保修政策解释，属于政策咨询而非具体售后申请",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8181.87,
+  "docs": [
+    "北庭阅读灯服务档案",
+    "延保方案年限",
+    "布料样本包"
+  ],
+  "provider_tokens": 2768,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "北庭阅读灯随产品发放的是延保方案 W65；按延保方案年限，W65 在原保修期结束后延长 14 个月。",
+  "evidence": [
+    {
+      "source": "北庭阅读灯服务档案_5c516eb7",
+      "text": "北庭阅读灯服务档案。北庭阅读灯随产品发放延保方案 W65。"
+    },
+    {
+      "source": "延保方案年限_90ff0f90",
+      "text": "延保方案年限。W56 延长10个月,W65 延长14个月,W66 延长20个月;均在原保修期后起算。"
+    },
+    {
+      "source": "布料样本包_f582cc48",
+      "text": "布料样本包。布料样本包签收后可保留11天,之后应寄回。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "a79646cfaad14bb384618d9493d4b0e3"
+}

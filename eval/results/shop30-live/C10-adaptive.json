@@ -1,0 +1,93 @@
+{
+  "id": "C10",
+  "group": "complex",
+  "arm": "adaptive",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "师傅自己改期一次后，我第一次和第二次不在家各收多少空跑费？",
+        "missing": "",
+        "suggestions": [
+          "师傅改期后 第一次不在家 空跑费 多少",
+          "师傅改期后 第二次不在家 空跑费 多少",
+          "师傅改期 两次不在家 空跑费 收费标准"
+        ],
+        "searches": [
+          {
+            "query": "师傅自己改期一次后，我第一次和第二次不在家各收多少空跑费？",
+            "hits": [
+              "预约安装爽约",
+              "积分抵扣",
+              "会员续期"
+            ]
+          },
+          {
+            "query": "师傅改期后 第一次不在家 空跑费 多少",
+            "hits": [
+              "会员续期",
+              "冷藏蛋糕改期",
+              "预约安装爽约"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[预约安装爽约_00d02265_00]明确说明第一次免空跑费、第二次收26元，且师傅原因改期不计入买家爽约次数，因此可直接回答第一次0元、第二次26元。"
+        },
+        "accumulated": [
+          "预约安装爽约",
+          "冷藏蛋糕改期",
+          "积分抵扣"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.88,
+      "rationale": "询问空跑费收取规则，属于通用政策解释，非具体订单售后或物流轨迹",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "multi_hop",
+      "strategy": "multi",
+      "confidence": 0.85,
+      "rationale": "需要组合改期规则与空跑费政策，并区分第一次和第二次不在家的不同收费条件，属于多条件政策推理。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5506.25,
+  "docs": [
+    "预约安装爽约",
+    "冷藏蛋糕改期",
+    "积分抵扣"
+  ],
+  "provider_tokens": 2340,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": false,
+  "answer": "按预约安装爽约规则：安装师傅上门但您未到场，第一次免空跑费，第二次收26元；因师傅原因导致的改期不计入您的爽约次数。因此，师傅自己改期那一次不算您的爽约，您第一次不在家仍按第一次免空跑费，第二次不在家收26元。",
+  "evidence": [
+    {
+      "source": "预约安装爽约_00d02265",
+      "text": "预约安装爽约。安装师傅上门但买家未到场,第一次免空跑费,第二次收26元。师傅原因导致改期不计入买家爽约次数。"
+    },
+    {
+      "source": "冷藏蛋糕改期_3f4db7d0",
+      "text": "冷藏蛋糕改期。冷藏蛋糕发出前一天18点前改期免费;超过该时点且未装车,改期收16元;已经装车则不能改期。"
+    },
+    {
+      "source": "积分抵扣_dd707cd7",
+      "text": "积分抵扣。普通配件每笔最多抵扣商品款的四分之一,运费不参与计算;每100积分抵1元。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "6ccc8c56c88a41b989e00e8ca4ecd427"
+}

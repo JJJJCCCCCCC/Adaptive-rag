@@ -1,0 +1,563 @@
+{
+  "model_requested": "deepseek-chat",
+  "fixtures": [
+    [
+      "s1",
+      "蓝鸥玩具城的银票将在领取后第17天失效。",
+      "银票领取后第几天失效？",
+      [
+        "17"
+      ],
+      "第17天。",
+      "第27天。"
+    ],
+    [
+      "s2",
+      "云帆俱乐部的铜船票一次最多兑换3盒纸星星。",
+      "铜船票一次最多兑换几盒？",
+      [
+        "3"
+      ],
+      "3盒。",
+      "13盒。"
+    ],
+    [
+      "s3",
+      "松针集市的雾灯箱押金为23枚贝币。",
+      "一个雾灯箱押金多少枚贝币？",
+      [
+        "23"
+      ],
+      "23枚贝币。",
+      "32枚贝币。"
+    ],
+    [
+      "s4",
+      "星桥手作社的空盒按每只4枚蓝币回收，带盖的按每只9枚蓝币回收。",
+      "空盒和带盖盒回收价各是多少？请按这个顺序回答。",
+      [
+        "4",
+        "9"
+      ],
+      "空盒4枚，带盖9枚。",
+      "空盒9枚，带盖4枚。"
+    ],
+    [
+      "s5",
+      "池月小站的月票限住客购买。日票不限身份。",
+      "月票和日票各有什么购买身份限制？",
+      [
+        "住客",
+        "不限"
+      ],
+      "月票只限住客，日票不限身份。",
+      "日票只限住客，月票不限身份。"
+    ],
+    [
+      "s6",
+      "风车馆在晴日于14时送件，雨日推迟至18时送件。",
+      "晴日和雨日分别几点送件？请按这个顺序回答。",
+      [
+        "14",
+        "18"
+      ],
+      "晴日14时，雨日18时。",
+      "雨日14时，晴日18时。"
+    ]
+  ],
+  "records": [
+    {
+      "id": "s1",
+      "kind": "without_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "d9aa64b4-d27b-4996-8570-61cfd2ad2db7",
+      "usage": {
+        "prompt_tokens": 75,
+        "completion_tokens": 5,
+        "total_tokens": 80,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 75
+      },
+      "ms": 5354,
+      "output": {
+        "answer": "不知道"
+      }
+    },
+    {
+      "id": "s1",
+      "kind": "with_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "2b81e53e-e90e-4b00-a58a-fd4f71b2b6b8",
+      "usage": {
+        "prompt_tokens": 85,
+        "completion_tokens": 5,
+        "total_tokens": 90,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 85
+      },
+      "ms": 5356,
+      "output": {
+        "answer": "17"
+      }
+    },
+    {
+      "id": "s1",
+      "kind": "valid",
+      "model": "deepseek-flash",
+      "completion_id": "ac6eb947-4c72-4276-a1e1-50e791e09550",
+      "usage": {
+        "prompt_tokens": 94,
+        "completion_tokens": 21,
+        "total_tokens": 115,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 94
+      },
+      "ms": 5424,
+      "output": {
+        "supported": true,
+        "reason": "答复与规则中“第17天失效”完全一致。"
+      }
+    },
+    {
+      "id": "s1",
+      "kind": "invalid",
+      "model": "deepseek-flash",
+      "completion_id": "df6d53a1-6281-4c93-bbf2-d8245eb18501",
+      "usage": {
+        "prompt_tokens": 94,
+        "completion_tokens": 26,
+        "total_tokens": 120,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 94
+      },
+      "ms": 1204,
+      "output": {
+        "supported": false,
+        "reason": "规则明确为第17天失效，答复称第27天，与规则不符。"
+      }
+    },
+    {
+      "id": "s2",
+      "kind": "without_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "c34530e1-869e-48e6-be57-91d169134fef",
+      "usage": {
+        "prompt_tokens": 76,
+        "completion_tokens": 5,
+        "total_tokens": 81,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 76
+      },
+      "ms": 1541,
+      "output": {
+        "answer": "不知道"
+      }
+    },
+    {
+      "id": "s2",
+      "kind": "with_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "1d5291eb-3337-4fe8-8b10-c81d0024f740",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 6,
+        "total_tokens": 93,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 87
+      },
+      "ms": 1182,
+      "output": {
+        "answer": "3盒"
+      }
+    },
+    {
+      "id": "s2",
+      "kind": "valid",
+      "model": "deepseek-flash",
+      "completion_id": "b3e6f555-a13b-4e98-a625-3a7de0ace2ac",
+      "usage": {
+        "prompt_tokens": 95,
+        "completion_tokens": 26,
+        "total_tokens": 121,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 95
+      },
+      "ms": 1177,
+      "output": {
+        "supported": true,
+        "reason": "规则明确铜船票一次最多兑换3盒纸星星，答复与规则一致。"
+      }
+    },
+    {
+      "id": "s2",
+      "kind": "invalid",
+      "model": "deepseek-flash",
+      "completion_id": "7fbb733d-c557-477c-9229-53e51141a2c9",
+      "usage": {
+        "prompt_tokens": 95,
+        "completion_tokens": 21,
+        "total_tokens": 116,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 95
+      },
+      "ms": 1291,
+      "output": {
+        "supported": false,
+        "reason": "规则规定最多3盒，答复13盒与规则不符。"
+      }
+    },
+    {
+      "id": "s3",
+      "kind": "without_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "b812882e-5a73-4e64-8253-029bdb53a2cd",
+      "usage": {
+        "prompt_tokens": 78,
+        "completion_tokens": 5,
+        "total_tokens": 83,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 78
+      },
+      "ms": 856,
+      "output": {
+        "answer": "不知道"
+      }
+    },
+    {
+      "id": "s3",
+      "kind": "with_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "ba233b33-7e9f-4923-8e32-a2bc586b8b17",
+      "usage": {
+        "prompt_tokens": 89,
+        "completion_tokens": 5,
+        "total_tokens": 94,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 89
+      },
+      "ms": 1115,
+      "output": {
+        "answer": "23"
+      }
+    },
+    {
+      "id": "s3",
+      "kind": "valid",
+      "model": "deepseek-flash",
+      "completion_id": "441ccb55-7928-40e4-93f5-9b7304565c5e",
+      "usage": {
+        "prompt_tokens": 99,
+        "completion_tokens": 21,
+        "total_tokens": 120,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 99
+      },
+      "ms": 1097,
+      "output": {
+        "supported": true,
+        "reason": "答复与规则中的押金数值23枚贝币一致。"
+      }
+    },
+    {
+      "id": "s3",
+      "kind": "invalid",
+      "model": "deepseek-flash",
+      "completion_id": "6f5ce20f-162c-4360-87d3-3280633219d9",
+      "usage": {
+        "prompt_tokens": 99,
+        "completion_tokens": 26,
+        "total_tokens": 125,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 99
+      },
+      "ms": 1442,
+      "output": {
+        "supported": false,
+        "reason": "规则规定押金为23枚贝币，答复称32枚，数值不符。"
+      }
+    },
+    {
+      "id": "s4",
+      "kind": "without_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "bdc11afa-1d8c-472e-82e5-dfa830802fe7",
+      "usage": {
+        "prompt_tokens": 84,
+        "completion_tokens": 5,
+        "total_tokens": 89,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 84
+      },
+      "ms": 871,
+      "output": {
+        "answer": "不知道"
+      }
+    },
+    {
+      "id": "s4",
+      "kind": "with_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "8c7ab6e5-38e7-4ac9-aae3-d13a7b1e2a57",
+      "usage": {
+        "prompt_tokens": 108,
+        "completion_tokens": 22,
+        "total_tokens": 130,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 108
+      },
+      "ms": 1244,
+      "output": {
+        "answer": "空盒每只4枚蓝币，带盖盒每只9枚蓝币"
+      }
+    },
+    {
+      "id": "s4",
+      "kind": "valid",
+      "model": "deepseek-flash",
+      "completion_id": "a23cb52c-a4d5-4266-99e0-ad31ee7e43b8",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 26,
+        "total_tokens": 149,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 123
+      },
+      "ms": 863,
+      "output": {
+        "supported": true,
+        "reason": "答复与规则中空盒4枚、带盖9枚的回收价一致。"
+      }
+    },
+    {
+      "id": "s4",
+      "kind": "invalid",
+      "model": "deepseek-flash",
+      "completion_id": "81fac7e9-53bc-447a-a1ae-12e5ce105524",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 25,
+        "total_tokens": 148,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 123
+      },
+      "ms": 1378,
+      "output": {
+        "supported": false,
+        "reason": "规则规定空盒4枚、带盖9枚，答复将两者颠倒。"
+      }
+    },
+    {
+      "id": "s5",
+      "kind": "without_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "305a3f21-2dee-4f10-833b-fb288b57e839",
+      "usage": {
+        "prompt_tokens": 78,
+        "completion_tokens": 5,
+        "total_tokens": 83,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 78
+      },
+      "ms": 753,
+      "output": {
+        "answer": "不知道"
+      }
+    },
+    {
+      "id": "s5",
+      "kind": "with_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "799d2fa6-374a-481b-84eb-7072d8d990a0",
+      "usage": {
+        "prompt_tokens": 90,
+        "completion_tokens": 16,
+        "total_tokens": 106,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 90
+      },
+      "ms": 795,
+      "output": {
+        "answer": "月票限住客购买；日票不限身份。"
+      }
+    },
+    {
+      "id": "s5",
+      "kind": "valid",
+      "model": "deepseek-flash",
+      "completion_id": "c3ccb99f-a612-470d-afb0-49123b13c10d",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 24,
+        "total_tokens": 131,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 107
+      },
+      "ms": 1115,
+      "output": {
+        "supported": true,
+        "reason": "答复与规则中月票限住客、日票不限身份一致。"
+      }
+    },
+    {
+      "id": "s5",
+      "kind": "invalid",
+      "model": "deepseek-flash",
+      "completion_id": "0bcd12fd-2730-4a1a-b9fb-91a066431eb8",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 31,
+        "total_tokens": 138,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 107
+      },
+      "ms": 780,
+      "output": {
+        "supported": false,
+        "reason": "答复将月票和日票的限制颠倒：规则规定月票限住客、日票不限身份。"
+      }
+    },
+    {
+      "id": "s6",
+      "kind": "without_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "66fcd430-bf4d-4549-99fe-9dfe79483694",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 5,
+        "total_tokens": 87,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 82
+      },
+      "ms": 795,
+      "output": {
+        "answer": "不知道"
+      }
+    },
+    {
+      "id": "s6",
+      "kind": "with_evidence",
+      "model": "deepseek-flash",
+      "completion_id": "15ca47a1-34ea-424b-94cc-a9e166051c67",
+      "usage": {
+        "prompt_tokens": 99,
+        "completion_tokens": 13,
+        "total_tokens": 112,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 99
+      },
+      "ms": 1065,
+      "output": {
+        "answer": "晴日14时，雨日18时"
+      }
+    },
+    {
+      "id": "s6",
+      "kind": "valid",
+      "model": "deepseek-flash",
+      "completion_id": "73f906f4-9076-487b-b46b-af29affef439",
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 23,
+        "total_tokens": 137,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 114
+      },
+      "ms": 1233,
+      "output": {
+        "supported": true,
+        "reason": "答复与规则一致：晴日14时，雨日18时。"
+      }
+    },
+    {
+      "id": "s6",
+      "kind": "invalid",
+      "model": "deepseek-flash",
+      "completion_id": "3638ad66-6134-4fd0-8a94-a7f1821c9c36",
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 25,
+        "total_tokens": 139,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 114
+      },
+      "ms": 984,
+      "output": {
+        "supported": false,
+        "reason": "答复将晴日与雨日的送件时间对调，与规则相反。"
+      }
+    }
+  ],
+  "errors": []
+}

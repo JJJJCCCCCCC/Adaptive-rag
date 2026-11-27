@@ -1,0 +1,37 @@
+{
+  "id": "H20",
+  "group": "code_link",
+  "arm": "adaptive",
+  "route": "refuse",
+  "trace": {
+    "rounds": [],
+    "intent": {
+      "label": "out_of_scope",
+      "confidence": 0.92,
+      "rationale": "询问特定店铺的过季寄存收费，属于与电商客服无关的线下服务/外部信息，不在可处理范围内。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "out_of_scope",
+      "strategy": "refuse",
+      "confidence": 0.95,
+      "rationale": "该问题询问特定店铺（苇洲折扇）的过季寄存收费，属于线下门店/第三方商家的具体服务定价，超出电商客服（订单、物流、退款、平台政策）的职责边界，无法依据现有知识或系统数据回答。"
+    }
+  },
+  "refused": true,
+  "rounds": 0,
+  "searches": 0,
+  "ms": 2134.6,
+  "docs": [],
+  "provider_tokens": 1019,
+  "provider_responses": 2,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "这个问题超出电商客服范围，我无法协助。如需购物、订单、物流或售后帮助，请换个问题。",
+  "evidence": [],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "37241d53e4f443d3a5a7930f7cc12b3c"
+}

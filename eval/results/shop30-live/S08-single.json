@@ -1,0 +1,75 @@
+{
+  "id": "S08",
+  "group": "simple",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "实体礼卡激活后有效期有多少个月？",
+        "missing": "",
+        "suggestions": [
+          "实体礼卡 激活后 有效期 多少个月",
+          "实体礼卡 有效期 月数"
+        ],
+        "searches": [
+          {
+            "query": "实体礼卡激活后有效期有多少个月？",
+            "hits": [
+              "礼卡激活",
+              "布料样本包",
+              "延保方案年限"
+            ]
+          },
+          {
+            "query": "实体礼卡 激活后 有效期 多少个月",
+            "hits": [
+              "礼卡激活",
+              "天井花架服务档案",
+              "延保方案年限"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.95,
+      "rationale": "询问礼卡激活后的有效期，属于通用政策解释，不是具体订单售后",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3462.91,
+  "docs": [
+    "礼卡激活",
+    "延保方案年限",
+    "布料样本包"
+  ],
+  "provider_tokens": 1487,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "实体礼卡激活后余额有效期为16个月。",
+  "evidence": [
+    {
+      "source": "礼卡激活_2b89f943",
+      "text": "礼卡激活。实体礼卡激活后余额有效期为16个月。"
+    },
+    {
+      "source": "延保方案年限_90ff0f90",
+      "text": "延保方案年限。W56 延长10个月,W65 延长14个月,W66 延长20个月;均在原保修期后起算。"
+    },
+    {
+      "source": "布料样本包_f582cc48",
+      "text": "布料样本包。布料样本包签收后可保留11天,之后应寄回。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "cb218f8529a840678c6d216ff26b6f6e"
+}

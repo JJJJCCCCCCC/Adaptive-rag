@@ -1,0 +1,93 @@
+{
+  "id": "C02",
+  "group": "complex",
+  "arm": "adaptive",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "昨天错过了蛋糕免费改期的截止点，没装车要花多少？装车以后还能改吗？",
+        "missing": "",
+        "suggestions": [
+          "蛋糕 错过改期截止 未装车 费用",
+          "蛋糕 已装车 还能改期吗",
+          "蛋糕 改期 装车后 费用"
+        ],
+        "searches": [
+          {
+            "query": "昨天错过了蛋糕免费改期的截止点，没装车要花多少？装车以后还能改吗？",
+            "hits": [
+              "冷藏蛋糕改期",
+              "发票寄送",
+              "夜间自提"
+            ]
+          },
+          {
+            "query": "蛋糕 错过改期截止 未装车 费用",
+            "hits": [
+              "冷藏蛋糕改期",
+              "天井花架服务档案",
+              "预约安装爽约"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据直接回答了问题：超过截止点且未装车改期收16元；已经装车则不能改期。信息完整，无需编造。"
+        },
+        "accumulated": [
+          "冷藏蛋糕改期",
+          "预约安装爽约",
+          "天井花架服务档案"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.88,
+      "rationale": "询问蛋糕改期截止后的费用及装车后能否改期，属于通用政策解释，非具体订单售后或物流轨迹",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "multi_hop",
+      "strategy": "multi",
+      "confidence": 0.85,
+      "rationale": "用户同时询问错过免费改期截止点后的未装车费用，以及装车后是否还能改期，需要组合改期政策、费用规则和装车状态条件进行推理。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 7228.49,
+  "docs": [
+    "冷藏蛋糕改期",
+    "预约安装爽约",
+    "天井花架服务档案"
+  ],
+  "provider_tokens": 2388,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据冷藏蛋糕改期规则：发出前一天18点前改期免费；超过该时点且尚未装车，改期收16元；已经装车则不能改期。您昨天错过免费截止点，若目前还未装车，改期费用为16元；若已装车，则无法改期。建议您提供订单号，以便核实当前装车状态。",
+  "evidence": [
+    {
+      "source": "冷藏蛋糕改期_3f4db7d0",
+      "text": "冷藏蛋糕改期。冷藏蛋糕发出前一天18点前改期免费;超过该时点且未装车,改期收16元;已经装车则不能改期。"
+    },
+    {
+      "source": "预约安装爽约_00d02265",
+      "text": "预约安装爽约。安装师傅上门但买家未到场,第一次免空跑费,第二次收26元。师傅原因导致改期不计入买家爽约次数。"
+    },
+    {
+      "source": "天井花架服务档案_70b24c4e",
+      "text": "天井花架服务档案。天井花架的组装工单类型为 A62。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "4c63e90df4fd4b83906e20a4818a0c73"
+}

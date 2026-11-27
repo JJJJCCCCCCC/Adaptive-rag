@@ -1,0 +1,76 @@
+{
+  "id": "C09",
+  "group": "complex",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "一个订单分成五个礼袋，礼袋总共收费多少？一共能拿到几张免费贺卡？",
+        "missing": "",
+        "suggestions": [
+          "订单分五个礼袋 礼袋收费 免费贺卡 数量",
+          "五个礼袋 礼袋费用 贺卡 免费几张",
+          "分5个礼袋 收费 免费贺卡"
+        ],
+        "searches": [
+          {
+            "query": "一个订单分成五个礼袋，礼袋总共收费多少？一共能拿到几张免费贺卡？",
+            "hits": [
+              "礼物分装",
+              "组装工单费率",
+              "预约配送"
+            ]
+          },
+          {
+            "query": "订单分五个礼袋 礼袋收费 免费贺卡 数量",
+            "hits": [
+              "礼物分装",
+              "回收活动券额",
+              "仓储等级保管表"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "order_inquiry",
+      "confidence": 0.93,
+      "rationale": "询问礼袋收费与免费贺卡数量，属于商品包装/赠品参数与费用咨询，非具体订单售后或政策解释。;overlay:order_inquiry",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3898.34,
+  "docs": [
+    "礼物分装",
+    "组装工单费率",
+    "预约配送"
+  ],
+  "provider_tokens": 1678,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": false,
+  "all_answer_spans": true,
+  "answer": "同一订单前三个礼袋免费，从第四个起每个4元，因此五个礼袋中第4、5个各收4元，礼袋总共收费8元。纸质贺卡每袋只赠一张，五个礼袋一共可拿到5张免费贺卡。",
+  "evidence": [
+    {
+      "source": "礼物分装_147d70fa",
+      "text": "礼物分装。同一订单前三个礼袋免费,从第四个起每个4元。纸质贺卡每袋只赠一张。"
+    },
+    {
+      "source": "组装工单费率_41be281b",
+      "text": "组装工单费率。A26 每次27元,A62 每次37元,A66 每次47元。"
+    },
+    {
+      "source": "预约配送_f4f613e9",
+      "text": "预约配送。预约送货每天最后一个可选时段从19点开始。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "dc9b2fba99b740309dc76d85bf2cff9d"
+}

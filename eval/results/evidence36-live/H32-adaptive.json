@@ -1,0 +1,131 @@
+{
+  "id": "H32",
+  "group": "unknown",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "芦岸雨罩接单后保证几天完工？",
+        "missing": "",
+        "suggestions": [
+          "芦岸雨罩 接单后 几天完工",
+          "芦岸雨罩 定制 工期 几天",
+          "芦岸雨罩 生产周期 完工时间"
+        ],
+        "searches": [
+          {
+            "query": "芦岸雨罩接单后保证几天完工？",
+            "hits": [
+              "芦岸雨罩公告",
+              "松烟方案",
+              "样片周转"
+            ]
+          },
+          {
+            "query": "芦岸雨罩 接单后 几天完工",
+            "hits": [
+              "芦岸雨罩公告",
+              "白榆协议",
+              "样片周转"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "芦岸雨罩接单后承诺的具体完工天数（证据仅说明未承诺完工日期）",
+          "rationale": "唯一与芦岸雨罩相关的证据明确表示其有维修受理服务但未承诺完工日期，因此无法回答保证几天完工；其他证据涉及松烟方案和样片周转，与问题无关。"
+        },
+        "accumulated": [
+          "芦岸雨罩公告",
+          "松烟方案",
+          "样片周转"
+        ]
+      },
+      {
+        "input": "芦岸雨罩接单后保证几天完工？",
+        "missing": "芦岸雨罩接单后承诺的具体完工天数（证据仅说明未承诺完工日期）",
+        "suggestions": [
+          "芦岸雨罩 接单后 完工天数",
+          "芦岸雨罩 定制 交货周期",
+          "芦岸雨罩 生产周期 承诺"
+        ],
+        "searches": [
+          {
+            "query": "芦岸雨罩接单后承诺的具体完工天数（证据仅说明未承诺完工日期）",
+            "hits": [
+              "芦岸雨罩公告",
+              "石浦烟熏盒服务手册",
+              "桐鸣水壶服务说明"
+            ]
+          },
+          {
+            "query": "芦岸雨罩 接单后 完工天数",
+            "hits": [
+              "芦岸雨罩公告",
+              "白榆协议",
+              "样片周转"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据中芦岸雨罩公告明确说明有维修受理服务但未承诺完工日期，直接回答了问题：没有保证几天完工。"
+        },
+        "accumulated": [
+          "芦岸雨罩公告",
+          "桐鸣水壶服务说明",
+          "松烟方案"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问接单后保证几天完工，属于通用工期/政策解释，非具体订单物流或售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问芦岸雨罩接单后的完工时间保证，属于单条政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 2,
+  "searches": 4,
+  "ms": 7293.13,
+  "docs": [
+    "芦岸雨罩公告",
+    "桐鸣水壶服务说明",
+    "松烟方案"
+  ],
+  "provider_tokens": 2520,
+  "provider_responses": 8,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据现有证据，芦岸雨罩只说明有维修受理服务，未承诺完工日期，因此无法保证接单后几天完工。若您需要确认具体时效，请补充订单号，或转人工进一步核实。",
+  "evidence": [
+    {
+      "source": "芦岸雨罩公告_24ef49fc",
+      "text": "芦岸雨罩公告。芦岸雨罩:有维修受理服务,但未承诺完工日期。"
+    },
+    {
+      "source": "桐鸣水壶服务说明_c49252b4",
+      "text": "桐鸣水壶服务说明。桐鸣水壶的换嘴依照《檐雨承诺》办理。"
+    },
+    {
+      "source": "松烟方案_690bcc88",
+      "text": "松烟方案。从柜台受理起第8天完成。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "8989e43d1c1742d5befddc8c28842deb"
+}

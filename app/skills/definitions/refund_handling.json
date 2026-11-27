@@ -1,0 +1,7 @@
+{
+  "name": "refund_handling",
+  "description": "查询退款记录，或在用户明确要求后提交退款申请",
+  "triggers": ["申请退款", "帮我退款", "我要退款", "退款进度", "退款到账"],
+  "steps": ["核对订单和退款记录", "明确要新建申请时展示确认卡", "确认后提交并告知受理状态"],
+  "tools": ["get_order", "get_refund_status", "create_refund_request"]
+}

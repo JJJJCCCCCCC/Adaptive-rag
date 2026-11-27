@@ -1,0 +1,93 @@
+{
+  "id": "C07",
+  "group": "complex",
+  "arm": "adaptive",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "全新滤水壶签收第六天，没注水能无理由退吗，邮费谁出？已经注水但没坏呢？",
+        "missing": "",
+        "suggestions": [
+          "全新滤水壶 签收第六天 未注水 无理由退货 邮费",
+          "滤水壶 已注水 无质量问题 七天无理由退货",
+          "滤水壶 退货 邮费 谁承担 七天无理由"
+        ],
+        "searches": [
+          {
+            "query": "全新滤水壶签收第六天，没注水能无理由退吗，邮费谁出？已经注水但没坏呢？",
+            "hits": [
+              "定制刻字修改",
+              "滤水壶退货",
+              "冷藏蛋糕改期"
+            ]
+          },
+          {
+            "query": "全新滤水壶 签收第六天 未注水 无理由退货 邮费",
+            "hits": [
+              "布料样本包",
+              "滤水壶退货",
+              "发票寄送"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[滤水壶退货_a4c9d881_00]直接覆盖问题：全新未注水签收后9日内可无理由退、买家付运费；已注水且无故障则不能无理由退。签收第六天在9日内，故可回答。"
+        },
+        "accumulated": [
+          "滤水壶退货",
+          "冷藏蛋糕改期",
+          "定制刻字修改"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "return_exchange",
+      "confidence": 0.92,
+      "rationale": "用户询问具体商品（全新滤水壶）签收第六天能否无理由退货及邮费承担，属于具体售后场景而非通用政策解释，优先匹配 return_exchange。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "multi_hop",
+      "strategy": "multi",
+      "confidence": 0.9,
+      "rationale": "需要组合无理由退货时限、商品完好条件（未注水/已注水）和退货运费承担多条政策进行条件推理，属于多跳政策判断。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 7115.65,
+  "docs": [
+    "滤水壶退货",
+    "冷藏蛋糕改期",
+    "定制刻字修改"
+  ],
+  "provider_tokens": 2603,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据现有规则：全新未注水的滤水壶在签收后9日内可无理由退回，运费由买家承担。您签收第六天，仍在9日窗口内，可以申请无理由退货，但需由您支付退回运费。已注水且无故障的滤水壶不能无理由退。若您已注水但商品无故障，则不符合无理由退货条件；如认为存在质量问题，请补充订单号并说明具体情况，以便进一步核实或转人工处理。",
+  "evidence": [
+    {
+      "source": "滤水壶退货_a4c9d881",
+      "text": "滤水壶退货。全新未注水的滤水壶签收后9日内可无理由退回,买家付运费;已注水且无故障则不能无理由退。"
+    },
+    {
+      "source": "冷藏蛋糕改期_3f4db7d0",
+      "text": "冷藏蛋糕改期。冷藏蛋糕发出前一天18点前改期免费;超过该时点且未装车,改期收16元;已经装车则不能改期。"
+    },
+    {
+      "source": "定制刻字修改_5ad9208d",
+      "text": "定制刻字修改。买家确认刻字稿后90分钟内免费修改。超过90分钟但尚未雕刻,改稿收12元;已经雕刻则停止改稿。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "a28287cc0b56430cb673b447b7232b6e"
+}

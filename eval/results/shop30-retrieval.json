@@ -1,0 +1,758 @@
+{
+  "dataset_sha256": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "dense": "hash",
+  "reranker": "lexical",
+  "top_k": 3,
+  "summary": {
+    "simple": {
+      "n": 10,
+      "first_all": 10,
+      "second_lookup_triggered": 0,
+      "after_all": 10,
+      "paired": {
+        "1->1": 10
+      }
+    },
+    "complex": {
+      "n": 10,
+      "first_all": 10,
+      "second_lookup_triggered": 0,
+      "after_all": 10,
+      "paired": {
+        "1->1": 10
+      }
+    },
+    "multihop": {
+      "n": 10,
+      "first_all": 7,
+      "second_lookup_triggered": 10,
+      "after_all": 10,
+      "paired": {
+        "1->1": 7,
+        "0->1": 3
+      }
+    },
+    "all": {
+      "n": 30,
+      "first_all": 27,
+      "second_lookup_triggered": 10,
+      "after_all": 30,
+      "paired": {
+        "1->1": 27,
+        "0->1": 3
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "S01",
+      "group": "simple",
+      "query": "门店自提柜发来的取货码能保留多久？",
+      "gold": [
+        "门店自提柜"
+      ],
+      "initial": [
+        "门店自提柜",
+        "回收纸箱",
+        "试色卡邮寄"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "门店自提柜",
+        "回收纸箱",
+        "试色卡邮寄"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "S02",
+      "group": "simple",
+      "query": "电子赠券一张值多少元？",
+      "gold": [
+        "电子赠券"
+      ],
+      "initial": [
+        "电子赠券",
+        "礼物分装",
+        "夜间自提"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "电子赠券",
+        "礼物分装",
+        "夜间自提"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "S03",
+      "group": "simple",
+      "query": "同一地址每个月免费试色卡的上限是几张？",
+      "gold": [
+        "试色卡邮寄"
+      ],
+      "initial": [
+        "试色卡邮寄",
+        "礼物分装",
+        "会员补签"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "试色卡邮寄",
+        "礼物分装",
+        "会员补签"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "S04",
+      "group": "simple",
+      "query": "纸质发票的邮费是多少？",
+      "gold": [
+        "发票寄送"
+      ],
+      "initial": [
+        "发票寄送",
+        "礼物分装",
+        "青屿折叠椅服务档案"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "发票寄送",
+        "礼物分装",
+        "青屿折叠椅服务档案"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "S05",
+      "group": "simple",
+      "query": "布料样本包签收后允许保留几天？",
+      "gold": [
+        "布料样本包"
+      ],
+      "initial": [
+        "布料样本包",
+        "门店自提柜",
+        "回澜边桌服务档案"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "布料样本包",
+        "门店自提柜",
+        "回澜边桌服务档案"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "S06",
+      "group": "simple",
+      "query": "预约送货最晚那个时段几点开始？",
+      "gold": [
+        "预约配送"
+      ],
+      "initial": [
+        "预约配送",
+        "家具搬楼",
+        "夜间自提"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "预约配送",
+        "家具搬楼",
+        "夜间自提"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "S07",
+      "group": "simple",
+      "query": "银卡会员一个月能补签几次？",
+      "gold": [
+        "会员补签"
+      ],
+      "initial": [
+        "会员补签",
+        "上门测量",
+        "防护组合押金"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "会员补签",
+        "上门测量",
+        "防护组合押金"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "S08",
+      "group": "simple",
+      "query": "实体礼卡激活后有效期有多少个月？",
+      "gold": [
+        "礼卡激活"
+      ],
+      "initial": [
+        "礼卡激活",
+        "延保方案年限",
+        "布料样本包"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "礼卡激活",
+        "延保方案年限",
+        "布料样本包"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "S09",
+      "group": "simple",
+      "query": "预约衣柜上门量尺需要交多少预约金？",
+      "gold": [
+        "上门测量"
+      ],
+      "initial": [
+        "上门测量",
+        "预约配送",
+        "礼盒规格加价"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "上门测量",
+        "预约配送",
+        "礼盒规格加价"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "S10",
+      "group": "simple",
+      "query": "拿一个完好的纸箱去门店回收能得几积分？",
+      "gold": [
+        "回收纸箱"
+      ],
+      "initial": [
+        "回收纸箱",
+        "门店自提柜",
+        "会员续期"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "回收纸箱",
+        "门店自提柜",
+        "会员续期"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C01",
+      "group": "complex",
+      "query": "刻字稿确认两小时了，还没开始刻能改吗，要收多少钱？要是已经刻了呢？",
+      "gold": [
+        "定制刻字修改"
+      ],
+      "initial": [
+        "定制刻字修改",
+        "门店自提柜",
+        "青屿折叠椅服务档案"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "定制刻字修改",
+        "门店自提柜",
+        "青屿折叠椅服务档案"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C02",
+      "group": "complex",
+      "query": "昨天错过了蛋糕免费改期的截止点，没装车要花多少？装车以后还能改吗？",
+      "gold": [
+        "冷藏蛋糕改期"
+      ],
+      "initial": [
+        "冷藏蛋糕改期",
+        "发票寄送",
+        "夜间自提"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "冷藏蛋糕改期",
+        "发票寄送",
+        "夜间自提"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C03",
+      "group": "complex",
+      "query": "无电梯要把小书柜送到四楼，搬楼收多少？如果电梯装得下又是多少？",
+      "gold": [
+        "家具搬楼"
+      ],
+      "initial": [
+        "家具搬楼",
+        "滤水壶退货",
+        "回收纸箱"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "家具搬楼",
+        "滤水壶退货",
+        "回收纸箱"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C04",
+      "group": "complex",
+      "query": "陶瓷杯三件套到货坏了一只，能单独免费补吗？想整套退款，要退几只、谁付运费？",
+      "gold": [
+        "组合装售后"
+      ],
+      "initial": [
+        "组合装售后",
+        "滤水壶退货",
+        "上门测量"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "组合装售后",
+        "滤水壶退货",
+        "上门测量"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C05",
+      "group": "complex",
+      "query": "普通配件商品款80元另付8元运费，积分充足时最多能抵几元、用多少积分？",
+      "gold": [
+        "积分抵扣"
+      ],
+      "initial": [
+        "积分抵扣",
+        "夜间自提",
+        "回收纸箱"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "积分抵扣",
+        "夜间自提",
+        "回收纸箱"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C06",
+      "group": "complex",
+      "query": "铜卡到期前和到期后续，分别加送多少天？能把两次优惠叠加吗？",
+      "gold": [
+        "会员续期"
+      ],
+      "initial": [
+        "会员续期",
+        "电子赠券",
+        "返厂通道预约周期"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "会员续期",
+        "电子赠券",
+        "返厂通道预约周期"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C07",
+      "group": "complex",
+      "query": "全新滤水壶签收第六天，没注水能无理由退吗，邮费谁出？已经注水但没坏呢？",
+      "gold": [
+        "滤水壶退货"
+      ],
+      "initial": [
+        "滤水壶退货",
+        "冷藏蛋糕改期",
+        "定制刻字修改"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "滤水壶退货",
+        "冷藏蛋糕改期",
+        "定制刻字修改"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C08",
+      "group": "complex",
+      "query": "普通包裹晚上九点想自提，要加多少钱？如果是生鲜能选夜取吗？",
+      "gold": [
+        "夜间自提"
+      ],
+      "initial": [
+        "夜间自提",
+        "积分抵扣",
+        "定制刻字修改"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "夜间自提",
+        "积分抵扣",
+        "定制刻字修改"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C09",
+      "group": "complex",
+      "query": "一个订单分成五个礼袋，礼袋总共收费多少？一共能拿到几张免费贺卡？",
+      "gold": [
+        "礼物分装"
+      ],
+      "initial": [
+        "礼物分装",
+        "组装工单费率",
+        "预约配送"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "礼物分装",
+        "组装工单费率",
+        "预约配送"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "C10",
+      "group": "complex",
+      "query": "师傅自己改期一次后，我第一次和第二次不在家各收多少空跑费？",
+      "gold": [
+        "预约安装爽约"
+      ],
+      "initial": [
+        "预约安装爽约",
+        "积分抵扣",
+        "会员续期"
+      ],
+      "initial_complete": true,
+      "lookup": null,
+      "lookup_candidates": [],
+      "final": [
+        "预约安装爽约",
+        "积分抵扣",
+        "会员续期"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M01",
+      "group": "multihop",
+      "query": "青屿折叠椅送修按规定要付多少寄送费？",
+      "gold": [
+        "维修寄送档收费表",
+        "青屿折叠椅服务档案"
+      ],
+      "initial": [
+        "青屿折叠椅服务档案",
+        "维修寄送档收费表",
+        "仓储等级保管表"
+      ],
+      "initial_complete": true,
+      "lookup": "M47",
+      "lookup_candidates": [
+        "青屿折叠椅服务档案",
+        "布料样本包",
+        "维修寄送档收费表"
+      ],
+      "final": [
+        "青屿折叠椅服务档案",
+        "维修寄送档收费表",
+        "仓储等级保管表"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M02",
+      "group": "multihop",
+      "query": "晴川手冲壶缺壶盖，补件审核通过后几天内能备齐？",
+      "gold": [
+        "备件组备货时限",
+        "晴川手冲壶服务档案"
+      ],
+      "initial": [
+        "备件组备货时限",
+        "晴川手冲壶服务档案",
+        "竹影茶盘服务档案"
+      ],
+      "initial_complete": true,
+      "lookup": "K32",
+      "lookup_candidates": [
+        "晴川手冲壶服务档案",
+        "回澜边桌服务档案",
+        "备件组备货时限"
+      ],
+      "final": [
+        "晴川手冲壶服务档案",
+        "备件组备货时限",
+        "竹影茶盘服务档案"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M03",
+      "group": "multihop",
+      "query": "北庭阅读灯原保修结束以后，随产品的延保能延长几个月？",
+      "gold": [
+        "北庭阅读灯服务档案",
+        "延保方案年限"
+      ],
+      "initial": [
+        "北庭阅读灯服务档案",
+        "延保方案年限",
+        "清涟滤芯服务档案"
+      ],
+      "initial_complete": true,
+      "lookup": "W65",
+      "lookup_candidates": [
+        "北庭阅读灯服务档案",
+        "回收活动券额",
+        "延保方案年限"
+      ],
+      "final": [
+        "北庭阅读灯服务档案",
+        "延保方案年限",
+        "清涟滤芯服务档案"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M04",
+      "group": "multihop",
+      "query": "回澜边桌到店后可以免费存放几天？",
+      "gold": [
+        "仓储等级保管表",
+        "回澜边桌服务档案"
+      ],
+      "initial": [
+        "回澜边桌服务档案",
+        "仓储等级保管表",
+        "冷藏蛋糕改期"
+      ],
+      "initial_complete": true,
+      "lookup": "H28",
+      "lookup_candidates": [
+        "回澜边桌服务档案",
+        "礼盒规格加价",
+        "仓储等级保管表"
+      ],
+      "final": [
+        "回澜边桌服务档案",
+        "仓储等级保管表",
+        "冷藏蛋糕改期"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M05",
+      "group": "multihop",
+      "query": "云纹羊毛毯按配套规格换礼盒加多少钱？",
+      "gold": [
+        "云纹羊毛毯服务档案",
+        "礼盒规格加价"
+      ],
+      "initial": [
+        "云纹羊毛毯服务档案",
+        "礼盒规格加价",
+        "电子赠券"
+      ],
+      "initial_complete": true,
+      "lookup": "P53",
+      "lookup_candidates": [
+        "云纹羊毛毯服务档案",
+        "秋岚落地扇服务档案",
+        "礼盒规格加价"
+      ],
+      "final": [
+        "云纹羊毛毯服务档案",
+        "礼盒规格加价",
+        "电子赠券"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M06",
+      "group": "multihop",
+      "query": "微光收音机的换新凭证最晚在签收后多少天内激活？",
+      "gold": [
+        "凭证激活窗口",
+        "微光收音机服务档案"
+      ],
+      "initial": [
+        "微光收音机服务档案",
+        "布料样本包",
+        "定制刻字修改"
+      ],
+      "initial_complete": false,
+      "lookup": "V34",
+      "lookup_candidates": [
+        "微光收音机服务档案",
+        "会员续期",
+        "凭证激活窗口"
+      ],
+      "final": [
+        "微光收音机服务档案",
+        "凭证激活窗口",
+        "布料样本包"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M07",
+      "group": "multihop",
+      "query": "给天井花架安排上门组装，按它的工单类型要收多少？",
+      "gold": [
+        "天井花架服务档案",
+        "组装工单费率"
+      ],
+      "initial": [
+        "天井花架服务档案",
+        "上门测量",
+        "晴川手冲壶服务档案"
+      ],
+      "initial_complete": false,
+      "lookup": "A62",
+      "lookup_candidates": [
+        "天井花架服务档案",
+        "礼盒规格加价",
+        "组装工单费率"
+      ],
+      "final": [
+        "天井花架服务档案",
+        "组装工单费率",
+        "上门测量"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M08",
+      "group": "multihop",
+      "query": "交回清涟滤芯后可以得到多少元的回收券？",
+      "gold": [
+        "回收活动券额",
+        "清涟滤芯服务档案"
+      ],
+      "initial": [
+        "清涟滤芯服务档案",
+        "门店自提柜",
+        "冷藏蛋糕改期"
+      ],
+      "initial_complete": false,
+      "lookup": "R71",
+      "lookup_candidates": [
+        "回收活动券额",
+        "清涟滤芯服务档案",
+        "家具搬楼"
+      ],
+      "final": [
+        "清涟滤芯服务档案",
+        "回收活动券额",
+        "门店自提柜"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M09",
+      "group": "multihop",
+      "query": "补寄竹影茶盘的防护包装要交多少押金？",
+      "gold": [
+        "竹影茶盘服务档案",
+        "防护组合押金"
+      ],
+      "initial": [
+        "竹影茶盘服务档案",
+        "防护组合押金",
+        "回收纸箱"
+      ],
+      "initial_complete": true,
+      "lookup": "B92",
+      "lookup_candidates": [
+        "上门测量",
+        "竹影茶盘服务档案",
+        "防护组合押金"
+      ],
+      "final": [
+        "竹影茶盘服务档案",
+        "防护组合押金",
+        "回收纸箱"
+      ],
+      "final_complete": true
+    },
+    {
+      "id": "M10",
+      "group": "multihop",
+      "query": "秋岚落地扇返厂，预约后应在多少个工作日内取件？",
+      "gold": [
+        "秋岚落地扇服务档案",
+        "返厂通道预约周期"
+      ],
+      "initial": [
+        "返厂通道预约周期",
+        "秋岚落地扇服务档案",
+        "会员补签"
+      ],
+      "initial_complete": true,
+      "lookup": "T48",
+      "lookup_candidates": [
+        "秋岚落地扇服务档案",
+        "北庭阅读灯服务档案",
+        "返厂通道预约周期"
+      ],
+      "final": [
+        "秋岚落地扇服务档案",
+        "返厂通道预约周期",
+        "会员补签"
+      ],
+      "final_complete": true
+    }
+  ]
+}

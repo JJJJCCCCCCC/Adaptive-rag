@@ -1,0 +1,76 @@
+{
+  "id": "C02",
+  "group": "complex",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "昨天错过了蛋糕免费改期的截止点，没装车要花多少？装车以后还能改吗？",
+        "missing": "",
+        "suggestions": [
+          "蛋糕 错过免费改期 未装车 费用",
+          "蛋糕 装车后 改期 是否可改",
+          "蛋糕 改期 截止 装车 收费"
+        ],
+        "searches": [
+          {
+            "query": "昨天错过了蛋糕免费改期的截止点，没装车要花多少？装车以后还能改吗？",
+            "hits": [
+              "冷藏蛋糕改期",
+              "发票寄送",
+              "夜间自提"
+            ]
+          },
+          {
+            "query": "蛋糕 错过免费改期 未装车 费用",
+            "hits": [
+              "冷藏蛋糕改期",
+              "晴川手冲壶服务档案",
+              "预约安装爽约"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.88,
+      "rationale": "询问蛋糕改期截止后未装车费用及装车后能否改期，属于通用政策/规则解释，非具体订单售后或物流轨迹。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5150.74,
+  "docs": [
+    "冷藏蛋糕改期",
+    "预约安装爽约",
+    "发票寄送"
+  ],
+  "provider_tokens": 1815,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据冷藏蛋糕改期规则：发出前一天18点前改期免费；超过该时点且尚未装车，改期收取16元；已经装车则不能改期。因此，您错过免费截止点但尚未装车时，改期费用为16元；装车后无法再改期。若需确认您订单当前是否已装车，请提供订单号，或转人工核实。",
+  "evidence": [
+    {
+      "source": "冷藏蛋糕改期_3f4db7d0",
+      "text": "冷藏蛋糕改期。冷藏蛋糕发出前一天18点前改期免费;超过该时点且未装车,改期收16元;已经装车则不能改期。"
+    },
+    {
+      "source": "预约安装爽约_00d02265",
+      "text": "预约安装爽约。安装师傅上门但买家未到场,第一次免空跑费,第二次收26元。师傅原因导致改期不计入买家爽约次数。"
+    },
+    {
+      "source": "发票寄送_2726700a",
+      "text": "发票寄送。纸质发票通过挂号信寄出,每封收取7元邮寄费。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "1acccfeb1c5140beaad8c3397bc06c4e"
+}

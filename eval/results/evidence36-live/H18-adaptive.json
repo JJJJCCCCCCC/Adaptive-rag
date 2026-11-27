@@ -1,0 +1,131 @@
+{
+  "id": "H18",
+  "group": "code_link",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "桥湾饭盒店里一年免费换几枚搭扣？",
+        "missing": "",
+        "suggestions": [
+          "桥湾饭盒 搭扣 一年免费换几枚",
+          "桥湾饭盒店 搭扣 免费更换 数量",
+          "桥湾 饭盒 搭扣 保修 一年"
+        ],
+        "searches": [
+          {
+            "query": "桥湾饭盒店里一年免费换几枚搭扣？",
+            "hits": [
+              "桥湾饭盒售后说明",
+              "苇洲折扇售后说明",
+              "桐鸣水壶服务说明"
+            ]
+          },
+          {
+            "query": "桥湾饭盒 搭扣 一年免费换几枚",
+            "hits": [
+              "桥湾饭盒售后说明",
+              "季度保管账",
+              "桐鸣水壶服务说明"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "桥湾饭盒店一年免费更换搭扣的具体数量（换扣配额 ZE27 的含义未说明，无法确定是几枚）",
+          "rationale": "唯一相关的证据是桥湾饭盒售后说明，其中提到换扣配额为 ZE27，但未解释 ZE27 对应的具体数量，因此无法据此回答一年免费换几枚搭扣。"
+        },
+        "accumulated": [
+          "桥湾饭盒售后说明",
+          "桐鸣水壶服务说明",
+          "苇洲折扇售后说明"
+        ]
+      },
+      {
+        "input": "桥湾饭盒店里一年免费换几枚搭扣？",
+        "missing": "桥湾饭盒店一年免费更换搭扣的具体数量（换扣配额 ZE27 的含义未说明，无法确定是几枚）",
+        "suggestions": [
+          "桥湾饭盒店 免费换搭扣 一年几枚",
+          "桥湾饭盒店 搭扣 免费更换 数量",
+          "桥湾饭盒店 换扣配额 ZE27"
+        ],
+        "searches": [
+          {
+            "query": "ZE27",
+            "hits": [
+              "桥湾饭盒售后说明",
+              "履约排期",
+              "年度更换配额"
+            ]
+          },
+          {
+            "query": "桥湾饭盒店一年免费更换搭扣的具体数量（换扣配额 ZE27 的含义未说明，无法确定是几枚）",
+            "hits": [
+              "年度更换配额",
+              "桥湾饭盒售后说明",
+              "补印收据"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据明确给出桥湾饭盒的换扣配额为ZE27，且年度更换配额表说明ZE27每年4枚，因此可直接回答一年免费换4枚搭扣。"
+        },
+        "accumulated": [
+          "桥湾饭盒售后说明",
+          "年度更换配额",
+          "桐鸣水壶服务说明"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问品牌售后政策中一年内免费更换搭扣的次数，属于通用政策解释，非具体订单售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "这是一个关于具体政策/FAQ 的单点事实问题（一年免费更换搭扣的数量），只需检索一条政策信息即可回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 2,
+  "searches": 4,
+  "ms": 8093.97,
+  "docs": [
+    "桥湾饭盒售后说明",
+    "年度更换配额",
+    "桐鸣水壶服务说明"
+  ],
+  "provider_tokens": 2645,
+  "provider_responses": 8,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "根据售后说明，桥湾饭盒对应的换扣配额为 ZE27；年度更换配额中 ZE27 为每年 4 枚，因此桥湾饭盒一年可免费更换 4 枚搭扣。",
+  "evidence": [
+    {
+      "source": "桥湾饭盒售后说明_2d7891fc",
+      "text": "桥湾饭盒售后说明。桥湾饭盒的换扣配额为 ZE27。"
+    },
+    {
+      "source": "年度更换配额_1046839f",
+      "text": "年度更换配额。ZE72 每年1枚,ZE27 每年4枚,ZE22 每年2枚。"
+    },
+    {
+      "source": "桐鸣水壶服务说明_c49252b4",
+      "text": "桐鸣水壶服务说明。桐鸣水壶的换嘴依照《檐雨承诺》办理。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "8df8765a92dc4bdba6aee6b94cb2b0b9"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "H14",
+  "group": "code_link",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "栗青磨豆器摇柄轴芯保多久？用月份回答？",
+        "missing": "",
+        "suggestions": [
+          "栗青磨豆器 摇柄轴芯 保修 几个月",
+          "栗青磨豆器 摇柄轴芯 质保 月"
+        ],
+        "searches": [
+          {
+            "query": "栗青磨豆器摇柄轴芯保多久？用月份回答？",
+            "hits": [
+              "栗青磨豆器售后说明",
+              "山杏协议",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "栗青磨豆器 摇柄轴芯 保修 几个月",
+            "hits": [
+              "栗青磨豆器售后说明",
+              "样刊邮费",
+              "零件保障期"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "售后说明指出栗青磨豆器轴芯保障为WX86，零件保障期表显示WX86为22个月，两条证据结合可直接得出答案。"
+        },
+        "accumulated": [
+          "栗青磨豆器售后说明",
+          "零件保障期",
+          "山杏协议"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.9,
+      "rationale": "询问商品保修期限，属于通用政策解释，不是具体售后申请",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问特定商品配件的保修期限，属于单条政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 6031.55,
+  "docs": [
+    "栗青磨豆器售后说明",
+    "零件保障期",
+    "山杏协议"
+  ],
+  "provider_tokens": 2109,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "栗青磨豆器的轴芯保障对应 WX86，按零件保障期规则 WX86 为22个月。因此轴芯保障期为22个月。",
+  "evidence": [
+    {
+      "source": "栗青磨豆器售后说明_b9c6fb55",
+      "text": "栗青磨豆器售后说明。栗青磨豆器的轴芯保障为 WX86。"
+    },
+    {
+      "source": "零件保障期_517af012",
+      "text": "零件保障期。WX68 为9个月,WX86 为22个月,WX88 为18个月。"
+    },
+    {
+      "source": "山杏协议_27dd8bf4",
+      "text": "山杏协议。该协议的执行档号为 HC64;以档号对应的细则为准。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "f5e8015b5e84428c8f8295d9b4d908bc"
+}

@@ -1,0 +1,157 @@
+{
+  "id": "H12",
+  "group": "code_link",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "晴瓦烘鞋架办理换架后，寄回旧架的期限是几天？",
+        "missing": "",
+        "suggestions": [
+          "晴瓦烘鞋架 换架 寄回旧架 期限",
+          "晴瓦烘鞋架 换货 旧架寄回 几天"
+        ],
+        "searches": [
+          {
+            "query": "晴瓦烘鞋架办理换架后，寄回旧架的期限是几天？",
+            "hits": [
+              "晴瓦烘鞋架售后说明",
+              "山杏协议",
+              "样片周转"
+            ]
+          },
+          {
+            "query": "晴瓦烘鞋架 换架 寄回旧架 期限",
+            "hits": [
+              "附加保障期限",
+              "晴瓦烘鞋架售后说明",
+              "工厂排期索引"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": false,
+          "sufficient": false,
+          "missing_aspect": "晴瓦烘鞋架办理换架后寄回旧架的具体期限（天数）",
+          "rationale": "三条证据均未提及换架后寄回旧架的期限：第一条只给出周转组编号，第二条讲样片借用9天，第三条讲附加保障期限，均与问题无关。"
+        },
+        "accumulated": [
+          "晴瓦烘鞋架售后说明",
+          "样片周转",
+          "附加保障期限"
+        ]
+      },
+      {
+        "input": "晴瓦烘鞋架办理换架后，寄回旧架的期限是几天？",
+        "missing": "晴瓦烘鞋架办理换架后寄回旧架的具体期限（天数）",
+        "suggestions": [
+          "晴瓦烘鞋架 换架 寄回旧架 期限 几天",
+          "晴瓦烘鞋架 换货 旧架寄回 时限",
+          "晴瓦烘鞋架 换架 寄回旧架 几天内"
+        ],
+        "searches": [
+          {
+            "query": "晴瓦烘鞋架办理换架后寄回旧架的具体期限（天数）",
+            "hits": [
+              "晴瓦烘鞋架售后说明",
+              "桥湾饭盒售后说明",
+              "样片周转"
+            ]
+          },
+          {
+            "query": "晴瓦烘鞋架 换架 寄回旧架 期限 几天",
+            "hits": [
+              "附加保障期限",
+              "晴瓦烘鞋架售后说明",
+              "工厂排期索引"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": false,
+          "sufficient": false,
+          "missing_aspect": "晴瓦烘鞋架办理换架后寄回旧架的具体期限（天数）",
+          "rationale": "证据中仅提到晴瓦烘鞋架的周转组为BD73，未涉及换架后寄回旧架的期限；其余证据分别关于桥湾饭盒和样片周转，与问题无关。因此没有相关证据，无法回答。"
+        },
+        "accumulated": [
+          "晴瓦烘鞋架售后说明",
+          "桥湾饭盒售后说明",
+          "样片周转"
+        ]
+      },
+      {
+        "input": "晴瓦烘鞋架办理换架后，寄回旧架的期限是几天？",
+        "missing": "晴瓦烘鞋架办理换架后寄回旧架的具体期限（天数）",
+        "suggestions": [
+          "晴瓦烘鞋架 换架 寄回旧架 期限 几天",
+          "晴瓦烘鞋架 换货 旧架寄回 时限",
+          "晴瓦烘鞋架 换架 寄回旧架 几天内"
+        ],
+        "searches": [
+          {
+            "query": "晴瓦烘鞋架 换货 旧架寄回 时限",
+            "hits": [
+              "晴瓦烘鞋架售后说明",
+              "工厂排期索引",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "晴瓦烘鞋架 换架 寄回旧架 几天内",
+            "hits": [
+              "交付承诺册",
+              "晴瓦烘鞋架售后说明",
+              "附加保障期限"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "return_exchange",
+      "confidence": 0.93,
+      "rationale": "用户询问换货后寄回旧架的期限，属于具体换货售后流程，匹配 return_exchange。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问换货后寄回旧架的期限，属于单一政策/FAQ查询，可直接检索换货政策回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8817.05,
+  "docs": [
+    "晴瓦烘鞋架售后说明",
+    "桥湾饭盒售后说明",
+    "附加保障期限"
+  ],
+  "provider_tokens": 2813,
+  "provider_responses": 9,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据未包含晴瓦烘鞋架换架后寄回旧架的具体期限，无法确认天数。建议补充订单号或换架申请单号，以便转人工核实售后规则。",
+  "evidence": [
+    {
+      "source": "晴瓦烘鞋架售后说明_4e9f8962",
+      "text": "晴瓦烘鞋架售后说明。晴瓦烘鞋架的周转组为 BD73。"
+    },
+    {
+      "source": "桥湾饭盒售后说明_2d7891fc",
+      "text": "桥湾饭盒售后说明。桥湾饭盒的换扣配额为 ZE27。"
+    },
+    {
+      "source": "附加保障期限_d52eaf3d",
+      "text": "附加保障期限。QS38 为5个月,QS83 为17个月。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "71a4d1fd0bc14cfd915fbdf881e017e4"
+}

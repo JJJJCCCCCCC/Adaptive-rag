@@ -1,0 +1,141 @@
+{
+  "id": "H03",
+  "group": "direct",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "一个订单可以免费补打几次收据？",
+        "missing": "",
+        "suggestions": [
+          "订单 免费补打收据 次数",
+          "收据 补打 免费 规则",
+          "订单收据 补打 限制"
+        ],
+        "searches": [
+          {
+            "query": "一个订单可以免费补打几次收据？",
+            "hits": [
+              "补印收据",
+              "附加保障期限",
+              "海隅坐垫公告"
+            ]
+          },
+          {
+            "query": "订单 免费补打收据 次数",
+            "hits": [
+              "补印收据",
+              "检测合同价",
+              "线下代存"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[补印收据_f1fcf368_00]明确说明每个订单可免费补印收据3次，直接回答了问题。"
+        },
+        "accumulated": [
+          "补印收据",
+          "线下代存",
+          "海隅坐垫公告"
+        ]
+      },
+      {
+        "input": "一个订单可以免费补打几次收据？",
+        "missing": "",
+        "suggestions": [
+          "订单 免费补打收据 次数",
+          "收据 补打 免费 几次 订单"
+        ],
+        "searches": [
+          {
+            "query": "收据 补打 免费 几次 订单",
+            "hits": [
+              "补印收据",
+              "盖件备料账",
+              "线下代存"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明每个订单可免费补印收据3次，直接回答了问题。"
+        },
+        "accumulated": [
+          "补印收据",
+          "盖件备料账",
+          "线下代存"
+        ]
+      },
+      {
+        "input": "一个订单可以免费补打几次收据？",
+        "missing": "",
+        "suggestions": [
+          "订单 免费补打收据 次数",
+          "收据 补打 免费 几次 订单",
+          "订单收据 免费补打 规则"
+        ],
+        "searches": [
+          {
+            "query": "订单收据 免费补打 规则",
+            "hits": [
+              "补印收据",
+              "枣林纸灯售后说明",
+              "线下代存"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "order_inquiry",
+      "confidence": 0.93,
+      "rationale": "询问订单收据免费补打的通用次数规则，属于通用政策解释，不是具体某笔订单的售后或查询。;overlay:order_inquiry",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "这是一个关于收据补打次数的单一政策问题，属于单跳 FAQ，可直接依据政策回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 4,
+  "ms": 7192.06,
+  "docs": [
+    "补印收据",
+    "盖件备料账",
+    "线下代存"
+  ],
+  "provider_tokens": 2488,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "每个订单可免费补印收据3次。",
+  "evidence": [
+    {
+      "source": "补印收据_f1fcf368",
+      "text": "补印收据。每个订单可免费补印收据3次。"
+    },
+    {
+      "source": "盖件备料账_1ff32036",
+      "text": "盖件备料账。LX-281 收8元,LX-218 收23元,LX-182 收14元。"
+    },
+    {
+      "source": "线下代存_dde8aeb9",
+      "text": "线下代存。门店每个包裹可免费代存28小时。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "cf5ea6aaa66c428c99fd8ae84359be53"
+}

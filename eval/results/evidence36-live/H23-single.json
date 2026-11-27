@@ -1,0 +1,82 @@
+{
+  "id": "H23",
+  "group": "named_link",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "花渡台秤在店校准称重，收多少服务费？",
+        "missing": "",
+        "suggestions": [
+          "花渡台秤 到店校准 服务费",
+          "花渡台秤 校准称重 收费标准",
+          "花渡台秤 门店校准 费用"
+        ],
+        "searches": [
+          {
+            "query": "花渡台秤在店校准称重，收多少服务费？",
+            "hits": [
+              "花渡台秤服务说明",
+              "年度更换配额",
+              "检测合同价"
+            ]
+          },
+          {
+            "query": "花渡台秤 到店校准 服务费",
+            "hits": [
+              "花渡台秤服务说明",
+              "雾岭冷萃瓶服务手册",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.82,
+      "rationale": "询问台秤在店校准称重的服务费标准，属于通用政策/费用解释，非具体订单售后",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问花渡台秤在店校准称重的服务费，属于单一政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5186.82,
+  "docs": [
+    "花渡台秤服务说明",
+    "雾岭冷萃瓶服务手册",
+    "检测合同价"
+  ],
+  "provider_tokens": 1980,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据无法确定花渡台秤在店校准称重的服务费金额。检索到的《花渡台秤服务说明》仅写明复核依照《溪石约定》办理，未给出收费标准；《检测合同价》中的 FN48、FN84、FN80 价格也未标明适用于台秤校准。建议补充具体订单号或服务单号，或转人工客服核实收费依据。",
+  "evidence": [
+    {
+      "source": "花渡台秤服务说明_fe46877a",
+      "text": "花渡台秤服务说明。花渡台秤的复核依照《溪石约定》办理。"
+    },
+    {
+      "source": "雾岭冷萃瓶服务手册_ceb0e637",
+      "text": "雾岭冷萃瓶服务手册。雾岭冷萃瓶的配套服务执行《山杏协议》。"
+    },
+    {
+      "source": "检测合同价_e1eddcdf",
+      "text": "检测合同价。FN48 收17元,FN84 收31元,FN80 收21元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "40445f392bb9478aa9355432c5f315fa"
+}

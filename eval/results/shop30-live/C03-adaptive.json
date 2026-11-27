@@ -1,0 +1,93 @@
+{
+  "id": "C03",
+  "group": "complex",
+  "arm": "adaptive",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "无电梯要把小书柜送到四楼，搬楼收多少？如果电梯装得下又是多少？",
+        "missing": "",
+        "suggestions": [
+          "无电梯搬小书柜到四楼 搬楼费多少",
+          "小书柜 电梯能装下 送货上楼收费",
+          "小书柜 无电梯 四楼 搬运费"
+        ],
+        "searches": [
+          {
+            "query": "无电梯要把小书柜送到四楼，搬楼收多少？如果电梯装得下又是多少？",
+            "hits": [
+              "家具搬楼",
+              "回收纸箱",
+              "滤水壶退货"
+            ]
+          },
+          {
+            "query": "无电梯搬小书柜到四楼 搬楼费多少",
+            "hits": [
+              "家具搬楼",
+              "晴川手冲壶服务档案",
+              "滤水壶退货"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[家具搬楼_d14c8c93_00]明确说明：无电梯按每层6元计，从二楼开始收费，一楼按零层计。送到四楼需经过2、3、4层，共3层，费用为3×6=18元。有电梯且可装下则免搬楼费，即0元。证据足以回答。"
+        },
+        "accumulated": [
+          "家具搬楼",
+          "滤水壶退货",
+          "回收纸箱"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "logistics",
+      "confidence": 0.82,
+      "rationale": "用户询问送货上楼/搬楼费用及电梯配送费用，属于配送服务与费用问题，归为物流类。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "multi_hop",
+      "strategy": "multi",
+      "confidence": 0.82,
+      "rationale": "需要同时判断无电梯搬楼收费与电梯可容纳时的收费两种条件，属于组合多条政策/条件推理，因此为 multi_hop，采用 multi 策略。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 7418.39,
+  "docs": [
+    "家具搬楼",
+    "滤水壶退货",
+    "回收纸箱"
+  ],
+  "provider_tokens": 2426,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "根据家具搬楼规则：无电梯时按每层6元计费，从二楼开始收费，一楼按零层计。因此送到四楼需收3层费用，即18元。若电梯可装下小书柜，则免搬楼费，即0元。以上为规则计算，实际费用以订单确认时为准。",
+  "evidence": [
+    {
+      "source": "家具搬楼_d14c8c93",
+      "text": "家具搬楼。小书柜送货时,有电梯且可装下则免搬楼费;无电梯按每层6元计,从二楼开始收费。一楼按零层计。"
+    },
+    {
+      "source": "滤水壶退货_a4c9d881",
+      "text": "滤水壶退货。全新未注水的滤水壶签收后9日内可无理由退回,买家付运费;已注水且无故障则不能无理由退。"
+    },
+    {
+      "source": "回收纸箱_1ec21c6c",
+      "text": "回收纸箱。门店按每个完整纸箱3积分登记环保回收。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "eaa3769545894282a36ac2eceefc75a7"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "H19",
+  "group": "code_link",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "远汀书立送去保养通常几天完工？",
+        "missing": "",
+        "suggestions": [
+          "远汀书立 保养 几天完工",
+          "远汀书立 保养 工期",
+          "远汀书立 保养 需要几天"
+        ],
+        "searches": [
+          {
+            "query": "远汀书立送去保养通常几天完工？",
+            "hits": [
+              "远汀书立售后说明",
+              "履约排期",
+              "芦岸雨罩公告"
+            ]
+          },
+          {
+            "query": "远汀书立 保养 几天完工",
+            "hits": [
+              "远汀书立售后说明",
+              "青穗计划",
+              "芦岸雨罩公告"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问保养通常需要几天，属于通用服务政策/时效解释，不是具体订单或物流轨迹，因此归为 faq_policy。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问保养完工时间，属于单条政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5327.37,
+  "docs": [
+    "远汀书立售后说明",
+    "芦岸雨罩公告",
+    "履约排期"
+  ],
+  "provider_tokens": 1916,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据无法确认远汀书立送去保养通常几天完工：售后说明只提到维护方案为 UF52，未给出完工时效；履约排期中的 HC46（5天）、HC64（14天）也未标明适用于远汀书立。建议补充订单号或具体服务单号，以便进一步核实；如仍无法确认，可转人工查询。",
+  "evidence": [
+    {
+      "source": "远汀书立售后说明_8acfbdcf",
+      "text": "远汀书立售后说明。远汀书立的维护方案为 UF52。"
+    },
+    {
+      "source": "芦岸雨罩公告_24ef49fc",
+      "text": "芦岸雨罩公告。芦岸雨罩:有维修受理服务,但未承诺完工日期。"
+    },
+    {
+      "source": "履约排期_56e22b64",
+      "text": "履约排期。HC46 为5天,HC64 为14天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "980a467017b04a3bb71c39f6f8e0c4cf"
+}

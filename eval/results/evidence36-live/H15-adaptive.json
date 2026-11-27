@@ -1,0 +1,157 @@
+{
+  "id": "H15",
+  "group": "code_link",
+  "arm": "adaptive",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "浅沙遮阳篷配的托架订货以后多少天交付？",
+        "missing": "",
+        "suggestions": [
+          "浅沙遮阳篷托架 订货 交付天数",
+          "浅沙遮阳篷 托架 交期"
+        ],
+        "searches": [
+          {
+            "query": "浅沙遮阳篷配的托架订货以后多少天交付？",
+            "hits": [
+              "浅沙遮阳篷售后说明",
+              "刻章加字",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "浅沙遮阳篷托架 订货 交付天数",
+            "hits": [
+              "交付承诺册",
+              "浅沙遮阳篷售后说明",
+              "附加保障期限"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "需要浅沙遮阳篷托架对应的交付档 YP13 的具体交付天数；现有证据只说明托架交付档为 YP13，但交付承诺册只列出 UF25、UF52、UF55 的天数，未给出 YP13 的交付天数。",
+          "rationale": "证据中有一条与浅沙遮阳篷托架相关，说明其交付档为 YP13；但另一条交付承诺册未包含 YP13 的交付天数，因此无法确定订货后多少天交付，证据不足以回答。"
+        },
+        "accumulated": [
+          "浅沙遮阳篷售后说明",
+          "交付承诺册",
+          "刻章加字"
+        ]
+      },
+      {
+        "input": "浅沙遮阳篷配的托架订货以后多少天交付？",
+        "missing": "需要浅沙遮阳篷托架对应的交付档 YP13 的具体交付天数；现有证据只说明托架交付档为 YP13，但交付承诺册只列出 UF25、UF52、UF55 的天数，未给出 YP13 的交付天数。",
+        "suggestions": [
+          "浅沙遮阳篷托架 交付天数",
+          "浅沙遮阳篷托架 YP13 交期",
+          "遮阳篷托架 订货 交付周期"
+        ],
+        "searches": [
+          {
+            "query": "YP13",
+            "hits": [
+              "交付承诺册",
+              "浅沙遮阳篷售后说明",
+              "附加保障期限"
+            ]
+          },
+          {
+            "query": "UF25",
+            "hits": [
+              "交付承诺册",
+              "海隅坐垫公告",
+              "刻章加字"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": false,
+          "missing_aspect": "需要浅沙遮阳篷托架对应的交付档 YP13 的具体交付天数；现有证据只说明托架交付档为 YP13，但交付承诺册只列出 UF25、UF52、UF55 的天数，没有 YP13 的交付天数。",
+          "rationale": "证据中有一条与浅沙遮阳篷托架相关，指出其交付档为 YP13；但没有任何证据给出 YP13 的交付天数，因此无法回答订货后多少天交付。"
+        },
+        "accumulated": [
+          "浅沙遮阳篷售后说明",
+          "交付承诺册",
+          "刻章加字"
+        ]
+      },
+      {
+        "input": "浅沙遮阳篷配的托架订货以后多少天交付？",
+        "missing": "需要浅沙遮阳篷托架对应的交付档 YP13 的具体交付天数；现有证据只说明托架交付档为 YP13，但交付承诺册只列出 UF25、UF52、UF55 的天数，没有 YP13 的交付天数。",
+        "suggestions": [
+          "浅沙遮阳篷托架 YP13 交付天数",
+          "浅沙遮阳篷托架 订货 交付周期",
+          "YP13 交付档 天数 遮阳篷托架"
+        ],
+        "searches": [
+          {
+            "query": "UF52",
+            "hits": [
+              "远汀书立售后说明",
+              "交付承诺册",
+              "帐篷清洁"
+            ]
+          },
+          {
+            "query": "UF55",
+            "hits": [
+              "交付承诺册",
+              "外箱附加价",
+              "刻章加字"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.85,
+      "rationale": "询问配件订货后的交付天数，属于通用发货/交付时效政策解释，非具体订单物流轨迹，故为 faq_policy",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问特定配件（浅沙遮阳篷托架）的交付周期，属于单一政策/FAQ类问题，无需组合多条政策或调用订单系统，直接单跳检索交付时效政策即可回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8629.12,
+  "docs": [
+    "浅沙遮阳篷售后说明",
+    "交付承诺册",
+    "远汀书立售后说明"
+  ],
+  "provider_tokens": 3091,
+  "provider_responses": 9,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只能确认浅沙遮阳篷的托架交付档为 YP13（chunk_id: 浅沙遮阳篷售后说明_70a6916a_00），但交付承诺册中只列出了 UF25、UF52、UF55 对应的天数，没有 YP13 的交付天数，因此无法确定具体多少天交付。建议补充订单号，或转人工核实 YP13 的交付时效。",
+  "evidence": [
+    {
+      "source": "浅沙遮阳篷售后说明_70a6916a",
+      "text": "浅沙遮阳篷售后说明。浅沙遮阳篷的托架交付档为 YP13。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    },
+    {
+      "source": "远汀书立售后说明_8acfbdcf",
+      "text": "远汀书立售后说明。远汀书立的维护方案为 UF52。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "e53b0e18f8f7414ba2c45737502ec525"
+}

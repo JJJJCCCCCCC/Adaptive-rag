@@ -1,0 +1,150 @@
+{
+  "id": "H08",
+  "group": "direct",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "餐盘要三个保护盒，一共加收多少元？",
+        "missing": "",
+        "suggestions": [
+          "餐盘 三个保护盒 加收 费用",
+          "餐盘 保护盒 3个 加价 多少钱",
+          "餐盘 保护盒 收费 3个"
+        ],
+        "searches": [
+          {
+            "query": "餐盘要三个保护盒，一共加收多少元？",
+            "hits": [
+              "餐盘保护盒",
+              "青丘砧板服务说明",
+              "石浦烟熏盒服务手册"
+            ]
+          },
+          {
+            "query": "餐盘 三个保护盒 加收 费用",
+            "hits": [
+              "餐盘保护盒",
+              "松烟方案",
+              "石浦烟熏盒服务手册"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[餐盘保护盒_7b46136d_00]明确说明首个保护盒免费、其后每个收5元。三个保护盒即首免费+后两个各5元=10元，足以计算加收金额。"
+        },
+        "accumulated": [
+          "餐盘保护盒",
+          "青丘砧板服务说明",
+          "石浦烟熏盒服务手册"
+        ]
+      },
+      {
+        "input": "餐盘要三个保护盒，一共加收多少元？",
+        "missing": "",
+        "suggestions": [
+          "餐盘 三个保护盒 加收 多少钱",
+          "餐盘 保护盒 3个 加收费用",
+          "餐盘 保护盒 加收 价格"
+        ],
+        "searches": [
+          {
+            "query": "餐盘 三个保护盒 加收 多少钱",
+            "hits": [
+              "餐盘保护盒",
+              "松烟方案",
+              "石浦烟熏盒服务手册"
+            ]
+          },
+          {
+            "query": "餐盘 保护盒 3个 加收费用",
+            "hits": [
+              "餐盘保护盒",
+              "工艺结算表",
+              "零件保障期"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据说明首个保护盒免费、其后每个5元。三个保护盒即首免费+后两个各5元=10元，足以计算加收金额。"
+        },
+        "accumulated": [
+          "餐盘保护盒",
+          "零件保障期",
+          "青丘砧板服务说明"
+        ]
+      },
+      {
+        "input": "餐盘要三个保护盒，一共加收多少元？",
+        "missing": "",
+        "suggestions": [
+          "餐盘 三个保护盒 加收 多少钱",
+          "餐盘 保护盒 3个 加收费用",
+          "餐盘 保护盒 加收 价格"
+        ],
+        "searches": [
+          {
+            "query": "餐盘 保护盒 加收 价格",
+            "hits": [
+              "石浦烟熏盒服务手册",
+              "餐盘保护盒",
+              "履约排期"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.85,
+      "rationale": "询问餐盘配三个保护盒的加收费用，属于具体商品配件/费用咨询，非通用政策解释，归为 product_consult",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问餐盘配三个保护盒的加收费用，属于单一产品/费用政策咨询，可直接依据收费标准回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 8349.86,
+  "docs": [
+    "餐盘保护盒",
+    "零件保障期",
+    "石浦烟熏盒服务手册"
+  ],
+  "provider_tokens": 2687,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": false,
+  "all_answer_spans": true,
+  "answer": "根据餐盘保护盒规则：首个保护盒免费，其后每个收5元。三个保护盒中，第一个免费，后两个各5元，合计加收10元。",
+  "evidence": [
+    {
+      "source": "餐盘保护盒_7b46136d",
+      "text": "餐盘保护盒。首个保护盒免费,其后每个收5元。"
+    },
+    {
+      "source": "零件保障期_517af012",
+      "text": "零件保障期。WX68 为9个月,WX86 为22个月,WX88 为18个月。"
+    },
+    {
+      "source": "石浦烟熏盒服务手册_2e9e9ddc",
+      "text": "石浦烟熏盒服务手册。石浦烟熏盒的配套服务执行《白榆协议》。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "49425bc9f8024714bdf10208f978f882"
+}

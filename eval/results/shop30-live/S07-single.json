@@ -1,0 +1,75 @@
+{
+  "id": "S07",
+  "group": "simple",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "银卡会员一个月能补签几次？",
+        "missing": "",
+        "suggestions": [
+          "银卡会员 补签 次数 一个月",
+          "银卡会员 补签 规则 每月几次"
+        ],
+        "searches": [
+          {
+            "query": "银卡会员一个月能补签几次？",
+            "hits": [
+              "上门测量",
+              "会员补签",
+              "防护组合押金"
+            ]
+          },
+          {
+            "query": "银卡会员 补签 次数 一个月",
+            "hits": [
+              "会员补签",
+              "维修寄送档收费表",
+              "预约安装爽约"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.92,
+      "rationale": "询问银卡会员每月补签次数，属于通用会员政策解释，不是具体订单售后或物流问题。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 3636.43,
+  "docs": [
+    "会员补签",
+    "预约安装爽约",
+    "维修寄送档收费表"
+  ],
+  "provider_tokens": 1594,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "银卡会员每个自然月有2次补签机会，且不能转给其他账户。",
+  "evidence": [
+    {
+      "source": "会员补签_a006f38c",
+      "text": "会员补签。银卡会员每个自然月有2次补签机会,不能转给其他账户。"
+    },
+    {
+      "source": "预约安装爽约_00d02265",
+      "text": "预约安装爽约。安装师傅上门但买家未到场,第一次免空跑费,第二次收26元。师傅原因导致改期不计入买家爽约次数。"
+    },
+    {
+      "source": "维修寄送档收费表_6529e93d",
+      "text": "维修寄送档收费表。M42 收9元;M47 收13元;M74 收31元。各档按单次寄送计费。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "08eaabefa9ce4212ab4d03fa99d5b859"
+}

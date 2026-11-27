@@ -1,0 +1,93 @@
+{
+  "id": "C04",
+  "group": "complex",
+  "arm": "adaptive",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "陶瓷杯三件套到货坏了一只，能单独免费补吗？想整套退款，要退几只、谁付运费？",
+        "missing": "",
+        "suggestions": [
+          "陶瓷杯三件套 到货破损 单独免费补发",
+          "陶瓷杯三件套 整套退款 退几只 运费谁承担",
+          "陶瓷杯 破损 补发 退款 运费"
+        ],
+        "searches": [
+          {
+            "query": "陶瓷杯三件套到货坏了一只，能单独免费补吗？想整套退款，要退几只、谁付运费？",
+            "hits": [
+              "组合装售后",
+              "上门测量",
+              "滤水壶退货"
+            ]
+          },
+          {
+            "query": "陶瓷杯三件套 到货破损 单独免费补发",
+            "hits": [
+              "组合装售后",
+              "清涟滤芯服务档案",
+              "仓储等级保管表"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据直接回答了全部问题：三件套中坏一只可单独免费补发；若整套退款须退回三只，运费由商家承担。其余证据与问题无关。"
+        },
+        "accumulated": [
+          "组合装售后",
+          "滤水壶退货",
+          "仓储等级保管表"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "return_exchange",
+      "confidence": 0.88,
+      "rationale": "用户询问到货破损能否单独免费补发，并提出整套退款、退几只及运费承担，属于具体售后换货/退货问题，优先于通用政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "multi_hop",
+      "strategy": "multi",
+      "confidence": 0.88,
+      "rationale": "用户同时询问破损补发政策与整套退款规则（退几只、运费承担），需组合退换货政策、破损补发条件及运费责任等多条规则进行条件推理，属于多跳政策组合问题。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 7164.02,
+  "docs": [
+    "组合装售后",
+    "滤水壶退货",
+    "仓储等级保管表"
+  ],
+  "provider_tokens": 2373,
+  "provider_responses": 6,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "可以单独免费补发破损的那一只；如果选择整套退款，需要退回三只，运费由商家承担。请提供订单号，以便核实并为您发起补发或退款的确认流程。",
+  "evidence": [
+    {
+      "source": "组合装售后_5d7c6e01",
+      "text": "组合装售后。三件套陶瓷杯有一只到货破损,买家可选择免费补发该只;若选择整套退款,须退回三只,运费商家承担。"
+    },
+    {
+      "source": "滤水壶退货_a4c9d881",
+      "text": "滤水壶退货。全新未注水的滤水壶签收后9日内可无理由退回,买家付运费;已注水且无故障则不能无理由退。"
+    },
+    {
+      "source": "仓储等级保管表_6c09d39e",
+      "text": "仓储等级保管表。H82 免费暂存4天;H28 免费暂存6天;H20 免费暂存2天。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "e5ea4bb6774b41c6be6e318de909b5fd"
+}

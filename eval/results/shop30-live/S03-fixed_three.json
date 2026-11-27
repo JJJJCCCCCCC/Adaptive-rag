@@ -1,0 +1,163 @@
+{
+  "id": "S03",
+  "group": "simple",
+  "arm": "fixed_three",
+  "route": "multi",
+  "trace": {
+    "rounds": [
+      {
+        "input": "同一地址每个月免费试色卡的上限是几张？",
+        "missing": "",
+        "suggestions": [
+          "免费试色卡 同一地址 每月 上限 几张",
+          "试色卡 同地址 每月 领取上限",
+          "免费试色卡 每月 地址 限制 数量"
+        ],
+        "searches": [
+          {
+            "query": "同一地址每个月免费试色卡的上限是几张？",
+            "hits": [
+              "会员补签",
+              "试色卡邮寄",
+              "礼物分装"
+            ]
+          },
+          {
+            "query": "免费试色卡 同一地址 每月 上限 几张",
+            "hits": [
+              "礼物分装",
+              "试色卡邮寄",
+              "维修寄送档收费表"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明试色卡每个收件地址每月可免费领取4张，直接回答了问题。"
+        },
+        "accumulated": [
+          "试色卡邮寄",
+          "礼物分装",
+          "会员补签"
+        ]
+      },
+      {
+        "input": "同一地址每个月免费试色卡的上限是几张？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "同一地址 每月 免费试色卡 上限 几张",
+          "免费试色卡 同地址 每月 领取上限",
+          "试色卡 免费 同一地址 月度 数量限制"
+        ],
+        "searches": [
+          {
+            "query": "同一地址每个月免费试色卡的上限是几张？",
+            "hits": [
+              "会员补签",
+              "试色卡邮寄",
+              "礼物分装"
+            ]
+          },
+          {
+            "query": "同一地址 每月 免费试色卡 上限 几张",
+            "hits": [
+              "礼物分装",
+              "试色卡邮寄",
+              "维修寄送档收费表"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[试色卡邮寄_08c9e039_00]明确说明每个收件地址每月可免费领取4张试色卡，直接回答了问题。"
+        },
+        "accumulated": [
+          "试色卡邮寄",
+          "礼物分装",
+          "会员补签"
+        ]
+      },
+      {
+        "input": "同一地址每个月免费试色卡的上限是几张？",
+        "missing": "more specific policy conditions",
+        "suggestions": [
+          "同一地址 每月 免费试色卡 上限 几张",
+          "免费试色卡 同地址 每月 领取上限",
+          "试色卡 免费 同一地址 月度 数量限制"
+        ],
+        "searches": [
+          {
+            "query": "同一地址每个月免费试色卡的上限是几张？",
+            "hits": [
+              "会员补签",
+              "试色卡邮寄",
+              "礼物分装"
+            ]
+          },
+          {
+            "query": "同一地址 每月 免费试色卡 上限 几张",
+            "hits": [
+              "礼物分装",
+              "试色卡邮寄",
+              "维修寄送档收费表"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明试色卡每个收件地址每月可免费领取4张，直接回答了问题。"
+        },
+        "accumulated": [
+          "试色卡邮寄",
+          "礼物分装",
+          "会员补签"
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.9,
+      "rationale": "询问试色卡每月领取上限，属于通用政策解释，非具体订单售后",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 6,
+  "ms": 8256.24,
+  "docs": [
+    "试色卡邮寄",
+    "礼物分装",
+    "会员补签"
+  ],
+  "provider_tokens": 2636,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "同一收件地址每月可免费领取试色卡4张。",
+  "evidence": [
+    {
+      "source": "试色卡邮寄_08c9e039",
+      "text": "试色卡邮寄。试色卡每个收件地址每月可免费领取4张。"
+    },
+    {
+      "source": "礼物分装_147d70fa",
+      "text": "礼物分装。同一订单前三个礼袋免费,从第四个起每个4元。纸质贺卡每袋只赠一张。"
+    },
+    {
+      "source": "会员补签_a006f38c",
+      "text": "会员补签。银卡会员每个自然月有2次补签机会,不能转给其他账户。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "acfc347bd86b478480aeeb5f6c518a16"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "H26",
+  "group": "named_link",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "青丘砧板做一次整面养护要几元？",
+        "missing": "",
+        "suggestions": [
+          "青丘砧板 整面养护 价格",
+          "青丘砧板 养护 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "青丘砧板做一次整面养护要几元？",
+            "hits": [
+              "青丘砧板服务说明",
+              "石浦烟熏盒服务手册",
+              "交付承诺册"
+            ]
+          },
+          {
+            "query": "青丘砧板 整面养护 价格",
+            "hits": [
+              "青丘砧板服务说明",
+              "年度更换配额",
+              "蓝枝陶铃公告"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.85,
+      "rationale": "询问具体商品青丘砧板的养护服务价格，属于产品相关咨询，非政策或售后。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问特定商品（青丘砧板）整面养护的价格，属于单跳产品咨询/FAQ，可直接查询商品养护服务价格回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 6084.15,
+  "docs": [
+    "青丘砧板服务说明",
+    "蓝枝陶铃公告",
+    "石浦烟熏盒服务手册"
+  ],
+  "provider_tokens": 1904,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据只说明青丘砧板的整面养护依照《谷风章程》办理，未给出具体价格，因此无法确认要几元。建议补充订单号或具体服务页面信息，或转人工核实。",
+  "evidence": [
+    {
+      "source": "青丘砧板服务说明_01a43dab",
+      "text": "青丘砧板服务说明。青丘砧板的整面养护依照《谷风章程》办理。"
+    },
+    {
+      "source": "蓝枝陶铃公告_a5f481f2",
+      "text": "蓝枝陶铃公告。蓝枝陶铃:本店受理补绳,需要先核验凭证;补绳价格待发布。"
+    },
+    {
+      "source": "石浦烟熏盒服务手册_2e9e9ddc",
+      "text": "石浦烟熏盒服务手册。石浦烟熏盒的配套服务执行《白榆协议》。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "189dd20a1604449295eb1a07089222fd"
+}

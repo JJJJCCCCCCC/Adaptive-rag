@@ -1,0 +1,147 @@
+{
+  "id": "H06",
+  "group": "direct",
+  "arm": "fixed_three",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "包裹在店里免费放多久？用小时回答。",
+        "missing": "",
+        "suggestions": [
+          "包裹 店里 免费存放 多久 小时",
+          "快递 代收点 免费保管 时长 小时"
+        ],
+        "searches": [
+          {
+            "query": "包裹在店里免费放多久？用小时回答。",
+            "hits": [
+              "线下代存",
+              "溪石约定",
+              "海隅坐垫公告"
+            ]
+          },
+          {
+            "query": "包裹 店里 免费存放 多久 小时",
+            "hits": [
+              "线下代存",
+              "栗青磨豆器售后说明",
+              "补印收据"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "证据[线下代存_dde8aeb9_00]明确说明门店每个包裹可免费代存28小时，直接回答了问题。"
+        },
+        "accumulated": [
+          "线下代存",
+          "海隅坐垫公告",
+          "补印收据"
+        ]
+      },
+      {
+        "input": "包裹在店里免费放多久？用小时回答。",
+        "missing": "",
+        "suggestions": [
+          "包裹 店里 免费存放 多久 小时",
+          "快递 代收点 免费保管 时长 小时"
+        ],
+        "searches": [
+          {
+            "query": "快递 代收点 免费保管 时长 小时",
+            "hits": [
+              "线下代存",
+              "月桥保温袋服务说明",
+              "样刊邮费"
+            ]
+          }
+        ],
+        "grade": {
+          "relevant": true,
+          "sufficient": true,
+          "missing_aspect": "",
+          "rationale": "第一条证据明确说明门店每个包裹可免费代存28小时，直接回答了问题。"
+        },
+        "accumulated": [
+          "线下代存",
+          "样刊邮费",
+          "海隅坐垫公告"
+        ]
+      },
+      {
+        "input": "包裹在店里免费放多久？用小时回答。",
+        "missing": "",
+        "suggestions": [
+          "包裹 店里 免费存放 多久 小时",
+          "快递 代收点 免费保管 时长 小时"
+        ],
+        "searches": [
+          {
+            "query": "包裹在店里免费放多久？用小时回答。",
+            "hits": [
+              "线下代存",
+              "溪石约定",
+              "海隅坐垫公告"
+            ]
+          },
+          {
+            "query": "包裹 店里 免费存放 多久 小时",
+            "hits": [
+              "线下代存",
+              "栗青磨豆器售后说明",
+              "补印收据"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "faq_policy",
+      "confidence": 0.9,
+      "rationale": "询问包裹在店内免费存放时长的通用政策，属于政策解释类问题，非具体订单物流轨迹查询。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "单一政策类FAQ，询问包裹在店免费存放时长，需按小时作答，属单跳政策查询。"
+    }
+  },
+  "refused": false,
+  "rounds": 3,
+  "searches": 5,
+  "ms": 7171.01,
+  "docs": [
+    "线下代存",
+    "样刊邮费",
+    "海隅坐垫公告"
+  ],
+  "provider_tokens": 2463,
+  "provider_responses": 9,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "门店每个包裹可免费代存28小时。",
+  "evidence": [
+    {
+      "source": "线下代存_dde8aeb9",
+      "text": "线下代存。门店每个包裹可免费代存28小时。"
+    },
+    {
+      "source": "样刊邮费_006718ab",
+      "text": "样刊邮费。样刊自取免费,快递上门每单11元。"
+    },
+    {
+      "source": "海隅坐垫公告_83a6289a",
+      "text": "海隅坐垫公告。海隅坐垫:可以在柜台咨询翻新,尚未公布使用寿命。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "6fac844e42cd4fa098da5bc47f23eeed"
+}

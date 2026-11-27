@@ -1,0 +1,82 @@
+{
+  "id": "H17",
+  "group": "code_link",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "枣林纸灯要求升级外包装时，需另付几元？",
+        "missing": "",
+        "suggestions": [
+          "枣林纸灯 外包装升级 加价 几元",
+          "枣林纸灯 升级外包装 另付费用",
+          "枣林纸灯 外包装升级 收费标准"
+        ],
+        "searches": [
+          {
+            "query": "枣林纸灯要求升级外包装时，需另付几元？",
+            "hits": [
+              "枣林纸灯售后说明",
+              "履约排期",
+              "晚枫条款"
+            ]
+          },
+          {
+            "query": "枣林纸灯 外包装升级 加价 几元",
+            "hits": [
+              "枣林纸灯售后说明",
+              "押金清单",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.85,
+      "rationale": "询问特定商品升级外包装的额外费用，属于商品参数/服务咨询，非通用政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.9,
+      "rationale": "用户询问特定商品（枣林纸灯）升级外包装的附加费用，属于单条政策/FAQ查询，无需组合多条政策或调用系统数据。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 5293.76,
+  "docs": [
+    "枣林纸灯售后说明",
+    "晚枫条款",
+    "押金清单"
+  ],
+  "provider_tokens": 1799,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据未说明升级外包装需另付的具体金额，无法确认费用。建议补充订单号或商品规格后转人工核实。",
+  "evidence": [
+    {
+      "source": "枣林纸灯售后说明_630c9c40",
+      "text": "枣林纸灯售后说明。枣林纸灯的防损系数档为 PK91。"
+    },
+    {
+      "source": "晚枫条款_f32d0525",
+      "text": "晚枫条款。最长保存19天,超期需领回。"
+    },
+    {
+      "source": "押金清单_17a9833f",
+      "text": "押金清单。RD75 为16元,RD57 为39元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "97827f73427840c58b976838d7471025"
+}

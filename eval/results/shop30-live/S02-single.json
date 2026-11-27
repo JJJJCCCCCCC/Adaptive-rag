@@ -1,0 +1,75 @@
+{
+  "id": "S02",
+  "group": "simple",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "电子赠券一张值多少元？",
+        "missing": "",
+        "suggestions": [
+          "电子赠券 面值 多少元",
+          "电子赠券 价值 价格"
+        ],
+        "searches": [
+          {
+            "query": "电子赠券一张值多少元？",
+            "hits": [
+              "电子赠券",
+              "夜间自提",
+              "礼物分装"
+            ]
+          },
+          {
+            "query": "电子赠券 面值 多少元",
+            "hits": [
+              "电子赠券",
+              "回收活动券额",
+              "组装工单费率"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "coupon",
+      "confidence": 0.92,
+      "rationale": "用户询问电子赠券的面值/价值，属于优惠券相关咨询。",
+      "prompt_version": "intent_v3"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4030.26,
+  "docs": [
+    "电子赠券",
+    "礼物分装",
+    "回收活动券额"
+  ],
+  "provider_tokens": 1497,
+  "provider_responses": 4,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "电子赠券每张面值18元，到期自动失效。",
+  "evidence": [
+    {
+      "source": "电子赠券_f960a05f",
+      "text": "电子赠券。电子赠券每张面值18元,到期自动失效。"
+    },
+    {
+      "source": "礼物分装_147d70fa",
+      "text": "礼物分装。同一订单前三个礼袋免费,从第四个起每个4元。纸质贺卡每袋只赠一张。"
+    },
+    {
+      "source": "回收活动券额_23e0c3ab",
+      "text": "回收活动券额。R17 返2元券,R71 返6元券,R77 返10元券。"
+    }
+  ],
+  "fingerprint": "0d464a05baef427b1a18ca941b761b78a51cbd9fc1a137e570df9b630ab25a39",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "e9bed7af109346a88b1fe6dcca2b920d"
+}

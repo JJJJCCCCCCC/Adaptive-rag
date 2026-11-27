@@ -1,0 +1,3073 @@
+{
+  "llm": "OfflineLLMProvider",
+  "dense": "bge-small-zh-v1.5",
+  "reranker": "lexical",
+  "simple_k": 8,
+  "multi_k": 8,
+  "case_sha256": "83ae04f76c363617d640dedbd40006fa807ebb6b271137ac9abca3d66addddca",
+  "summary": [
+    {
+      "group": "simple",
+      "arm": "single",
+      "n": 12,
+      "all_docs": 12,
+      "all_evidence_spans": 12,
+      "all_answer_spans": 9,
+      "rounds": 12,
+      "searches": 12,
+      "median_ms": 19.75,
+      "routes": {
+        "single": 12
+      }
+    },
+    {
+      "group": "simple",
+      "arm": "fixed_three",
+      "n": 12,
+      "all_docs": 12,
+      "all_evidence_spans": 12,
+      "all_answer_spans": 9,
+      "rounds": 36,
+      "searches": 36,
+      "median_ms": 19.24,
+      "routes": {
+        "multi": 12
+      }
+    },
+    {
+      "group": "simple",
+      "arm": "adaptive",
+      "n": 12,
+      "all_docs": 12,
+      "all_evidence_spans": 12,
+      "all_answer_spans": 9,
+      "rounds": 12,
+      "searches": 12,
+      "median_ms": 19.37,
+      "routes": {
+        "single": 12
+      }
+    },
+    {
+      "group": "compound",
+      "arm": "single",
+      "n": 12,
+      "all_docs": 12,
+      "all_evidence_spans": 12,
+      "all_answer_spans": 1,
+      "rounds": 12,
+      "searches": 12,
+      "median_ms": 22.36,
+      "routes": {
+        "single": 12
+      }
+    },
+    {
+      "group": "compound",
+      "arm": "fixed_three",
+      "n": 12,
+      "all_docs": 12,
+      "all_evidence_spans": 12,
+      "all_answer_spans": 1,
+      "rounds": 36,
+      "searches": 36,
+      "median_ms": 21.87,
+      "routes": {
+        "multi": 12
+      }
+    },
+    {
+      "group": "compound",
+      "arm": "adaptive",
+      "n": 12,
+      "all_docs": 12,
+      "all_evidence_spans": 12,
+      "all_answer_spans": 1,
+      "rounds": 12,
+      "searches": 12,
+      "median_ms": 22.08,
+      "routes": {
+        "multi": 12
+      }
+    },
+    {
+      "group": "all",
+      "arm": "single",
+      "n": 24,
+      "all_docs": 24,
+      "all_evidence_spans": 24,
+      "all_answer_spans": 10,
+      "rounds": 24,
+      "searches": 24,
+      "median_ms": 20.79,
+      "routes": {
+        "single": 24
+      }
+    },
+    {
+      "group": "all",
+      "arm": "fixed_three",
+      "n": 24,
+      "all_docs": 24,
+      "all_evidence_spans": 24,
+      "all_answer_spans": 10,
+      "rounds": 72,
+      "searches": 72,
+      "median_ms": 19.76,
+      "routes": {
+        "multi": 24
+      }
+    },
+    {
+      "group": "all",
+      "arm": "adaptive",
+      "n": 24,
+      "all_docs": 24,
+      "all_evidence_spans": 24,
+      "all_answer_spans": 10,
+      "rounds": 24,
+      "searches": 24,
+      "median_ms": 21.55,
+      "routes": {
+        "single": 12,
+        "multi": 12
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "p01",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 33.5,
+      "docs": [
+        "gift_card",
+        "price_protect",
+        "invoice_vat",
+        "packaging_gift"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《gift_card》的资料节选，请核对原文：\n\n> 可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。",
+      "evidence": [
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        }
+      ]
+    },
+    {
+      "id": "p01",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.93,
+      "docs": [
+        "gift_card",
+        "price_protect",
+        "invoice_vat",
+        "packaging_gift"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《gift_card》的资料节选，请核对原文：\n\n> 可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。",
+      "evidence": [
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        }
+      ]
+    },
+    {
+      "id": "p01",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 5.86,
+      "docs": [
+        "gift_card",
+        "price_protect",
+        "invoice_vat",
+        "packaging_gift"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《gift_card》的资料节选，请核对原文：\n\n> 可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。",
+      "evidence": [
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 25.06,
+      "docs": [
+        "faq",
+        "invoice_vat",
+        "shipping_address",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《faq》的资料节选，请核对原文：\n\n> 电子发票在确认收货后 48 小时内开具,可在订单详情下载。目前不支持拆分开票。",
+      "evidence": [
+        {
+          "source": "faq_1021b2da",
+          "text": "电子发票在确认收货后 48 小时内开具,可在订单详情下载。目前不支持拆分开票。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "需在发货前填写公司名称、税号、地址电话、开户行账号。确认收货后 5 个工作日开具 PDF+纸质(纸质需到付)。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "政策版本:2024-12-v3\n普通电子发票仍为确认收货后 48 小时。"
+        },
+        {
+          "source": "shipping_address_7242689a",
+          "text": "支付后、仓库未拣货前可修改收货地址,每个订单限 1 次。改到偏远地区需补 8 元附加费。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "江浙沪皖 48 小时内发货,签收通常 1-3 天。其他省份 2-5 天。偏远地区(新疆、西藏、内蒙古部分旗县)5-10 天。"
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.72,
+      "docs": [
+        "faq",
+        "invoice_vat",
+        "shipping_address",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《faq》的资料节选，请核对原文：\n\n> 电子发票在确认收货后 48 小时内开具,可在订单详情下载。目前不支持拆分开票。",
+      "evidence": [
+        {
+          "source": "faq_1021b2da",
+          "text": "电子发票在确认收货后 48 小时内开具,可在订单详情下载。目前不支持拆分开票。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "需在发货前填写公司名称、税号、地址电话、开户行账号。确认收货后 5 个工作日开具 PDF+纸质(纸质需到付)。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "政策版本:2024-12-v3\n普通电子发票仍为确认收货后 48 小时。"
+        },
+        {
+          "source": "shipping_address_7242689a",
+          "text": "支付后、仓库未拣货前可修改收货地址,每个订单限 1 次。改到偏远地区需补 8 元附加费。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "江浙沪皖 48 小时内发货,签收通常 1-3 天。其他省份 2-5 天。偏远地区(新疆、西藏、内蒙古部分旗县)5-10 天。"
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 4.71,
+      "docs": [
+        "faq",
+        "invoice_vat",
+        "shipping_address",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《faq》的资料节选，请核对原文：\n\n> 电子发票在确认收货后 48 小时内开具,可在订单详情下载。目前不支持拆分开票。",
+      "evidence": [
+        {
+          "source": "faq_1021b2da",
+          "text": "电子发票在确认收货后 48 小时内开具,可在订单详情下载。目前不支持拆分开票。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "需在发货前填写公司名称、税号、地址电话、开户行账号。确认收货后 5 个工作日开具 PDF+纸质(纸质需到付)。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "政策版本:2024-12-v3\n普通电子发票仍为确认收货后 48 小时。"
+        },
+        {
+          "source": "shipping_address_7242689a",
+          "text": "支付后、仓库未拣货前可修改收货地址,每个订单限 1 次。改到偏远地区需补 8 元附加费。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "江浙沪皖 48 小时内发货,签收通常 1-3 天。其他省份 2-5 天。偏远地区(新疆、西藏、内蒙古部分旗县)5-10 天。"
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 18.3,
+      "docs": [
+        "warranty_battery",
+        "exchange_size",
+        "repair_onsite",
+        "warranty",
+        "warranty_jewelry"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《warranty_battery》的资料节选，请核对原文：\n\n> 可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。",
+      "evidence": [
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。"
+        },
+        {
+          "source": "exchange_size_216f0802",
+          "text": "同一订单同一 SKU 最多换货 2 次。第二次仍不适配,建议退货而非继续换。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        },
+        {
+          "source": "warranty_1f88fd5f",
+          "text": "数码配件保修 12 个月,家居百货保修 3 个月。以订单签收日开始计算。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "镀金/合金饰品保修 30 天(掉色、断裂)。925 银与 14K 以上保修 12 个月,不含磕碰变形。"
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 18.58,
+      "docs": [
+        "warranty_battery",
+        "exchange_size",
+        "repair_onsite",
+        "warranty",
+        "warranty_jewelry"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《warranty_battery》的资料节选，请核对原文：\n\n> 可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。",
+      "evidence": [
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。"
+        },
+        {
+          "source": "exchange_size_216f0802",
+          "text": "同一订单同一 SKU 最多换货 2 次。第二次仍不适配,建议退货而非继续换。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        },
+        {
+          "source": "warranty_1f88fd5f",
+          "text": "数码配件保修 12 个月,家居百货保修 3 个月。以订单签收日开始计算。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "镀金/合金饰品保修 30 天(掉色、断裂)。925 银与 14K 以上保修 12 个月,不含磕碰变形。"
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.11,
+      "docs": [
+        "warranty_battery",
+        "exchange_size",
+        "repair_onsite",
+        "warranty",
+        "warranty_jewelry"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《warranty_battery》的资料节选，请核对原文：\n\n> 可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。",
+      "evidence": [
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。"
+        },
+        {
+          "source": "exchange_size_216f0802",
+          "text": "同一订单同一 SKU 最多换货 2 次。第二次仍不适配,建议退货而非继续换。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "家居大家电在保期内可申请上门检修,检测周期仍为 3-7 个工作日(含上门等待)。"
+        },
+        {
+          "source": "warranty_1f88fd5f",
+          "text": "数码配件保修 12 个月,家居百货保修 3 个月。以订单签收日开始计算。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "镀金/合金饰品保修 30 天(掉色、断裂)。925 银与 14K 以上保修 12 个月,不含磕碰变形。"
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 19.67,
+      "docs": [
+        "points_expiry",
+        "payment_methods",
+        "missing_wrong_item"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《points_expiry》的资料节选，请核对原文：\n\n> 积分自入账月起 24 个月有效,到期当月短信提醒。过期不补发。",
+      "evidence": [
+        {
+          "source": "points_expiry_52095870",
+          "text": "积分自入账月起 24 个月有效,到期当月短信提醒。过期不补发。"
+        },
+        {
+          "source": "payment_methods_82a85cb2",
+          "text": "积分与优惠券可同时用于商品款,但不能同时抵运费。花呗分期订单不可再用积分。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "单个自然日积分抵现上限 50 元,大促期间可能临时下调,以结算页提示为准。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "发生退款时,该单已发放积分冻结并扣除。若已抵现,从退款中扣回对应金额。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "错发商品请暂存,平台生成取件单。错发件勿自行丢弃,否则可能无法退款。补发与取件可并行。"
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 17.19,
+      "docs": [
+        "points_expiry",
+        "payment_methods",
+        "missing_wrong_item"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《points_expiry》的资料节选，请核对原文：\n\n> 积分自入账月起 24 个月有效,到期当月短信提醒。过期不补发。",
+      "evidence": [
+        {
+          "source": "points_expiry_52095870",
+          "text": "积分自入账月起 24 个月有效,到期当月短信提醒。过期不补发。"
+        },
+        {
+          "source": "payment_methods_82a85cb2",
+          "text": "积分与优惠券可同时用于商品款,但不能同时抵运费。花呗分期订单不可再用积分。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "单个自然日积分抵现上限 50 元,大促期间可能临时下调,以结算页提示为准。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "发生退款时,该单已发放积分冻结并扣除。若已抵现,从退款中扣回对应金额。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "错发商品请暂存,平台生成取件单。错发件勿自行丢弃,否则可能无法退款。补发与取件可并行。"
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 18.85,
+      "docs": [
+        "points_expiry",
+        "payment_methods",
+        "missing_wrong_item"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《points_expiry》的资料节选，请核对原文：\n\n> 积分自入账月起 24 个月有效,到期当月短信提醒。过期不补发。",
+      "evidence": [
+        {
+          "source": "points_expiry_52095870",
+          "text": "积分自入账月起 24 个月有效,到期当月短信提醒。过期不补发。"
+        },
+        {
+          "source": "payment_methods_82a85cb2",
+          "text": "积分与优惠券可同时用于商品款,但不能同时抵运费。花呗分期订单不可再用积分。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "单个自然日积分抵现上限 50 元,大促期间可能临时下调,以结算页提示为准。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "发生退款时,该单已发放积分冻结并扣除。若已抵现,从退款中扣回对应金额。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "错发商品请暂存,平台生成取件单。错发件勿自行丢弃,否则可能无法退款。补发与取件可并行。"
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 18.81,
+      "docs": [
+        "pickup_return",
+        "repair_onsite",
+        "price_protect",
+        "missing_wrong_item"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《pickup_return》的资料节选，请核对原文：\n\n> 售后审核通过后可选上门取件。当日 16:00 前预约,最早次日 10:00-12:00 时段。取件码以 QM 开头,短信下发。",
+      "evidence": [
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "售后审核通过后可选上门取件。当日 16:00 前预约,最早次日 10:00-12:00 时段。取件码以 QM 开头,短信下发。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "补差以余额或原路返回,审核 24 小时。价保记录单号 PP 开头。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "错发商品请暂存,平台生成取件单。错发件勿自行丢弃,否则可能无法退款。补发与取件可并行。"
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 17.4,
+      "docs": [
+        "pickup_return",
+        "repair_onsite",
+        "price_protect",
+        "missing_wrong_item"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《pickup_return》的资料节选，请核对原文：\n\n> 售后审核通过后可选上门取件。当日 16:00 前预约,最早次日 10:00-12:00 时段。取件码以 QM 开头,短信下发。",
+      "evidence": [
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "售后审核通过后可选上门取件。当日 16:00 前预约,最早次日 10:00-12:00 时段。取件码以 QM 开头,短信下发。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "补差以余额或原路返回,审核 24 小时。价保记录单号 PP 开头。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "错发商品请暂存,平台生成取件单。错发件勿自行丢弃,否则可能无法退款。补发与取件可并行。"
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.05,
+      "docs": [
+        "pickup_return",
+        "repair_onsite",
+        "price_protect",
+        "missing_wrong_item"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《pickup_return》的资料节选，请核对原文：\n\n> 售后审核通过后可选上门取件。当日 16:00 前预约,最早次日 10:00-12:00 时段。取件码以 QM 开头,短信下发。",
+      "evidence": [
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "售后审核通过后可选上门取件。当日 16:00 前预约,最早次日 10:00-12:00 时段。取件码以 QM 开头,短信下发。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "在保免费。过保上门检测费 60 元,修好则抵维修款;不修则收取检测费。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "补差以余额或原路返回,审核 24 小时。价保记录单号 PP 开头。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "错发商品请暂存,平台生成取件单。错发件勿自行丢弃,否则可能无法退款。补发与取件可并行。"
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 18.06,
+      "docs": [
+        "shipping",
+        "shipping_remote",
+        "shipping_address",
+        "coupons"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《shipping》的资料节选，请核对原文：\n\n> 订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。",
+      "evidence": [
+        {
+          "source": "shipping_6c5f3232",
+          "text": "订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。"
+        },
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "政策版本:2024-12-v3\n主政策:偏远附加费 8 元,包邮券不可抵。"
+        },
+        {
+          "source": "shipping_address_7242689a",
+          "text": "支付后、仓库未拣货前可修改收货地址,每个订单限 1 次。改到偏远地区需补 8 元附加费。"
+        },
+        {
+          "source": "coupons_2d68704d",
+          "text": "满 59 免基础运费,不可抵偏远附加费。"
+        },
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "偏远地区承诺 10 日内到达(从揽收起算)。超 10 日可申请 10 元延误券 DELAY10。"
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 17.82,
+      "docs": [
+        "shipping",
+        "shipping_remote",
+        "shipping_address",
+        "coupons"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《shipping》的资料节选，请核对原文：\n\n> 订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。",
+      "evidence": [
+        {
+          "source": "shipping_6c5f3232",
+          "text": "订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。"
+        },
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "政策版本:2024-12-v3\n主政策:偏远附加费 8 元,包邮券不可抵。"
+        },
+        {
+          "source": "shipping_address_7242689a",
+          "text": "支付后、仓库未拣货前可修改收货地址,每个订单限 1 次。改到偏远地区需补 8 元附加费。"
+        },
+        {
+          "source": "coupons_2d68704d",
+          "text": "满 59 免基础运费,不可抵偏远附加费。"
+        },
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "偏远地区承诺 10 日内到达(从揽收起算)。超 10 日可申请 10 元延误券 DELAY10。"
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 5.21,
+      "docs": [
+        "shipping",
+        "shipping_remote",
+        "shipping_address",
+        "coupons"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《shipping》的资料节选，请核对原文：\n\n> 订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。",
+      "evidence": [
+        {
+          "source": "shipping_6c5f3232",
+          "text": "订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。"
+        },
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "政策版本:2024-12-v3\n主政策:偏远附加费 8 元,包邮券不可抵。"
+        },
+        {
+          "source": "shipping_address_7242689a",
+          "text": "支付后、仓库未拣货前可修改收货地址,每个订单限 1 次。改到偏远地区需补 8 元附加费。"
+        },
+        {
+          "source": "coupons_2d68704d",
+          "text": "满 59 免基础运费,不可抵偏远附加费。"
+        },
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "偏远地区承诺 10 日内到达(从揽收起算)。超 10 日可申请 10 元延误券 DELAY10。"
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.36,
+      "docs": [
+        "membership_plus",
+        "promo_stacking",
+        "price_protect"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《membership_plus》的资料节选，请核对原文：\n\n> PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。",
+      "evidence": [
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "开通 7 日内未使用任何 PLUS 券可全额退。已使用任一张券则按剩余月份折算,手续费 10 元。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 运费券可与 NEW10 同单使用:NEW10 抵商品款,PLUS_SHIP 抵基础运费。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "「满 300 减 50」店铺券 SHOP50 与平台券默认二选一。PLUS_SHIP 运费券例外,可叠加。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 19.85,
+      "docs": [
+        "membership_plus",
+        "promo_stacking",
+        "price_protect"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《membership_plus》的资料节选，请核对原文：\n\n> PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。",
+      "evidence": [
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "开通 7 日内未使用任何 PLUS 券可全额退。已使用任一张券则按剩余月份折算,手续费 10 元。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 运费券可与 NEW10 同单使用:NEW10 抵商品款,PLUS_SHIP 抵基础运费。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "「满 300 减 50」店铺券 SHOP50 与平台券默认二选一。PLUS_SHIP 运费券例外,可叠加。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 4.68,
+      "docs": [
+        "membership_plus",
+        "promo_stacking",
+        "price_protect"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《membership_plus》的资料节选，请核对原文：\n\n> PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。",
+      "evidence": [
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "开通 7 日内未使用任何 PLUS 券可全额退。已使用任一张券则按剩余月份折算,手续费 10 元。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 运费券可与 NEW10 同单使用:NEW10 抵商品款,PLUS_SHIP 抵基础运费。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "「满 300 减 50」店铺券 SHOP50 与平台券默认二选一。PLUS_SHIP 运费券例外,可叠加。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.38,
+      "docs": [
+        "gift_card",
+        "invoice_vat",
+        "price_protect"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《gift_card》的资料节选，请核对原文：\n\n> 卡号/卡密输错超过 5 次将锁定 24 小时。赠送后不可撤回,除非 10 分钟内对方未领取。",
+      "evidence": [
+        {
+          "source": "gift_card_25ceb666",
+          "text": "卡号/卡密输错超过 5 次将锁定 24 小时。赠送后不可撤回,除非 10 分钟内对方未领取。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 5.23,
+      "docs": [
+        "gift_card",
+        "invoice_vat",
+        "price_protect"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《gift_card》的资料节选，请核对原文：\n\n> 卡号/卡密输错超过 5 次将锁定 24 小时。赠送后不可撤回,除非 10 分钟内对方未领取。",
+      "evidence": [
+        {
+          "source": "gift_card_25ceb666",
+          "text": "卡号/卡密输错超过 5 次将锁定 24 小时。赠送后不可撤回,除非 10 分钟内对方未领取。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.98,
+      "docs": [
+        "gift_card",
+        "invoice_vat",
+        "price_protect"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《gift_card》的资料节选，请核对原文：\n\n> 卡号/卡密输错超过 5 次将锁定 24 小时。赠送后不可撤回,除非 10 分钟内对方未领取。",
+      "evidence": [
+        {
+          "source": "gift_card_25ceb666",
+          "text": "卡号/卡密输错超过 5 次将锁定 24 小时。赠送后不可撤回,除非 10 分钟内对方未领取。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 21.42,
+      "docs": [
+        "return_policy",
+        "return_custom",
+        "cross_border"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_policy》的资料节选，请核对原文：\n\n> 非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。",
+      "evidence": [
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        },
+        {
+          "source": "cross_border_60f6605a",
+          "text": "跨境商品不适用 7 天无理由。质量问题须在签收 7 日内申请,退货至保税仓,国际段运费平台承担。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "屏幕色差不属于质量问题。印刷错字、漏印、图案颠倒按质量问题全额退,运费平台承担。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "印字、刻字、定做尺寸等定制商品不适用 7 天无理由。质量问题(破损、错发、与描述严重不符)仍可退货。"
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 22.68,
+      "docs": [
+        "return_policy",
+        "return_custom",
+        "cross_border"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_policy》的资料节选，请核对原文：\n\n> 非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。",
+      "evidence": [
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        },
+        {
+          "source": "cross_border_60f6605a",
+          "text": "跨境商品不适用 7 天无理由。质量问题须在签收 7 日内申请,退货至保税仓,国际段运费平台承担。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "屏幕色差不属于质量问题。印刷错字、漏印、图案颠倒按质量问题全额退,运费平台承担。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "印字、刻字、定做尺寸等定制商品不适用 7 天无理由。质量问题(破损、错发、与描述严重不符)仍可退货。"
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 21.12,
+      "docs": [
+        "return_policy",
+        "return_custom",
+        "cross_border"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_policy》的资料节选，请核对原文：\n\n> 非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。",
+      "evidence": [
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        },
+        {
+          "source": "cross_border_60f6605a",
+          "text": "跨境商品不适用 7 天无理由。质量问题须在签收 7 日内申请,退货至保税仓,国际段运费平台承担。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "屏幕色差不属于质量问题。印刷错字、漏印、图案颠倒按质量问题全额退,运费平台承担。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "印字、刻字、定做尺寸等定制商品不适用 7 天无理由。质量问题(破损、错发、与描述严重不符)仍可退货。"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 20.21,
+      "docs": [
+        "pickup_return",
+        "return_policy",
+        "warranty_jewelry",
+        "shipping_cod"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《pickup_return》的资料节选，请核对原文：\n\n> 质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。",
+      "evidence": [
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "拆封激活的数码产品、贴身服饰已洗涤、食品已开封,不适用无理由退货。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "戒指改围收费 35 元起,改围后该尺寸无理由退货关闭。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "无理由拒收,手续费不退,并可能影响后续货到付款资格。质量问题拒收免手续费。"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 23.9,
+      "docs": [
+        "pickup_return",
+        "return_policy",
+        "warranty_jewelry",
+        "shipping_cod"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《pickup_return》的资料节选，请核对原文：\n\n> 质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。",
+      "evidence": [
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "拆封激活的数码产品、贴身服饰已洗涤、食品已开封,不适用无理由退货。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "戒指改围收费 35 元起,改围后该尺寸无理由退货关闭。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "无理由拒收,手续费不退,并可能影响后续货到付款资格。质量问题拒收免手续费。"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 45.31,
+      "docs": [
+        "pickup_return",
+        "return_policy",
+        "warranty_jewelry",
+        "shipping_cod"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《pickup_return》的资料节选，请核对原文：\n\n> 质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。",
+      "evidence": [
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "拆封激活的数码产品、贴身服饰已洗涤、食品已开封,不适用无理由退货。"
+        },
+        {
+          "source": "warranty_jewelry_579c96b6",
+          "text": "戒指改围收费 35 元起,改围后该尺寸无理由退货关闭。"
+        },
+        {
+          "source": "shipping_cod_9a3c8717",
+          "text": "无理由拒收,手续费不退,并可能影响后续货到付款资格。质量问题拒收免手续费。"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 58.57,
+      "docs": [
+        "restock_notify",
+        "live_presale",
+        "repair_onsite"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《restock_notify》的资料节选，请核对原文：\n\n> 缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。",
+      "evidence": [
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。"
+        },
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "到货通知不是库存预留合同,大促可能瞬时售罄。"
+        },
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "在商品页关闭订阅即可。每个账号同一 SKU 30 天内限订阅 3 次,防刷。"
+        },
+        {
+          "source": "live_presale_2eba858e",
+          "text": "尾款支付窗口通常 24-48 小时,超时定金没收且不保留库存。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 38.52,
+      "docs": [
+        "restock_notify",
+        "live_presale",
+        "repair_onsite"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《restock_notify》的资料节选，请核对原文：\n\n> 缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。",
+      "evidence": [
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。"
+        },
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "到货通知不是库存预留合同,大促可能瞬时售罄。"
+        },
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "在商品页关闭订阅即可。每个账号同一 SKU 30 天内限订阅 3 次,防刷。"
+        },
+        {
+          "source": "live_presale_2eba858e",
+          "text": "尾款支付窗口通常 24-48 小时,超时定金没收且不保留库存。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 95.73,
+      "docs": [
+        "restock_notify",
+        "live_presale",
+        "repair_onsite"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《restock_notify》的资料节选，请核对原文：\n\n> 缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。",
+      "evidence": [
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。"
+        },
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "到货通知不是库存预留合同,大促可能瞬时售罄。"
+        },
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "在商品页关闭订阅即可。每个账号同一 SKU 30 天内限订阅 3 次,防刷。"
+        },
+        {
+          "source": "live_presale_2eba858e",
+          "text": "尾款支付窗口通常 24-48 小时,超时定金没收且不保留库存。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "group": "simple",
+      "arm": "adaptive",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.69,
+      "docs": [
+        "promo_stacking",
+        "return_custom",
+        "price_protect",
+        "coupons",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《promo_stacking》的资料节选，请核对原文：\n\n> 秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。",
+      "evidence": [
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "coupons_2d68704d",
+          "text": "满 99 减 10,每账号限领 1 张,不与品类券叠加。不适用于定制商品。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "group": "simple",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 19.78,
+      "docs": [
+        "promo_stacking",
+        "return_custom",
+        "price_protect",
+        "coupons",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《promo_stacking》的资料节选，请核对原文：\n\n> 秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。",
+      "evidence": [
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "coupons_2d68704d",
+          "text": "满 99 减 10,每账号限领 1 张,不与品类券叠加。不适用于定制商品。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "group": "simple",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 7.05,
+      "docs": [
+        "promo_stacking",
+        "return_custom",
+        "price_protect",
+        "coupons",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《promo_stacking》的资料节选，请核对原文：\n\n> 秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。",
+      "evidence": [
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "coupons_2d68704d",
+          "text": "满 99 减 10,每账号限领 1 张,不与品类券叠加。不适用于定制商品。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。"
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 27.24,
+      "docs": [
+        "return_electronics",
+        "return_policy",
+        "repair_onsite",
+        "logistics_exception"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_electronics》的资料节选，请核对原文：\n\n> 耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。",
+      "evidence": [
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "超过 7 天无理由且无法证明质量问题的,不能退货。可转保修或人工复核。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。"
+        },
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "质量问题仍须在签收后 15 日内提交视频凭证。超过 15 天转保修通道,不能原单退货。"
+        },
+        {
+          "source": "logistics_exception_b97f65d5",
+          "text": "显示已签收但未收到:24 小时内联系驿站;超时后按丢件流程,需提供门店/柜机编号。"
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 31.67,
+      "docs": [
+        "return_electronics",
+        "return_policy",
+        "repair_onsite",
+        "logistics_exception"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_electronics》的资料节选，请核对原文：\n\n> 耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。",
+      "evidence": [
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "超过 7 天无理由且无法证明质量问题的,不能退货。可转保修或人工复核。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。"
+        },
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "质量问题仍须在签收后 15 日内提交视频凭证。超过 15 天转保修通道,不能原单退货。"
+        },
+        {
+          "source": "logistics_exception_b97f65d5",
+          "text": "显示已签收但未收到:24 小时内联系驿站;超时后按丢件流程,需提供门店/柜机编号。"
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 6.41,
+      "docs": [
+        "return_electronics",
+        "return_policy",
+        "repair_onsite",
+        "logistics_exception"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_electronics》的资料节选，请核对原文：\n\n> 耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。",
+      "evidence": [
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "超过 7 天无理由且无法证明质量问题的,不能退货。可转保修或人工复核。"
+        },
+        {
+          "source": "repair_onsite_ede3d888",
+          "text": "无现货备件时最长等待 15 天。超过 15 天可选择退货退款(需设备可回收)。"
+        },
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "质量问题仍须在签收后 15 日内提交视频凭证。超过 15 天转保修通道,不能原单退货。"
+        },
+        {
+          "source": "logistics_exception_b97f65d5",
+          "text": "显示已签收但未收到:24 小时内联系驿站;超时后按丢件流程,需提供门店/柜机编号。"
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 21.97,
+      "docs": [
+        "return_custom",
+        "return_policy",
+        "promo_stacking",
+        "return_electronics"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_custom》的资料节选，请核对原文：\n\n> 定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。",
+      "evidence": [
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "印字、刻字、定做尺寸等定制商品不适用 7 天无理由。质量问题(破损、错发、与描述严重不符)仍可退货。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "屏幕色差不属于质量问题。印刷错字、漏印、图案颠倒按质量问题全额退,运费平台承担。"
+        },
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "质量问题仍须在签收后 15 日内提交视频凭证。超过 15 天转保修通道,不能原单退货。"
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 22.35,
+      "docs": [
+        "return_custom",
+        "return_policy",
+        "promo_stacking",
+        "return_electronics"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_custom》的资料节选，请核对原文：\n\n> 定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。",
+      "evidence": [
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "印字、刻字、定做尺寸等定制商品不适用 7 天无理由。质量问题(破损、错发、与描述严重不符)仍可退货。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "屏幕色差不属于质量问题。印刷错字、漏印、图案颠倒按质量问题全额退,运费平台承担。"
+        },
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "质量问题仍须在签收后 15 日内提交视频凭证。超过 15 天转保修通道,不能原单退货。"
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 6.1,
+      "docs": [
+        "return_custom",
+        "return_policy",
+        "promo_stacking",
+        "return_electronics"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_custom》的资料节选，请核对原文：\n\n> 定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。",
+      "evidence": [
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "印字、刻字、定做尺寸等定制商品不适用 7 天无理由。质量问题(破损、错发、与描述严重不符)仍可退货。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "屏幕色差不属于质量问题。印刷错字、漏印、图案颠倒按质量问题全额退,运费平台承担。"
+        },
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "质量问题仍须在签收后 15 日内提交视频凭证。超过 15 天转保修通道,不能原单退货。"
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 25.05,
+      "docs": [
+        "shipping_remote",
+        "membership_plus",
+        "shipping",
+        "coupons"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《shipping_remote》的资料节选，请核对原文：\n\n> 海南除海口/三亚外乡镇、舟山部分岛屿加收 15 元岛屿费,与 8 元偏远费不叠加,取较高者。",
+      "evidence": [
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "海南除海口/三亚外乡镇、舟山部分岛屿加收 15 元岛屿费,与 8 元偏远费不叠加,取较高者。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。"
+        },
+        {
+          "source": "coupons_2d68704d",
+          "text": "平台券与商品券默认不可叠加。积分抵扣不可用于运费。"
+        },
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "政策版本:2024-12-v3\n主政策:偏远附加费 8 元,包邮券不可抵。"
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 21.51,
+      "docs": [
+        "shipping_remote",
+        "membership_plus",
+        "shipping",
+        "coupons"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《shipping_remote》的资料节选，请核对原文：\n\n> 海南除海口/三亚外乡镇、舟山部分岛屿加收 15 元岛屿费,与 8 元偏远费不叠加,取较高者。",
+      "evidence": [
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "海南除海口/三亚外乡镇、舟山部分岛屿加收 15 元岛屿费,与 8 元偏远费不叠加,取较高者。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。"
+        },
+        {
+          "source": "coupons_2d68704d",
+          "text": "平台券与商品券默认不可叠加。积分抵扣不可用于运费。"
+        },
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "政策版本:2024-12-v3\n主政策:偏远附加费 8 元,包邮券不可抵。"
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 4.65,
+      "docs": [
+        "shipping_remote",
+        "membership_plus",
+        "shipping",
+        "coupons"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《shipping_remote》的资料节选，请核对原文：\n\n> 海南除海口/三亚外乡镇、舟山部分岛屿加收 15 元岛屿费,与 8 元偏远费不叠加,取较高者。",
+      "evidence": [
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "海南除海口/三亚外乡镇、舟山部分岛屿加收 15 元岛屿费,与 8 元偏远费不叠加,取较高者。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "订单实付满 59 元包邮。偏远地区加收 8 元偏远附加费,包邮券不可抵该附加费。"
+        },
+        {
+          "source": "coupons_2d68704d",
+          "text": "平台券与商品券默认不可叠加。积分抵扣不可用于运费。"
+        },
+        {
+          "source": "shipping_remote_104aa5d1",
+          "text": "政策版本:2024-12-v3\n主政策:偏远附加费 8 元,包邮券不可抵。"
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 22.66,
+      "docs": [
+        "invoice_vat",
+        "gift_card",
+        "payment_methods",
+        "packaging_gift"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《invoice_vat》的资料节选，请核对原文：\n\n> 优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。",
+      "evidence": [
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "payment_methods_82a85cb2",
+          "text": "积分与优惠券可同时用于商品款,但不能同时抵运费。花呗分期订单不可再用积分。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 5.09,
+      "docs": [
+        "invoice_vat",
+        "gift_card",
+        "payment_methods",
+        "packaging_gift"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《invoice_vat》的资料节选，请核对原文：\n\n> 优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。",
+      "evidence": [
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "payment_methods_82a85cb2",
+          "text": "积分与优惠券可同时用于商品款,但不能同时抵运费。花呗分期订单不可再用积分。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 20.88,
+      "docs": [
+        "invoice_vat",
+        "gift_card",
+        "payment_methods",
+        "packaging_gift"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《invoice_vat》的资料节选，请核对原文：\n\n> 优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。",
+      "evidence": [
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "payment_methods_82a85cb2",
+          "text": "积分与优惠券可同时用于商品款,但不能同时抵运费。花呗分期订单不可再用积分。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "可与优惠券叠加,礼品卡优先扣减。不支持货到付款订单。"
+        },
+        {
+          "source": "packaging_gift_89a65515",
+          "text": "礼品包装 8 元/件,含贺卡(限 40 字)。包装费不开专票,普票记为「服务费」。"
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 26.07,
+      "docs": [
+        "return_food",
+        "logistics_exception",
+        "return_policy"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_food》的资料节选，请核对原文：\n\n> 食品一旦拆封、加热或剪开密封条,除变质、异物、保质期已过,一律不可退。",
+      "evidence": [
+        {
+          "source": "return_food_287bf71d",
+          "text": "食品一旦拆封、加热或剪开密封条,除变质、异物、保质期已过,一律不可退。"
+        },
+        {
+          "source": "return_food_287bf71d",
+          "text": "经审核属实的变质,退款外另赔付券 FRESH20(满 20 可用,7 天有效)。"
+        },
+        {
+          "source": "logistics_exception_b97f65d5",
+          "text": "确认丢件后按实付金额退款,或补发(库存允许)。运费险同时理赔时,不重复赔付运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "拆封激活的数码产品、贴身服饰已洗涤、食品已开封,不适用无理由退货。"
+        },
+        {
+          "source": "return_food_287bf71d",
+          "text": "常温食品未开封、外包装完好,签收后 24 小时内可申请无理由退货。冷链/生鲜签收时须当场开箱,离场后质量问题需提供开箱视频。"
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 5.4,
+      "docs": [
+        "return_food",
+        "logistics_exception",
+        "return_policy"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_food》的资料节选，请核对原文：\n\n> 食品一旦拆封、加热或剪开密封条,除变质、异物、保质期已过,一律不可退。",
+      "evidence": [
+        {
+          "source": "return_food_287bf71d",
+          "text": "食品一旦拆封、加热或剪开密封条,除变质、异物、保质期已过,一律不可退。"
+        },
+        {
+          "source": "return_food_287bf71d",
+          "text": "经审核属实的变质,退款外另赔付券 FRESH20(满 20 可用,7 天有效)。"
+        },
+        {
+          "source": "logistics_exception_b97f65d5",
+          "text": "确认丢件后按实付金额退款,或补发(库存允许)。运费险同时理赔时,不重复赔付运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "拆封激活的数码产品、贴身服饰已洗涤、食品已开封,不适用无理由退货。"
+        },
+        {
+          "source": "return_food_287bf71d",
+          "text": "常温食品未开封、外包装完好,签收后 24 小时内可申请无理由退货。冷链/生鲜签收时须当场开箱,离场后质量问题需提供开箱视频。"
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 23.33,
+      "docs": [
+        "return_food",
+        "logistics_exception",
+        "return_policy"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_food》的资料节选，请核对原文：\n\n> 食品一旦拆封、加热或剪开密封条,除变质、异物、保质期已过,一律不可退。",
+      "evidence": [
+        {
+          "source": "return_food_287bf71d",
+          "text": "食品一旦拆封、加热或剪开密封条,除变质、异物、保质期已过,一律不可退。"
+        },
+        {
+          "source": "return_food_287bf71d",
+          "text": "经审核属实的变质,退款外另赔付券 FRESH20(满 20 可用,7 天有效)。"
+        },
+        {
+          "source": "logistics_exception_b97f65d5",
+          "text": "确认丢件后按实付金额退款,或补发(库存允许)。运费险同时理赔时,不重复赔付运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "拆封激活的数码产品、贴身服饰已洗涤、食品已开封,不适用无理由退货。"
+        },
+        {
+          "source": "return_food_287bf71d",
+          "text": "常温食品未开封、外包装完好,签收后 24 小时内可申请无理由退货。冷链/生鲜签收时须当场开箱,离场后质量问题需提供开箱视频。"
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 22.02,
+      "docs": [
+        "membership_plus",
+        "promo_stacking",
+        "return_custom"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《membership_plus》的资料节选，请核对原文：\n\n> PLUS 运费券可与 NEW10 同单使用:NEW10 抵商品款,PLUS_SHIP 抵基础运费。",
+      "evidence": [
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 运费券可与 NEW10 同单使用:NEW10 抵商品款,PLUS_SHIP 抵基础运费。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "开通 7 日内未使用任何 PLUS 券可全额退。已使用任一张券则按剩余月份折算,手续费 10 元。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 5.59,
+      "docs": [
+        "membership_plus",
+        "promo_stacking",
+        "return_custom"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《membership_plus》的资料节选，请核对原文：\n\n> PLUS 运费券可与 NEW10 同单使用:NEW10 抵商品款,PLUS_SHIP 抵基础运费。",
+      "evidence": [
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 运费券可与 NEW10 同单使用:NEW10 抵商品款,PLUS_SHIP 抵基础运费。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "开通 7 日内未使用任何 PLUS 券可全额退。已使用任一张券则按剩余月份折算,手续费 10 元。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 20.69,
+      "docs": [
+        "membership_plus",
+        "promo_stacking",
+        "return_custom"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《membership_plus》的资料节选，请核对原文：\n\n> PLUS 运费券可与 NEW10 同单使用:NEW10 抵商品款,PLUS_SHIP 抵基础运费。",
+      "evidence": [
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 运费券可与 NEW10 同单使用:NEW10 抵商品款,PLUS_SHIP 抵基础运费。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "PLUS 年卡 149 元。每月发放 3 张运费券 PLUS_SHIP(满 1 元可用,不可抵偏远/岛屿费),积分倍率 1.5 倍。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        },
+        {
+          "source": "membership_plus_ab644d62",
+          "text": "开通 7 日内未使用任何 PLUS 券可全额退。已使用任一张券则按剩余月份折算,手续费 10 元。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "定制商品不可使用 NEW10 与品类券,可用积分抵扣商品款,不可抵运费。"
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 19.46,
+      "docs": [
+        "points_expiry",
+        "return_food",
+        "payment_methods"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《points_expiry》的资料节选，请核对原文：\n\n> 发生退款时,该单已发放积分冻结并扣除。若已抵现,从退款中扣回对应金额。",
+      "evidence": [
+        {
+          "source": "points_expiry_52095870",
+          "text": "发生退款时,该单已发放积分冻结并扣除。若已抵现,从退款中扣回对应金额。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "积分自入账月起 24 个月有效,到期当月短信提醒。过期不补发。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "单个自然日积分抵现上限 50 元,大促期间可能临时下调,以结算页提示为准。"
+        },
+        {
+          "source": "return_food_287bf71d",
+          "text": "经审核属实的变质,退款外另赔付券 FRESH20(满 20 可用,7 天有效)。"
+        },
+        {
+          "source": "payment_methods_82a85cb2",
+          "text": "积分与优惠券可同时用于商品款,但不能同时抵运费。花呗分期订单不可再用积分。"
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 23.66,
+      "docs": [
+        "points_expiry",
+        "return_food",
+        "payment_methods"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《points_expiry》的资料节选，请核对原文：\n\n> 发生退款时,该单已发放积分冻结并扣除。若已抵现,从退款中扣回对应金额。",
+      "evidence": [
+        {
+          "source": "points_expiry_52095870",
+          "text": "发生退款时,该单已发放积分冻结并扣除。若已抵现,从退款中扣回对应金额。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "积分自入账月起 24 个月有效,到期当月短信提醒。过期不补发。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "单个自然日积分抵现上限 50 元,大促期间可能临时下调,以结算页提示为准。"
+        },
+        {
+          "source": "return_food_287bf71d",
+          "text": "经审核属实的变质,退款外另赔付券 FRESH20(满 20 可用,7 天有效)。"
+        },
+        {
+          "source": "payment_methods_82a85cb2",
+          "text": "积分与优惠券可同时用于商品款,但不能同时抵运费。花呗分期订单不可再用积分。"
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 21.67,
+      "docs": [
+        "points_expiry",
+        "return_food",
+        "payment_methods"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《points_expiry》的资料节选，请核对原文：\n\n> 发生退款时,该单已发放积分冻结并扣除。若已抵现,从退款中扣回对应金额。",
+      "evidence": [
+        {
+          "source": "points_expiry_52095870",
+          "text": "发生退款时,该单已发放积分冻结并扣除。若已抵现,从退款中扣回对应金额。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "积分自入账月起 24 个月有效,到期当月短信提醒。过期不补发。"
+        },
+        {
+          "source": "points_expiry_52095870",
+          "text": "单个自然日积分抵现上限 50 元,大促期间可能临时下调,以结算页提示为准。"
+        },
+        {
+          "source": "return_food_287bf71d",
+          "text": "经审核属实的变质,退款外另赔付券 FRESH20(满 20 可用,7 天有效)。"
+        },
+        {
+          "source": "payment_methods_82a85cb2",
+          "text": "积分与优惠券可同时用于商品款,但不能同时抵运费。花呗分期订单不可再用积分。"
+        }
+      ]
+    },
+    {
+      "id": "p20",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 24.45,
+      "docs": [
+        "return_policy",
+        "cross_border",
+        "pickup_return",
+        "return_custom"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_policy》的资料节选，请核对原文：\n\n> 非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。",
+      "evidence": [
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "cross_border_60f6605a",
+          "text": "跨境商品不适用 7 天无理由。质量问题须在签收 7 日内申请,退货至保税仓,国际段运费平台承担。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "印字、刻字、定做尺寸等定制商品不适用 7 天无理由。质量问题(破损、错发、与描述严重不符)仍可退货。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "屏幕色差不属于质量问题。印刷错字、漏印、图案颠倒按质量问题全额退,运费平台承担。"
+        }
+      ]
+    },
+    {
+      "id": "p20",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 23.29,
+      "docs": [
+        "return_policy",
+        "cross_border",
+        "pickup_return",
+        "return_custom"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_policy》的资料节选，请核对原文：\n\n> 非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。",
+      "evidence": [
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "cross_border_60f6605a",
+          "text": "跨境商品不适用 7 天无理由。质量问题须在签收 7 日内申请,退货至保税仓,国际段运费平台承担。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "印字、刻字、定做尺寸等定制商品不适用 7 天无理由。质量问题(破损、错发、与描述严重不符)仍可退货。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "屏幕色差不属于质量问题。印刷错字、漏印、图案颠倒按质量问题全额退,运费平台承担。"
+        }
+      ]
+    },
+    {
+      "id": "p20",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 22.63,
+      "docs": [
+        "return_policy",
+        "cross_border",
+        "pickup_return",
+        "return_custom"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_policy》的资料节选，请核对原文：\n\n> 非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。",
+      "evidence": [
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "cross_border_60f6605a",
+          "text": "跨境商品不适用 7 天无理由。质量问题须在签收 7 日内申请,退货至保税仓,国际段运费平台承担。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "印字、刻字、定做尺寸等定制商品不适用 7 天无理由。质量问题(破损、错发、与描述严重不符)仍可退货。"
+        },
+        {
+          "source": "return_custom_d31491b4",
+          "text": "屏幕色差不属于质量问题。印刷错字、漏印、图案颠倒按质量问题全额退,运费平台承担。"
+        }
+      ]
+    },
+    {
+      "id": "p21",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 23.27,
+      "docs": [
+        "price_protect",
+        "gift_card",
+        "invoice_vat",
+        "promo_stacking"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《price_protect》的资料节选，请核对原文：\n\n> 预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。",
+      "evidence": [
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "大多数商品签收后 15 天内,若自营同款降价且价差 ≥ 10 元,可申请价保补差。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        }
+      ]
+    },
+    {
+      "id": "p21",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 6.56,
+      "docs": [
+        "price_protect",
+        "gift_card",
+        "invoice_vat",
+        "promo_stacking"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《price_protect》的资料节选，请核对原文：\n\n> 预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。",
+      "evidence": [
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "大多数商品签收后 15 天内,若自营同款降价且价差 ≥ 10 元,可申请价保补差。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        }
+      ]
+    },
+    {
+      "id": "p21",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 23.49,
+      "docs": [
+        "price_protect",
+        "gift_card",
+        "invoice_vat",
+        "promo_stacking"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《price_protect》的资料节选，请核对原文：\n\n> 预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。",
+      "evidence": [
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "预售定金、定制、秒杀、礼品卡、跨境购不参加价保。PLUS 专享价与直播价不交叉比价。"
+        },
+        {
+          "source": "gift_card_25ceb666",
+          "text": "电子礼品卡面值 50 / 100 / 200 / 500 元,购买后 12 个月有效。不可提现、不可开专票。"
+        },
+        {
+          "source": "invoice_vat_d600f1a3",
+          "text": "优惠券抵扣部分、运费、礼品卡支付部分不开专票,只开实付商品款。"
+        },
+        {
+          "source": "price_protect_f0bf249d",
+          "text": "大多数商品签收后 15 天内,若自营同款降价且价差 ≥ 10 元,可申请价保补差。"
+        },
+        {
+          "source": "promo_stacking_a3820716",
+          "text": "秒杀价商品不可用 NEW10、SHOP50。可使用包邮券 SHIP0(满 59)。"
+        }
+      ]
+    },
+    {
+      "id": "p22",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 22.09,
+      "docs": [
+        "return_electronics",
+        "warranty_battery",
+        "missing_wrong_item",
+        "return_policy"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_electronics》的资料节选，请核对原文：\n\n> 耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。",
+      "evidence": [
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。"
+        },
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "签收后 48 小时内在订单页提交开箱照片/视频。超时无法证明错发漏发的,按普通售后审核。"
+        },
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "质量问题仍须在签收后 15 日内提交视频凭证。超过 15 天转保修通道,不能原单退货。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "超过 7 天无理由且无法证明质量问题的,不能退货。可转保修或人工复核。"
+        }
+      ]
+    },
+    {
+      "id": "p22",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 6.25,
+      "docs": [
+        "return_electronics",
+        "warranty_battery",
+        "missing_wrong_item",
+        "return_policy"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_electronics》的资料节选，请核对原文：\n\n> 耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。",
+      "evidence": [
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。"
+        },
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "签收后 48 小时内在订单页提交开箱照片/视频。超时无法证明错发漏发的,按普通售后审核。"
+        },
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "质量问题仍须在签收后 15 日内提交视频凭证。超过 15 天转保修通道,不能原单退货。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "超过 7 天无理由且无法证明质量问题的,不能退货。可转保修或人工复核。"
+        }
+      ]
+    },
+    {
+      "id": "p22",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 22.14,
+      "docs": [
+        "return_electronics",
+        "warranty_battery",
+        "missing_wrong_item",
+        "return_policy"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_electronics》的资料节选，请核对原文：\n\n> 耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。",
+      "evidence": [
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "耳机、手机配件等一旦在系统中绑定 SN/IMEI,即视为激活。激活后不适用 7 天无理由,仅质量问题(无法开机、原厂功能失效)可走退货。"
+        },
+        {
+          "source": "warranty_battery_a9dec946",
+          "text": "可充电电池保修 6 个月或充放电 300 次(以先到为准)。容量衰减低于标称 60% 可申请检测换新。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "签收后 48 小时内在订单页提交开箱照片/视频。超时无法证明错发漏发的,按普通售后审核。"
+        },
+        {
+          "source": "return_electronics_ecb5e89c",
+          "text": "质量问题仍须在签收后 15 日内提交视频凭证。超过 15 天转保修通道,不能原单退货。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "超过 7 天无理由且无法证明质量问题的,不能退货。可转保修或人工复核。"
+        }
+      ]
+    },
+    {
+      "id": "p23",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 22.23,
+      "docs": [
+        "restock_notify",
+        "live_presale",
+        "refund_timeline",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《restock_notify》的资料节选，请核对原文：\n\n> 缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。",
+      "evidence": [
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。"
+        },
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "到货通知不是库存预留合同,大促可能瞬时售罄。"
+        },
+        {
+          "source": "live_presale_2eba858e",
+          "text": "尾款支付窗口通常 24-48 小时,超时定金没收且不保留库存。"
+        },
+        {
+          "source": "refund_timeline_dbf0b0cb",
+          "text": "资料不全将在 12 小时内驳回并说明缺件。重新提交后时效重新计算,不占用 15 日质量问题窗口的首次提交时间。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "支付后超过 48 小时未发货可催发。预售商品以页面标明发货时间为准。"
+        }
+      ]
+    },
+    {
+      "id": "p23",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 21.9,
+      "docs": [
+        "restock_notify",
+        "live_presale",
+        "refund_timeline",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《restock_notify》的资料节选，请核对原文：\n\n> 缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。",
+      "evidence": [
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。"
+        },
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "到货通知不是库存预留合同,大促可能瞬时售罄。"
+        },
+        {
+          "source": "live_presale_2eba858e",
+          "text": "尾款支付窗口通常 24-48 小时,超时定金没收且不保留库存。"
+        },
+        {
+          "source": "refund_timeline_dbf0b0cb",
+          "text": "资料不全将在 12 小时内驳回并说明缺件。重新提交后时效重新计算,不占用 15 日质量问题窗口的首次提交时间。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "支付后超过 48 小时未发货可催发。预售商品以页面标明发货时间为准。"
+        }
+      ]
+    },
+    {
+      "id": "p23",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 32.18,
+      "docs": [
+        "restock_notify",
+        "live_presale",
+        "refund_timeline",
+        "shipping"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": true,
+      "answer": "当前未配置生成模型，以下是《restock_notify》的资料节选，请核对原文：\n\n> 缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。",
+      "evidence": [
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "缺货 SKU 可订阅到货通知,保留 30 天。到货后短信+站内信,库存锁 2 小时,超时释放。"
+        },
+        {
+          "source": "restock_notify_8fe4d981",
+          "text": "到货通知不是库存预留合同,大促可能瞬时售罄。"
+        },
+        {
+          "source": "live_presale_2eba858e",
+          "text": "尾款支付窗口通常 24-48 小时,超时定金没收且不保留库存。"
+        },
+        {
+          "source": "refund_timeline_dbf0b0cb",
+          "text": "资料不全将在 12 小时内驳回并说明缺件。重新提交后时效重新计算,不占用 15 日质量问题窗口的首次提交时间。"
+        },
+        {
+          "source": "shipping_6c5f3232",
+          "text": "支付后超过 48 小时未发货可催发。预售商品以页面标明发货时间为准。"
+        }
+      ]
+    },
+    {
+      "id": "p24",
+      "group": "compound",
+      "arm": "fixed_three",
+      "route": "multi",
+      "rounds": 3,
+      "searches": 3,
+      "ms": 22.63,
+      "docs": [
+        "return_food",
+        "return_policy",
+        "pickup_return",
+        "missing_wrong_item"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_food》的资料节选，请核对原文：\n\n> 常温食品未开封、外包装完好,签收后 24 小时内可申请无理由退货。冷链/生鲜签收时须当场开箱,离场后质量问题需提供开箱视频。",
+      "evidence": [
+        {
+          "source": "return_food_287bf71d",
+          "text": "常温食品未开封、外包装完好,签收后 24 小时内可申请无理由退货。冷链/生鲜签收时须当场开箱,离场后质量问题需提供开箱视频。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "拆封激活的数码产品、贴身服饰已洗涤、食品已开封,不适用无理由退货。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "漏发配件或商品,审核通过后 24 小时内补发,不再收取运费。无货则退对应商品款。"
+        }
+      ]
+    },
+    {
+      "id": "p24",
+      "group": "compound",
+      "arm": "adaptive",
+      "route": "multi",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 23.78,
+      "docs": [
+        "return_food",
+        "return_policy",
+        "pickup_return",
+        "missing_wrong_item"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_food》的资料节选，请核对原文：\n\n> 常温食品未开封、外包装完好,签收后 24 小时内可申请无理由退货。冷链/生鲜签收时须当场开箱,离场后质量问题需提供开箱视频。",
+      "evidence": [
+        {
+          "source": "return_food_287bf71d",
+          "text": "常温食品未开封、外包装完好,签收后 24 小时内可申请无理由退货。冷链/生鲜签收时须当场开箱,离场后质量问题需提供开箱视频。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "拆封激活的数码产品、贴身服饰已洗涤、食品已开封,不适用无理由退货。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "漏发配件或商品,审核通过后 24 小时内补发,不再收取运费。无货则退对应商品款。"
+        }
+      ]
+    },
+    {
+      "id": "p24",
+      "group": "compound",
+      "arm": "single",
+      "route": "single",
+      "rounds": 1,
+      "searches": 1,
+      "ms": 7.18,
+      "docs": [
+        "return_food",
+        "return_policy",
+        "pickup_return",
+        "missing_wrong_item"
+      ],
+      "all_docs": true,
+      "all_evidence_spans": true,
+      "all_answer_spans": false,
+      "answer": "当前未配置生成模型，以下是《return_food》的资料节选，请核对原文：\n\n> 常温食品未开封、外包装完好,签收后 24 小时内可申请无理由退货。冷链/生鲜签收时须当场开箱,离场后质量问题需提供开箱视频。",
+      "evidence": [
+        {
+          "source": "return_food_287bf71d",
+          "text": "常温食品未开封、外包装完好,签收后 24 小时内可申请无理由退货。冷链/生鲜签收时须当场开箱,离场后质量问题需提供开箱视频。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "非定制、未拆封影响二次销售的商品,签收次日起 7 个自然日内可申请无理由退货。运费由买家承担,除非商品存在质量问题。"
+        },
+        {
+          "source": "pickup_return_d230b6de",
+          "text": "质量问题取件免费。无理由退货取件费 12 元从退款中扣除,也可自行寄出并自行承担运费。"
+        },
+        {
+          "source": "return_policy_2f2e66b9",
+          "text": "拆封激活的数码产品、贴身服饰已洗涤、食品已开封,不适用无理由退货。"
+        },
+        {
+          "source": "missing_wrong_item_3dcbac87",
+          "text": "漏发配件或商品,审核通过后 24 小时内补发,不再收取运费。无货则退对应商品款。"
+        }
+      ]
+    }
+  ]
+}

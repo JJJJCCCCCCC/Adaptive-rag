@@ -1,0 +1,82 @@
+{
+  "id": "H27",
+  "group": "chain",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "绀海折桌补桌脚需要交多少材料费？",
+        "missing": "",
+        "suggestions": [
+          "绀海折桌 补桌脚 材料费",
+          "绀海折桌 桌脚配件 价格",
+          "折桌 补桌脚 费用"
+        ],
+        "searches": [
+          {
+            "query": "绀海折桌补桌脚需要交多少材料费？",
+            "hits": [
+              "蓝枝陶铃公告",
+              "绀海折桌服务手册",
+              "晴瓦烘鞋架售后说明"
+            ]
+          },
+          {
+            "query": "绀海折桌 补桌脚 材料费",
+            "hits": [
+              "绀海折桌服务手册",
+              "外箱附加价",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.82,
+      "rationale": "询问具体商品（绀海折桌）补桌脚的材料费用，属于产品/配件费用咨询，非通用政策解释，也未涉及具体订单售后。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.82,
+      "rationale": "用户询问特定商品（绀海折桌）补桌脚的材料费，属于单一产品售后配件费用咨询，可通过单条产品/售后政策FAQ直接回答，无需组合多政策或调用订单系统。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4560.87,
+  "docs": [
+    "绀海折桌服务手册",
+    "蓝枝陶铃公告",
+    "交付承诺册"
+  ],
+  "provider_tokens": 1953,
+  "provider_responses": 5,
+  "all_docs": false,
+  "all_evidence_spans": false,
+  "all_answer_spans": false,
+  "answer": "现有证据无法确定绀海折桌补桌脚的材料费金额：服务手册只提到执行《西苔协议》，未给出补桌脚的材料费标准；其余证据与补桌脚无关。建议补充订单号或具体型号，或转人工核实后再答复。",
+  "evidence": [
+    {
+      "source": "绀海折桌服务手册_9b405269",
+      "text": "绀海折桌服务手册。绀海折桌的配套服务执行《西苔协议》。"
+    },
+    {
+      "source": "蓝枝陶铃公告_a5f481f2",
+      "text": "蓝枝陶铃公告。蓝枝陶铃:本店受理补绳,需要先核验凭证;补绳价格待发布。"
+    },
+    {
+      "source": "交付承诺册_850bd457",
+      "text": "交付承诺册。UF25 为3天,UF52 为11天,UF55 为7天。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "31b9a12ccf5a4f539e09219905133771"
+}

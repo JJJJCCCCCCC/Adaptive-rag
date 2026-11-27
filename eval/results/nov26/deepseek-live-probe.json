@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-11-26T01:03:35.653731+00:00",
+  "host": "api.deepseek.com",
+  "path": "/chat/completions",
+  "model_requested": "deepseek-chat",
+  "managed_network": true,
+  "attempts": 1,
+  "http_status": 200,
+  "model_returned": "deepseek-flash",
+  "usage_returned": {
+    "prompt_tokens": 11,
+    "completion_tokens": 1,
+    "total_tokens": 12,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 11
+  },
+  "status": "response_received",
+  "reply": "OK",
+  "tokens": 12,
+  "elapsed_ms": 7562
+}

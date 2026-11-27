@@ -1,0 +1,82 @@
+{
+  "id": "H31",
+  "group": "unknown",
+  "arm": "single",
+  "route": "single",
+  "trace": {
+    "rounds": [
+      {
+        "input": "蓝枝陶铃补绳具体收几元？",
+        "missing": "",
+        "suggestions": [
+          "蓝枝陶铃 补绳 价格",
+          "蓝枝陶铃 补绳 收费",
+          "陶铃 补绳 多少钱"
+        ],
+        "searches": [
+          {
+            "query": "蓝枝陶铃补绳具体收几元？",
+            "hits": [
+              "蓝枝陶铃公告",
+              "芦岸雨罩公告",
+              "检测合同价"
+            ]
+          },
+          {
+            "query": "蓝枝陶铃 补绳 价格",
+            "hits": [
+              "蓝枝陶铃公告",
+              "溪石约定",
+              "交付承诺册"
+            ]
+          }
+        ]
+      }
+    ],
+    "intent": {
+      "label": "product_consult",
+      "confidence": 0.82,
+      "rationale": "询问具体商品（蓝枝陶铃）补绳的收费金额，属于商品相关咨询，未涉及退款、退货或通用政策解释。",
+      "prompt_version": "intent_v3"
+    },
+    "decision": {
+      "complexity": "single_hop",
+      "strategy": "single",
+      "confidence": 0.85,
+      "rationale": "用户询问特定商品（蓝枝陶铃）补绳的具体收费，属于单一商品/服务价格咨询，可通过单条FAQ或商品信息直接回答。"
+    }
+  },
+  "refused": false,
+  "rounds": 1,
+  "searches": 2,
+  "ms": 4793.86,
+  "docs": [
+    "蓝枝陶铃公告",
+    "检测合同价",
+    "溪石约定"
+  ],
+  "provider_tokens": 2003,
+  "provider_responses": 5,
+  "all_docs": true,
+  "all_evidence_spans": true,
+  "all_answer_spans": true,
+  "answer": "目前无法确认蓝枝陶铃补绳的具体费用：公告只说明受理补绳需先核验凭证，补绳价格待发布，未给出金额（chunk_id: 蓝枝陶铃公告_a5f481f2_00）。其他证据中的17元、31元、21元、33元分别属于检测合同价和溪石约定，与蓝枝陶铃补绳无关，不能套用。建议您提供订单号，或转人工核实最新补绳收费标准。",
+  "evidence": [
+    {
+      "source": "蓝枝陶铃公告_a5f481f2",
+      "text": "蓝枝陶铃公告。蓝枝陶铃:本店受理补绳,需要先核验凭证;补绳价格待发布。"
+    },
+    {
+      "source": "检测合同价_e1eddcdf",
+      "text": "检测合同价。FN48 收17元,FN84 收31元,FN80 收21元。"
+    },
+    {
+      "source": "溪石约定_27da5ad2",
+      "text": "溪石约定。本约定下每次计量复核为33元。"
+    }
+  ],
+  "fingerprint": "fc5e78c556db3fddbc0edd0a79c94ebf44c828c1ad7d7c68b6b9e16a8f6e4ed2",
+  "model_requested": "deepseek-chat",
+  "backend": "hash",
+  "attempt": "7c9ff99434ce4d1284cd9c162fef4e24"
+}
