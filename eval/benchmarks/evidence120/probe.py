@@ -14,7 +14,7 @@ class Credentials(BaseSettings):
 
 
 async def main() -> None:
-    credentials = Credentials(_env_file=Path(os.environ["RAG_EVAL_MODEL_CONFIG"]))
+    credentials = Credentials(_env_file=Path(os.environ["RAG_EVAL_MODEL_CONFIG"]))  # type: ignore[call-arg]
     async with httpx.AsyncClient(
         base_url="https://api.deepseek.com",
         trust_env=os.environ.get("RAG_EVAL_DIRECT") != "1",
@@ -27,9 +27,7 @@ async def main() -> None:
                 headers={"Authorization": "Bearer " + credentials.deepseek_api_key},
                 json={
                     "model": credentials.deepseek_model,
-                    "messages": [
-                        {"role": "user", "content": "仅输出数字 24681，不加解释。"}
-                    ],
+                    "messages": [{"role": "user", "content": "仅输出数字 24681，不加解释。"}],
                     "temperature": 0,
                     "max_tokens": 24,
                 },

@@ -20,9 +20,7 @@ def main():
     expected = json.loads((source / "summary.json").read_bytes())
     assert expected["input_sha256"] == sha256(raw)
     assert expected["experiment_sha256"] == sha256(raw + (base / "study.py").read_bytes())
-    records = [
-        json.loads((source / f"{row['id']}.json").read_bytes()) for row in dataset["cases"]
-    ]
+    records = [json.loads((source / f"{row['id']}.json").read_bytes()) for row in dataset["cases"]]
     assert Counter(row["group"] for row in records) == expected["group_sizes"]
     case_by_id = {case["id"]: case for case in dataset["cases"]}
     receipts = {}
@@ -32,7 +30,7 @@ def main():
         assert row["input_sha256"] == expected["input_sha256"]
         assert row["experiment_sha256"] == expected["experiment_sha256"]
         assert set(row["arms"]) == set(ARMS)
-        for arm, result in row["arms"].items():
+        for result in row["arms"].values():
             assert validate(case, result["answer"]) == result["passed"]
             if result["calls"]:
                 final_id = result["calls"][-1]["id"]
@@ -45,12 +43,16 @@ def main():
                 receipts[receipt["id"]] = receipt
     assert len(receipts) == expected["physical_receipts"]
     assert len(generated_ids) == (len(records) - expected["group_sizes"]["outside"]) * len(ARMS)
-    expected2 = summarize(records, args.cohort, expected["input_sha256"], expected["experiment_sha256"])
+    expected2 = summarize(
+        records, args.cohort, expected["input_sha256"], expected["experiment_sha256"]
+    )
     assert expected2 == expected
-    with (base / f"{args.cohort}-audit.jsonl").open("w", encoding="utf-8", newline="\n") as f:
+    with (source / "audit.jsonl").open("w", encoding="utf-8", newline="\n") as f:
         for row in records:
             f.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
-    print(f"Validated {len(records)} paired cases and {len(receipts)} unique official usage receipts")
+    print(
+        f"Validated {len(records)} paired cases and {len(receipts)} unique official usage receipts"
+    )
 
 
 if __name__ == "__main__":

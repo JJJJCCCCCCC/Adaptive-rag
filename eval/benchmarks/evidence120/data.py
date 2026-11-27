@@ -7,13 +7,38 @@ import random
 from pathlib import Path
 
 STORES = (
-    "松弦", "槐序", "砚溯", "棠屿", "墨禾", "云瓷", "沐榆", "照川",
-    "榕岸", "晴汀", "青霁", "霜檀", "锦笺", "南栗",
+    "松弦",
+    "槐序",
+    "砚溯",
+    "棠屿",
+    "墨禾",
+    "云瓷",
+    "沐榆",
+    "照川",
+    "榕岸",
+    "晴汀",
+    "青霁",
+    "霜檀",
+    "锦笺",
+    "南栗",
 )
 PRODUCTS = (
-    "便携咖啡壶", "竹席收纳袋", "陶艺描金笔", "桌面迷你架", "雨衣清洁盒",
-    "碳钢煎锅", "羊毛暖杯套", "藤编置物筐", "不锈钢搅拌勺", "手摇磨豆杯",
-    "净水量杯", "葡萄木盘", "玻璃午餐盒", "手冲保温瓶", "松石茶筅", "竹制蒸笼",
+    "便携咖啡壶",
+    "竹席收纳袋",
+    "陶艺描金笔",
+    "桌面迷你架",
+    "雨衣清洁盒",
+    "碳钢煎锅",
+    "羊毛暖杯套",
+    "藤编置物筐",
+    "不锈钢搅拌勺",
+    "手摇磨豆杯",
+    "净水量杯",
+    "葡萄木盘",
+    "玻璃午餐盒",
+    "手冲保温瓶",
+    "松石茶筅",
+    "竹制蒸笼",
 )
 TASKS = (
     ("补发运费", "元", ("补寄配件要付多少快递费", "买它以后补寄费用是多少")),
@@ -76,8 +101,16 @@ def create(cohort):
             case_id = f"{cohort.upper()}-{index + 1:03}"
             if group == "outside":
                 cases.append(
-                    dict(id=case_id, store=store, group=group, query=OUTSIDE[index % len(OUTSIDE)],
-                         value=None, unit=None, sources=[], decision="outside")
+                    dict(
+                        id=case_id,
+                        store=store,
+                        group=group,
+                        query=OUTSIDE[index % len(OUTSIDE)],
+                        value=None,
+                        unit=None,
+                        sources=[],
+                        decision="outside",
+                    )
                 )
                 continue
             task, unit, wording = TASKS[index % len(TASKS)]
@@ -109,24 +142,46 @@ def create(cohort):
                     body = f"本记录覆盖{task}；{referral(style, next_title, next_code, next_alias, index + hop)}"
                     if hop == 0:
                         body = f"{product}的{body}"
-                docs.append(dict(id=doc_id, store=store, title=title,
-                                 text=f"{title}。编号 {code}；别名「{alias}」。{body}"))
+                docs.append(
+                    dict(
+                        id=doc_id,
+                        store=store,
+                        title=title,
+                        text=f"{title}。编号 {code}；别名「{alias}」。{body}",
+                    )
+                )
             distractor = stable_id(cohort, store, case_id, "distractor")
             title = f"{store}{product}存档问答"
             docs.append(
-                dict(id=distractor, store=store, title=title,
-                     text=f"{title}。旧版中的{task}为{value + 6}{unit}，于新规则生效后作废。")
+                dict(
+                    id=distractor,
+                    store=store,
+                    title=title,
+                    text=f"{title}。旧版中的{task}为{value + 6}{unit}，于新规则生效后作废。",
+                )
             )
             if depth > 1:
                 title = f"{store}展示{branch}政策"
                 docs.append(
-                    dict(id=stable_id(cohort, store, case_id, "similar"), store=store,
-                         title=title, text=f"{title}。编号 RV-{branch}09；仅用于样品。{task}为{value + 8}{unit}。")
+                    dict(
+                        id=stable_id(cohort, store, case_id, "similar"),
+                        store=store,
+                        title=title,
+                        text=f"{title}。编号 RV-{branch}09；仅用于样品。{task}为{value + 8}{unit}。",
+                    )
                 )
-            cases.append(dict(id=case_id, store=store, group=group, query=query,
-                              value=value if decision == "answer" else None,
-                              unit=unit if decision == "answer" else None,
-                              sources=sources, decision=decision))
+            cases.append(
+                dict(
+                    id=case_id,
+                    store=store,
+                    group=group,
+                    query=query,
+                    value=value if decision == "answer" else None,
+                    unit=unit if decision == "answer" else None,
+                    sources=sources,
+                    decision=decision,
+                )
+            )
     return dict(cohort=cohort, cases=cases, documents=docs)
 
 

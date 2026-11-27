@@ -11,7 +11,6 @@ from collections import Counter
 from pathlib import Path
 
 import httpx
-
 import study
 from probe import Credentials
 
@@ -36,16 +35,30 @@ def load_original(source):
             n, unit = int(match[1]), match[2]
         kind = {"answer": "answer", "unknown": "missing", "outside": "outside"}[row["kind"]]
         group = {
-            "direct": "direct", "code_link": "two", "named_link": "two",
-            "chain": "three", "unknown": "missing", "outside": "outside",
+            "direct": "direct",
+            "code_link": "two",
+            "named_link": "two",
+            "chain": "three",
+            "unknown": "missing",
+            "outside": "outside",
         }[row["group"]]
-        cases.append({
-            "id": row["id"], "store": "evidence36", "group": group, "query": row["query"],
-            "value": n, "unit": unit, "sources": row["docs"], "decision": kind,
-        })
+        cases.append(
+            {
+                "id": row["id"],
+                "store": "evidence36",
+                "group": group,
+                "query": row["query"],
+                "value": n,
+                "unit": unit,
+                "sources": row["docs"],
+                "decision": kind,
+            }
+        )
     corpus = [
         {
-            "id": d["id"], "store": "evidence36", "title": d["title"],
+            "id": d["id"],
+            "store": "evidence36",
+            "title": d["title"],
             "text": d["title"] + "。项目政策。" + d["body"],
         }
         for d in docs

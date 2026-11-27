@@ -10,11 +10,12 @@ import random
 import re
 import statistics
 import time
-import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
 import httpx
+from probe import Credentials
+
 from app.providers.embeddings import HashEmbeddingProvider
 from app.providers.reranker import LexicalRerankProvider
 from app.retrieval.bm25 import BM25Retriever
@@ -22,7 +23,6 @@ from app.retrieval.hybrid import HybridRetriever
 from app.retrieval.reranker import DocumentReranker
 from app.retrieval.vector import InMemoryVectorStore, VectorRetriever, build_records
 from app.schemas.retrieval import RetrievedChunk
-from probe import Credentials
 
 ARMS = ("single", "fixed_three", "adaptive")
 TOP_K = 8
@@ -98,14 +98,19 @@ class Corpus:
         for document in self.documents:
             per_store[document["store"]].append(
                 RetrievedChunk(
-                    chunk_id=document["id"], document_id=document["id"],
-                    title=document["title"], content=document["text"], score=0,
+                    chunk_id=document["id"],
+                    document_id=document["id"],
+                    title=document["title"],
+                    content=document["text"],
+                    score=0,
                 )
             )
         for store, chunks in per_store.items():
             memory = InMemoryVectorStore()
             memory.upsert(build_records(chunks, await embedder.embed([c.content for c in chunks])))
-            engine = HybridRetriever(BM25Retriever(chunks), VectorRetriever(memory, embedder), rrf_k=60)
+            engine = HybridRetriever(
+                BM25Retriever(chunks), VectorRetriever(memory, embedder), rrf_k=60
+            )
             aliases = defaultdict(list)
             for chunk in chunks:
                 if eligible(chunk):
@@ -118,12 +123,14 @@ class Corpus:
         results = await engine.retrieve(query, top_k=TOP_K)
         ranked = await self.lexical.rerank(query, results, top_n=TOP_K)
         exact = aliases.get(query, [])
-        return [*dict(
-            (chunk.document_id, chunk)
-            for chunk in [*ranked, *exact]
-        ).values()] if not exact else [
-            *exact, *[c for c in ranked if c.document_id not in {e.document_id for e in exact}]
-        ]
+        return (
+            [*dict((chunk.document_id, chunk) for chunk in [*ranked, *exact]).values()]
+            if not exact
+            else [
+                *exact,
+                *[c for c in ranked if c.document_id not in {e.document_id for e in exact}],
+            ]
+        )
 
 
 def outside_query(store, query):
@@ -142,8 +149,10 @@ def validate(case, answer):
     if case["decision"] != "answer":
         return answer["value"] is None and answer["unit"] is None and answer["sources"] == []
     return (
-        type(answer["value"]) is int and answer["value"] == case["value"]
-        and answer["unit"] == case["unit"] and isinstance(answer["sources"], list)
+        type(answer["value"]) is int
+        and answer["value"] == case["value"]
+        and answer["unit"] == case["unit"]
+        and isinstance(answer["sources"], list)
         and all(isinstance(k, str) for k in answer["sources"])
         and sorted(answer["sources"]) == sorted(case["sources"])
     )
@@ -200,11 +209,21 @@ async def measure(case, corpus, service, input_hash):
     start = time.perf_counter()
     if outside_query(store, query):
         return {
-            "id": case["id"], "store": store, "group": case["group"], "input_sha256": input_hash,
-            "trajectory": [], "arms": {
-                arm: {"answer": dict(decision="outside", value=None, unit=None, sources=[]),
-                      "calls": [], "evidence": [], "rounds": 0, "ms": 0.0,
-                      "passed": case["decision"] == "outside"} for arm in ARMS
+            "id": case["id"],
+            "store": store,
+            "group": case["group"],
+            "input_sha256": input_hash,
+            "trajectory": [],
+            "arms": {
+                arm: {
+                    "answer": dict(decision="outside", value=None, unit=None, sources=[]),
+                    "calls": [],
+                    "evidence": [],
+                    "rounds": 0,
+                    "ms": 0.0,
+                    "passed": case["decision"] == "outside",
+                }
+                for arm in ARMS
             },
         }
     pool = await corpus.retrieve(store, query)
@@ -216,7 +235,7 @@ async def measure(case, corpus, service, input_hash):
     stop_at = None
     for iteration in range(3):
         selected = select(anchor, chain, pool)
-        snapshots.append((selected, list(calls), (time.perf_counter() - start)*1000))
+        snapshots.append((selected, list(calls), (time.perf_counter() - start) * 1000))
         keys = references(trail)
         keys = [k for k in keys if k not in {step["query"] for step in provenance}]
         if stop_at is None and (DONE.search(body(trail)) or not keys):
@@ -240,8 +259,13 @@ async def measure(case, corpus, service, input_hash):
             chain.append(trail)
             seen.add(trail.document_id)
         pool = [*candidates, *pool]
-        provenance.append({"query": planned, "picked": trail.document_id,
-                           "hits": [c.document_id for c in candidates]})
+        provenance.append(
+            {
+                "query": planned,
+                "picked": trail.document_id,
+                "hits": [c.document_id for c in candidates],
+            }
+        )
     targets = {"single": 0, "fixed_three": 2, "adaptive": 2 if stop_at is None else stop_at}
     arms = {}
     # Each arm submits its own answer request, even if evidence happens to match.
@@ -262,8 +286,14 @@ async def measure(case, corpus, service, input_hash):
             "ms": round(retrieval_ms + (time.perf_counter() - answer_start) * 1000, 2),
             "passed": validate(case, answer),
         }
-    return {"id": case["id"], "store": store, "group": case["group"],
-            "input_sha256": input_hash, "trajectory": provenance, "arms": arms}
+    return {
+        "id": case["id"],
+        "store": store,
+        "group": case["group"],
+        "input_sha256": input_hash,
+        "trajectory": provenance,
+        "arms": arms,
+    }
 
 
 def pass_rate(records, arm):
@@ -302,7 +332,9 @@ def summarize(records, cohort, input_hash, fingerprint):
             "passed": sum(row["passed"] for row in rows),
             "answerable_passed": sum(r["arms"][arm]["passed"] for r in answerable),
             "controls_passed": sum(r["arms"][arm]["passed"] for r in controls),
-            "passed_by_group": dict(Counter(r["group"] for r in records if r["arms"][arm]["passed"])),
+            "passed_by_group": dict(
+                Counter(r["group"] for r in records if r["arms"][arm]["passed"])
+            ),
             "rounds": sum(row["rounds"] for row in rows),
             "calls_accounted": len(receipts),
             "prompt_tokens": sum(r["usage"]["prompt_tokens"] for r in receipts),
@@ -316,17 +348,23 @@ def summarize(records, cohort, input_hash, fingerprint):
     ci_single = paired_interval(records, "single")
     ci_three = paired_interval(records, "fixed_three")
     return {
-        "cohort": cohort, "input_sha256": input_hash, "experiment_sha256": fingerprint,
-        "n": len(records), "merchants": len({r["store"] for r in records}),
-        "answerable_n": len(answerable), "controls_n": len(controls),
+        "cohort": cohort,
+        "input_sha256": input_hash,
+        "experiment_sha256": fingerprint,
+        "n": len(records),
+        "merchants": len({r["store"] for r in records}),
+        "answerable_n": len(answerable),
+        "controls_n": len(controls),
         "model": sorted({r["model"] for r in physical.values()}),
         "physical_receipts": len(physical),
         "actual_billed_tokens": sum(r["usage"]["total_tokens"] for r in physical.values()),
         "group_sizes": dict(Counter(r["group"] for r in records)),
-        "totals": totals, "quality_gain_vs_single": advantage,
+        "totals": totals,
+        "quality_gain_vs_single": advantage,
         "quality_gain_vs_single_ci95": ci_single,
         "quality_difference_vs_fixed_three": versus_three,
-        "quality_difference_ci95": ci_three, "savings_vs_fixed_three": savings,
+        "quality_difference_ci95": ci_three,
+        "savings_vs_fixed_three": savings,
         "quality_goal": advantage >= 0.10 and ci_single[0] > 0,
         "cost_goal": savings >= 0.20 and ci_three[0] > -0.05,
         "stretch_cost_goal": savings >= 0.276 and ci_three[0] > -0.05,

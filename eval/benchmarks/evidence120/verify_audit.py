@@ -16,12 +16,12 @@ def verify(cohort: str, base: Path) -> None:
         for line in (base / f"{cohort}-audit.jsonl").read_text(encoding="utf-8").splitlines()
     ]
     input_digest = sha256(raw)
-    run_digest = sha256(raw + (base / "study.py").read_bytes())
+    run_digest = sha256(raw + (base / "frozen-study.py.txt").read_bytes())
     assert expected["input_sha256"] == input_digest
     assert expected["experiment_sha256"] == run_digest
     assert len(records) == len(cases) == len({row["id"] for row in records})
     assert {row["id"] for row in records} == set(cases)
-    receipts = {}
+    receipts: dict[str, dict] = {}
     answer_ids = set()
     for row in records:
         case = cases[row["id"]]

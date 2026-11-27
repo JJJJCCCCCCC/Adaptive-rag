@@ -40,3 +40,5 @@
 Evidence120 的独立留出集包含 100 道可回答题。按证据补检通过 100 道，固定单轮通过 44 道。相对固定三轮，在答全数持平的情况下，检索轮数从 330 降到 220，Token 从 81,267 降到 46,069（−43.3%）。这是合成语料上的受控组件对照。[实验报告](../eval/benchmarks/evidence120/README.md)
 
 实际采用确定性结构化打分和共用首轮检索轨迹，域外对照由商户范围检查处理。报告记录了与原方案的这些差异。Coder 实测增量输入 Token 减少 89.5%，整请求输入 Token 减少 85.2%。 [Coder 评测](https://github.com/JJJJCCCCCCC/coder/blob/main/benchmarks/compaction-report.md)
+
+FancyU 的真实 ASGI 路由和序列化请求在 24 个合成场景中验证，观察到的敏感标记外发从 9/24 降至 0/24。 [FancyU 出站验证](https://github.com/JJJJCCCCCCC/fancyU/blob/main/docs/verification/outbound-privacy.md)
